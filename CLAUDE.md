@@ -31,6 +31,11 @@ Exports are 1080x1920 H.264 at about 45 Mbps and 95 MB to 1.3 GB, above Instagra
 
 ## Meta access
 
-One system user token for all pages, read from the `META_SYSTEM_USER_TOKEN` environment variable. Never print it,
-log it or commit it. First step once it exists: a read-only check that lists the Pages and linked Instagram
-accounts it can reach, before any posting code runs.
+One system user token for CH, DEH, AM and CB, read from the `META_SYSTEM_USER_TOKEN` environment variable.
+Dee Emm Mahindra and M R Hyundai could not be shared into the agency business portfolio, so each uses a
+non-expiring Page token from the user's personal access: `META_PAGE_TOKEN_DEM` and `META_PAGE_TOKEN_MRH`.
+Those stop working if the user changes their Facebook password or loses access to the Page; if that happens,
+the user regenerates them in Graph API Explorer.
+
+Never print, log or commit any token. First step once they exist: a read-only check that lists the Pages and
+linked Instagram accounts each token can reach, before any posting code runs.
