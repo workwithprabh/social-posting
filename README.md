@@ -28,6 +28,7 @@ Reel covers and helper scripts for posting edited client videos to Instagram and
 
 - `scripts/list_videos.py` lists every video in the client month folders and writes `videos.json`.
 - `scripts/fetch_thumbnail.py CH-2610-04` copies that video's thumbnail from Drive into `thumbnails/`.
+- `scripts/check_access.py` lists the Pages and Instagram accounts each Meta token can reach (read-only).
 
 Both read Drive folders shared as "Anyone with the link can view", so keep that sharing setting on the
 video and thumbnail folders.

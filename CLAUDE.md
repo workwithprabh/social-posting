@@ -37,5 +37,6 @@ non-expiring Page token from the user's personal access: `META_PAGE_TOKEN_DEM` a
 Those stop working if the user changes their Facebook password or loses access to the Page; if that happens,
 the user regenerates them in Graph API Explorer.
 
-Never print, log or commit any token. First step once they exist: a read-only check that lists the Pages and
-linked Instagram accounts each token can reach, before any posting code runs.
+The tokens are environment variables in the "BC Social Automation" environment. Never print, log or commit any
+token. When the user says "Check Meta access", run `python scripts/check_access.py` (GET requests only) and report
+each client's Page and Instagram account, or what is missing, before any posting code is written or run.
