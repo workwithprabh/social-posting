@@ -131,13 +131,20 @@ def main():
     p.add_argument('--cover-url')
     p.add_argument('--cover-file')
     p.add_argument('--platforms', default='ig,fb')
+    p.add_argument('--system-user', action='store_true',
+                   help='token is the system user token: fetch the Page token for Facebook (kept in memory only)')
     a = p.parse_args()
     token = os.environ[a.token_env].strip()
     caption = open(a.caption_file, encoding='utf-8').read().strip()
     result = {}
     for plat in a.platforms.split(','):
         try:
-            result.update(publish_instagram(a, token, caption) if plat == 'ig' else publish_facebook(a, token, caption))
+            if plat == 'ig':
+                result.update(publish_instagram(a, token, caption))
+            else:
+                fb_token = call('GET', f'{GRAPH}/{a.page_id}', token, {'fields': 'access_token'})['access_token'] \
+                    if a.system_user else token
+                result.update(publish_facebook(a, fb_token, caption))
         except RuntimeError as e:
             result[f'{plat}_error'] = str(e)
     print(json.dumps(result))
