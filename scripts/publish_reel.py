@@ -65,8 +65,11 @@ def publish_instagram(a, token, caption):
         'media_type': 'REELS', 'upload_type': 'resumable', 'caption': caption,
         'cover_url': a.cover_url, 'share_to_feed': 'true'})
     cid = c['id']
-    upload_binary(f'https://rupload.facebook.com/ig-api-upload/{V}/{cid}', token, a.video)
-    for _ in range(90):                                   # up to ~15 minutes of processing
+    up = upload_binary(f'https://rupload.facebook.com/ig-api-upload/{V}/{cid}', token, a.video)
+    # A failed upload leaves the container IN_PROGRESS forever (seen with a 61 MB file; 34-41 MB files upload
+    # fine), so after an upload error give it two minutes, not fifteen.
+    polls = 12 if 'upload_warning' in up else 90
+    for _ in range(polls):
         s = call('GET', f'{GRAPH}/{cid}', token, {'fields': 'status_code,status'})
         if s.get('status_code') == 'FINISHED':
             break
@@ -74,7 +77,9 @@ def publish_instagram(a, token, caption):
             raise RuntimeError(f'Instagram processing failed: {s.get("status")}')
         time.sleep(10)
     else:
-        raise RuntimeError('Instagram processing timed out')
+        mb = os.path.getsize(a.video) / 1e6
+        raise RuntimeError(f'Instagram container {cid} never finished ({up.get("upload_warning", "upload ok")}). '
+                           f'File is {mb:.0f} MB: re-encode below 40 MB and retry; nothing was published.')
     media = post_form(f'{GRAPH}/{a.ig_user}/media_publish', token, {'creation_id': cid})
     info = call('GET', f'{GRAPH}/{media["id"]}', token, {'fields': 'permalink'})
     return {'ig_media_id': media['id'], 'ig_link': info.get('permalink')}

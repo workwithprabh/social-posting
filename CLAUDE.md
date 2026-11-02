@@ -27,7 +27,10 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 
 Exports are 1080x1920 H.264 at about 45 Mbps and 95 MB to 1.3 GB, above Instagram's Reels limits. Download with
 `drive_folder.download`, then re-encode before upload:
-`ffmpeg -i in.mp4 -c:v libx264 -preset medium -crf 20 -maxrate 20M -bufsize 40M -pix_fmt yuv420p -c:a aac -b:a 192k -ar 48000 -movflags +faststart out.mp4`
+`ffmpeg -i in.mp4 -c:v libx264 -preset medium -crf 22 -maxrate 6M -bufsize 12M -pix_fmt yuv420p -c:a aac -b:a 160k -ar 48000 -movflags +faststart out.mp4`
+Keep the result under 40 MB: uploads from the cloud session fail above roughly that size (a 61 MB file never
+finished on Instagram; 34 and 41 MB files went through). Publish with `scripts/publish_reel.py`; for clients on the
+system user token add `--system-user` so Facebook gets the Page token.
 
 ## Meta access
 
