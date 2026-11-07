@@ -7,7 +7,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 - **Tracker sheet:** "Social Posting Tracker", Google Sheet id `1bcx0yZ-5C7F6e_WLg9Kbw8FRQQ4jUaPQ_SRGnJts_NY`
   in the workwithprabh@gmail.com Drive. Tab `Videos`: Video ID, Client, Month, Video file (HYPERLINK to Drive),
   Status (Pending / Approved / Posted / Skip), Platforms (IG + FB / IG only / FB only), Caption, Thumbnail link,
-  Post date, Instagram post link, Facebook post link, Notes. Tab `Clients`: code, client, Drive folder.
+  Post date, Instagram post link, Facebook post link, Notes, Added to Drive (the video file's Drive upload date,
+  India time). Tab `Clients`: code, client, Drive folder.
   Read it with the Drive connector: `download_file_content` with `exportMimeType: text/csv`.
   Writing to it needs the Google Sheets connector; without it, the user updates the sheet by hand.
 - **Edited videos:** owned by becarrotsocial@gmail.com, one folder per client, one subfolder per month,
