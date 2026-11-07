@@ -12,3 +12,7 @@ Notes from the first trial (AM-2611-01, DEM-2611-02):
 - Brighter source frames than Reel 5 push the face above the target; tone the presenter with a CSS
   `brightness(.83-.85)` placed before the drop-shadows in `.person{filter:...}` and re-check `04_face_metrics.py`.
 - For festival greetings, swap "WATCH THIS FIRST!" for the greeting (e.g. "HAPPY DIWALI!").
+- `build.py <ID>` builds a cover from a per-reel folder (presenter.png, bg.png, panel_bg.png, graphic.png, optional
+  car_final.png and a `cfg.json` with the text, theme `mahindra` or `hyundai`, and cutout fade). It finds the face
+  with YuNet (`../models/yunet.onnx`), places and grades the presenter, swaps in the Hyundai blue theme, and
+  auto-tunes face brightness to L* 53-60.
