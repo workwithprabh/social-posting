@@ -6,6 +6,7 @@ import numpy as np, cv2, sys
 from PIL import Image
 src,dst=sys.argv[1],sys.argv[2]
 KX=float(sys.argv[3]) if len(sys.argv)>3 else 430; KY=float(sys.argv[4]) if len(sys.argv)>4 else 560
+LIFT=float(sys.argv[5]) if len(sys.argv)>5 else 0.30  # lower for already-bright source frames
 im=np.array(Image.open(src).convert('RGBA'))
 rgb=im[...,:3]; alpha=im[...,3].astype(np.float32)/255
 H,W=alpha.shape
@@ -26,7 +27,7 @@ def curve(x, lift=0.30, shoulder=0.82):
     y=x+lift*(x**1.6)*(1-x)*2.6               # lift mids/skin, keep darks (hair, eyes) deep
     y=np.where(y>shoulder, shoulder+(1-shoulder)*np.tanh((y-shoulder)/(1-shoulder)), y)  # soft highlight roll-off
     return y
-L=curve(L)
+L=curve(L,lift=LIFT)
 L=np.clip((L-0.035)/0.965,0,1)   # firm black point
 # mild, wide local contrast (not gritty)
 blur=cv2.GaussianBlur(L,(0,0),28); L=np.clip(L+(L-blur)*0.32,0,1)

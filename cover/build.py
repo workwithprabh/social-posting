@@ -19,7 +19,7 @@ det = cv2.FaceDetectorYN.create(os.path.join(HERE, '../models/yunet.onnx'), '', 
 _, faces = det.detect(fr)
 fx, fy, fw, fh = faces[0][:4]
 fcx, fcy = fx + fw / 2, fy + fh / 2
-run('python3', '03_grade.py', 'person.png', 'person_natural.png', str(fcx - 70), str(fcy - 90))
+run('python3', '03_grade.py', 'person.png', 'person_natural.png', str(fcx - 70), str(fcy - 90), str(CFG.get('lift', .30)))
 
 # place: face width -> CFG face_w (default 205), centre -> CFG face_c (default 700,1150)
 tw = CFG.get('face_w', 205); cx, cy = CFG.get('face_c', [700, 1150])
@@ -42,8 +42,8 @@ def tt(t, c, small=False):
     return f'<span class="{"tt s" if small else "ln tt"} {c}" data-t="{t}">{t}</span>'
 l1, l2, l3 = CFG['lines']
 head = (f'<div class="row r1"><i class="stk"></i><span class="ln tt w" data-w="{CFG.get("l1_w", 860)}" data-t="{l1}">{l1}</span></div>\n'
-        f'    <div class="row r2"><i class="stk"></i>{tt(l2, "w")}</div>\n'
-        f'    <div class="row r3"><i class="stk"></i><i class="stk2"></i>{tt(l3, "y")}</div>\n'
+        f'    <div class="row r2"><i class="stk"></i><span class="ln tt w" data-w="{CFG.get("l2_w", 1010)}" data-t="{l2}">{l2}</span></div>\n'
+        f'    <div class="row r3"><i class="stk"></i><i class="stk2"></i><span class="ln tt y" data-w="{CFG.get("l3_w", 1010)}" data-t="{l3}">{l3}</span></div>\n'
         f'    <div class="boxrow"><div class="redbox"><span class="in">' + ''.join(tt(t, c, True) for t, c in CFG['box']) + '</span></div></div>')
 T = re.sub(r'<div class="row r1">.*?</div></div>\n', head + '\n', T, flags=re.S)
 b1, b2 = CFG.get('banner', ['WATCH THIS', 'FIRST!'])
@@ -54,6 +54,7 @@ if not os.path.exists('car_final.png'):
     T = T.replace('<img class="car" src="car_final.png">', '')
 gw = CFG.get('graphic_w', 470); gtop = CFG.get('graphic_top', 925)
 br = CFG.get('bright', .85)
+T = T.replace('<div class="vs"><img src="graphic.png"></div>', CFG.get('vs_html', '<div class="vs"><img src="graphic.png"></div>'))
 css = f""".person{{left:{left:.0f}px;top:{top:.0f}px;width:{width:.0f}px;filter:brightness({br}) contrast({CFG.get('contrast',1.08)}) PERSONGLOW}}
 .vs{{left:{CFG.get('graphic_left',16)}px;top:{gtop}px;width:{gw}px}}
 {CFG.get('css','')}"""
@@ -85,7 +86,7 @@ def render(T):
 
 info, m = render(T)
 # auto-tune face brightness toward L 57
-for _ in range(3):
+for _ in range(3 if CFG.get('autotune', True) else 0):
     L = float(m.split('face L ')[1].split(' ')[0])
     if 53 <= L <= 60: break
     nb = round(br * (57 / L) ** 1.3, 3)

@@ -16,3 +16,7 @@ Notes from the first trial (AM-2611-01, DEM-2611-02):
   car_final.png and a `cfg.json` with the text, theme `mahindra` or `hyundai`, and cutout fade). It finds the face
   with YuNet (`../models/yunet.onnx`), places and grades the presenter, swaps in the Hyundai blue theme, and
   auto-tunes face brightness to L* 53-60.
+- `03_grade.py` takes an optional 5th argument, the mid-tone lift (playbook default 0.30). Bright source frames
+  (white showroom light) need a negative lift to land the face in the playbook ranges; CH-2610-12 used -0.2.
+  Fix brightness in the grade, never with a CSS brightness filter on the presenter (that made v1 grey and flat).
+- Festival reels: same playbook template, headline from the reel's wish, banner "HAPPY DIWALI!".
