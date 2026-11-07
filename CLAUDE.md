@@ -21,7 +21,13 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 ## Rules the user set
 
 - Post only when the user says to upload specific Video IDs. The Post date column is not a schedule.
-- Captions and thumbnails come from the team (made in ChatGPT); do not generate them.
+- Claude drafts captions and thumbnails; the team approves them. Covers follow `cover/PLAYBOOK.md`
+  (Mahindra style; Hyundai and Car & Bike use the same rules in their own colours, refs in `cover/refs/`).
+  Captions follow `captions/STYLE.md` and use only facts said in the reel.
+- Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive) as
+  `<Video ID>.jpg`; write the caption and the draft's link into the sheet and set Notes to
+  "Draft by Claude, needs review". Never put drafts in the team's Thumbnail folder: a file there named by Video ID
+  is treated as the approved cover.
 - Before publishing, show the user the batch (ID, client, caption start, thumbnail, platforms) and wait for a yes.
 - Both CH-2610-07 and CH-2610-08 (Reel 3 offer and Reel 3) are meant to be posted.
 
