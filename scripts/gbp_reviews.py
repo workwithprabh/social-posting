@@ -64,14 +64,15 @@ def get(url, tok, **params):
         raise RuntimeError(f'{e.code} {url.split("?")[0]}: {msg}') from None
 
 
-def paged(url, tok, key, **params):
+def paged(url, tok, key, stop=None, **params):
+    """All pages of `key`; `stop(page_items)` returning True ends paging early (e.g. past the --since date)."""
     out, token = [], None
     while True:
         p = dict(params, **({'pageToken': token} if token else {}))
         d = get(url, tok, **p)
         out += d.get(key, [])
         token = d.get('nextPageToken')
-        if not token:
+        if not token or (stop and stop(d.get(key, []))):
             return out
 
 
@@ -134,8 +135,11 @@ if __name__ == '__main__':
             continue
         loc_id = l['location'].split('/')[-1]
         try:
+            # newest-updated first, and a review is created no later than it is updated, so once a page ends
+            # before --since every later page is older too
+            past = (lambda page: bool(page) and page[-1]['updateTime'] < since.astimezone(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S')) if since else None
             revs = paged(f"https://mybusiness.googleapis.com/v4/{l['account']}/locations/{loc_id}/reviews", tok, 'reviews',
-                         pageSize=50, orderBy='updateTime desc')
+                         stop=past, pageSize=50, orderBy='updateTime desc')
         except RuntimeError as e:
             print(f"# {l['title']}: {e}", file=sys.stderr)
             continue
@@ -149,7 +153,7 @@ if __name__ == '__main__':
                 continue          # too thin to look genuine, or too long to quote in full on a card
             who = (r.get('reviewer') or {})
             display = 'A Google user' if who.get('isAnonymous') else who.get('displayName', '')
-            rows.append([r['reviewId'], l['client'], l['area'] or l['title'], stars, display, post_name(display), text,
+            rows.append([r.get('name') or r['reviewId'], l['client'], l['area'] or l['title'], stars, display, post_name(display), text,
                          when.strftime('%-d %b %Y'), l['maps'], 'New', '', '', text])   # M: Text for post (typo fixes only, by a person)
     rows.sort(key=lambda x: dt.datetime.strptime(x[7], '%d %b %Y'), reverse=True)
     if a.out:

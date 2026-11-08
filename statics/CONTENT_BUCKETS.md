@@ -62,4 +62,7 @@ Mahindra Arav swaps one of these for a Pickups post each month.
   copies new qualifying 5-star reviews (max 3 per branch per day) into the tracker's Reviews tab;
   `scripts/dmu_reviews.py` lists candidates from a CSV export. First backfill (8 Nov 2026): 18 hand-checked reviews
   from the last 60 days.
-- **Other clients**: `scripts/gbp_reviews.py` once their listings are reachable with GBP OAuth credentials.
+- **Other clients**: `scripts/gbp_reviews.py reviews --since <date>` (GBP OAuth credentials are in the environment; the
+  account sees every Capital Hyundai, M R Hyundai, Mahindra Arav and Dee Emm Mahindra listing, none for Car & Bike).
+  Skip its Dee Emm Hyundai rows: those come from the DMU sheet. First backfill (8 Nov 2026): 38 hand-checked reviews
+  from the last 60 days (Capital Hyundai 27, Dee Emm Mahindra 8, Mahindra Arav 2, M R Hyundai 1).
