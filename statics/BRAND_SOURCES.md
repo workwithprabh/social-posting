@@ -39,6 +39,9 @@ Prices change; re-read the sites before using a price in a post, and label it "e
 - Footer numbers follow the post's topic (user, 8 Nov 2026): a service post (service review, service tip, camp)
   shows the service centre numbers, a showroom/sales post shows the showroom numbers, a general post shows both.
   Service numbers per client are in `statics/clients.json` ("service"); use only ones marked confirmed.
+- Logo size (measured from the clients' own posts, 8 Nov 2026, on a 1080px-wide post): Capital Hyundai ~240px
+  wide, Dee Emm Hyundai ~200px, M R Hyundai ~270px (one line: H emblem + "M R HYUNDAI"), Mahindra Arav ~150px,
+  Dee Emm Mahindra stacked twin-peaks ~220px; about 40-50px from the top and side edges. Don't go bigger.
 - Dee Emm Mahindra logo depends on the topic (user, 8 Nov 2026): a post or review about EVs (BE 6, XEV 9e, XEV 9S,
   XUV 3XO EV, XUV400, charging) uses the EV logo (white loop mark); everything else, i.e. petrol/diesel/CNG cars,
   service, insurance, uses the twin-peaks "DEE EMM MAHINDRA, SERVING GURGAON SINCE 2019" logo (white version on dark

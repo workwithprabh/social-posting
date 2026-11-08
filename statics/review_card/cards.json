@@ -3,85 +3,85 @@
   "id": "CH-REV-2611-01",
   "theme": "hyundai",
   "logo": "CH_cap.png",
-  "logoH": 74,
   "kicker": "CUSTOMER LOVE",
   "headline": "A Creta delivery to remember.",
   "quote": "Everyone was so polite and welcoming! A special thanks to Astha for all her support and for the amazing demonstration of the Hyundai Creta. The entire experience was wonderful, and the team made me feel really special during the delivery of my new Creta.",
   "name": "Lokesh K.",
   "place": "Capital Hyundai, Sector 132, Noida",
-  "footer": "CH"
+  "footer": "CH",
+  "logoW": 240
  },
  {
   "id": "CH-REV-2611-02",
   "theme": "hyundai",
   "logo": "CH_cap.png",
-  "logoH": 74,
   "kicker": "CUSTOMER LOVE",
   "headline": "Service, sorted.",
   "quote": "The service centre is very well managed. Palak at the reception was very responsive, and the floor manager, Mr. Nizam, was very helpful. The problem was sorted in no time. Thank you, guys!",
   "name": "Anuradha K.",
   "place": "Capital Hyundai Service, Sector 132, Noida",
-  "footer": "CH"
+  "footer": "CH_SVC",
+  "logoW": 240
  },
  {
   "id": "DEH-REV-2611-01",
   "theme": "hyundai",
   "logo": "DEH_white.png",
-  "logoH": 74,
   "kicker": "CUSTOMER LOVE",
   "headline": "Smooth from start to finish.",
   "quote": "I recently bought my car from Jasvinder Sir at Dee Emm Hyundai, and the experience was smooth from start to finish. He explained every feature clearly, was patient with all my questions, and never pushed me into anything. The pricing was transparent, with no hidden surprises, and the delivery was on time.",
   "name": "Mohit A.",
   "place": "Dee Emm Hyundai, Sector 18, Gurgaon",
-  "footer": "DEH"
+  "footer": "DEH",
+  "logoW": 200
  },
  {
   "id": "MRH-REV-2611-01",
   "theme": "hyundai",
-  "logo": "MRH_3.png",
-  "logoH": 110,
+  "logo": "MRH_line.png",
   "kicker": "CUSTOMER LOVE",
   "headline": "Thank you, Nitin!",
   "quote": "Excellent service by Sumit! He was professional, helpful, and attentive throughout the process. The service was completed smoothly, and I’m very satisfied with the overall experience. Highly recommended!",
   "name": "Nitin C.",
   "place": "M R Hyundai, Pasonda, Sahibabad",
-  "footer": "MRH"
+  "footer": "MRH",
+  "logoW": 270
  },
  {
   "id": "DEM-REV-2611-01",
   "theme": "mahindra",
   "logo": "DEM_ice_white.png",
-  "logoH": 108,
   "kicker": "CUSTOMER LOVE",
   "headline": "Insurance claim? Handled.",
   "quote": "Dealing with an insurance claim can often be a headache, but Rohit Rajput made the entire process effortless. He managed everything from the insurance paperwork to regular status updates and ensured a seamless, timely handover of my car.",
   "name": "Himanshu K.",
   "place": "Dee Emm Mahindra, Sector 35, Gurgaon",
-  "footer": "DEM"
+  "footer": "DEM_SVC",
+  "logoW": 220
  },
  {
   "id": "AM-REV-2611-01",
   "theme": "mahindra",
   "logo": "AM_group1.png",
-  "logoH": 84,
   "kicker": "CUSTOMER LOVE",
   "headline": "Your XUV700, in good hands.",
   "quote": "Got my XUV700 serviced here last week. The service station is very clean, and the staff are very responsive. I reached at 8:50 am and a service advisor was available immediately. A WhatsApp group was created, and all updates on the car’s service were shared promptly.",
   "name": "Ashutosh T.",
   "place": "Mahindra Arav, Sector 83, Gurgaon",
-  "footer": "AM"
+  "footer": "AM_SVC",
+  "logoW": 150
  },
  {
   "id": "CH-REV-2611-03",
   "theme": "hyundai",
   "logo": "CH_cap.png",
-  "logoH": 74,
   "kicker": "CUSTOMER LOVE",
   "headline": "Welcome to the Hyundai family!",
   "quote": "I had a great experience with Hyundai. Astha supported me throughout the whole process, along with Aditya Sir. They did a very commendable job, and the car is in good condition.",
   "name": "Sumit G.",
   "place": "Capital Hyundai, Sector 132, Noida",
   "footer": "CH",
-  "cut": "cut_CH-REV-2611-03.png"
+  "cut": "cut_CH-REV-2611-03.png",
+  "logoW": 240
  }
 ]

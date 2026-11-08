@@ -19,7 +19,8 @@ stands on the right, bleeding off the edge (sample: CH-REV-2611-03-SAMPLE, Sumit
 `python cutout.py photo.jpg cut_<ID>.png --plate ... --crop-right ...` from the review's full-size photo (column N
 of the Reviews tab). Only when "Photo OK?" is Yes.
 
-Edit `cards.json` for each batch (`theme` hyundai/mahindra, `logo`, `headline`, `quote`, `name`, `place`, `footer`
-CH/DEH/MRH/DEM/AM). IDs are `<client>-REV-<YYMM>-<nn>`; drafts go to the "Claude drafts" Drive folder and a
+Edit `cards.json` for each batch (`theme` hyundai/mahindra, `logo` and `logoW` (logo width, sizes in
+`statics/BRAND_SOURCES.md`), `headline`, `quote`, `name`, `place`, `footer`
+CH/DEH/MRH/DEM/AM for showroom posts, CH_SVC/DEM_SVC/AM_SVC for service posts). IDs are `<client>-REV-<YYMM>-<nn>`; drafts go to the "Claude drafts" Drive folder and a
 Calendar row (Bucket "Customer love", Status "Drafted", caption draft in "Brief and source").
 First batch (8 Nov 2026): CH-REV-2611-01/02, DEH-, MRH-, DEM-, AM-REV-2611-01.

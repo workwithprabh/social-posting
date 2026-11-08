@@ -29,7 +29,7 @@
       "Dadri"
     ],
     "service": {
-      "_status": "read from the Google Business Profile listings on 8 Nov 2026; NOT confirmed by the user yet, ask before use",
+      "_status": "read from the Google Business Profile listings on 8 Nov 2026; the user approved using them (8 Nov 2026)",
       "centres": [
         [
           "Sector 132, Noida",
@@ -59,7 +59,8 @@
           "Dadri (showroom & service)",
           "72900 79106 / 072900 77380"
         ]
-      ]
+      ],
+      "footer": "Service posts list all seven centres with one number each: Sector 132 73031 11937, Sector 63 99994 89444, Sector 58 84480 96129, Sector 3 97177 92239, Sector 83 95606 11466, Faridabad 93559 31002, Dadri 072900 79106."
     }
   },
   "DEH": {
@@ -85,7 +86,7 @@
       "Gurgaon"
     ],
     "service": {
-      "_status": "read from the Google Business Profile listings on 8 Nov 2026; NOT confirmed by the user yet, ask before use",
+      "_status": "read from the Google Business Profile listings on 8 Nov 2026; the user approved using them (8 Nov 2026)",
       "centres": [
         [
           "Sector 14",
@@ -136,7 +137,7 @@
       "Manesar"
     ],
     "service": {
-      "_status": "read from the Google Business Profile listings on 8 Nov 2026; NOT confirmed by the user yet, ask before use",
+      "_status": "read from the Google Business Profile listings on 8 Nov 2026; the user approved using them (8 Nov 2026)",
       "centres": [
         [
           "Arav Motors service centre, Sector 81A, Manesar",
@@ -169,7 +170,7 @@
       "Gurgaon"
     ],
     "service": {
-      "_status": "read from the Google Business Profile listings on 8 Nov 2026; NOT confirmed by the user yet, ask before use",
+      "_status": "read from the Google Business Profile listings on 8 Nov 2026; the user approved using them (8 Nov 2026)",
       "centres": [
         [
           "Sector 61",

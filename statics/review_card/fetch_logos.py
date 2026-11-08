@@ -15,8 +15,22 @@ LOGOS = {  # file name used by cards.json -> Drive file id (folders in statics/c
     'DEM_transparent.png': '1yGX8NLHbupLmkPcNU3wEtphWIvwdyZ07', # Dee Emm Mahindra EV logo: EV posts only
     'DEM_ice_white.png': '1LMRsS3JY-HEZhHkTAVvna7CbTo6v4s-u',   # Dee Emm Mahindra twin peaks, white: all other posts
 }
+def mrh_one_line():
+    # M R Hyundai posts use a one-line logo; the Drive copy is only 100px, so rebuild it from the stacked logo's pieces
+    im = Image.open('MRH_3.png').convert('RGBA'); import numpy as np
+    rows = np.where((np.array(im)[..., 3] > 20).any(1))[0]; g = np.where(np.diff(rows) > 3)[0][0]
+    tight = lambda x: x.crop(x.getchannel('A').point(lambda v: 255 if v > 20 else 0).getbbox())
+    emb, txt = tight(im.crop((0, 0, im.size[0], rows[g] + 1))), tight(im.crop((0, rows[g + 1], im.size[0], im.size[1])))
+    h = txt.size[1]; e = emb.resize((round(emb.size[0] * h * 1.05 / emb.size[1]), round(h * 1.05)), Image.LANCZOS)
+    gap = round(h * .55); out = Image.new('RGBA', (e.size[0] + gap + txt.size[0], max(e.size[1], h)))
+    out.paste(e, (0, (out.size[1] - e.size[1]) // 2), e); out.paste(txt, (e.size[0] + gap, (out.size[1] - h) // 2), txt)
+    out.save('MRH_line.png')
+
+
 for name, fid in LOGOS.items():
     drive_folder.download(fid, name)
     im = Image.open(name)
     im.crop(im.getchannel('A').point(lambda a: 255 if a > 20 else 0).getbbox()).save(name)
     print(name, im.size)
+mrh_one_line()
+print("MRH_line.png built")
