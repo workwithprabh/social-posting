@@ -38,6 +38,9 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   static, flexible when videos are short). Client contacts and logos: `statics/clients.json`.
 - Static content buckets and the Calendar/Reviews tabs: `statics/CONTENT_BUCKETS.md`. Google reviews come from
   `scripts/gbp_reviews.py` (setup in `statics/GBP_SETUP.md`; needs GBP_CLIENT_ID, GBP_CLIENT_SECRET, GBP_REFRESH_TOKEN).
+- Static footers: service posts show service numbers, showroom posts showroom numbers, general posts both.
+  Dee Emm Mahindra uses its EV logo only for EV posts; every other post uses the twin-peaks logo
+  (`statics/BRAND_SOURCES.md`, ids in `statics/clients.json`).
 - Review posts: whatever goes on social media is in correct English. Column M "Text for post" holds the review with
   its grammar corrected or rephrased in our words, keeping the customer's meaning and facts (names, car, branch,
   what happened) and adding nothing; column G keeps the original. Details in `statics/CONTENT_BUCKETS.md`.

@@ -36,6 +36,13 @@ Prices change; re-read the sites before using a price in a post, and label it "e
 ## Rules the user set for statics
 
 - Capital Hyundai Dadri number: 072900 77380.
+- Footer numbers follow the post's topic (user, 8 Nov 2026): a service post (service review, service tip, camp)
+  shows the service centre numbers, a showroom/sales post shows the showroom numbers, a general post shows both.
+  Service numbers per client are in `statics/clients.json` ("service"); use only ones marked confirmed.
+- Dee Emm Mahindra logo depends on the topic (user, 8 Nov 2026): a post or review about EVs (BE 6, XEV 9e, XEV 9S,
+  XUV 3XO EV, XUV400, charging) uses the EV logo (white loop mark); everything else, i.e. petrol/diesel/CNG cars,
+  service, insurance, uses the twin-peaks "DEE EMM MAHINDRA, SERVING GURGAON SINCE 2019" logo (white version on dark
+  backgrounds, black on light). File ids are in `statics/clients.json`.
 - Car & Bike phone: 98185 64808; the Dee Emm logo may sit alongside the car&bike logo.
 - Dee Emm Mahindra: everyday footer (CTA + phone); add its six locations only when they fit cleanly.
 - Mahindra Arav sells personal SUVs and commercial **pickups only** (Bolero Pik-Up, Bolero Camper, Maxx City, Maxx HD,

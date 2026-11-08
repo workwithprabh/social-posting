@@ -27,7 +27,40 @@
       "Noida",
       "Faridabad",
       "Dadri"
-    ]
+    ],
+    "service": {
+      "_status": "read from the Google Business Profile listings on 8 Nov 2026; NOT confirmed by the user yet, ask before use",
+      "centres": [
+        [
+          "Sector 132, Noida",
+          "73031 11937 (same as the showroom on Google)"
+        ],
+        [
+          "Sector 63, Noida (showroom & service)",
+          "99994 89444 / 92899 78469"
+        ],
+        [
+          "Sector 58, Noida",
+          "84480 96129"
+        ],
+        [
+          "Sector 3, Noida",
+          "97177 92239 / 0120 438 1001"
+        ],
+        [
+          "Sector 83, Noida",
+          "95606 11466 / 0120 477 4700"
+        ],
+        [
+          "Faridabad, Sector 27A",
+          "93559 31002"
+        ],
+        [
+          "Dadri (showroom & service)",
+          "72900 79106 / 072900 77380"
+        ]
+      ]
+    }
   },
   "DEH": {
     "name": "Dee Emm Hyundai",
@@ -50,7 +83,24 @@
     "map_search": "Dee Emm Hyundai",
     "emi_cities": [
       "Gurgaon"
-    ]
+    ],
+    "service": {
+      "_status": "read from the Google Business Profile listings on 8 Nov 2026; NOT confirmed by the user yet, ask before use",
+      "centres": [
+        [
+          "Sector 14",
+          "85888 91504"
+        ],
+        [
+          "Udyog Vihar Phase 2",
+          "93197 36501"
+        ],
+        [
+          "Daulatabad",
+          "93112 29480"
+        ]
+      ]
+    }
   },
   "MRH": {
     "name": "M R Hyundai",
@@ -84,7 +134,20 @@
     "emi_cities": [
       "Gurgaon",
       "Manesar"
-    ]
+    ],
+    "service": {
+      "_status": "read from the Google Business Profile listings on 8 Nov 2026; NOT confirmed by the user yet, ask before use",
+      "centres": [
+        [
+          "Arav Motors service centre, Sector 81A, Manesar",
+          "85888 46233"
+        ],
+        [
+          "Sector 83 (showroom & service)",
+          "88600 86639"
+        ]
+      ]
+    }
   },
   "DEM": {
     "name": "Dee Emm Mahindra",
@@ -104,7 +167,30 @@
     "footer_rule": "Everyday footer (CTA + phone). Add the six locations only when they fit without crowding the post.",
     "emi_cities": [
       "Gurgaon"
-    ]
+    ],
+    "service": {
+      "_status": "read from the Google Business Profile listings on 8 Nov 2026; NOT confirmed by the user yet, ask before use",
+      "centres": [
+        [
+          "Sector 61",
+          "93193 95913"
+        ],
+        [
+          "Sector 35",
+          "92890 32858"
+        ]
+      ]
+    },
+    "logos": {
+      "ev": {
+        "white": "1yGX8NLHbupLmkPcNU3wEtphWIvwdyZ07"
+      },
+      "ice": {
+        "black": "1tJmh29hAs9rw0fF62UuZ_VYNK-usLA5e",
+        "white": "1LMRsS3JY-HEZhHkTAVvna7CbTo6v4s-u"
+      },
+      "_rule": "EV posts use ev; all other posts use ice (twin-peaks). See BRAND_SOURCES.md."
+    }
   },
   "CB": {
     "name": "Dee Emm Car & Bike",
