@@ -1,0 +1,128 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Reel Cover</title>
+<style>
+@font-face{font-family:Anton;src:url(node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2)}
+@font-face{font-family:Mont;font-weight:900;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-900-normal.woff2)}
+@font-face{font-family:Mont;font-weight:800;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:#0a0a0d;overflow:hidden}
+.c{position:relative;width:1080px;height:1920px;overflow:hidden}
+
+/* [PER REEL] bg.png = any showroom frame from the reel (blurred + darkened here) */
+.bg{position:absolute;inset:-40px;background:url(bg.png) center 30%/cover;filter:blur(14px) saturate(.9) brightness(.32)}
+.shade{position:absolute;inset:0;background:
+  radial-gradient(ellipse 34% 15% at 66% 60%, rgba(0,0,0,.55), rgba(0,0,0,0) 80%),
+  radial-gradient(ellipse 70% 25% at 50% 80%, rgba(255,110,0,.14), rgba(255,60,0,0) 70%),
+  linear-gradient(180deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.18) 32%, rgba(0,0,0,.15) 62%, rgba(0,0,0,.92) 100%)}
+
+/* glowing gold frame; presenter pops out of its top edge. panel_bg.png = a showroom/cars frame from the reel */
+.panel{position:absolute;left:30px;top:1260px;width:1020px;height:440px;border-radius:34px;overflow:hidden;
+  box-shadow:0 0 0 7px #ffc400,0 0 30px 8px rgba(255,170,0,.8),0 0 80px 18px rgba(255,90,0,.38)}
+.panel .img{position:absolute;inset:-20px;background:url(panel_bg.png) center 34%/1080px auto no-repeat;filter:blur(6px) saturate(1.25) brightness(.7)}
+.panel .tint{position:absolute;inset:0;background:
+  radial-gradient(ellipse 55% 70% at 30% 30%, rgba(255,140,0,.28), rgba(0,0,0,0) 70%),
+  linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,.6))}
+.halo{position:absolute;left:330px;top:1180px;width:760px;height:440px;border-radius:50%;
+  background:radial-gradient(ellipse at center, rgba(255,110,0,.24), rgba(255,60,0,.1) 50%, rgba(255,40,0,0) 72%);filter:blur(24px)}
+.pwrap{position:absolute;left:0;top:0;width:1080px;height:1920px;
+  clip-path:polygon(0 0,1080px 0,1080px 1260px,1050px 1260px,1050px 1700px,30px 1700px,30px 1260px,0 1260px)}
+.person{position:absolute;left:146px;top:412px;width:1296px;
+  filter:drop-shadow(0 0 0 #fff) drop-shadow(5px 0 0 #fff) drop-shadow(-5px 0 0 #fff) drop-shadow(0 -5px 0 #fff)
+         drop-shadow(0 0 8px #ffd000) drop-shadow(0 0 20px rgba(255,160,0,.85)) drop-shadow(0 0 44px rgba(255,90,0,.55))}
+
+.car{position:absolute;left:-20px;top:1165px;width:710px;clip-path:inset(0 0 calc(100% - 535px) 0);filter:brightness(1.18) contrast(1.1) saturate(1.1) drop-shadow(0 0 3px rgba(255,220,150,.9)) drop-shadow(0 0 26px rgba(255,140,0,.55)) drop-shadow(0 30px 40px rgba(0,0,0,.8))}
+/* [PER REEL] graphic.png = the reel's own on-screen graphic that explains the topic (here: Your Profile vs Wife's Profile) */
+.vs{position:absolute;left:22px;top:912px;width:440px;border-radius:24px;overflow:hidden;transform:rotate(-4deg);
+  box-shadow:0 0 0 6px #ffd400,0 0 34px 8px rgba(255,190,0,.8),0 20px 40px rgba(0,0,0,.7)}
+.vs img{display:block;width:100%}
+
+/* textured 3D lettering, matched to the feed's style */
+.tt{position:relative;display:inline-block;white-space:pre;color:#000;-webkit-text-stroke:6px #000;text-shadow:4px 6px 0 #000,6px 10px 18px rgba(0,0,0,.8)}
+.tt.s{text-shadow:3px 4px 0 #000,4px 7px 12px rgba(0,0,0,.75);-webkit-text-stroke:4px #000}
+.tt::after{content:attr(data-t);position:absolute;left:0;top:0;white-space:pre;-webkit-text-stroke:0;text-shadow:none;color:transparent;
+  -webkit-background-clip:text;background-clip:text;background-size:520px auto,100% 100%;background-repeat:repeat,no-repeat}
+.tt.w::after{background-image:url(grunge_light.png),linear-gradient(180deg,#ffffff 0%,#f4f3f3 50%,#dcdcdc 100%)}
+.tt.y::after{background-image:url(grunge_light.png),linear-gradient(180deg,#fcf314 0%,#fbe206 50%,#ecb308 100%)}
+
+.head{position:absolute;left:0;right:0;top:140px;transform:rotate(-4deg) skewX(-9deg);transform-origin:center top;isolation:isolate}
+.row{position:relative;width:max-content;margin:0 auto}
+.ln{display:block;position:relative;font-family:Anton;text-transform:uppercase;letter-spacing:0;white-space:pre}
+.stk{position:absolute;z-index:-1;background-repeat:no-repeat;background-size:100% 100%;filter:drop-shadow(0 0 14px rgba(255,0,0,.45))}
+.r1 .stk{left:-210px;width:640px;top:2%;height:96%;background-image:url(brush_left.png)}
+.r2 .stk{left:-160px;right:-60px;top:-6%;height:112%;background-image:url(brush_wide.png)}
+.r3 .stk{right:-230px;width:640px;top:8%;height:90%;background-image:url(brush_right.png)}
+.r3 .stk2{position:absolute;z-index:-1;left:4%;right:-120px;bottom:-34px;height:34px;background:url(brush_line.png) 0 0/100% 100% no-repeat}
+.boxrow{position:relative;width:max-content;margin:0 auto}
+.redbox{position:relative;white-space:nowrap;font-family:Anton;letter-spacing:0;border-radius:10px;
+  background:linear-gradient(180deg,#3d0404 0%,#160000 50%,#2c0202 100%);border:3px solid #ffe3da;
+  box-shadow:0 0 0 4px #ff2410,0 0 20px 5px rgba(255,36,16,1),0 0 60px 12px rgba(255,20,0,.6),
+             inset 0 0 0 2px rgba(255,40,20,.9),inset 0 0 22px rgba(255,40,20,.55),inset 0 -30px 50px rgba(0,0,0,.6),0 14px 0 rgba(0,0,0,.45)}
+.redbox::before{content:'';position:absolute;left:-18%;right:-18%;top:-7px;height:10px;border-radius:50%;
+  background:radial-gradient(ellipse at 55% 50%,#fff 0%,#ffe2c0 14%,rgba(255,110,40,.9) 36%,rgba(255,40,0,.35) 60%,rgba(255,0,0,0) 75%);filter:blur(.6px)}
+.redbox::after{content:'';position:absolute;left:8%;right:30%;bottom:-4px;height:5px;border-radius:50%;
+  background:radial-gradient(ellipse at 30% 50%,#ffe8d8 0%,rgba(255,90,30,.85) 30%,rgba(255,0,0,0) 72%);filter:blur(.6px)}
+.redbox .in{display:block;position:relative;white-space:pre}
+
+.watch{position:absolute;left:50%;top:1600px;transform:translateX(-50%) rotate(-3deg);width:920px;height:140px}
+.watch .brush{position:absolute;inset:-14px -70px;background:url(brush_dense.png) 0 0/100% 100% no-repeat,url(brush_wide.png) 0 0/100% 100% no-repeat;
+  filter:drop-shadow(0 0 20px rgba(255,0,0,.9))}
+.watch b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:Anton;font-size:100px;letter-spacing:2px;transform:skewX(-10deg)}
+.watch b .tt+.tt{margin-left:20px}
+.foot{position:absolute;left:0;right:0;bottom:90px;text-align:center;font-family:Mont;font-weight:800;font-size:32px;color:#fff;letter-spacing:2px;opacity:.95}
+.foot span{color:#ffd400}
+</style></head>
+<body><div class="c">
+  <div class="bg"></div>
+  <div class="shade"></div>
+
+  <div class="panel"><div class="img"></div><div class="tint"></div></div>
+  <div class="halo"></div>
+  <img class="car" src="car_final.png">
+  <div class="pwrap"><img class="person" src="person_natural.png"></div>
+
+  <div class="vs"><img src="graphic.png"></div>
+
+  <div class="head">
+    <!-- [PER REEL] headline: 3 lines. data-t MUST equal the visible text. Line 1 data-w=860, others auto-fit to 1010px -->
+    <div class="row r1"><i class="stk"></i><span class="ln tt w" data-w="860" data-t="CAR LOAN">CAR LOAN</span></div>
+    <div class="row r2"><i class="stk"></i><span class="ln tt w" data-t="APNE NAAM PE?">APNE NAAM PE?</span></div>
+    <div class="row r3"><i class="stk"></i><i class="stk2"></i><span class="ln tt y" data-t="YA WIFE KE?">YA WIFE KE?</span></div>
+    <!-- [PER REEL] red box: curiosity line; wrap the key word in .y (yellow), rest .w (white) -->
+    <div class="boxrow"><div class="redbox"><span class="in"><span class="tt s w" data-t="SIRF ">SIRF </span><span class="tt s y" data-t="REGISTRATION">REGISTRATION</span><span class="tt s w" data-t=" SE NAHI HOTA!"> SE NAHI HOTA!</span></span></div></div>
+  </div>
+
+  <div class="watch"><div class="brush"></div><b><span class="tt s w" data-t="WATCH THIS">WATCH THIS</span><span class="tt s y" data-t="FIRST!">FIRST!</span></b></div>
+  <!-- [PER REEL] footer only shows in full-screen view -->
+  <div class="foot">MAHINDRA <span>ARAV</span> &nbsp;&bull;&nbsp; MANESAR &nbsp;&bull;&nbsp; GURGAON</div>
+</div>
+<script>
+// Spacing ratios measured from the Mahindra Arav feed covers:
+const LINE_W=1010;      // each headline line fitted to ~94% of the cover width
+const LINE_GAP=0.07;    // gap between lines = 7% of cap height (lines almost touch)
+const BOX_GAP=0.10;     // headline -> red box gap = 10% of cap height
+const BOX_W=960;        // red box spans ~89% of the width
+const BOX_PADV=0.30, BOX_PADH=0.45; // red box padding as share of its text cap height
+const cv=document.createElement('canvas').getContext('2d');
+function metrics(fs){cv.font=fs+'px Anton';const m=cv.measureText('H');return {asc:m.fontBoundingBoxAscent,desc:m.fontBoundingBoxDescent,cap:m.actualBoundingBoxAscent};}
+function capCrop(el,fs){ // make the element's box exactly the cap height
+  const m=metrics(fs); const L=m.cap; el.style.fontSize=fs+'px'; el.style.lineHeight=L+'px'; el.style.height=L+'px';
+  const base=(L-(m.asc+m.desc))/2+m.asc; el.style.top=(-(base-m.cap))+'px'; el.parentElement.style.height=L+'px'; return L;}
+document.fonts.ready.then(()=>{
+  let caps=[];
+  document.querySelectorAll('.ln').forEach(el=>{
+    el.style.fontSize='100px'; const w=el.offsetWidth; const fs=100*(+(el.dataset.w||LINE_W))/w; caps.push(capCrop(el,fs));
+  });
+  const rows=document.querySelectorAll('.row');
+  rows.forEach((r,i)=>{ if(i>0) r.style.marginTop=(LINE_GAP*Math.min(caps[i-1],caps[i]))+'px'; });
+  const box=document.querySelector('.redbox'), inn=box.querySelector('.in');
+  inn.style.fontSize='100px'; const w100=inn.offsetWidth, r=metrics(100).cap/100;
+  const fs=BOX_W/(w100/100 + 2*BOX_PADH*r); const cap=capCrop(inn,fs);
+  box.style.padding=(BOX_PADV*cap)+'px '+(BOX_PADH*cap)+'px'; box.style.height='auto'; inn.parentElement.style.height='auto';
+  box.parentElement.style.marginTop=(BOX_GAP*caps[2]+8)+'px';
+  inn.querySelectorAll('.tt').forEach(t=>t.style.fontSize='inherit');
+  const hb=document.querySelector('.head').getBoundingClientRect();
+  document.body.dataset.headBottom=Math.round(hb.bottom); document.body.dataset.caps=caps.map(Math.round).join(',')+','+Math.round(cap);
+});
+</script>
+</body></html>
