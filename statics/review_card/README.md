@@ -27,12 +27,12 @@ only people, so whenever the car matters (deliveries), use the photo print so th
 8 Nov 2026: a lone cutout of the customer without the car looked empty). Pixelate every readable plate,
 including parked cars. `"h1W"` limits the headline width when a tall cutout needs the space.
 Search all locations for candidates: 5-star reviews with photos where the customer is in the frame, then add them to
-the Reviews tab with Photo OK? = Ask.
+the Reviews tab (Customer in photo? = Yes).
 
 Photo layout: add `"cut": "cut_<ID>.png" to a card and the quote narrows to the left while the customer cutout
 stands on the right, bleeding off the edge (sample: CH-REV-2611-03-SAMPLE, Sumit G.). Make the cutout with
 `python cutout.py photo.jpg cut_<ID>.png --plate ... --crop-right ...` from the review's full-size photo (column N
-of the Reviews tab). Only when "Photo OK?" is Yes.
+of the Reviews tab).
 
 Edit `cards.json` for each batch (`theme` hyundai/mahindra, `logo` and `logoH` (logo height, sizes in
 `statics/BRAND_SOURCES.md`), `headline`, `quote`, `name`, `place`, `footer`

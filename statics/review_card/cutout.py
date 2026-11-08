@@ -6,7 +6,6 @@ usage: python cutout.py photo.jpg out.png [--plate x0 y0 x1 y1] [--erase x0 y0 x
 - --erase clears leftovers that touch the subject (box in the original photo, repeatable)
 - --crop-right cuts the subject at X (original-photo pixels) so it can bleed off the card's right edge
 Model: rembg isnet-general-use (pip install rembg==2.0.86 onnxruntime opencv-python-headless).
-Only for reviews whose "Photo OK?" column is Yes (the customer agreed).
 """
 import argparse
 import numpy as np, cv2
