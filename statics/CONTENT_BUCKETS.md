@@ -48,7 +48,7 @@ Mahindra Arav swaps one of these for a Pickups post each month.
   rephrased in our words. Keep the customer's meaning and facts: the staff names, car, branch and what happened,
   nothing added (no new praise, claims or numbers). Column G keeps the original text untouched, and Notes says
   "Grammar corrected" or "Rephrased" (with the main changes). Poor English is no longer a reason to skip a good
-  review. On a card, quote marks hold column M exactly; shorten only by cutting whole sentences.
+  review; a Hinglish review may be translated into English (Notes: "Translated from Hinglish"). On a card, quote marks hold column M exactly; shorten only by cutting whole sentences.
 
 ## Sheet tabs
 
@@ -70,3 +70,5 @@ Mahindra Arav swaps one of these for a Pickups post each month.
   account sees every Capital Hyundai, M R Hyundai, Mahindra Arav and Dee Emm Mahindra listing, none for Car & Bike).
   Skip its Dee Emm Hyundai rows: those come from the DMU sheet. First backfill (8 Nov 2026): 38 hand-checked reviews
   from the last 60 days (Capital Hyundai 27, Dee Emm Mahindra 8, Mahindra Arav 2, M R Hyundai 1).
+  Same day, under the correct-English rule: 24 more that had been skipped for their English (Capital Hyundai 20,
+  Dee Emm Mahindra 4; 12 grammar corrected, 9 rephrased, 3 translated from Hinglish).
