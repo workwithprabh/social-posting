@@ -1,0 +1,66 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Anton;src:url(node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2)}
+@font-face{font-family:Mont;font-weight:500;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2)}
+@font-face{font-family:Mont;font-weight:600;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-600-normal.woff2)}
+@font-face{font-family:Mont;font-weight:700;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:Mont;font-weight:800;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:Play;font-weight:500;src:url(node_modules/@fontsource/playfair-display/files/playfair-display-latin-500-normal.woff2)}
+@font-face{font-family:Play;font-style:italic;font-weight:500;src:url(node_modules/@fontsource/playfair-display/files/playfair-display-latin-500-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:Mont,sans-serif;color:#fff;position:relative}
+.hyundai{--bg1:#002C5F;--bg2:#00132b;--acc:#00AAD2;--card:rgba(255,255,255,.06)}
+.mahindra{--bg1:#25262b;--bg2:#0b0b0d;--acc:#E31837;--card:rgba(255,255,255,.05)}
+.bg{position:absolute;inset:0;background:radial-gradient(1200px 900px at 85% 0%,var(--bg1),var(--bg2) 75%)}
+.mahindra .bg:after{content:"";position:absolute;right:-180px;top:-120px;width:520px;height:1700px;background:linear-gradient(180deg,rgba(227,24,55,.55),rgba(227,24,55,0));transform:rotate(24deg);opacity:.35}
+.hyundai .bg:after{content:"";position:absolute;right:-260px;top:-260px;width:760px;height:760px;border-radius:50%;border:2px solid rgba(0,170,210,.25);box-shadow:0 0 0 70px rgba(0,170,210,.05)}
+header{position:absolute;left:72px;right:72px;top:64px;height:130px;display:flex;align-items:center;justify-content:space-between}
+header img{display:block}
+.g{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.stars{color:#FBBC04;font-size:40px;letter-spacing:6px;line-height:1}
+.g small{font-weight:600;font-size:22px;letter-spacing:3px;opacity:.85}
+main{position:absolute;left:72px;right:72px;top:250px;bottom:262px;display:flex;flex-direction:column}
+.kicker{font-weight:700;font-size:24px;letter-spacing:6px;color:var(--acc)}
+.mahindra .kicker{color:#ff4a63}
+h1{margin-top:18px;font-weight:800;font-size:76px;line-height:1.05;letter-spacing:-1px}
+.mahindra h1{font-family:Anton;font-weight:400;text-transform:uppercase;letter-spacing:1px;font-size:96px;line-height:1.02}
+.quote{position:relative;margin-top:44px;flex:1;min-height:0;overflow:hidden;background:var(--card);border-left:8px solid var(--acc);border-radius:6px 24px 24px 6px;padding:70px 56px 40px 60px;display:flex;flex-direction:column;justify-content:space-between}
+.quote:before{content:"\201C";position:absolute;left:44px;top:-56px;font-family:Play;font-size:220px;line-height:1;color:var(--acc)}
+.q{flex:1;display:flex;align-items:center;font-variant-numeric:lining-nums;font-family:Play;font-style:italic;font-weight:500;line-height:1.38;color:#f4f6fa}
+.by{margin-top:28px;display:flex;align-items:center;gap:20px}
+.av{width:72px;height:72px;border-radius:50%;background:var(--acc);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:34px}
+.by b{display:block;font-weight:700;font-size:32px}
+.by span{display:block;font-weight:500;font-size:22px;opacity:.75;margin-top:4px}
+footer{position:absolute;left:0;right:0;bottom:0;height:230px;padding:0 72px 56px;display:flex;flex-direction:column;justify-content:flex-end}
+.rule{display:flex;align-items:center;gap:20px;font-weight:700;font-size:22px;letter-spacing:4px;margin-bottom:22px}
+.rule:before,.rule:after{content:"";flex:1;height:2px;background:rgba(255,255,255,.35)}
+.cols{display:flex;justify-content:space-between}
+.cols div{font-weight:600;font-size:22px;opacity:.8}
+.cols div b{display:block;font-weight:800;font-size:27px;opacity:1;margin-top:6px;letter-spacing:.5px}
+.row{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.big{font-weight:800;font-size:34px;letter-spacing:1px}
+.mahindra .big{font-family:Anton;font-weight:400;font-size:44px;letter-spacing:1.5px;line-height:1.05}
+.ph{font-weight:800;font-size:40px;white-space:nowrap}
+.sub{margin-top:14px;font-weight:600;font-size:22px;letter-spacing:2px;opacity:.8}
+.loc{white-space:nowrap;text-align:right;font-weight:600;font-size:22px;line-height:1.4;opacity:.9}
+.loc b{font-weight:800;font-size:26px;letter-spacing:3px}
+.pin{color:var(--acc)}
+</style></head><body><div class="bg"></div><div id="root"></div>
+<script>
+const FOOT={
+ CH:`<div class="rule">CAPITAL HYUNDAI SHOWROOMS</div><div class="cols"><div>Sector 63, Noida<b>99994 89444</b></div><div>Sector 132, Noida<b>73031 11937</b></div><div>Dadri<b>072900 77380</b></div><div>Faridabad<b>93559 31054</b></div></div>`,
+ DEH:`<div class="row"><div class="big">DEE EMM HYUNDAI GURGAON</div><div class="ph">97736 47900</div></div><div class="sub">SECTOR 16 | SECTOR 49 · DAULATABAD · SECTOR 18 | SIKANDERPUR</div>`,
+ MRH:`<div class="row"><div><div class="big">SHOWROOM &amp; SERVICE</div><div class="sub">Loni Rd, opp. Shalimar Garden, Pasonda, Sahibabad</div></div><div class="loc"><b><span class="pin">&#9679;</span> GHAZIABAD</b><br>Pasonda, Shalimar Garden<br><span class="ph">93128 21182</span></div></div>`,
+ DEM:`<div class="row"><div class="big">BOOK YOUR SUV WITH<br>DEE EMM MAHINDRA</div><div class="ph">95995 58379</div></div>`,
+ AM:`<div class="row"><div class="big">BOOK YOUR SUV WITH<br>MAHINDRA ARAV TODAY</div><div class="loc"><b><span class="pin">&#9679;</span> GURGAON</b><br>Manesar · Sector 95 · Sector 83<br><span class="ph">88600 86639</span></div></div>`};
+function render(c){
+ document.body.className=c.theme;
+ document.getElementById('root').innerHTML=`<header><img src="${c.logo}" style="height:${c.logoH}px"><div class="g"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><small>GOOGLE REVIEW</small></div></header>
+ <main><div class="kicker">${c.kicker}</div><h1>${c.headline}</h1><div class="quote"><div class="q" id="q">${c.quote}</div>
+ <div class="by"><div class="av">${c.name[0]}</div><div><b>${c.name}</b><span>${c.place}</span></div></div></div></main><footer>${FOOT[c.footer]}</footer>`;
+ const q=document.getElementById('q'), box=q.parentElement; let fs=58;
+ const fits=()=>q.scrollHeight<=q.clientHeight+1&&box.scrollHeight<=box.clientHeight+1;
+ q.style.fontSize=fs+'px'; while(!fits()&&fs>26){fs-=1;q.style.fontSize=fs+'px';}
+ return {fs,fits:fits()};
+}
+</script></body></html>
