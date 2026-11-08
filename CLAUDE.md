@@ -34,6 +34,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   back to the Dee Emm Hyundai / Car & Bike account only when their own can't cover the boost. Create boosts paused,
   show the batch, and activate only after the user says yes. `python scripts/check_ads.py` checks access and balances;
   `python scripts/boost_reel.py plan|create|activate|delete` makes the boost (create = paused, no spend).
+- Posting rhythm and static-post rules: `statics/BRAND_SOURCES.md` (a post every second day, cycling 2 videos then 1
+  static, flexible when videos are short). Client contacts and logos: `statics/clients.json`.
 - Both CH-2610-07 and CH-2610-08 (Reel 3 offer and Reel 3) are meant to be posted.
 
 ## Video handling

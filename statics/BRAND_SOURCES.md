@@ -38,8 +38,17 @@ Prices change; re-read the sites before using a price in a post, and label it "e
 - Capital Hyundai Dadri number: 072900 77380.
 - Car & Bike phone: 98185 64808; the Dee Emm logo may sit alongside the car&bike logo.
 - Dee Emm Mahindra: everyday footer (CTA + phone); add its six locations only when they fit cleanly.
-- Mahindra Arav sells personal and commercial vehicles; no other client sells commercial vehicles, so commercial
+- Mahindra Arav sells personal SUVs and commercial **pickups only** (Bolero Pik-Up, Bolero Camper, Maxx City, Maxx HD,
+  Veero), not the small range (Jeeto, Supro, Treo, Zor Grand). No other client sells commercial vehicles, so pickup
   posts go only to Mahindra Arav.
 - Informative EMI posts can be location-specific: e.g. an EMI breakdown for Noida on Capital Hyundai, Ghaziabad on
   M R Hyundai, Gurgaon on the Gurgaon dealers.
 - Car & Bike posts are designed from the list of available cars the user will provide.
+- EMI and on-road numbers come from CarDekho's city price pages (`scripts/emi.py`), labelled indicative.
+
+## Posting rhythm (user, 8 Nov 2026)
+
+- Something goes out on each client's feed **every second day**.
+- Default cycle: **2 videos, then 1 static**, repeating (V, V, S, V, V, S ...).
+- It is a guide, not a rule: when there are fewer videos, fill the alternate days with statics (or post less often);
+  festivals and launches take their own date.

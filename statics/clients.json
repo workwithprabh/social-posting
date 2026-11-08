@@ -1,22 +1,119 @@
 {
   "_note": "Contact details and logos for static posts, as set by the user on 8 Nov 2026. Logo folders are in the workwithprabh Drive.",
-  "CH": {"name": "Capital Hyundai", "brand": "Hyundai", "logo_folder": "1bdn45sPgNiQejlQE5EYQXTH-SfcUF1bC",
-         "showrooms": [["Sector 63, Noida", "99994 89444"], ["Sector 132, Noida", "73031 11937"], ["Dadri", "072900 77380"], ["Faridabad", "93559 31054"]],
-         "footer_short": "CAPITAL HYUNDAI SHOWROOMS · NOIDA | DADRI | FARIDABAD", "emi_cities": ["Noida", "Faridabad", "Dadri"]},
-  "DEH": {"name": "Dee Emm Hyundai", "brand": "Hyundai", "logo_folder": "1wvelVnHn0qg2evPV0eB-C1kRVU2esr3K", "phone": "97736 47900",
-          "showrooms": ["Sector 16", "Sector 49", "Daulatabad", "Sector 18", "Sikanderpur"],
-          "service_centres": ["Sector 14", "Sector 16", "Udyog Vihar Phase 2", "Daulatabad"], "map_search": "Dee Emm Hyundai", "emi_cities": ["Gurgaon"]},
-  "MRH": {"name": "M R Hyundai", "brand": "Hyundai", "logo_folder": "1MbGkLf0QvRcEJU4DeN1ZTpVus20r7rei", "phone": "93128 21182",
-          "location": "Pasonda, Shalimar Garden, Ghaziabad", "address": "Loni Rd, opp. Shalimar Garden, Pasonda, Sahibabad, Ghaziabad, UP 201005",
-          "map_search": "M R Hyundai, Pasonda", "emi_cities": ["Ghaziabad"]},
-  "AM": {"name": "Mahindra Arav", "brand": "Mahindra", "deals_in": ["personal SUVs", "commercial vehicles"], "logo_folder": "1O-VryGzKfYyCD_CwdCBw88P1wGta6r4w",
-         "phone": "88600 86639", "phone_sector95": "88601 03798", "locations": ["Manesar, Gurgaon", "Sector 95, Gurgaon", "Sector 83, Gurgaon"],
-         "map_search": "Arav Mahindra, Gurgaon", "footer_cta": "BOOK YOUR SUV WITH MAHINDRA ARAV TODAY", "emi_cities": ["Gurgaon", "Manesar"]},
-  "DEM": {"name": "Dee Emm Mahindra", "brand": "Mahindra", "logo_folder": "1S1pVqOp2cL33wOrmEtzPg6Jz5WpkQ0o4", "phone": "95995 58379",
-          "locations": ["Sector 18", "Sector 14", "Sector 53", "Sector 61", "Daulatabad", "Pataudi"], "map_search": "Dee Emm Mahindra",
-          "footer_cta": "BOOK YOUR SUV WITH DEE EMM MAHINDRA",
-          "footer_rule": "Everyday footer (CTA + phone). Add the six locations only when they fit without crowding the post.", "emi_cities": ["Gurgaon"]},
-  "CB": {"name": "Dee Emm Car & Bike", "brand": "Pre-owned (Mahindra First Choice)", "logo_folder": "1-SRrduSGrFmazaC768KB2rNBmR9yL6er",
-         "phone": "98185 64808", "location": "Sector 18, Gurgaon", "also_logo": "Dee Emm (twin-peaks) logo may be added",
-         "tagline": "MORE CARS BRIGHTER LIVES", "stock_source": "car list the user will attach"}
+  "CH": {
+    "name": "Capital Hyundai",
+    "brand": "Hyundai",
+    "logo_folder": "1bdn45sPgNiQejlQE5EYQXTH-SfcUF1bC",
+    "showrooms": [
+      [
+        "Sector 63, Noida",
+        "99994 89444"
+      ],
+      [
+        "Sector 132, Noida",
+        "73031 11937"
+      ],
+      [
+        "Dadri",
+        "072900 77380"
+      ],
+      [
+        "Faridabad",
+        "93559 31054"
+      ]
+    ],
+    "footer_short": "CAPITAL HYUNDAI SHOWROOMS · NOIDA | DADRI | FARIDABAD",
+    "emi_cities": [
+      "Noida",
+      "Faridabad",
+      "Dadri"
+    ]
+  },
+  "DEH": {
+    "name": "Dee Emm Hyundai",
+    "brand": "Hyundai",
+    "logo_folder": "1wvelVnHn0qg2evPV0eB-C1kRVU2esr3K",
+    "phone": "97736 47900",
+    "showrooms": [
+      "Sector 16",
+      "Sector 49",
+      "Daulatabad",
+      "Sector 18",
+      "Sikanderpur"
+    ],
+    "service_centres": [
+      "Sector 14",
+      "Sector 16",
+      "Udyog Vihar Phase 2",
+      "Daulatabad"
+    ],
+    "map_search": "Dee Emm Hyundai",
+    "emi_cities": [
+      "Gurgaon"
+    ]
+  },
+  "MRH": {
+    "name": "M R Hyundai",
+    "brand": "Hyundai",
+    "logo_folder": "1MbGkLf0QvRcEJU4DeN1ZTpVus20r7rei",
+    "phone": "93128 21182",
+    "location": "Pasonda, Shalimar Garden, Ghaziabad",
+    "address": "Loni Rd, opp. Shalimar Garden, Pasonda, Sahibabad, Ghaziabad, UP 201005",
+    "map_search": "M R Hyundai, Pasonda",
+    "emi_cities": [
+      "Ghaziabad"
+    ]
+  },
+  "AM": {
+    "name": "Mahindra Arav",
+    "brand": "Mahindra",
+    "deals_in": [
+      "personal SUVs",
+      "commercial pickups only: Bolero Pik-Up, Bolero Camper, Maxx City, Maxx HD, Veero (not Jeeto, Supro, Treo, Zor Grand)"
+    ],
+    "logo_folder": "1O-VryGzKfYyCD_CwdCBw88P1wGta6r4w",
+    "phone": "88600 86639",
+    "phone_sector95": "88601 03798",
+    "locations": [
+      "Manesar, Gurgaon",
+      "Sector 95, Gurgaon",
+      "Sector 83, Gurgaon"
+    ],
+    "map_search": "Arav Mahindra, Gurgaon",
+    "footer_cta": "BOOK YOUR SUV WITH MAHINDRA ARAV TODAY",
+    "emi_cities": [
+      "Gurgaon",
+      "Manesar"
+    ]
+  },
+  "DEM": {
+    "name": "Dee Emm Mahindra",
+    "brand": "Mahindra",
+    "logo_folder": "1S1pVqOp2cL33wOrmEtzPg6Jz5WpkQ0o4",
+    "phone": "95995 58379",
+    "locations": [
+      "Sector 18",
+      "Sector 14",
+      "Sector 53",
+      "Sector 61",
+      "Daulatabad",
+      "Pataudi"
+    ],
+    "map_search": "Dee Emm Mahindra",
+    "footer_cta": "BOOK YOUR SUV WITH DEE EMM MAHINDRA",
+    "footer_rule": "Everyday footer (CTA + phone). Add the six locations only when they fit without crowding the post.",
+    "emi_cities": [
+      "Gurgaon"
+    ]
+  },
+  "CB": {
+    "name": "Dee Emm Car & Bike",
+    "brand": "Pre-owned (Mahindra First Choice)",
+    "logo_folder": "1-SRrduSGrFmazaC768KB2rNBmR9yL6er",
+    "phone": "98185 64808",
+    "location": "Sector 18, Gurgaon",
+    "also_logo": "Dee Emm (twin-peaks) logo may be added",
+    "tagline": "MORE CARS BRIGHTER LIVES",
+    "stock_source": "car list the user will attach"
+  }
 }
