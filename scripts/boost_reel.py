@@ -66,16 +66,18 @@ def pick_account(client):
                        + (" and the fallback is short too" if c.get('fallback') else " (no fallback allowed)"))
 
 
-def ig_and_page(client, media_id):
-    m = call('GET', media_id, fields='owner{id,username},permalink,caption')
-    ig = m['owner']['id']
-    page = CFG['clients'][client].get('page_id')
-    return ig, m['owner'].get('username'), page, m.get('permalink'), (m.get('caption') or '')[:40]
+def ig_and_page(client, media_id, permalink=None):
+    c = CFG['clients'][client]
+    try:
+        m = call('GET', media_id, fields='owner{id,username},permalink,caption')
+        return m['owner']['id'], m['owner'].get('username'), c.get('page_id'), m.get('permalink'), (m.get('caption') or '')[:40]
+    except RuntimeError:   # IG account not shared with the system user (e.g. DEM, MRH): use the saved details
+        return c['ig_user'], c['ig_username'], c.get('page_id'), permalink or f'https://www.instagram.com/{c["ig_username"]}/{media_id}', ''
 
 
-def plan(client, media_id):
+def plan(client, media_id, permalink=None):
     act, r, why = pick_account(client)
-    ig, user, page, link, cap = ig_and_page(client, media_id)
+    ig, user, page, link, cap = ig_and_page(client, media_id, permalink)
     start = dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=10)
     end = start + dt.timedelta(days=CFG['days'])
     loc = CFG['clients'][client]['locations']
@@ -120,7 +122,7 @@ def _rest(p, name, camp):
 if __name__ == '__main__':
     cmd = sys.argv[1]
     if cmd in ('plan', 'create'):
-        p = plan(sys.argv[2], sys.argv[3])
+        p = plan(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else None)
         print(json.dumps(p, indent=1, ensure_ascii=False))
         if cmd == 'create':
             try:
