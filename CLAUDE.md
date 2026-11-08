@@ -36,6 +36,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   `python scripts/boost_reel.py plan|create|activate|delete` makes the boost (create = paused, no spend).
 - Posting rhythm and static-post rules: `statics/BRAND_SOURCES.md` (a post every second day, cycling 2 videos then 1
   static, flexible when videos are short). Client contacts and logos: `statics/clients.json`.
+- Static content buckets and the Calendar/Reviews tabs: `statics/CONTENT_BUCKETS.md`. Google reviews come from
+  `scripts/gbp_reviews.py` (setup in `statics/GBP_SETUP.md`; needs GBP_CLIENT_ID, GBP_CLIENT_SECRET, GBP_REFRESH_TOKEN).
 - Both CH-2610-07 and CH-2610-08 (Reel 3 offer and Reel 3) are meant to be posted.
 
 ## Video handling
