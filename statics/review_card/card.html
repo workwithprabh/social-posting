@@ -14,12 +14,12 @@ body{font-family:Mont,sans-serif;color:#fff;position:relative}
 .bg{position:absolute;inset:0;background:radial-gradient(1200px 900px at 85% 0%,var(--bg1),var(--bg2) 75%)}
 .mahindra .bg:after{content:"";position:absolute;right:-180px;top:-120px;width:520px;height:1700px;background:linear-gradient(180deg,rgba(227,24,55,.55),rgba(227,24,55,0));transform:rotate(24deg);opacity:.35}
 .hyundai .bg:after{content:"";position:absolute;right:-260px;top:-260px;width:760px;height:760px;border-radius:50%;border:2px solid rgba(0,170,210,.25);box-shadow:0 0 0 70px rgba(0,170,210,.05)}
-header{position:absolute;left:64px;right:64px;top:48px;height:110px;display:flex;align-items:center;justify-content:space-between}
+header{position:absolute;left:72px;right:72px;top:64px;height:130px;display:flex;align-items:center;justify-content:space-between}
 header img{display:block}
 .g{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
-.stars{color:#FBBC04;font-size:32px;letter-spacing:5px;line-height:1}
-.g small{font-weight:600;font-size:18px;letter-spacing:3px;opacity:.85}
-main{position:absolute;left:72px;right:72px;top:216px;bottom:262px;display:flex;flex-direction:column}
+.stars{color:#FBBC04;font-size:40px;letter-spacing:6px;line-height:1}
+.g small{font-weight:600;font-size:22px;letter-spacing:3px;opacity:.85}
+main{position:absolute;left:72px;right:72px;top:250px;bottom:262px;display:flex;flex-direction:column}
 .kicker{font-weight:700;font-size:24px;letter-spacing:6px;color:var(--acc)}
 .mahindra .kicker{color:#ff4a63}
 h1{margin-top:18px;font-weight:800;font-size:76px;line-height:1.05;letter-spacing:-1px}
@@ -34,8 +34,14 @@ h1{margin-top:18px;font-weight:800;font-size:76px;line-height:1.05;letter-spacin
 .photo .quote{flex:1;width:470px;padding:70px 40px 36px 48px}
 .photo h1{max-width:940px}
 .cut{position:absolute;right:0;bottom:214px;height:660px;filter:drop-shadow(0 18px 28px rgba(0,0,0,.55))}
+.framed .quote{width:510px}
+.frame{position:absolute;right:36px;bottom:300px;width:440px;padding:14px 14px 18px;background:#fff;border-radius:6px;transform:rotate(3deg);box-shadow:0 22px 40px rgba(0,0,0,.55)}
+.frame img{display:block;width:100%;border-radius:2px}
 .glow{position:absolute;right:-120px;bottom:180px;width:760px;height:760px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,170,210,.32),rgba(0,170,210,0))}
-.mahindra .glow{background:radial-gradient(closest-side,rgba(227,24,55,.30),rgba(227,24,55,0))}
+.mahindra .framed .quote{width:510px}
+.frame{position:absolute;right:36px;bottom:300px;width:440px;padding:14px 14px 18px;background:#fff;border-radius:6px;transform:rotate(3deg);box-shadow:0 22px 40px rgba(0,0,0,.55)}
+.frame img{display:block;width:100%;border-radius:2px}
+.glow{background:radial-gradient(closest-side,rgba(227,24,55,.30),rgba(227,24,55,0))}
 .floor{position:absolute;right:30px;bottom:196px;width:560px;height:40px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.55),rgba(0,0,0,0))}
 .grid{display:grid;grid-template-columns:repeat(4,auto);justify-content:space-between;row-gap:12px}
 .grid div{font-weight:600;font-size:19px;opacity:.8}
@@ -68,12 +74,12 @@ const FOOT={
  DEM:`<div class="row"><div class="big">BOOK YOUR SUV WITH<br>DEE EMM MAHINDRA</div><div class="ph">95995 58379</div></div>`,
  AM:`<div class="row"><div class="big">BOOK YOUR SUV WITH<br>MAHINDRA ARAV TODAY</div><div class="loc"><b><span class="pin">&#9679;</span> GURGAON</b><br>Manesar · Sector 95 · Sector 83<br><span class="ph">88600 86639</span></div></div>`};
 function render(c){
- document.body.className=c.theme+(c.cut?' photo':'')+(c.footer==='CH_SVC'?' svc':'');
- document.getElementById('root').innerHTML=`<header><img src="${c.logo}" style="width:${c.logoW}px"><div class="g"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><small>GOOGLE REVIEW</small></div></header>
- <main><div class="kicker">${c.kicker}</div><h1>${c.headline}</h1><div class="quote"><div class="q" id="q">${c.quote}</div>
- <div class="by"><div class="av">${c.name[0]}</div><div><b>${c.name}</b><span>${c.place}</span></div></div></div></main><footer>${FOOT[c.footer]}</footer>`+(c.cut?`<div class="glow"></div><div class="floor"></div><img class="cut" src="${c.cut}">`:'');
+ document.body.className=c.theme+((c.cut||c.frame)?' photo':'')+(c.frame?' framed':'')+(c.footer==='CH_SVC'?' svc':'');
+ document.getElementById('root').innerHTML=`<header><img src="${c.logo}" style="height:${c.logoH}px"><div class="g"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><small>GOOGLE REVIEW</small></div></header>
+ <main><div class="kicker">${c.kicker}</div><h1 style="${c.h1W?'max-width:'+c.h1W+'px':''}">${c.headline}</h1><div class="quote"><div class="q" id="q">${c.quote}</div>
+ <div class="by"><div class="av">${c.name[0]}</div><div><b>${c.name}</b><span>${c.place}</span></div></div></div></main><footer>${FOOT[c.footer]}</footer>`+(c.cut?`<div class="glow"></div><div class="floor"></div><img class="cut" src="${c.cut}" style="height:${c.cutH||660}px">`:'')+(c.frame?`<div class="frame"><img src="${c.frame}"></div>`:'');
  const q=document.getElementById('q'), box=q.parentElement; let fs=58;
- const fits=()=>q.scrollHeight<=q.clientHeight+1&&box.scrollHeight<=box.clientHeight+1;
+ const by=box.querySelector('.by'); const fits=()=>q.scrollHeight<=q.clientHeight+1&&box.scrollHeight<=box.clientHeight+1&&by.getBoundingClientRect().bottom<=box.getBoundingClientRect().bottom-30;
  q.style.fontSize=fs+'px'; while(!fits()&&fs>26){fs-=1;q.style.fontSize=fs+'px';}
  return {fs,fits:fits()};
 }

@@ -9,7 +9,7 @@
   "name": "Lokesh K.",
   "place": "Capital Hyundai, Sector 132, Noida",
   "footer": "CH",
-  "logoW": 240
+  "logoH": 74
  },
  {
   "id": "CH-REV-2611-02",
@@ -21,7 +21,7 @@
   "name": "Anuradha K.",
   "place": "Capital Hyundai Service, Sector 132, Noida",
   "footer": "CH_SVC",
-  "logoW": 240
+  "logoH": 74
  },
  {
   "id": "DEH-REV-2611-01",
@@ -33,19 +33,19 @@
   "name": "Mohit A.",
   "place": "Dee Emm Hyundai, Sector 18, Gurgaon",
   "footer": "DEH",
-  "logoW": 200
+  "logoH": 74
  },
  {
   "id": "MRH-REV-2611-01",
   "theme": "hyundai",
-  "logo": "MRH_line.png",
+  "logo": "MRH_3.png",
   "kicker": "CUSTOMER LOVE",
   "headline": "Thank you, Nitin!",
   "quote": "Excellent service by Sumit! He was professional, helpful, and attentive throughout the process. The service was completed smoothly, and I’m very satisfied with the overall experience. Highly recommended!",
   "name": "Nitin C.",
   "place": "M R Hyundai, Pasonda, Sahibabad",
   "footer": "MRH",
-  "logoW": 270
+  "logoH": 110
  },
  {
   "id": "DEM-REV-2611-01",
@@ -57,7 +57,7 @@
   "name": "Himanshu K.",
   "place": "Dee Emm Mahindra, Sector 35, Gurgaon",
   "footer": "DEM_SVC",
-  "logoW": 220
+  "logoH": 108
  },
  {
   "id": "AM-REV-2611-01",
@@ -69,7 +69,7 @@
   "name": "Ashutosh T.",
   "place": "Mahindra Arav, Sector 83, Gurgaon",
   "footer": "AM_SVC",
-  "logoW": 150
+  "logoH": 84
  },
  {
   "id": "CH-REV-2611-03",
@@ -82,6 +82,47 @@
   "place": "Capital Hyundai, Sector 132, Noida",
   "footer": "CH",
   "cut": "cut_CH-REV-2611-03.png",
-  "logoW": 240
+  "logoH": 74
+ },
+ {
+  "id": "CH-REV-2611-04",
+  "theme": "hyundai",
+  "logo": "CH_cap.png",
+  "logoH": 74,
+  "kicker": "CUSTOMER LOVE",
+  "headline": "Welcome to the Hyundai family!",
+  "quote": "Our representative, Poonam Bhatti, was exceptional: incredibly polite, knowledgeable and always quick to address our questions. The entire team made the delivery day feel truly special for our family.",
+  "name": "Ritu S.",
+  "place": "Sector 63, Noida",
+  "footer": "CH",
+  "frame": "frame_CH-REV-2611-04.jpg"
+ },
+ {
+  "id": "DEH-REV-2611-02",
+  "theme": "hyundai",
+  "logo": "DEH_white.png",
+  "logoH": 74,
+  "kicker": "CUSTOMER LOVE",
+  "headline": "Above and beyond, every step.",
+  "quote": "A big thank you to Mr. Abhishek for making my car-buying experience absolutely seamless. From arranging multiple test drives (even bringing a car to my home) to guiding me through the right model, documentation and accessories, he went above and beyond.",
+  "name": "Rinku S.",
+  "place": "Sector 18, Gurgaon",
+  "footer": "DEH",
+  "frame": "frame_DEH-REV-2611-02.jpg"
+ },
+ {
+  "id": "DEM-REV-2611-02",
+  "theme": "mahindra",
+  "logo": "DEM_ice_white.png",
+  "logoH": 108,
+  "kicker": "CUSTOMER LOVE",
+  "headline": "Welcome to the family!",
+  "h1W": 700,
+  "quote": "I got my Scorpio from here. The staff were very helpful and treated us really well, with great hospitality, and everything was done nicely. I am fully satisfied and happy. Highly recommended!",
+  "name": "Diyaaa",
+  "place": "Daulatabad, Gurgaon",
+  "footer": "DEM",
+  "cut": "cut_DEM-REV-2611-02.png",
+  "cutH": 840
  }
 ]
