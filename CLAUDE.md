@@ -5,10 +5,14 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 ## Where things are
 
 - **Tracker sheet:** "Social Posting Tracker", Google Sheet id `1bcx0yZ-5C7F6e_WLg9Kbw8FRQQ4jUaPQ_SRGnJts_NY`
-  in the workwithprabh@gmail.com Drive. Tab `Videos`, columns A-M: Video ID, Client, Added to Drive (the video
-  file's Drive upload date, India time), Month, Video file (HYPERLINK to Drive), Status (Pending / Approved /
-  Posted / Skip), Platforms (IG + FB / IG only / FB only), Caption, Thumbnail link, Post date, Instagram post
-  link, Facebook post link, Notes. Tab `Dashboard`: formula-only counts by client and month (never write to it).
+  in the workwithprabh@gmail.com Drive. Tab `Videos`, columns A-N: Planned date, Video ID, Client, Added to
+  Drive (the video file's Drive upload date, India time), Month, Video file (HYPERLINK to Drive), Status (Pending /
+  Approved / Not approved / Posted / Skip; the Dashboard counts these exact words), Platforms (IG + FB / IG only /
+  FB only), Caption (Done/Pending, an ARRAYFORMULA in I2 that looks up the `Captions` tab: never type in column I),
+  Thumbnail (the thumbnail's Drive link when done, else "Pending"), Post date, Instagram post link, Facebook post
+  link, Notes. A filter hides Posted and Skip rows: lift it before bulk copies or clears, because copies and clears
+  skip hidden rows. Tab `Captions`: ID, Caption (caption text for every video and static, looked up by ID).
+  Tab `Statics`: the static-post calendar (see `statics/CONTENT_BUCKETS.md`). Tab `Dashboard`: formula-only counts by client and month (never write to it).
   Tab `Clients`: code, client, Drive folder.
   Read it with the Drive connector: `download_file_content` with `exportMimeType: text/csv`.
   Writing to it needs the Google Sheets connector; without it, the user updates the sheet by hand.
@@ -27,7 +31,7 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in
   `config/drafts_folders.json`; make the month's folders when a new month starts). Thumbnails are named
-  `<Video ID>.jpg`; write the caption and the draft's link into the sheet and set Notes to
+  `<Video ID>.jpg`; put the caption in the `Captions` tab (row with the Video ID) and the draft's link in the Thumbnail column, and set Notes to
   "Draft by Claude, needs review". Never put drafts in the team's Thumbnail folder: a file there named by Video ID
   is treated as the approved cover.
 - Before publishing, show the user the batch (ID, client, caption start, thumbnail, platforms) and wait for a yes.

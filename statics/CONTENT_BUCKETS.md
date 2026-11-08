@@ -56,14 +56,15 @@ Mahindra Arav swaps one of these for a Pickups post each month.
 
 ## Sheet tabs
 
-- **Calendar** (the master plan for every client, videos and statics; user, 8 Nov 2026): Date, Client, Format
-  (Video / Static), Bucket, Topic, Asset link (HYPERLINK to the Drive file), Status (dropdown: Pending for approval /
-  Approved / Not approved / Posted; blank = still to make, or an open slot waiting for the team's next reel). Keep it plain: no fills
-  or notes; only the Status cell is coloured. One row per post, sorted by date then client (CH, DEH, MRH, AM, DEM,
-  CB). Plan with the rhythm in BRAND_SOURCES.md (each client every second day from its last post, 2 videos then 1
-  static, Approved videos before Pending, festivals on their own date). Posting and boosting follow this tab, and still
-  only after the user says go.
-- **Static captions**: Asset, Caption draft for each static card (the Calendar has no caption column).
+- **Statics** (static-post calendar; user, 8 Nov 2026): Date, Client, Bucket, Caption (Done/Pending, ARRAYFORMULA
+  in D2 looking up the Captions tab by asset ID), Topic, Asset link (HYPERLINK to the Drive file, label = asset ID),
+  Status (dropdown: Pending for approval / Approved / Not approved / Posted; blank = still to make). Plain: no fills or
+  notes; only status cells are coloured. Sorted by date then client (CH, DEH, MRH, AM, DEM, CB).
+- **Videos** carry their schedule in the Planned date column (same plain style; see CLAUDE.md for the columns).
+  Plan with the rhythm in BRAND_SOURCES.md: each client every second day from its last post, 2 videos then 1 static,
+  Approved videos before Pending, festivals on their own date; a client day with no planned video or static is an
+  open slot for the team's next reel. Posting and boosting follow these dates, and still only after the user says go.
+- **Captions**: ID, Caption, for every video and static.
 - **Reviews**: Review ID, Client, Location, Stars, Reviewer (on Google), Name for post, Review text, Review date,
   Google link, Use? (New / Use / No / Used), Posted on, Notes, Text for post, Photo (full-size links of the photos the
   customer attached to the review), Customer in photo? (Yes / No, checked by looking at each photo). Filled by `scripts/gbp_reviews.py`; the team sets
