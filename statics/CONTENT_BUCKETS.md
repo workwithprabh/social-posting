@@ -50,3 +50,13 @@ Mahindra Arav swaps one of these for a Pickups post each month.
 - **Reviews**: Review ID, Client, Location, Stars, Reviewer (on Google), Name for post, Review text, Review date,
   Google link, Use? (New / Use / No / Used), Posted on, Notes. Filled by `scripts/gbp_reviews.py`; the team sets
   "Use" on the ones to design.
+
+## Where reviews come from
+
+- **Dee Emm Hyundai**: the "DMU GBP Intelligence & Review Audit" sheet (`1r9c4Bhjsya3kDnBbUldHnZyeg-0T30tP3hPaJpI_3p4`,
+  tab Reviews_Raw), filled every 3 hours by the GitHub job in `deeemm-hyundai-lp`. Read-only for us: that job posts
+  automatic replies signed "Team Dee Emm Hyundai", so never add other dealers to its Locations tab. The daily sync
+  copies new qualifying 5-star reviews (max 3 per branch per day) into the tracker's Reviews tab;
+  `scripts/dmu_reviews.py` does the same selection from a CSV export (used for the first backfill: 36 reviews,
+  last 60 days, 8 per branch).
+- **Other clients**: `scripts/gbp_reviews.py` once their listings are reachable with GBP OAuth credentials.
