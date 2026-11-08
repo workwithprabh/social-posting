@@ -123,5 +123,19 @@
   "place": "Daulatabad, Gurgaon",
   "footer": "DEM",
   "frame": "frame_DEM-REV-2611-02.jpg"
+ },
+ {
+  "id": "AM-REV-2611-02",
+  "theme": "mahindra",
+  "logo": "AM_hr.png",
+  "logoH": 84,
+  "kicker": "CUSTOMER LOVE",
+  "headline": "Welcome to the family!",
+  "h1W": 700,
+  "quote": "A very good experience. All the staff are great, and the service is good.",
+  "name": "Priyanka Y.",
+  "place": "Sector 95, Gurgaon",
+  "footer": "AM",
+  "frame": "frame_AM-REV-2611-02.jpg"
  }
 ]
