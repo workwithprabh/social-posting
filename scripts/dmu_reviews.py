@@ -3,6 +3,8 @@
 Usage:
   python scripts/dmu_reviews.py <Reviews_Raw.csv> [--days 60] [--per-branch 8] [--min-words 10] [--exclude ids.txt]
 
+Picks are candidates: a person still reads each one and keeps only reviews in clear English that need at most
+typo-level fixes (spelling, capitals, spacing, punctuation) for the "Text for post" column; never reword.
 Rules: 5 stars, not Removed, no Duplicate_Flag (Google removes those far more often), the reviewer's own words
 (Google's auto-translation dropped), at least --min-words words and at most --max-chars characters. Ranked by detail: length, plus a bonus for
 naming staff or describing delivery/service. Prints JSON rows in the Reviews tab's column order.
@@ -26,8 +28,9 @@ def original(t):
 
 
 def post_name(n):
-    """'pooja sehgal' -> 'Pooja S.'; tokens with digits are ignored ('Rahul 123' -> 'Rahul')."""
-    parts = [w for w in (n or '').split() if w.isalpha()]
+    """'pooja sehgal' -> 'Pooja S.'; digits and honorifics dropped ('SACHIN YADAV8826' -> 'Sachin Y.', 'Shivam Veram ji' -> 'Shivam V.')."""
+    words = [re.sub(r'\d+', '', w) for w in (n or '').split()]
+    parts = [w for w in words if w.isalpha() and w.lower() not in ('ji', 'sir', 'mr', 'mrs', 'ms', 'dr')]
     if not parts:
         return 'A Google user'
     first = parts[0].capitalize()
@@ -41,7 +44,7 @@ def score(t):
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('csv'); ap.add_argument('--days', type=int, default=60); ap.add_argument('--per-branch', type=int, default=8)
-    ap.add_argument('--min-words', type=int, default=10); ap.add_argument('--max-chars', type=int, default=500)
+    ap.add_argument('--min-words', type=int, default=25); ap.add_argument('--max-chars', type=int, default=500)
     ap.add_argument('--exclude')
     a = ap.parse_args()
     skip = set(open(a.exclude).read().split()) if a.exclude else set()
