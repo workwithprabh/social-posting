@@ -14,12 +14,10 @@ import urllib.parse
 import urllib.request
 
 GRAPH = 'https://graph.facebook.com/v24.0'
-ACCOUNTS = {
-    '180067875407208': 'MR Hyundai / Mahindra Arav (same ID given twice)',
-    '768739352110216': 'Dee Emm Hyundai + Car & Bike (fallback for Arav / Dee Emm Mahindra)',
-    '1843796949802121': 'Capital Hyundai',
-    '213796001764883': 'Dee Emm Mahindra',
-}
+_cfg = json.load(open(os.path.join(os.path.dirname(__file__), '..', 'config', 'boost.json')))
+ACCOUNTS = {}
+for _c in _cfg['clients'].values():
+    ACCOUNTS[_c['ad_account']] = ' + '.join(filter(None, [ACCOUNTS.get(_c['ad_account']), _c['name']]))
 
 
 def get(path, token, **params):

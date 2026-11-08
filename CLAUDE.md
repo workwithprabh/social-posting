@@ -29,6 +29,10 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   "Draft by Claude, needs review". Never put drafts in the team's Thumbnail folder: a file there named by Video ID
   is treated as the approved cover.
 - Before publishing, show the user the batch (ID, client, caption start, thumbnail, platforms) and wait for a yes.
+- Boosting: rules and ad accounts are in `config/boost.json` (Instagram only, Advantage+ audience, Rs 100/day for
+  2 days). Capital Hyundai and M R Hyundai always use their own ad account; Mahindra Arav and Dee Emm Mahindra fall
+  back to the Dee Emm Hyundai / Car & Bike account only when their own can't cover the boost. Create boosts paused,
+  show the batch, and activate only after the user says yes. `python scripts/check_ads.py` checks access and balances.
 - Both CH-2610-07 and CH-2610-08 (Reel 3 offer and Reel 3) are meant to be posted.
 
 ## Video handling

@@ -1,0 +1,18 @@
+{
+  "_note": "Boost rules set by the user. Instagram only, Advantage+ audience, created paused and activated only after the user says yes.",
+  "daily_budget_inr": 100,
+  "days": 2,
+  "per_reel_inr": 200,
+  "placement": "instagram_only",
+  "audience": "advantage_plus",
+  "goal": "video_views (ThruPlay) unless the user picks another",
+  "clients": {
+    "CH":  {"name": "Capital Hyundai",  "ad_account": "1843796949802121", "fallback": null},
+    "MRH": {"name": "M R Hyundai",      "ad_account": "180067875407208",  "fallback": null},
+    "DEH": {"name": "Dee Emm Hyundai",  "ad_account": "768739352110216",  "fallback": null},
+    "CB":  {"name": "Car and Bike",     "ad_account": "768739352110216",  "fallback": null},
+    "AM":  {"name": "Mahindra Arav",    "ad_account": "394722466230373",  "fallback": "768739352110216"},
+    "DEM": {"name": "Dee Emm Mahindra", "ad_account": "213796001764883",  "fallback": "768739352110216"}
+  },
+  "fallback_rule": "Use the fallback account only when the client's own account cannot cover the boost (balance or spend cap). Capital Hyundai and M R Hyundai never use another account."
+}
