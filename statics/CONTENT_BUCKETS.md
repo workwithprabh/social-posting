@@ -58,7 +58,8 @@ Mahindra Arav swaps one of these for a Pickups post each month.
 
 - **Statics** (static-post calendar; user, 8 Nov 2026): Date, Client, Bucket, Caption (Done/Pending, ARRAYFORMULA
   in D2 looking up the Captions tab by asset ID), Topic, Asset link (HYPERLINK to the Drive file, label = asset ID),
-  Status (dropdown: Pending for approval / Approved / Not approved / Posted; blank = still to make). Plain: no fills or
+  Status (dropdown: Pending for approval / Approved / Not approved / Posted; blank = still to make). Client uses the
+  `Clients` tab names ("Arav Mahindra", "Car and Bike") so the Dashboard counts it. Plain: no fills or
   notes; only status cells are coloured. Sorted by date then client (CH, DEH, MRH, AM, DEM, CB).
 - **Videos** carry their schedule in the Planned date column (same plain style; see CLAUDE.md for the columns).
   Plan with the rhythm in BRAND_SOURCES.md: each client every second day from its last post, 2 videos then 1 static,

@@ -14,7 +14,11 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   skip hidden rows. Never reset `textFormat` over the link columns (F, J, L, M): that removes the hyperlinks. A URL
   written through the API stays plain text until its cell gets `textFormat.link`, so set it whenever writing a link.
   Tab `Captions`: ID, Caption (caption text for every video and static, looked up by ID).
-  Tab `Statics`: the static-post calendar (see `statics/CONTENT_BUCKETS.md`). Tab `Dashboard`: formula-only counts by client and month (never write to it).
+  Tab `Statics`: the static-post calendar (see `statics/CONTENT_BUCKETS.md`). Tab `Dashboard` (formulas only; don't type into it except the blue inputs): "Ready to post, by client" (approved
+  videos and statics against the posts needed until the plan date, at a post every second day and 2 videos per static,
+  and the date the ready content lasts until) and "Posted in the month" (from Post date in Videos and Date in Statics;
+  it moves to the new month on the 1st). Client names in Videos C and Statics B must match the `Clients` tab exactly
+  ("Arav Mahindra", "Car and Bike"), or the Dashboard won't count them; fill Post date whenever a video is posted.
   Tab `Clients`: code, client, Drive folder.
   Read it with the Drive connector: `download_file_content` with `exportMimeType: text/csv`.
   Writing to it needs the Google Sheets connector; without it, the user updates the sheet by hand.
