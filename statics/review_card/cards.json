@@ -122,7 +122,6 @@
   "name": "Diyaaa",
   "place": "Daulatabad, Gurgaon",
   "footer": "DEM",
-  "cut": "cut_DEM-REV-2611-02.png",
-  "cutH": 840
+  "frame": "frame_DEM-REV-2611-02.jpg"
  }
 ]

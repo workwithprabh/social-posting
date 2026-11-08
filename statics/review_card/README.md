@@ -16,7 +16,9 @@ mkdir -p out && node render.js            # or: node render.js CH-REV-2611-01
 
 Photo layouts (user liked them, 8 Nov 2026): a single customer standing clear of the background gets a cutout
 (`"cut"`, optional `"cutH"` height); a group or key-handover photo gets a tilted photo print (`"frame":
-"frame_<ID>.jpg"`), because cutting a car out from behind several people leaves pieces. Pixelate every readable plate,
+"frame_<ID>.jpg"`), because cutting a car out from behind several people leaves pieces. The cutout models keep
+only people, so whenever the car matters (deliveries), use the photo print so the car stays in the picture (user,
+8 Nov 2026: a lone cutout of the customer without the car looked empty). Pixelate every readable plate,
 including parked cars. `"h1W"` limits the headline width when a tall cutout needs the space.
 Search all locations for candidates: 5-star reviews with photos where the customer is in the frame, then add them to
 the Reviews tab with Photo OK? = Ask.
