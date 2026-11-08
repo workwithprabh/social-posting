@@ -11,38 +11,117 @@
       "name": "Capital Hyundai",
       "ad_account": "1843796949802121",
       "fallback": null,
-      "meta_name": "Be Carrot (owned by be_carrot)"
+      "meta_name": "Be Carrot (owned by be_carrot)",
+      "locations": [
+        {
+          "name": "Noida Sector 63",
+          "lat": 28.627,
+          "lng": 77.379,
+          "km": 15
+        },
+        {
+          "name": "Noida Sector 132",
+          "lat": 28.511,
+          "lng": 77.377,
+          "km": 15
+        },
+        {
+          "name": "Faridabad",
+          "lat": 28.4089,
+          "lng": 77.3178,
+          "km": 15
+        },
+        {
+          "name": "Dadri",
+          "lat": 28.553,
+          "lng": 77.553,
+          "km": 15
+        }
+      ],
+      "page_id": "1796813873933984"
     },
     "MRH": {
       "name": "M R Hyundai",
       "ad_account": "180067875407208",
       "fallback": null,
-      "meta_name": "180067875407208 (personal ad account)"
+      "meta_name": "180067875407208 (personal ad account)",
+      "locations": [
+        {
+          "name": "Shalimar Garden, Ghaziabad",
+          "lat": 28.681,
+          "lng": 77.346,
+          "km": 15
+        }
+      ],
+      "page_id": "423738584167015"
     },
     "DEH": {
       "name": "Dee Emm Hyundai",
       "ad_account": "768739352110216",
       "fallback": null,
-      "meta_name": "Dee Emm Hyundai"
+      "meta_name": "Dee Emm Hyundai",
+      "locations": [
+        {
+          "name": "Gurgaon",
+          "lat": 28.4595,
+          "lng": 77.0266,
+          "km": 20
+        }
+      ],
+      "page_id": "222490927623865"
     },
     "CB": {
       "name": "Car and Bike",
       "ad_account": "768739352110216",
       "fallback": null,
-      "meta_name": "Dee Emm Hyundai"
+      "meta_name": "Dee Emm Hyundai",
+      "locations": [
+        {
+          "name": "Gurgaon",
+          "lat": 28.4595,
+          "lng": 77.0266,
+          "km": 20
+        }
+      ],
+      "page_id": "979679125237339"
     },
     "AM": {
       "name": "Mahindra Arav",
       "ad_account": "394722466230373",
       "fallback": "768739352110216",
-      "meta_name": "APMP Motors LLP"
+      "meta_name": "APMP Motors LLP",
+      "locations": [
+        {
+          "name": "Manesar",
+          "lat": 28.357,
+          "lng": 76.937,
+          "km": 15
+        },
+        {
+          "name": "Gurgaon Sector 95",
+          "lat": 28.414,
+          "lng": 76.942,
+          "km": 15
+        }
+      ],
+      "page_id": "111768271764481"
     },
     "DEM": {
       "name": "Dee Emm Mahindra",
       "ad_account": "213796001764883",
       "fallback": "768739352110216",
-      "meta_name": "Trob Auto India Private Limited"
+      "meta_name": "Trob Auto India Private Limited",
+      "locations": [
+        {
+          "name": "Gurgaon",
+          "lat": 28.4595,
+          "lng": 77.0266,
+          "km": 20
+        }
+      ],
+      "page_id": "1143134585858524"
     }
   },
-  "fallback_rule": "Use the fallback account only when the client's own account cannot cover the boost (balance or spend cap). Capital Hyundai and M R Hyundai never use another account."
+  "fallback_rule": "Use the fallback account only when the client's own account cannot cover the boost (balance or spend cap). Capital Hyundai and M R Hyundai never use another account.",
+  "_locations_note": "Approximate showroom areas; radius in km. Adjust if the client wants a different area."
 }
