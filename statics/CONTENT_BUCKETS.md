@@ -58,7 +58,7 @@ Mahindra Arav swaps one of these for a Pickups post each month.
 
 - **Calendar** (the master plan for every client, videos and statics; user, 8 Nov 2026): Date, Client, Format
   (Video / Static), Bucket, Topic, Asset link (HYPERLINK to the Drive file), Status (dropdown: Pending for approval /
-  Approved / Posted; blank = still to make, or an open slot waiting for the team's next reel). Keep it plain: no fills
+  Approved / Not approved / Posted; blank = still to make, or an open slot waiting for the team's next reel). Keep it plain: no fills
   or notes; only the Status cell is coloured. One row per post, sorted by date then client (CH, DEH, MRH, AM, DEM,
   CB). Plan with the rhythm in BRAND_SOURCES.md (each client every second day from its last post, 2 videos then 1
   static, Approved videos before Pending, festivals on their own date). Posting and boosting follow this tab, and still
