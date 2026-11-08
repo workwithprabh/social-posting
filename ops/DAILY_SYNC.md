@@ -20,8 +20,9 @@ What it does:
 - **Part B, reviews:** copies up to 3 new 5-star Dee Emm Hyundai reviews per branch per day from the DMU sheet into
   the `Reviews` tab, with the rules in `statics/CONTENT_BUCKETS.md`.
 
-Its run summaries are only visible in the run's session (claude.ai/code → scheduled tasks → Daily sheet sync →
-last run); nothing is sent anywhere.
+After each run a push notification goes to the Claude app on the owner's phone (turned on in the claude.ai
+scheduled tasks screen on 8 Nov 2026). The full run summary is in the run's session (claude.ai/code → scheduled
+tasks → Daily sheet sync → last run).
 
 To see or change it, ask Claude in a session that has the claude-code-remote tools: "show the daily sync task" or
 "update the daily sync prompt". If the task is ever lost, recreate it from the prompt below (same schedule,
