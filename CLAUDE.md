@@ -24,7 +24,9 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 - Claude drafts captions and thumbnails; the team approves them. Covers follow `cover/PLAYBOOK.md`
   (Mahindra style; Hyundai and Car & Bike use the same rules in their own colours, refs in `cover/refs/`).
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
-- Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive) as
+- Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
+  as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in
+  `config/drafts_folders.json`; make the month's folders when a new month starts). Thumbnails are named
   `<Video ID>.jpg`; write the caption and the draft's link into the sheet and set Notes to
   "Draft by Claude, needs review". Never put drafts in the team's Thumbnail folder: a file there named by Video ID
   is treated as the approved cover.

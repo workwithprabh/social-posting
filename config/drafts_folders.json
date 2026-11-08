@@ -1,0 +1,13 @@
+{
+  "_note": "Claude drafts folder layout (user, 8 Nov 2026): <type>/<YYYY-MM Month>/<client>. Month comes from the ID (2611 = 2026-11). Create the month folder with all six client folders when a new month starts, then add its ids here.",
+  "root": "1KDnTFCTb2SoIW3168M26spmO3htJwX8o",
+  "Video thumbnails": {
+    "id": "1dmyWqJeFQr7ErsqCAn2u1npwnPnQ9M4d",
+    "2026-10 October": {"id": "1zxMbTsjCpGmPj6UQlaqCGMsOmmfrR6IH", "CH": "1pvon1oi1g1Pv9ytRXUaBqNlfGs_EiU38", "DEH": "1Dz2PncVSlytYN1VPZbx51aXKYGz3XgsR", "MRH": "11T0V21dDQSJWKpcEXnq2X7pD6OgHRBYF", "AM": "1aGSrwuJpxfFJxbnb5SmXJxe-2FO_FW86", "DEM": "15nkOo4VxyY3qW8fOzwrLqkJeFKx1QVpK", "CB": "15uY-Ry2tdmRwjdY3VHb_2afBGNXg2Hqu"},
+    "2026-11 November": {"id": "1DAiz9IPsLupySmpYePQXpCZdFt6c0ZhJ", "CH": "1PYRZKfSwiFDugYW-Je95zI6_-BPVafS7", "DEH": "1RcBvYwoLzHrAm81WYarkJkN8BDTjR3Ka", "MRH": "1zVS3AsHgkhcM3d9AA6EE_fySmbBSMZG5", "AM": "1PsIaiQNveVzXC9IjzqxVkLtExpQAN88q", "DEM": "1MUt9lqqNFeaRcp_KD2Kh0hr0-C0EUhVY", "CB": "1v9fVMH8tXOQOrQBfP9wuJ4S0vaRy2J1p"}
+  },
+  "Social media posts": {
+    "id": "1l2iS1VyaPWPZQrqBWsuG3clSIDa2NtXw",
+    "2026-11 November": {"id": "1xZFuMv7Jezi_xMUL6BF6gK0qqHIb4mop", "CH": "1oV7pGCO-_8iiOM70CKty3enELBK9Nwb4", "DEH": "1caSOmxv_odR1gvIPacmWtpJD0z05dsR6", "MRH": "1TDczzAFlEhPmibstMPosAxX5llGRMihA", "AM": "1Mw4aTyW6qJkh6zEFNlANSkbjTOel4YUI", "DEM": "1-Vk-TpLDKOiorG3H9FtteXFm7aYN1HxP", "CB": "1BcTcC3WdZo3N67bSzXzwRhZWLtXYumfh"}
+  }
+}
