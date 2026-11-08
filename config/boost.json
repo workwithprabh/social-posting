@@ -5,7 +5,7 @@
   "per_reel_inr": 200,
   "placement": "instagram_only",
   "audience": "advantage_plus",
-  "goal": "video_views (ThruPlay) unless the user picks another",
+  "goal": "profile_visits (OUTCOME_TRAFFIC, destination INSTAGRAM_PROFILE, optimisation VISIT_INSTAGRAM_PROFILE)",
   "clients": {
     "CH":  {"name": "Capital Hyundai",  "ad_account": "1843796949802121", "fallback": null},
     "MRH": {"name": "M R Hyundai",      "ad_account": "180067875407208",  "fallback": null},
