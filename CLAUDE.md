@@ -11,7 +11,9 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   FB only), Caption (Done/Pending, an ARRAYFORMULA in I2 that looks up the `Captions` tab: never type in column I),
   Thumbnail (the thumbnail's Drive link when done, else "Pending"), Post date, Instagram post link, Facebook post
   link, Notes. A filter hides Posted and Skip rows: lift it before bulk copies or clears, because copies and clears
-  skip hidden rows. Tab `Captions`: ID, Caption (caption text for every video and static, looked up by ID).
+  skip hidden rows. Never reset `textFormat` over the link columns (F, J, L, M): that removes the hyperlinks. A URL
+  written through the API stays plain text until its cell gets `textFormat.link`, so set it whenever writing a link.
+  Tab `Captions`: ID, Caption (caption text for every video and static, looked up by ID).
   Tab `Statics`: the static-post calendar (see `statics/CONTENT_BUCKETS.md`). Tab `Dashboard`: formula-only counts by client and month (never write to it).
   Tab `Clients`: code, client, Drive folder.
   Read it with the Drive connector: `download_file_content` with `exportMimeType: text/csv`.
