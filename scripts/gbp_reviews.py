@@ -27,7 +27,7 @@ CLIENTS = [  # location title keyword -> client name used in the sheet
     (r'dee\s*emm\s*hyundai|deeemm\s*hyundai|dm\s*hyundai', 'Dee Emm Hyundai'),
     (r'\bm\.?\s*r\.?\s*hyundai', 'M R Hyundai'),
     (r'arav', 'Mahindra Arav'),
-    (r'dee\s*emm\s*mahindra|deeemm\s*mahindra|dm\s*mahindra', 'Dee Emm Mahindra'),
+    (r'dee\s*emm\s*mahindra|deeemm\s*mahindra|dm\s*mahindra|mahindra\b.*\bdee\s*emm', 'Dee Emm Mahindra'),
     (r'car\s*(&|and)\s*bike|first\s*choice', 'Car and Bike'),
 ]
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
