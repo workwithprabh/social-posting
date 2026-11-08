@@ -34,3 +34,15 @@ for name, fid in LOGOS.items():
     print(name, im.size)
 mrh_one_line()
 print("MRH_line.png built")
+
+# High-resolution logos for the 2160x2700 masters (8 Nov 2026). Drive only has small Dee Emm Hyundai (313px),
+# M R Hyundai (280px) and Capital Hyundai (703px) files, so their flat white shapes are rebuilt at 2-4x with
+# upscale_logo.py (same shapes, crisp edges). Mahindra Arav uses its 2200px black file, turned white.
+import subprocess, numpy as np
+here = __file__.rsplit('/', 1)[0]
+for src, dst, k in [('DEH_white.png', 'DEH_white_hr.png', 4), ('MRH_3.png', 'MRH_3_hr.png', 3), ('CH_cap.png', 'CH_cap_hr.png', 2)]:
+    subprocess.run(['python3', f'{here}/upscale_logo.py', src, dst, str(k), 'white'], check=True)
+drive_folder.download('1cuCmyzYMvy3TX4X4YcJ5lAQePQVPGi4U', 'AM_black.png')
+a = np.array(Image.open('AM_black.png').convert('RGBA'))
+bb = Image.fromarray(a[..., 3]).point(lambda v: 255 if v > 20 else 0).getbbox(); a = a[bb[1]:bb[3], bb[0]:bb[2]]; a[..., :3] = 255
+Image.fromarray(a, 'RGBA').save('AM_hr.png'); print('AM_hr.png built')

@@ -41,6 +41,8 @@ Prices change; re-read the sites before using a price in a post, and label it "e
 - Footer numbers follow the post's topic (user, 8 Nov 2026): a service post (service review, service tip, camp)
   shows the service centre numbers, a showroom/sales post shows the showroom numbers, a general post shows both.
   Service numbers per client are in `statics/clients.json` ("service"); use only ones marked confirmed.
+- Static image quality (user, 8 Nov 2026): keep masters at 2160x2700 (4:5), JPEG q95 4:4:4, high-resolution logos;
+  post a 1080x1350 copy to Instagram and the 2160x2700 file to Facebook. Details in `statics/review_card/README.md`.
 - Logo size on our cards (user, 8 Nov 2026): keep the larger size, not the smaller size the old feed posts use. On a
   1080px-wide card the logo is 74px tall for Capital Hyundai and Dee Emm Hyundai (about 395px wide), 110px for the
   stacked M R Hyundai logo, 84px for Mahindra Arav and 108px for the Dee Emm Mahindra twin-peaks logo, inside a

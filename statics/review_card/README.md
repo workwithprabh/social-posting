@@ -11,8 +11,14 @@ Build in a scratch folder, never inside the repo:
 cp card.html render.js cards.json fetch_logos.py <scratch>/ && cd <scratch>
 npm i -s @fontsource/anton@5.3.0 @fontsource/montserrat@5.3.0 @fontsource/playfair-display@5.2.8
 python <repo>/statics/review_card/fetch_logos.py
-mkdir -p out && node render.js            # or: node render.js CH-REV-2611-01
+mkdir -p out && node render.js && python save.py out    # or: node render.js CH-REV-2611-01
 ```
+
+Resolution (user, 8 Nov 2026: files must look good on Instagram and Facebook): cards render at 2x, 2160x2700, and
+`save.py` stores them as JPEG quality 95 with 4:4:4 chroma (no colour bleed on red/blue text). That file goes to
+Drive and is what Facebook gets. For Instagram, `python save.py out --ig` (or a resize at publish time) makes an exact
+1080x1350 copy, Instagram's native 4:5 size, so Instagram doesn't resize it again. Use only the `_hr` logos
+(fetch_logos.py builds them); photos in prints or cutouts should be at least ~900px wide.
 
 Photo layouts (user liked them, 8 Nov 2026): a single customer standing clear of the background gets a cutout
 (`"cut"`, optional `"cutH"` height); a group or key-handover photo gets a tilted photo print (`"frame":
