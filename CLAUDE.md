@@ -38,6 +38,9 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   static, flexible when videos are short). Client contacts and logos: `statics/clients.json`.
 - Static content buckets and the Calendar/Reviews tabs: `statics/CONTENT_BUCKETS.md`. Google reviews come from
   `scripts/gbp_reviews.py` (setup in `statics/GBP_SETUP.md`; needs GBP_CLIENT_ID, GBP_CLIENT_SECRET, GBP_REFRESH_TOKEN).
+- Review posts: whatever goes on social media is in correct English. Column M "Text for post" holds the review with
+  its grammar corrected or rephrased in our words, keeping the customer's meaning and facts (names, car, branch,
+  what happened) and adding nothing; column G keeps the original. Details in `statics/CONTENT_BUCKETS.md`.
 - Both CH-2610-07 and CH-2610-08 (Reel 3 offer and Reel 3) are meant to be posted.
 
 ## Video handling

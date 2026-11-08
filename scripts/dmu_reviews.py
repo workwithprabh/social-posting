@@ -4,7 +4,7 @@ Usage:
   python scripts/dmu_reviews.py <Reviews_Raw.csv> [--days 60] [--per-branch 8] [--min-words 25] [--exclude ids.txt]
 
 Picks are candidates: a person still reads each one and keeps only reviews in clear English that need at most
-typo-level fixes (spelling, capitals, spacing, punctuation) for the "Text for post" column; never reword.
+correct English for the "Text for post" column (grammar corrected or rephrased, same meaning and facts).
 Rules: 5 stars, not Removed, no Duplicate_Flag (Google removes those far more often), the reviewer's own words
 (Google's auto-translation dropped), at least --min-words words and at most --max-chars characters. Ranked by detail: length, plus a bonus for
 naming staff or describing delivery/service. Prints JSON rows in the Reviews tab's column order.
@@ -69,6 +69,6 @@ if __name__ == '__main__':
     for branch, lst in picks.items():
         for s, when, r, t in sorted(lst, key=lambda x: (-x[0], -x[1].timestamp()))[:a.per_branch]:
             rows.append([r['Review_ID'], 'Dee Emm Hyundai', branch, 5, r['Reviewer_Name'], post_name(r['Reviewer_Name']), t,
-                         r['Review_Date'], r['Review_URL'], 'New', '', 'From the DMU GBP sheet. Text for post: ', t])   # M: typo fixes only, by a person
+                         r['Review_Date'], r['Review_URL'], 'New', '', 'From the DMU GBP sheet. Text for post: ', t])   # M: correct English, by a person
     rows.sort(key=lambda x: dt.datetime.strptime(x[7], '%d %b %Y'), reverse=True)
     print(json.dumps(rows, ensure_ascii=False))

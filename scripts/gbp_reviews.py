@@ -9,7 +9,8 @@ Usage:
   python scripts/gbp_reviews.py reviews [--min-stars 5] [--since 2026-10-01] [--out reviews.json]
 
 `reviews` prints candidate rows in the column order of the sheet's Reviews tab (A-M). A person then keeps only
-reviews in clear English that need at most typo-level fixes in column M (Text for post); never reword. Never prints a token.
+good reviews and writes column M (Text for post) in correct English: grammar corrected or rephrased, keeping the
+customer's meaning and facts (statics/CONTENT_BUCKETS.md). Never prints a token.
 """
 import argparse
 import datetime as dt
@@ -154,7 +155,7 @@ if __name__ == '__main__':
             who = (r.get('reviewer') or {})
             display = 'A Google user' if who.get('isAnonymous') else who.get('displayName', '')
             rows.append([r.get('name') or r['reviewId'], l['client'], l['area'] or l['title'], stars, display, post_name(display), text,
-                         when.strftime('%-d %b %Y'), l['maps'], 'New', '', '', text])   # M: Text for post (typo fixes only, by a person)
+                         when.strftime('%-d %b %Y'), l['maps'], 'New', '', '', text])   # M: Text for post (correct English, by a person)
     rows.sort(key=lambda x: dt.datetime.strptime(x[7], '%d %b %Y'), reverse=True)
     if a.out:
         json.dump(rows, open(a.out, 'w'), ensure_ascii=False, indent=1)

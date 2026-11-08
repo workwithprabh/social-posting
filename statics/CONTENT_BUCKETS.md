@@ -40,11 +40,15 @@ Mahindra Arav swaps one of these for a Pickups post each month.
   "ex-showroom" or "indicative on-road", "T&C apply", and rechecked before posting.
 - Brand fence: each client posts only its own brand; pickups only on Mahindra Arav.
 - When dealers of the same brand cover the same moment, each gets its own headline and image.
-- Google reviews: pick meaningful, longer reviews (25+ words, at most 500 characters) in clear English that name
-  staff or describe the delivery/service. Column G keeps the original text untouched; column M "Text for post" may
-  fix only typos (spelling, capitals, spacing, punctuation) with the changes noted in Notes. Never reword a review
-  or show reworded text as a customer's quote; skip reviews that would need it, Hinglish ones, generic product
-  essays, and pasted-looking templates. First name + last initial only (digits and "ji" dropped), no profile photo.
+- Google reviews: pick meaningful, longer reviews (25+ words, at most 500 characters) that name staff or describe
+  the delivery/service; skip generic product essays and pasted-looking templates. First name + last initial only
+  (digits and "ji" dropped), no profile photo.
+- Review English (user, 8 Nov 2026): whatever goes on social media must be correct English. Customers often write
+  in broken English, so column M "Text for post" is either the review with its grammar corrected, or the review
+  rephrased in our words. Keep the customer's meaning and facts: the staff names, car, branch and what happened,
+  nothing added (no new praise, claims or numbers). Column G keeps the original text untouched, and Notes says
+  "Grammar corrected" or "Rephrased" (with the main changes). Poor English is no longer a reason to skip a good
+  review. On a card, quote marks hold column M exactly; shorten only by cutting whole sentences.
 
 ## Sheet tabs
 
