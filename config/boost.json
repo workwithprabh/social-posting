@@ -38,7 +38,9 @@
           "km": 15
         }
       ],
-      "page_id": "1796813873933984"
+      "page_id": "1796813873933984",
+      "ig_user": "17841404103430378",
+      "ig_username": "capitalhyundai"
     },
     "MRH": {
       "name": "M R Hyundai",
@@ -53,7 +55,9 @@
           "km": 15
         }
       ],
-      "page_id": "423738584167015"
+      "page_id": "423738584167015",
+      "ig_user": "17841470355540620",
+      "ig_username": "hyundaimr_sg"
     },
     "DEH": {
       "name": "Dee Emm Hyundai",
@@ -68,7 +72,9 @@
           "km": 20
         }
       ],
-      "page_id": "222490927623865"
+      "page_id": "222490927623865",
+      "ig_user": "17841430529180239",
+      "ig_username": "hyundaidm"
     },
     "CB": {
       "name": "Car and Bike",
@@ -83,7 +89,9 @@
           "km": 20
         }
       ],
-      "page_id": "979679125237339"
+      "page_id": "979679125237339",
+      "ig_user": "17841475932990498",
+      "ig_username": "dm_carandbike"
     },
     "AM": {
       "name": "Mahindra Arav",
@@ -104,7 +112,9 @@
           "km": 15
         }
       ],
-      "page_id": "111768271764481"
+      "page_id": "111768271764481",
+      "ig_user": "17841457116100505",
+      "ig_username": "mahindraarav"
     },
     "DEM": {
       "name": "Dee Emm Mahindra",
@@ -119,7 +129,9 @@
           "km": 20
         }
       ],
-      "page_id": "1143134585858524"
+      "page_id": "1143134585858524",
+      "ig_user": "17841415265612306",
+      "ig_username": "mahindradm"
     }
   },
   "fallback_rule": "Use the fallback account only when the client's own account cannot cover the boost (balance or spend cap). Capital Hyundai and M R Hyundai never use another account.",
