@@ -8,7 +8,8 @@ Usage:
   python scripts/gbp_reviews.py check                          # token works? which accounts/locations can it see
   python scripts/gbp_reviews.py reviews [--min-stars 5] [--since 2026-10-01] [--out reviews.json]
 
-`reviews` prints one JSON row per review, in the column order of the sheet's Reviews tab. Never prints a token.
+`reviews` prints candidate rows in the column order of the sheet's Reviews tab (A-M). A person then keeps only
+reviews in clear English that need at most typo-level fixes in column M (Text for post); never reword. Never prints a token.
 """
 import argparse
 import datetime as dt
@@ -93,12 +94,14 @@ def locations(tok):
     return locs
 
 
-def post_name(display):
-    """'Rahul Sharma' -> 'Rahul S.'; single names stay as they are."""
-    parts = (display or '').split()
+def post_name(n):
+    """'pooja sehgal' -> 'Pooja S.'; digits and honorifics dropped ('SACHIN YADAV8826' -> 'Sachin Y.', 'Shivam Veram ji' -> 'Shivam V.')."""
+    words = [re.sub(r'\d+', '', w) for w in (n or '').split()]
+    parts = [w for w in words if w.isalpha() and w.lower() not in ('ji', 'sir', 'mr', 'mrs', 'ms', 'dr')]
     if not parts:
         return 'A Google user'
-    return parts[0] if len(parts) == 1 else f'{parts[0]} {parts[-1][0]}.'
+    first = parts[0].capitalize()
+    return first if len(parts) == 1 else f'{first} {parts[-1][0].upper()}.'
 
 
 def original_text(comment):
@@ -112,6 +115,8 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('cmd', choices=['check', 'reviews'])
     ap.add_argument('--min-stars', type=int, default=5)
+    ap.add_argument('--min-words', type=int, default=25)
+    ap.add_argument('--max-chars', type=int, default=500)
     ap.add_argument('--since')
     ap.add_argument('--out')
     a = ap.parse_args()
@@ -140,12 +145,12 @@ if __name__ == '__main__':
             if stars < a.min_stars or (since and when < since):
                 continue
             text = original_text(r.get('comment'))
-            if not text:
-                continue          # star-only reviews have nothing to quote
+            if len(text.split()) < a.min_words or len(text) > a.max_chars:
+                continue          # too thin to look genuine, or too long to quote in full on a card
             who = (r.get('reviewer') or {})
             display = 'A Google user' if who.get('isAnonymous') else who.get('displayName', '')
             rows.append([r['reviewId'], l['client'], l['area'] or l['title'], stars, display, post_name(display), text,
-                         when.strftime('%-d %b %Y'), l['maps'], 'New', '', ''])
+                         when.strftime('%-d %b %Y'), l['maps'], 'New', '', '', text])   # M: Text for post (typo fixes only, by a person)
     rows.sort(key=lambda x: dt.datetime.strptime(x[7], '%d %b %Y'), reverse=True)
     if a.out:
         json.dump(rows, open(a.out, 'w'), ensure_ascii=False, indent=1)

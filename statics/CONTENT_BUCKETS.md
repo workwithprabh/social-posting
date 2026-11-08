@@ -40,13 +40,26 @@ Mahindra Arav swaps one of these for a Pickups post each month.
   "ex-showroom" or "indicative on-road", "T&C apply", and rechecked before posting.
 - Brand fence: each client posts only its own brand; pickups only on Mahindra Arav.
 - When dealers of the same brand cover the same moment, each gets its own headline and image.
-- Google reviews: quote word for word (trims marked "..."), first name + last initial only, no profile photo,
-  keep the date and link in the Reviews tab, prefer 5-star reviews that mention something specific.
+- Google reviews: pick meaningful, longer reviews (25+ words, at most 500 characters) in clear English that name
+  staff or describe the delivery/service. Column G keeps the original text untouched; column M "Text for post" may
+  fix only typos (spelling, capitals, spacing, punctuation) with the changes noted in Notes. Never reword a review
+  or show reworded text as a customer's quote; skip reviews that would need it, Hinglish ones, generic product
+  essays, and pasted-looking templates. First name + last initial only (digits and "ji" dropped), no profile photo.
 
 ## Sheet tabs
 
 - **Calendar**: Date, Day (auto), Client, Format (Video / Static / Carousel), Bucket, Topic, Video ID / asset,
   Brief and source, Status (Planned / Drafted / Approved / Posted / Skipped), Post link, Notes.
 - **Reviews**: Review ID, Client, Location, Stars, Reviewer (on Google), Name for post, Review text, Review date,
-  Google link, Use? (New / Use / No / Used), Posted on, Notes. Filled by `scripts/gbp_reviews.py`; the team sets
+  Google link, Use? (New / Use / No / Used), Posted on, Notes, Text for post. Filled by `scripts/gbp_reviews.py`; the team sets
   "Use" on the ones to design.
+
+## Where reviews come from
+
+- **Dee Emm Hyundai**: the "DMU GBP Intelligence & Review Audit" sheet (`1r9c4Bhjsya3kDnBbUldHnZyeg-0T30tP3hPaJpI_3p4`,
+  tab Reviews_Raw), filled every 3 hours by the GitHub job in `deeemm-hyundai-lp`. Read-only for us: that job posts
+  automatic replies signed "Team Dee Emm Hyundai", so never add other dealers to its Locations tab. The daily sync
+  copies new qualifying 5-star reviews (max 3 per branch per day) into the tracker's Reviews tab;
+  `scripts/dmu_reviews.py` lists candidates from a CSV export. First backfill (8 Nov 2026): 18 hand-checked reviews
+  from the last 60 days.
+- **Other clients**: `scripts/gbp_reviews.py` once their listings are reachable with GBP OAuth credentials.
