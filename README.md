@@ -26,13 +26,18 @@ Reel covers and helper scripts for posting edited client videos to Instagram and
 
 ## Scripts
 
-- `scripts/list_videos.py` lists every video in the client month folders and writes `videos.json`.
+- `scripts/list_videos.py ["Nov 2026" ...]` lists the videos in the client month folders (default: this month and last) and writes `videos.json`.
 - `scripts/fetch_thumbnail.py CH-2610-04` copies that video's thumbnail from Drive into `thumbnails/`.
 - `scripts/check_access.py` lists the Pages and Instagram accounts each Meta token can reach (read-only).
 - `scripts/recent_captions.py` reads the latest Instagram captions of every client account (read-only).
 - `scripts/publish_reel.py` publishes one re-encoded video as a Reel to Instagram and the Facebook Page and prints the post links.
 
-Both read Drive folders shared as "Anyone with the link can view", so keep that sharing setting on the
+These read Drive folders shared as "Anyone with the link can view", so keep that sharing setting on the
 video and thumbnail folders.
 
 No access tokens are stored in this repository. Meta tokens are kept in the session environment settings.
+
+More: `CLAUDE.md` (all working rules and where everything is), `ops/DAILY_SYNC.md` (the daily sheet sync),
+`cover/` (thumbnail recipe), `captions/STYLE.md`, `statics/` (static posts, reviews, client contacts),
+`config/boost.json` + `scripts/boost_reel.py` (boosting), `scripts/emi.py` (EMI posts), `scripts/gbp_reviews.py`
+and `scripts/dmu_reviews.py` (Google reviews).

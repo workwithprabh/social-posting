@@ -1,35 +1,58 @@
 """List every video in the client month folders and write videos.json.
 
-The month folders must stay shared as "Anyone with the link can view".
-Add a row to FOLDERS when a new month folder is created.
+Usage: python scripts/list_videos.py [Mon YYYY ...]     # default: this month and last month (India time)
+e.g.   python scripts/list_videos.py "Oct 2026" "Nov 2026"
+
+Month folders are found by name inside each client's root folder ("oct 2026", "Sept 2026", "Nov 2026" all match),
+so nothing needs editing when the team adds a new month. The root folders (owned by becarrotsocial@gmail.com) must
+stay shared as "Anyone with the link can view". The daily sync trigger uses the same root folder IDs.
 """
+import datetime as dt
 import json
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from drive_folder import walk  # noqa: E402
+from drive_folder import entries, walk  # noqa: E402
 
-FOLDERS = [  # (client, code, month, folder_id)
-    ("Capital Hyundai", "CH", "Sep 2026", "15QzslMAfBn_VQ30J17ZGTtjHjSqwxmZw"),
-    ("Capital Hyundai", "CH", "Oct 2026", "1Jl1bHkKOKHipYbflm2fLGloREXwQa-zW"),
-    ("Dee Emm Hyundai", "DEH", "Sep 2026", "1qkiORVLdTv2Phn9GW4C7iyx7MzFlAoPG"),
-    ("Dee Emm Hyundai", "DEH", "Oct 2026", "1K80rau_PWx7FYsr_KrS61h8x1kLeuVhU"),
-    ("Dee Emm Mahindra", "DEM", "Sep 2026", "1zWAlN0Ei_D-NwEcivBTI9LEMfou49fc-"),
-    ("Dee Emm Mahindra", "DEM", "Oct 2026", "19zyeNhzWBE1XRPw8BLxDvrQovh6DPfRA"),
-    ("Arav Mahindra", "AM", "Sep 2026", "1DoleDQEpIUAer-PIa9rFD7XLq2jR_SUs"),
-    ("Arav Mahindra", "AM", "Oct 2026", "1SMI3XogR78A39iBwLu9ww5EQ2glwZ_JX"),
-    ("M R Hyundai", "MRH", "Sep 2026", "1InH_mrgt71dePHbBS_EfNQp3zWmSOgXd"),
-    ("M R Hyundai", "MRH", "Oct 2026", "1-dPyeVhfZ28VwqINa0meDJLMUESYMn_5"),
-    ("Car and Bike", "CB", "Sep 2026", "14scmQB0J46Y-ceurhgOEITmVM6U4EeW7"),
+ROOTS = [  # (client, code, root folder id)
+    ("Capital Hyundai", "CH", "150lMiEOdNYDFoTrGrQN_t58GWPEXBFX_"),
+    ("Dee Emm Hyundai", "DEH", "1gsVkvsqjy89O8K2Tc0rVQCl5p3N80ixP"),
+    ("Dee Emm Mahindra", "DEM", "1CumF3EbcvxfNhxwIPwZBC6LXlhDEV-1h"),
+    ("Arav Mahindra", "AM", "1njpvbueNFwJILVlVXStz85jmqulNNlSX"),
+    ("M R Hyundai", "MRH", "1Tl4Ru87CdTSHUUggIygbYekEKlEWtwxR"),
+    ("Car and Bike", "CB", "1YQZiRlRM70XV2OvxDQi9BYDxqo9AuOFY"),
 ]
+MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 
-rows = []
-for client, code, month, folder in FOLDERS:
-    files = sorted(walk(folder), key=lambda f: f[1].lower())
-    print(f"{client} {month}: {len(files)} files")
-    for fid, name, modified in files:
-        rows.append(dict(client=client, code=code, month=month, name=name, id=fid, modified=modified,
-                         link=f"https://drive.google.com/file/d/{fid}/view"))
-json.dump(rows, open("videos.json", "w"), indent=1)
-print("total", len(rows))
+
+def folder_month(name):
+    """'Sept 2026' -> 'Sep 2026'; 'OCT. 25' -> 'Oct 2025'; anything else -> None."""
+    m = re.fullmatch(r'\s*([A-Za-z]{3})[A-Za-z]*\.?\s*(\d{4}|\d{2})\s*', name)
+    if not m or m.group(1).lower() not in MONTHS:
+        return None
+    year = m.group(2) if len(m.group(2)) == 4 else '20' + m.group(2)
+    return f"{m.group(1).capitalize()} {year}"
+
+
+if __name__ == "__main__":
+    wanted = [folder_month(a) for a in sys.argv[1:]]
+    if not wanted:
+        today = dt.datetime.now(dt.timezone(dt.timedelta(hours=5, minutes=30))).date().replace(day=1)
+        last = today - dt.timedelta(days=1)
+        wanted = [last.strftime("%b %Y"), today.strftime("%b %Y")]
+    rows = []
+    for client, code, root in ROOTS:
+        months = {folder_month(name): fid for fid, name, is_dir, _ in entries(root) if is_dir and folder_month(name)}
+        for month in wanted:
+            if month not in months:
+                print(f"{client}: no {month} folder")
+                continue
+            files = sorted((f for f in walk(months[month]) if f[1].lower().endswith(('.mp4', '.mov'))), key=lambda f: f[1].lower())
+            print(f"{client} {month}: {len(files)} files")
+            for fid, name, modified in files:
+                rows.append(dict(client=client, code=code, month=month, name=name, id=fid, modified=modified,
+                                 link=f"https://drive.google.com/file/d/{fid}/view"))
+    json.dump(rows, open("videos.json", "w"), indent=1)
+    print("total", len(rows))

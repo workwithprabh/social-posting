@@ -8,12 +8,18 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   in the workwithprabh@gmail.com Drive. Tab `Videos`, columns A-M: Video ID, Client, Added to Drive (the video
   file's Drive upload date, India time), Month, Video file (HYPERLINK to Drive), Status (Pending / Approved /
   Posted / Skip), Platforms (IG + FB / IG only / FB only), Caption, Thumbnail link, Post date, Instagram post
-  link, Facebook post link, Notes. Tab `Dashboard`: formula-only counts by client and month (never write to it).
-  Tab `Clients`: code, client, Drive folder.
-  Read it with the Drive connector: `download_file_content` with `exportMimeType: text/csv`.
-  Writing to it needs the Google Sheets connector; without it, the user updates the sheet by hand.
-- **Edited videos:** owned by becarrotsocial@gmail.com, one folder per client, one subfolder per month,
-  shared "Anyone with the link can view". Folder ids are in `scripts/list_videos.py`.
+  link, Facebook post link, Notes. Rows are sorted by Added to Drive (oldest first) and a filter hides Posted/Skip
+  rows; never change a Video ID once given. Other tabs (sheetId): `Videos` 589291894, `Dashboard` 1646150369
+  (formula-only counts by client and month, never write to it), `Clients` 1351693519 (code, client, Drive folder),
+  `Calendar` 1271969579 and `Reviews` 1119077801 (layouts in `statics/CONTENT_BUCKETS.md`).
+  Read and write it with the Google Sheets connector (`get_values`, `get_spreadsheet`, `update_values`,
+  `update_formulas`, `update_spreadsheet`); the Drive and Sheets connectors are signed in as workwithprabh@gmail.com.
+  Without them, the user updates the sheet by hand.
+- **Daily sync:** a scheduled task adds new videos and Dee Emm Hyundai reviews to the sheet every day at 8:45 IST.
+  What it does, its ID and its full prompt: `ops/DAILY_SYNC.md` (update that file whenever the prompt changes).
+- **Edited videos:** owned by becarrotsocial@gmail.com, one root folder per client, one subfolder per month
+  ("Nov 2026", "Sept 2026", ...), shared "Anyone with the link can view". Root folder ids are in
+  `scripts/list_videos.py`, which finds the month folders by name.
 - **Thumbnails:** Drive folder `1u6J5NUVc51ZufYb6n5AmO7JXd1QL2Y_D`, one subfolder per client, files named by
   Video ID. `scripts/fetch_thumbnail.py <ID>` copies one into `thumbnails/`; its raw GitHub URL on `main` is the
   Instagram `cover_url`.
@@ -24,7 +30,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 - Claude drafts captions and thumbnails; the team approves them. Covers follow `cover/PLAYBOOK.md`
   (Mahindra style; Hyundai and Car & Bike use the same rules in their own colours, refs in `cover/refs/`).
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
-- Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive) as
+- Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive; only
+  shared with the people the user adds, so the team needs access to open the draft links) as
   `<Video ID>.jpg`; write the caption and the draft's link into the sheet and set Notes to
   "Draft by Claude, needs review". Never put drafts in the team's Thumbnail folder: a file there named by Video ID
   is treated as the approved cover.
@@ -56,6 +63,10 @@ Dee Emm Mahindra and M R Hyundai could not be shared into the agency business po
 non-expiring Page token from the user's personal access: `META_PAGE_TOKEN_DEM` and `META_PAGE_TOKEN_MRH`.
 Those stop working if the user changes their Facebook password or loses access to the Page; if that happens,
 the user regenerates them in Graph API Explorer.
+
+Google Business Profile (reviews for all clients): `GBP_CLIENT_ID`, `GBP_CLIENT_SECRET`, `GBP_REFRESH_TOKEN`, the
+OAuth client in Google Cloud project `erudite-variety-404318` (same client as the Dee Emm Hyundai website's GitHub
+jobs; see `statics/GBP_SETUP.md`).
 
 The tokens are environment variables in the "BC Social Automation" environment. Never print, log or commit any
 token. When the user says "Check Meta access", run `python scripts/check_access.py` (GET requests only) and report

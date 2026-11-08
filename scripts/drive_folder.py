@@ -7,6 +7,14 @@ ENTRY = re.compile(r'id="entry-([\w-]+)".*?<a href="([^"]+)".*?flip-entry-title"
                    r'.*?flip-entry-last-modified"><div>(.*?)</div>', re.S)
 
 
+def entries(folder_id):
+    """Yield (id, name, is_folder, last_modified) for the items directly inside folder_id."""
+    page = subprocess.run(["curl", "-sSL", f"https://drive.google.com/embeddedfolderview?id={folder_id}"],
+                          capture_output=True, text=True, check=True).stdout
+    for fid, href, title, modified in ENTRY.findall(page):
+        yield fid, html.unescape(title), "/folders/" in href, html.unescape(modified)
+
+
 def walk(folder_id, path=""):
     """Yield (file_id, path/name, last_modified) for every file under folder_id, subfolders included."""
     page = subprocess.run(["curl", "-sSL", f"https://drive.google.com/embeddedfolderview?id={folder_id}"],
