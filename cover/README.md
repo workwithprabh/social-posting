@@ -9,8 +9,8 @@ Extra helpers:
 - `clean.py in.png out.png <alpha threshold> [crop]` removes faint cutout leftovers and keeps the largest solid piece.
 
 Notes from the first trial (AM-2611-01, DEM-2611-02):
-- Brighter source frames than Reel 5 push the face above the target; tone the presenter with a CSS
-  `brightness(.83-.85)` placed before the drop-shadows in `.person{filter:...}` and re-check `04_face_metrics.py`.
+- Brighter source frames than Reel 5 push the face above the target; fix it with a lower lift in `03_grade.py`
+  (below) and re-check `04_face_metrics.py`. Do not use a CSS brightness filter on the presenter.
 - For festival greetings, swap "WATCH THIS FIRST!" for the greeting (e.g. "HAPPY DIWALI!").
 - `build.py <ID>` builds a cover from a per-reel folder (presenter.png, bg.png, panel_bg.png, graphic.png, optional
   car_final.png and a `cfg.json` with the text, theme `mahindra` or `hyundai`, and cutout fade). It finds the face
@@ -20,3 +20,5 @@ Notes from the first trial (AM-2611-01, DEM-2611-02):
   (white showroom light) need a negative lift to land the face in the playbook ranges; CH-2610-12 used -0.2.
   Fix brightness in the grade, never with a CSS brightness filter on the presenter (that made v1 grey and flat).
 - Festival reels: same playbook template, headline from the reel's wish, banner "HAPPY DIWALI!".
+- Festival headlines with a Hindi wish: Hindi line big, English line small (the user's call, Diwali 2026).
+- Never put Claude's draft covers in the team's Thumbnail folder; drafts go to "Claude drafts" (see `CLAUDE.md`).
