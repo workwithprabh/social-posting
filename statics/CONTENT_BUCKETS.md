@@ -43,6 +43,9 @@ Mahindra Arav swaps one of these for a Pickups post each month.
 - Google reviews: pick meaningful, longer reviews (25+ words, at most 500 characters) that name staff or describe
   the delivery/service; skip generic product essays and pasted-looking templates. First name + last initial only
   (digits and "ji" dropped), no profile photo.
+- Customer photos on review cards (user, 8 Nov 2026): prefer reviews whose photo shows the customer, cut them out
+  and place them on the card (`statics/review_card/`). Use a photo only when "Photo OK?" is Yes, pixelate readable
+  number plates, and never use the reviewer's Google profile photo.
 - Review English (user, 8 Nov 2026): whatever goes on social media must be correct English. Customers often write
   in broken English, so column M "Text for post" is either the review with its grammar corrected, or the review
   rephrased in our words. Keep the customer's meaning and facts: the staff names, car, branch and what happened,
@@ -55,7 +58,9 @@ Mahindra Arav swaps one of these for a Pickups post each month.
 - **Calendar**: Date, Day (auto), Client, Format (Video / Static / Carousel), Bucket, Topic, Video ID / asset,
   Brief and source, Status (Planned / Drafted / Approved / Posted / Skipped), Post link, Notes.
 - **Reviews**: Review ID, Client, Location, Stars, Reviewer (on Google), Name for post, Review text, Review date,
-  Google link, Use? (New / Use / No / Used), Posted on, Notes, Text for post. Filled by `scripts/gbp_reviews.py`; the team sets
+  Google link, Use? (New / Use / No / Used), Posted on, Notes, Text for post, Photo (full-size links of the photos the
+  customer attached to the review), Customer in photo? (Yes / No, checked by looking at each photo), Photo OK?
+  (Ask / Yes / No: the team asks the customer, usually on WhatsApp, before their face goes on a post). Filled by `scripts/gbp_reviews.py`; the team sets
   "Use" on the ones to design.
 
 ## Where reviews come from

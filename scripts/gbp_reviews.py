@@ -154,8 +154,9 @@ if __name__ == '__main__':
                 continue          # too thin to look genuine, or too long to quote in full on a card
             who = (r.get('reviewer') or {})
             display = 'A Google user' if who.get('isAnonymous') else who.get('displayName', '')
+            photos = '\n'.join(re.sub(r'=[^/=]*$', '=s0', m['thumbnailUrl']) for m in r.get('reviewMediaItems', []) if m.get('thumbnailUrl'))
             rows.append([r.get('name') or r['reviewId'], l['client'], l['area'] or l['title'], stars, display, post_name(display), text,
-                         when.strftime('%-d %b %Y'), l['maps'], 'New', '', '', text])   # M: Text for post (correct English, by a person)
+                         when.strftime('%-d %b %Y'), l['maps'], 'New', '', '', text, photos, '', ''])   # M: Text for post (correct English, by a person); N photos; O, P by a person
     rows.sort(key=lambda x: dt.datetime.strptime(x[7], '%d %b %Y'), reverse=True)
     if a.out:
         json.dump(rows, open(a.out, 'w'), ensure_ascii=False, indent=1)

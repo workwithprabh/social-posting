@@ -14,6 +14,11 @@ python <repo>/statics/review_card/fetch_logos.py
 mkdir -p out && node render.js            # or: node render.js CH-REV-2611-01
 ```
 
+Photo layout: add `"cut": "cut_<ID>.png"` to a card and the quote narrows to the left while the customer cutout
+stands on the right, bleeding off the edge (sample: CH-REV-2611-03-SAMPLE, Sumit G.). Make the cutout with
+`python cutout.py photo.jpg cut_<ID>.png --plate ... --crop-right ...` from the review's full-size photo (column N
+of the Reviews tab). Only when "Photo OK?" is Yes.
+
 Edit `cards.json` for each batch (`theme` hyundai/mahindra, `logo`, `headline`, `quote`, `name`, `place`, `footer`
 CH/DEH/MRH/DEM/AM). IDs are `<client>-REV-<YYMM>-<nn>`; drafts go to the "Claude drafts" Drive folder and a
 Calendar row (Bucket "Customer love", Status "Drafted", caption draft in "Brief and source").

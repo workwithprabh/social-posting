@@ -70,5 +70,18 @@
   "name": "Ashutosh T.",
   "place": "Mahindra Arav, Sector 83, Gurgaon",
   "footer": "AM"
+ },
+ {
+  "id": "CH-REV-2611-03",
+  "theme": "hyundai",
+  "logo": "CH_cap.png",
+  "logoH": 74,
+  "kicker": "CUSTOMER LOVE",
+  "headline": "Welcome to the Hyundai family!",
+  "quote": "I had a great experience with Hyundai. Astha supported me throughout the whole process, along with Aditya Sir. They did a very commendable job, and the car is in good condition.",
+  "name": "Sumit G.",
+  "place": "Capital Hyundai, Sector 132, Noida",
+  "footer": "CH",
+  "cut": "cut_CH-REV-2611-03.png"
  }
 ]
