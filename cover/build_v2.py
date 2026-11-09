@@ -40,7 +40,7 @@ if C.get('sharpen', .5):
     cv2.imwrite('person_natural.png', im)
 for f in ['grunge_light.png', 'brush_wide.png', 'brush_dense.png']:
     if not os.path.exists(f): run('python3', '../05_textures.py'); break
-shutil.copy(C['logo'], 'logo.png')
+if C.get('logo'): shutil.copy(C['logo'], 'logo.png')
 tw = C.get('face_w', 285); cx, cy = C.get('face_c', [815, 1040]); s = tw / fw
 left, top, width = cx - fcx * s, cy - fcy * s, W * s
 box = [int(cx - fw * s * .38), int(cy - fh * s * .30), int(cx + fw * s * .38), int(cy + fh * s * .45)]
@@ -68,6 +68,10 @@ head = (f'<div class="row r1">{tt(l1,"w",C.get("l1_w",860),C.get("l1_max",190))}
 bn = C.get('banner', ['WATCH THIS', 'FIRST!'])
 banner = f'<span class="tt w" data-t="{bn[0]}">{bn[0]}</span><span class="tt y" data-t="{bn[1]}">{bn[1]}</span>'
 H2 = open('../cover_v2.html').read()
+if not C.get('logo'):
+    H2 = H2.replace('<div class="logo"><i></i><img src="logo.png"><i></i></div>', '')
+    C.setdefault('watch_top', 1600); C.setdefault('pfade', [1720, 1880])
+    C['css'] = C.get('css', '') + '\n.shade::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 62%,rgba(0,0,0,.93) 74%,#050507 88%)}'
 rep = dict(BGBLUR=f"{C.get('bg_blur',5)}px", BGBRIGHT=str(C.get('bg_bright', .72)), PFADE0=str(C.get('pfade', [1560, 1690])[0]), PFADE1=str(C.get('pfade', [1560, 1690])[1]),
            SIDETOP=str(C.get('side_top', 860)), SIDEW=str(C.get('side_w', 420)), HEADTOP=str(C.get('head_top', 60)), BOXW=str(C.get('box_w', 1010)),
            BOXPAD=C.get('box_pad', '30px 40px 34px'), WATCHTOP=str(C.get('watch_top', 1440)), LOGOH=str(C.get('logo_h', 120)), HEADHTML=head, BANNERHTML=banner, **T)

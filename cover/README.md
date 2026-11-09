@@ -68,3 +68,6 @@ When the reel has no held frame with the right emotion, edit the presenter's exp
 4. Use the export as `frame` in `cfg2.json` with `lift` 0, `glow` 0.5, `sharpen` 0.3; set `fade` to end above any
    burnt-in subtitles in the edited image. Check the face with `face_expr.py` (no teeth, target score up).
 Notes say "presenter's expression edited with AI" on these rows, so the team knows when they review.
+
+No brand logos on reel thumbnails (user, 9 Nov 2026): leave `logo` out of `cfg2.json`; `build_v2.py` then drops the
+logo strip, moves the banner lower and lets the presenter run further down.
