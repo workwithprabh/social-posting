@@ -32,7 +32,20 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 
 - Post only when the user says to upload specific Video IDs. The Post date column is not a schedule.
 - Claude drafts captions and thumbnails; the team approves them. Covers follow `cover/PLAYBOOK.md`
-  (Mahindra style; Hyundai and Car & Bike use the same rules in their own colours, refs in `cover/refs/`).
+  (Mahindra style; Hyundai and Car & Bike use the same rules in their own colours, refs in `cover/refs/`),
+  updated by the v2 rules below.
+- **Thumbnail standard (user, 9 Nov 2026: "perfect", use for all future thumbnails).** Recipe in `cover/README.md`
+  (sections "v2 style", "Faces: expression rules", "AI expression edit"); reference covers: AM-2610-05 (the user's
+  pick) and the finals of DEH-2610-04, DEH-2610-05, AM-2610-07.
+  1. Decide the reel's mood first (happy/reassuring = confident closed-mouth smile; shocking news = shocked, brows
+     high, eyes wide, round "O" mouth; emotional = soft brows, closed mouth; advice = calm, confident smile).
+  2. Pick the clearest, front-facing close-up of the presenter, then edit only the expression with Canva's
+     `generate-image` (same person, clothes, setting; no teeth, no mid-word mouth; soft even front light, glowing
+     skin). Never use a talking frame with the mouth open or teeth showing. Check with `cover/face_expr.py`.
+  3. Build with `cover/build_v2.py`: big bright presenter on the right (face ~26% of the width), thin gold (Mahindra)
+     or white-blue (Hyundai) edge glow, lightly blurred real background with no presenter in it, headline of 2 lines
+     plus a neon box with the main question, a small tilted card from the reel on the left, brand logo at the bottom.
+  4. Notes on the row say "presenter's expression edited with AI".
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in
