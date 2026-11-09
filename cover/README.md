@@ -55,3 +55,16 @@ Glow: the even, luminous skin of AM-2610-05 (skin spread ~5) comes from soft fro
 gently (`glow` 1), but stronger settings make plastic skin, and side-lit frames can't be rescued.
 Talk-to-camera reels rarely contain these faces (9 Nov check: DEH-2610-05 has no closed-mouth smile at all);
 ask the team to hold each reel's expression for 3 seconds at the end of the take, in front light.
+
+## AI expression edit (user, 9 Nov 2026: approved as the way forward; first finals DEH-2610-04, DEH-2610-05, AM-2610-07)
+When the reel has no held frame with the right emotion, edit the presenter's expression with Canva's image tool:
+1. Crop the chosen frame to 1080x1350 around the face; upload it (Canva `create-upload-url`, then POST the raw bytes).
+2. `generate-image` with that media as the reference and aspect `PORTRAIT_4_5`. Prompt: keep the exact same person
+   (face, identity, hair, clothes, mic, background), change only the expression (e.g. shocked: brows high, eyes wide,
+   relaxed round "O", no teeth; confident smile: lips closed, cheeks lifted), looking into the camera, soft even
+   front light, bright smooth glowing skin, natural and realistic.
+3. The job returns only a 161x200 preview. For the full 1136x1408 file, add a page of that size to a scratch Canva
+   design ("Cover export scratch", DAHaZBzI-To), `insert_fill` the media full-page, commit, `export-design` PNG.
+4. Use the export as `frame` in `cfg2.json` with `lift` 0, `glow` 0.5, `sharpen` 0.3; set `fade` to end above any
+   burnt-in subtitles in the edited image. Check the face with `face_expr.py` (no teeth, target score up).
+Notes say "presenter's expression edited with AI" on these rows, so the team knows when they review.
