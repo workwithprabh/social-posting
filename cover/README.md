@@ -105,3 +105,12 @@ Run `python3 skin_tone.py old.jpg new.jpg` against the earlier cover: match its 
 For a pale AI edit, `"skin_ab": [ka, kb]` scales red (a) and yellow (b) on skin pixels. Keep it gentle:
 [1.25, 1.05] (CH-2610-08) and [1.3, 1.3] (CH-2610-10) worked; [2.8, 1.6] made the face red and the lips magenta, and
 the cheek reading did not show it, so always look at a face crop too.
+
+## Car & Bike covers (CB-2611-02, 9 Nov 2026)
+`"theme": "carbike"` gives the Car & Bike look from `refs/car_and_bike_feed.webp`: black and gold, gold edge glow,
+dark headline box with a gold rim. A good side card is the reel's own stock card (title, hero car, first rows).
+When a real frame already has the reel's mood with a closed mouth (face_expr score high, held), use it as is; no AI
+edit needed. Car & Bike frames are pale and cool: `"skin_shift": [8, 22]` adds warmth (red, yellow) to skin and
+`target_L` 57 keeps the face from going white; aim for skin chroma ~30, L ~78 (`skin_tone.py`).
+A new cover folder needs the helper links (`node_modules`, `render.js`, `0*_*.py`, `cover_template.html`) from
+`..`, or the headline falls back to a serif font.

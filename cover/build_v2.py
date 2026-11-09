@@ -1,5 +1,5 @@
 """Build a v2 cover (the AM-2610-05 look).  usage: python3 build_v2.py <ID>
-Reads <ID>/cfg2.json: {"theme":"mahindra|hyundai","frame":"presenter.png","lines":[l1,l2],"box":[b1,b2],
+Reads <ID>/cfg2.json: {"theme":"mahindra|hyundai|carbike","frame":"presenter.png","lines":[l1,l2],"box":[b1,b2],
  "banner":["WATCH THIS","FIRST!"],"logo":"path.png","logo_h":120, optional: fade, lift, face_w(285), face_c([815,1040]),
  side_top(860), side_w(420), head_top(60), bg_blur(5), bg_bright(.72), target_L(62)}
 Needs in <ID>/: presenter.png (frame with the reel's emotion), bg.png (showroom frame), graphic.png (left card)."""
@@ -45,7 +45,7 @@ if C.get('edge_fade'):
     im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); n = int(C['edge_fade'])
     ramp = np.clip(np.arange(im.shape[1]) / n, 0, 1); im[..., 3] = (im[..., 3] * ramp[None, :]).astype(np.uint8)
     cv2.imwrite('person_natural.png', im)
-if C.get('face_light') or C.get('skin_neutral') or C.get('skin_ab'):
+if C.get('face_light') or C.get('skin_neutral') or C.get('skin_ab') or C.get('skin_shift'):
     im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); bgr = im[..., :3]; a = im[..., 3].astype(np.float32) / 255
     lab = cv2.cvtColor(bgr, cv2.COLOR_BGR2LAB).astype(np.float32)
     ycc = cv2.cvtColor(bgr, cv2.COLOR_BGR2YCrCb)
@@ -59,6 +59,8 @@ if C.get('face_light') or C.get('skin_neutral') or C.get('skin_ab'):
         n = float(C['skin_neutral']); lab[..., 1] -= (lab[..., 1] - 128) * .25 * n * sk; lab[..., 2] -= (lab[..., 2] - 128) * .35 * n * sk
     if C.get('skin_ab'):                                                               # warm up pale skin: scale red (a) and yellow (b)
         ka, kb = C['skin_ab']; lab[..., 1] += (lab[..., 1] - 128) * (ka - 1) * sk; lab[..., 2] += (lab[..., 2] - 128) * (kb - 1) * sk
+    if C.get('skin_shift'):                                                            # add warmth to cool/pale skin (a = red, b = yellow)
+        da, db = C['skin_shift']; lab[..., 1] += da * sk; lab[..., 2] += db * sk
     lab[..., 0] = np.clip(L, 0, 255)
     im[..., :3] = cv2.cvtColor(np.clip(lab, 0, 255).astype(np.uint8), cv2.COLOR_LAB2BGR); cv2.imwrite('person_natural.png', im)
 if C.get('sharpen', .5):
@@ -81,6 +83,15 @@ if hy:
              BOXBG='linear-gradient(180deg,#0b2f86 0%,#061d57 55%,#0a2a7a 100%)', BOXRIM='#e6f2ff',
              BOXSHADOW='0 0 0 4px #1f6fff,0 0 22px 6px rgba(31,111,255,1),0 0 64px 14px rgba(0,90,255,.5),inset 0 0 24px rgba(80,160,255,.45),0 14px 0 rgba(0,0,0,.45)',
              GLOW=C.get('glow_css') or ('drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 4px #cfe9ff) drop-shadow(0 0 14px rgba(70,160,255,.95)) drop-shadow(0 0 34px rgba(0,110,255,.5))' if C.get('strong_rim') else 'drop-shadow(0 0 1.5px #ffffff) drop-shadow(0 0 3px #9fd4ff) drop-shadow(0 0 12px rgba(40,140,255,.85)) drop-shadow(0 0 30px rgba(0,90,255,.38))'))
+elif C['theme'] == 'carbike':  # Car & Bike: black and gold, white/yellow type (cover/refs/car_and_bike_feed.webp)
+    for b in ['brush_wide', 'brush_dense']:
+        a = np.array(Image.open(b + '.png')); r = a[..., 0].astype(float); o = a.copy()
+        o[..., 0] = np.clip(r + 10, 0, 255).astype('uint8'); o[..., 1] = (r * .68).astype('uint8'); o[..., 2] = (r * .05).astype('uint8')
+        Image.fromarray(o).save(b + '_b.png')
+    T = dict(EDGE='#ffd23a', GLOW1='rgba(255,180,0,.75)', STKGLOW='rgba(255,170,0,.5)', BRUSH_W='brush_wide_b.png', BRUSH_D='brush_dense_b.png',
+             BOXBG='linear-gradient(180deg,#1d1d1f 0%,#0b0b0c 55%,#19191b 100%)', BOXRIM='#fff3c4',
+             BOXSHADOW='0 0 0 4px #ffb400,0 0 22px 6px rgba(255,180,0,1),0 0 64px 14px rgba(255,150,0,.5),inset 0 0 24px rgba(255,190,40,.4),0 14px 0 rgba(0,0,0,.45)',
+             GLOW=C.get('glow_css') or 'drop-shadow(0 0 2px #fff6c8) drop-shadow(0 0 4px #ffd34d) drop-shadow(0 0 14px rgba(255,180,0,.9)) drop-shadow(0 0 34px rgba(255,130,0,.45))')
 else:
     T = dict(EDGE='#ffd23a', GLOW1='rgba(255,170,0,.75)', STKGLOW='rgba(255,0,0,.45)', BRUSH_W='brush_wide.png', BRUSH_D='brush_dense.png',
              BOXBG='linear-gradient(180deg,#3d0404 0%,#160000 55%,#2c0202 100%)', BOXRIM='#ffe3da',
