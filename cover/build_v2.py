@@ -45,6 +45,20 @@ if C.get('edge_fade'):
     im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); n = int(C['edge_fade'])
     ramp = np.clip(np.arange(im.shape[1]) / n, 0, 1); im[..., 3] = (im[..., 3] * ramp[None, :]).astype(np.uint8)
     cv2.imwrite('person_natural.png', im)
+if C.get('face_light') or C.get('skin_neutral'):
+    im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); bgr = im[..., :3]; a = im[..., 3].astype(np.float32) / 255
+    lab = cv2.cvtColor(bgr, cv2.COLOR_BGR2LAB).astype(np.float32)
+    ycc = cv2.cvtColor(bgr, cv2.COLOR_BGR2YCrCb)
+    sk = ((ycc[..., 1] > 133) & (ycc[..., 1] < 180) & (ycc[..., 2] > 77) & (ycc[..., 2] < 135)).astype(np.float32)
+    sk = cv2.GaussianBlur(sk, (0, 0), 5) * a
+    H_, W_ = a.shape; yy, xx = np.mgrid[0:H_, 0:W_].astype(np.float32)
+    key = np.exp(-(((xx - fcx) / (fw * 1.1)) ** 2 + ((yy - fcy) / (fh * 1.2)) ** 2))   # soft key light on the face
+    L = lab[..., 0]; fl = float(C.get('face_light', 0))
+    L += fl * 255 / 100 * key * (1 - L / 255) * 1.6 * (0.35 + 0.65 * sk)              # lift shadows on the face, spare highlights
+    if C.get('skin_neutral'):                                                          # pull orange skin toward neutral
+        n = float(C['skin_neutral']); lab[..., 1] -= (lab[..., 1] - 128) * .25 * n * sk; lab[..., 2] -= (lab[..., 2] - 128) * .35 * n * sk
+    lab[..., 0] = np.clip(L, 0, 255)
+    im[..., :3] = cv2.cvtColor(np.clip(lab, 0, 255).astype(np.uint8), cv2.COLOR_LAB2BGR); cv2.imwrite('person_natural.png', im)
 if C.get('sharpen', .5):
     im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); rgb = im[..., :3].astype(np.float32)
     bl = cv2.GaussianBlur(rgb, (0, 0), 1.6); im[..., :3] = np.clip(rgb + C.get('sharpen', .5) * (rgb - bl), 0, 255).astype(np.uint8)
@@ -64,7 +78,7 @@ if hy:
     T = dict(EDGE='#d6ecff', GLOW1='rgba(60,150,255,.75)', STKGLOW='rgba(30,120,255,.55)', BRUSH_W='brush_wide_b.png', BRUSH_D='brush_dense_b.png',
              BOXBG='linear-gradient(180deg,#0b2f86 0%,#061d57 55%,#0a2a7a 100%)', BOXRIM='#e6f2ff',
              BOXSHADOW='0 0 0 4px #1f6fff,0 0 22px 6px rgba(31,111,255,1),0 0 64px 14px rgba(0,90,255,.5),inset 0 0 24px rgba(80,160,255,.45),0 14px 0 rgba(0,0,0,.45)',
-             GLOW='drop-shadow(0 0 1.5px #ffffff) drop-shadow(0 0 3px #9fd4ff) drop-shadow(0 0 12px rgba(40,140,255,.85)) drop-shadow(0 0 30px rgba(0,90,255,.38))')
+             GLOW=C.get('glow_css') or ('drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 4px #cfe9ff) drop-shadow(0 0 14px rgba(70,160,255,.95)) drop-shadow(0 0 34px rgba(0,110,255,.5))' if C.get('strong_rim') else 'drop-shadow(0 0 1.5px #ffffff) drop-shadow(0 0 3px #9fd4ff) drop-shadow(0 0 12px rgba(40,140,255,.85)) drop-shadow(0 0 30px rgba(0,90,255,.38))'))
 else:
     T = dict(EDGE='#ffd23a', GLOW1='rgba(255,170,0,.75)', STKGLOW='rgba(255,0,0,.45)', BRUSH_W='brush_wide.png', BRUSH_D='brush_dense.png',
              BOXBG='linear-gradient(180deg,#3d0404 0%,#160000 55%,#2c0202 100%)', BOXRIM='#ffe3da',
@@ -89,8 +103,14 @@ rep = dict(BGBLUR=f"{C.get('bg_blur',5)}px", BGBRIGHT=str(C.get('bg_bright', .72
 for k in sorted(rep, key=len, reverse=True): H2 = H2.replace(k, rep[k])
 if not bn: H2 = H2.replace('<div class="watch"><div class="brush"></div><b></b></div>', '')
 br = C.get('bright', 1.0)
+BACK = ''
+if C.get('backlight'):
+    bl = float(C['backlight']); col = '170,215,255' if hy else '255,214,140'; col2 = '60,140,255' if hy else '255,150,40'
+    BACK = (f".backlight{{position:absolute;left:{cx-330:.0f}px;top:{cy-420:.0f}px;width:660px;height:760px;border-radius:50%;"
+            f"background:radial-gradient(ellipse at 50% 42%,rgba({col},{.55*bl:.2f}) 0%,rgba({col2},{.28*bl:.2f}) 40%,rgba({col2},0) 70%);filter:blur(18px)}}")
+    H2 = H2.replace('<div class="pwrap">', '<div class="backlight"></div><div class="pwrap">')
 def page(br):
-    css = f".person{{left:{left:.0f}px;top:{top:.0f}px;width:{width:.0f}px;filter:brightness({br}) contrast(1.06) saturate(1.1) {T['GLOW']}}}\n{C.get('css','')}"
+    css = f".person{{left:{left:.0f}px;top:{top:.0f}px;width:{width:.0f}px;filter:brightness({br}) contrast(1.06) saturate(1.1) {T['GLOW']}}}\n{BACK}\n{C.get('css','')}"
     return H2.replace('PFILTER', 'none').replace('</style>', css + '\n</style>')
 def render(br):
     open('cover2.html', 'w').write(page(br))
