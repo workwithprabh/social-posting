@@ -1,9 +1,12 @@
 # Caption style per client
 
+No bold or other markdown in captions (user, 9 Nov 2026): Instagram and Facebook show `**` and `__` as-is. Plain text
+and emojis only, no trailing spaces at line ends.
+
 Learned from each account's last 10 Instagram posts (read 7 Nov 2026 with `scripts/recent_captions.py`).
 Two styles show up: the older posts (Oct) are short and mostly English with about 5 hashtags; the newest
 reels (Nov, written by the team in ChatGPT and posted through this repo) are longer Hinglish with emoji bullets.
-**Follow the newest style** unless the client's section says otherwise. Only use facts said in the reel.
+Follow the newest style unless the client's section says otherwise. Only use facts said in the reel.
 
 ## Shape of a reel caption (Arav, Dee Emm Mahindra, Dee Emm Hyundai, M R Hyundai)
 
@@ -75,7 +78,7 @@ greeting of 4-6 short lines that echoes the reel, then the contact block and fes
   📞 Faridabad: 93559 31054
   📞 Sector 132: 73031 11937
   ```
-  (One October post listed Dadri as 07290 77380; check with the team which Dadri number is right.)
+  These match the reel end card (user, 9 Nov 2026: use 72900 77273 for Dadri everywhere).
 - About 5 hashtags: `#CapitalHyundai #HyundaiIndia` + topic (#CarBuyingTips #HyundaiShowroom #TestDrive).
 - Festival reels: 2 lines of English wishes, hashtags, no contact block (Navratri post).
 

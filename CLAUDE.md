@@ -63,6 +63,11 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   "Draft by Claude, needs review". Never put drafts in the team's Thumbnail folder: a file there named by Video ID
   is treated as the approved cover.
 - Before publishing, show the user the batch (ID, client, caption start, thumbnail, platforms) and wait for a yes.
+- Captions are plain text: no bold, no markdown (`**`, `__`), no trailing spaces (user, 9 Nov 2026).
+- Review and other static posts are posted by Claude (user, 9 Nov 2026). Before posting each one, check that the
+  caption, the image and the footer numbers belong together (same customer, staff, car, branch; showroom vs service
+  numbers per `statics/BRAND_SOURCES.md`), and post only the text after "Caption draft:" in the Captions tab.
+- Capital Hyundai Dadri showroom number is 72900 77273 everywhere (user, 9 Nov 2026; matches the reel end card).
 - Boosting: rules and ad accounts are in `config/boost.json` (Instagram only, Advantage+ audience, goal profile visits, Rs 100/day for
   2 days). Capital Hyundai and M R Hyundai always use their own ad account; Mahindra Arav and Dee Emm Mahindra fall
   back to the Dee Emm Hyundai / Car & Bike account only when their own can't cover the boost. Create boosts paused,
