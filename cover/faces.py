@@ -1,4 +1,5 @@
-"""faces.py ID t1 t2 ... -> ID/faces.jpg (face crops with face width)"""
+"""faces.py ID t1 t2 ... -> ID/faces.jpg (face crops with face width).
+Run from the working folder that holds vids/<ID>.mp4, models/yunet.onnx and the per-reel folders."""
 import sys,subprocess,cv2,numpy as np
 from PIL import Image, ImageDraw
 vid=sys.argv[1]; v=f'vids/{vid}.mp4'; ts=sys.argv[2:]
