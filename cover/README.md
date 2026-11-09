@@ -88,7 +88,8 @@ For Hyundai covers add these to cfg2.json (the CH-2610-06 to 11 reworks use them
 - `"strong_rim": true`: a brighter white-blue edge glow (`glow_css` overrides the whole filter if needed).
 - `"backlight": 0.6`: a soft blue light behind the head so the hair separates from the background (1 reads as haze).
 - `"face_light": 8`: a soft key light on the face that lifts shadows and spares highlights.
-- `"skin_neutral": 1`: pulls orange skin back toward neutral.
+- Leave `skin_neutral` out (user, 9 Nov 2026: it made the skin look white). It cut skin chroma from ~36 to ~24;
+  keep the warm tone of the earlier covers (skin chroma ~33-37, hue ~53, L ~76-78; check with `skin_tone.py`).
 - `"target_L": 66`.
 The glow also traces faded alpha, so a body that fades out mid-frame shows a white-blue haze band. Set `pfade`
 (cover pixels, `[start, end]`) to end just above that band; to also hide a straight image edge at the side, override

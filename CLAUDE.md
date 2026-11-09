@@ -49,7 +49,7 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
      either (user, 9 Nov 2026: it has been there too long and isn't needed).
   4. Notes on the row say "presenter's expression edited with AI".
   5. Hyundai covers (user, 9 Nov 2026: Capital Hyundai looked dim, no glow): set `strong_rim`, `backlight` 0.6,
-     `face_light` 8, `skin_neutral` 1, `target_L` 66 (cover/README.md "Hyundai brightness and glow"), and give each
+     `face_light` 8, `target_L` 66, no `skin_neutral` (it turned the skin white; keep the warm natural tone) (cover/README.md "Hyundai brightness and glow"), and give each
      reel a distinct expression.
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
