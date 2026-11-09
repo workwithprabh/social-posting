@@ -45,7 +45,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   3. Build with `cover/build_v2.py`: big bright presenter on the right (face ~26% of the width), thin gold (Mahindra)
      or white-blue (Hyundai) edge glow, lightly blurred real background with no presenter in it, headline of 2 lines
      plus a neon box with the main question, a small tilted card from the reel on the left. No brand logo on reel
-     thumbnails (user, 9 Nov 2026); the account posting it already shows the brand.
+     thumbnails (user, 9 Nov 2026); the account posting it already shows the brand. No "WATCH THIS FIRST!" banner
+     either (user, 9 Nov 2026: it has been there too long and isn't needed).
   4. Notes on the row say "presenter's expression edited with AI".
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted

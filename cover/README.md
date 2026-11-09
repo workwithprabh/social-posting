@@ -75,3 +75,6 @@ Small or distant presenters (face under ~180 px): crop a tight 4:5 box around th
 and upscale it to 1080x1350 before the AI edit; MediaPipe misses faces that far away, so find them with YuNet.
 If the edited photo ends in a hard edge through the hair or arm, set `"edge_fade": 140` in cfg2.json. Crop dealer
 watermarks and subtitles out of the side card.
+
+No "WATCH THIS FIRST!" banner on reel thumbnails (user, 9 Nov 2026). `build_v2.py` leaves it out unless a
+cfg2.json sets `"banner"` explicitly.

@@ -69,8 +69,8 @@ head = (f'<div class="row r1">{tt(l1,"w",C.get("l1_w",860),C.get("l1_max",190))}
         f'<div class="row r2"><i class="stk"></i>{tt(l2,"y",C.get("l2_w",960),C.get("l2_max",300))}</div>'
         f'<div class="box"><div class="row first">{tt(b1,"w",C.get("b1_w",880),C.get("b_max",190))}</div>'
         f'<div class="row">{tt(b2,"y",C.get("b2_w",880),C.get("b_max",190))}</div></div>')
-bn = C.get('banner', ['WATCH THIS', 'FIRST!'])
-banner = f'<span class="tt w" data-t="{bn[0]}">{bn[0]}</span><span class="tt y" data-t="{bn[1]}">{bn[1]}</span>'
+bn = C.get('banner')
+banner = f'<span class="tt w" data-t="{bn[0]}">{bn[0]}</span><span class="tt y" data-t="{bn[1]}">{bn[1]}</span>' if bn else ''
 H2 = open('../cover_v2.html').read()
 if not C.get('logo'):
     H2 = H2.replace('<div class="logo"><i></i><img src="logo.png"><i></i></div>', '')
@@ -80,6 +80,7 @@ rep = dict(BGBLUR=f"{C.get('bg_blur',5)}px", BGBRIGHT=str(C.get('bg_bright', .72
            SIDETOP=str(C.get('side_top', 860)), SIDEW=str(C.get('side_w', 420)), HEADTOP=str(C.get('head_top', 60)), BOXW=str(C.get('box_w', 1010)),
            BOXPAD=C.get('box_pad', '30px 40px 34px'), WATCHTOP=str(C.get('watch_top', 1440)), LOGOH=str(C.get('logo_h', 120)), HEADHTML=head, BANNERHTML=banner, **T)
 for k in sorted(rep, key=len, reverse=True): H2 = H2.replace(k, rep[k])
+if not bn: H2 = H2.replace('<div class="watch"><div class="brush"></div><b></b></div>', '')
 br = C.get('bright', 1.0)
 def page(br):
     css = f".person{{left:{left:.0f}px;top:{top:.0f}px;width:{width:.0f}px;filter:brightness({br}) contrast(1.06) saturate(1.1) {T['GLOW']}}}\n{C.get('css','')}"
