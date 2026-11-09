@@ -51,6 +51,10 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   5. Hyundai covers (user, 9 Nov 2026: Capital Hyundai looked dim, no glow): set `strong_rim`, `backlight` 0.6,
      `face_light` 8, `target_L` 66, no `skin_neutral` (it turned the skin white; keep the warm natural tone) (cover/README.md "Hyundai brightness and glow"), and give each
      reel a distinct expression.
+  6. **Skin tone (user, 9 Nov 2026: approved on CH-2610-06, "looking good").** Keep the warm, natural skin of the
+     earlier covers; never let it go pale or white. Check with `python3 cover/skin_tone.py <cover>`: skin chroma about
+     29-38 (the old covers' range), L about 66-80. If an AI edit comes out pale, warm it gently with `skin_ab`
+     (e.g. [1.25, 1.05]); stronger values turn the face red and the lips magenta, so look at a face crop every time.
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in

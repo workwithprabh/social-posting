@@ -45,7 +45,7 @@ if C.get('edge_fade'):
     im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); n = int(C['edge_fade'])
     ramp = np.clip(np.arange(im.shape[1]) / n, 0, 1); im[..., 3] = (im[..., 3] * ramp[None, :]).astype(np.uint8)
     cv2.imwrite('person_natural.png', im)
-if C.get('face_light') or C.get('skin_neutral'):
+if C.get('face_light') or C.get('skin_neutral') or C.get('skin_ab'):
     im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); bgr = im[..., :3]; a = im[..., 3].astype(np.float32) / 255
     lab = cv2.cvtColor(bgr, cv2.COLOR_BGR2LAB).astype(np.float32)
     ycc = cv2.cvtColor(bgr, cv2.COLOR_BGR2YCrCb)
@@ -57,6 +57,8 @@ if C.get('face_light') or C.get('skin_neutral'):
     L += fl * 255 / 100 * key * (1 - L / 255) * 1.6 * (0.35 + 0.65 * sk)              # lift shadows on the face, spare highlights
     if C.get('skin_neutral'):                                                          # pull orange skin toward neutral
         n = float(C['skin_neutral']); lab[..., 1] -= (lab[..., 1] - 128) * .25 * n * sk; lab[..., 2] -= (lab[..., 2] - 128) * .35 * n * sk
+    if C.get('skin_ab'):                                                               # warm up pale skin: scale red (a) and yellow (b)
+        ka, kb = C['skin_ab']; lab[..., 1] += (lab[..., 1] - 128) * (ka - 1) * sk; lab[..., 2] += (lab[..., 2] - 128) * (kb - 1) * sk
     lab[..., 0] = np.clip(L, 0, 255)
     im[..., :3] = cv2.cvtColor(np.clip(lab, 0, 255).astype(np.uint8), cv2.COLOR_LAB2BGR); cv2.imwrite('person_natural.png', im)
 if C.get('sharpen', .5):

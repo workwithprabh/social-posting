@@ -98,3 +98,10 @@ door, enlarge and lower the presenter (`face_w` 330, `face_c` [800, 1150], CH-26
 Give each reel its own expression: skeptical (ADAS doubt), delighted (easy feature), playful (online vs real), warm
 (parents), confident and knowing (checklist), proud (dealer trust). Six covers with the same mild smile look like
 one post repeated.
+
+## Skin tone (user, 9 Nov 2026: "the after thumbnails are just looking white"; fix approved on CH-2610-06)
+Brightness was not the problem; the skin had lost a third of its colour (chroma 36 to 24) from `skin_neutral`.
+Run `python3 skin_tone.py old.jpg new.jpg` against the earlier cover: match its chroma and keep hue near 53-62.
+For a pale AI edit, `"skin_ab": [ka, kb]` scales red (a) and yellow (b) on skin pixels. Keep it gentle:
+[1.25, 1.05] (CH-2610-08) and [1.3, 1.3] (CH-2610-10) worked; [2.8, 1.6] made the face red and the lips magenta, and
+the cheek reading did not show it, so always look at a face crop too.
