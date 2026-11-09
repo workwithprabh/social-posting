@@ -47,3 +47,10 @@ and red) with the same header logos and footers as the review cards, then `pytho
 three feature chips, price pill, fine print. Facts and prices come only from the brand's own posts or website,
 marked ex-showroom with T&C. The three Hyundai dealers take different angles of the same model (AI ON / Safety ON /
 Performance ON) so their feeds don't repeat each other.
+
+## EMI guide posts: `emi.html` (9 Nov 2026)
+`node render_emi.js [ID]` renders `cards_emi.json`: car photo, "<Model> in <City>?" headline, a breakdown table
+(ex-showroom, registration, insurance, other charges, on-road) and an EMI box. Numbers come from
+`scripts/emi.py` (CarDekho's base-variant block for that city, optional accessories left out; 10% down, 9.8% p.a.,
+60 months), and the fine print says they are indicative, dated and lender-dependent. Each dealer gets its own city
+and a different model where possible.

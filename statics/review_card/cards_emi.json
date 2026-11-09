@@ -1,0 +1,194 @@
+[
+ {
+  "theme": "bayon",
+  "tag": "EMI GUIDE",
+  "totalLabel": "On-road price*",
+  "vars": {
+   "ct": "400px",
+   "ch": "470px",
+   "pt": "815px"
+  },
+  "id": "CH-EMI-2611-01",
+  "img": "emi_CH.jpg",
+  "logo": "CH_cap_hr.png",
+  "logoH": 74,
+  "footer": "CH",
+  "kicker": "HYUNDAI CRETA · E PETROL",
+  "headline": "Creta in <em>Noida?</em>",
+  "sub": "The full on-road price, and what it costs every month.",
+  "rows": [
+   [
+    "Ex-showroom",
+    "₹10,90,700"
+   ],
+   [
+    "Registration (RTO)",
+    "₹1,19,977"
+   ],
+   [
+    "Insurance",
+    "₹51,770"
+   ],
+   [
+    "Other charges",
+    "₹10,907"
+   ]
+  ],
+  "total": "₹12,73,354",
+  "emi": "₹24,237",
+  "emiNote": "₹1,27,335 down<br>5 years · 9.8% p.a.",
+  "fine": "*Indicative on-road price in Noida from CarDekho (9 Nov 2026), base Creta E (petrol) variant, without optional accessories. EMI on a 10% down payment, 9.8% p.a. for 5 years; the actual EMI depends on the lender. Prices may change. T&C apply."
+ },
+ {
+  "theme": "bayon",
+  "tag": "EMI GUIDE",
+  "totalLabel": "On-road price*",
+  "vars": {
+   "ct": "400px",
+   "ch": "470px",
+   "pt": "815px",
+   "h1": "90px"
+  },
+  "id": "DEH-EMI-2611-01",
+  "img": "emi_DEH.jpg",
+  "logo": "DEH_white_hr.png",
+  "logoH": 74,
+  "footer": "DEH",
+  "kicker": "HYUNDAI VENUE · HX 2 PETROL",
+  "headline": "Venue in <em>Gurgaon?</em>",
+  "sub": "The full on-road price, and what it costs every month.",
+  "rows": [
+   [
+    "Ex-showroom",
+    "₹7,99,900"
+   ],
+   [
+    "Registration (RTO)",
+    "₹63,992"
+   ],
+   [
+    "Insurance",
+    "₹41,368"
+   ]
+  ],
+  "total": "₹9,05,260",
+  "emi": "₹17,231",
+  "emiNote": "₹90,526 down<br>5 years · 9.8% p.a.",
+  "fine": "*Indicative on-road price in Gurgaon from CarDekho (9 Nov 2026), base Venue HX 2 (petrol) variant, without optional accessories. EMI on a 10% down payment, 9.8% p.a. for 5 years; the actual EMI depends on the lender. Prices may change. T&C apply."
+ },
+ {
+  "theme": "bayon",
+  "tag": "EMI GUIDE",
+  "totalLabel": "On-road price*",
+  "vars": {
+   "ct": "400px",
+   "ch": "470px",
+   "pt": "815px",
+   "h1": "76px"
+  },
+  "id": "MRH-EMI-2611-01",
+  "img": "emi_MRH.jpg",
+  "logo": "MRH_3_hr.png",
+  "logoH": 110,
+  "footer": "MRH",
+  "kicker": "HYUNDAI BAYON · HX 2 PETROL MT",
+  "headline": "BAYON in <em>Ghaziabad?</em>",
+  "sub": "The full on-road price, and what it costs every month.",
+  "rows": [
+   [
+    "Ex-showroom",
+    "₹9,99,900"
+   ],
+   [
+    "Registration (RTO)",
+    "₹89,991"
+   ],
+   [
+    "Insurance",
+    "₹48,522"
+   ]
+  ],
+  "total": "₹11,38,413",
+  "emi": "₹21,668",
+  "emiNote": "₹1,13,841 down<br>5 years · 9.8% p.a.",
+  "fine": "*Indicative on-road price in Ghaziabad from CarDekho (9 Nov 2026), base BAYON HX 2 Petrol MT variant, without optional accessories. EMI on a 10% down payment, 9.8% p.a. for 5 years; the actual EMI depends on the lender. Prices may change. T&C apply."
+ },
+ {
+  "theme": "mahindra",
+  "tag": "EMI GUIDE",
+  "totalLabel": "On-road price*",
+  "vars": {
+   "ct": "470px",
+   "ch": "420px",
+   "pt": "815px",
+   "h1": "100px"
+  },
+  "id": "AM-EMI-2611-01",
+  "img": "emi_AM.jpg",
+  "logo": "AM_hr.png",
+  "logoH": 84,
+  "footer": "AM",
+  "kicker": "MAHINDRA SCORPIO-N · Z2 PETROL MT",
+  "headline": "Scorpio-N in Gurgaon?",
+  "sub": "The full on-road price, and what it costs every month.",
+  "rows": [
+   [
+    "Ex-showroom",
+    "₹13,69,000"
+   ],
+   [
+    "Registration (RTO)",
+    "₹1,09,520"
+   ],
+   [
+    "Insurance",
+    "₹80,526"
+   ],
+   [
+    "Other charges",
+    "₹13,690"
+   ]
+  ],
+  "total": "₹15,72,736",
+  "emi": "₹29,935",
+  "emiNote": "₹1,57,274 down<br>5 years · 9.8% p.a.",
+  "fine": "*Indicative on-road price in Gurgaon from CarDekho (9 Nov 2026), base Scorpio-N Z2 Petrol MT variant, without optional accessories. EMI on a 10% down payment, 9.8% p.a. for 5 years; the actual EMI depends on the lender. Prices may change. T&C apply."
+ },
+ {
+  "theme": "mahindra",
+  "tag": "EMI GUIDE",
+  "totalLabel": "On-road price*",
+  "vars": {
+   "ct": "470px",
+   "ch": "420px",
+   "pt": "815px",
+   "h1": "100px"
+  },
+  "id": "DEM-EMI-2611-01",
+  "img": "emi_DEM.jpg",
+  "logo": "DEM_ice_white.png",
+  "logoH": 108,
+  "footer": "DEM",
+  "kicker": "MAHINDRA XUV 3XO ZNG · MX EDGE CNG",
+  "headline": "3XO ZNG in Gurgaon?",
+  "sub": "The full on-road price, and what it costs every month.",
+  "rows": [
+   [
+    "Ex-showroom",
+    "₹9,99,000"
+   ],
+   [
+    "Registration (RTO)",
+    "₹79,920"
+   ],
+   [
+    "Insurance",
+    "₹48,490"
+   ]
+  ],
+  "total": "₹11,27,410",
+  "emi": "₹21,459",
+  "emiNote": "₹1,12,741 down<br>5 years · 9.8% p.a.",
+  "fine": "*Indicative on-road price in Gurgaon from CarDekho (9 Nov 2026), XUV 3XO ZNG MX Edge CNG variant, without optional accessories. EMI on a 10% down payment, 9.8% p.a. for 5 years; the actual EMI depends on the lender. Prices may change. T&C apply."
+ }
+]

@@ -4,7 +4,7 @@ Usage:
   python scripts/emi.py hyundai/creta noida gurgaon ghaziabad [--down 150000 | --down-pct 10] [--rate 9.8] [--months 60]
 
 For each city: the base variant's ex-showroom, registration (RTO), insurance, other charges and on-road price
-(mandatory items only; CarDekho's optional accessories are left out), the loan after the down payment, the EMI and
+(mandatory items only; CarDekho's optional accessories are left out, and a line the variant lacks counts as 0), the loan after the down payment, the EMI and
 the total interest, plus the on-road price CarDekho lists for each variant in that city.
 Model slugs are CarDekho's: hyundai/creta, hyundai/venue, hyundai/exter, mahindra/xuv-3xo, mahindra/thar-roxx ...
 Numbers are indicative; dealer prices can differ. Prints JSON.
@@ -32,17 +32,22 @@ def rupees(s):
 def city_prices(model, city):
     url = f'https://www.cardekho.com/{model}/price-in-{city}'
     x = page_text(url)
-    m = re.search(r'([A-Za-z0-9() .+\-]+?) \(Base Model\) Ex-Showroom Price Rs\. ([\d,]+) Registration Charges Rs\. ([\d,]+) '
-                  r'Insurance .*? Rs\. ([\d,]+) Others Rs\. ([\d,]+)', x)
-    if not m:
+    i = x.find('(Base Model) Ex-Showroom Price')
+    if i < 0:
         raise RuntimeError(f'No price breakdown found at {url}')
-    variant, exs, rto, ins, oth = m.group(1).strip(), *[rupees(g) for g in m.groups()[1:]]
-    variant = re.sub(r'^.*\b(?:Manual|Automatic) ', '', variant)
+    head = x[max(0, i - 200):i]
+    variant = re.sub(r'^.*\b(?:Manual|Automatic|Model|Price|Offers) ', '', head).strip()
+    block = x[i:x.find('On-Road Price', i)]   # only this variant's lines; a missing line must not borrow the next variant's
+    num = lambda p: (lambda m: int(m.group(1).replace(',', '')) if m else 0)(re.search(p, block))
+    exs = num(r'Ex-Showroom Price Rs\. ([\d,]+)'); rto = num(r'Registration Charges Rs\. ([\d,]+)')
+    ins = num(r'Insurance .*?Rs\. ([\d,]+)'); oth = num(r'Others Rs\. ([\d,]+)'); opt = num(r'Optional Rs\. ([\d,]+)')
+    if not exs:
+        raise RuntimeError(f'No ex-showroom price at {url}')
     listed = []
     for name, lakh in re.findall(r'((?:Hyundai|Mahindra) [^*]+?) Rs\. ([\d.]+) Lakh \*', x[:x.find('Ex-Showroom Price')]):
         listed.append({'variant': name.split('Variants On-Road Price ')[-1].strip(), 'on_road_lakh': float(lakh)})
     return dict(city=city, source=url, base_variant=variant, ex_showroom=exs, registration=rto, insurance=ins, others=oth,
-                on_road=exs + rto + ins + oth, variants_on_road=listed[:12])
+                optional_not_included=opt, on_road=exs + rto + ins + oth, variants_on_road=listed[:12])
 
 
 def emi(principal, rate_pct, months):
