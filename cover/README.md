@@ -71,3 +71,7 @@ Notes say "presenter's expression edited with AI" on these rows, so the team kno
 
 No brand logos on reel thumbnails (user, 9 Nov 2026): leave `logo` out of `cfg2.json`; `build_v2.py` then drops the
 logo strip, moves the banner lower and lets the presenter run further down.
+Small or distant presenters (face under ~180 px): crop a tight 4:5 box around the face (face ~27% of the crop width)
+and upscale it to 1080x1350 before the AI edit; MediaPipe misses faces that far away, so find them with YuNet.
+If the edited photo ends in a hard edge through the hair or arm, set `"edge_fade": 140` in cfg2.json. Crop dealer
+watermarks and subtitles out of the side card.

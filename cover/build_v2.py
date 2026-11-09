@@ -34,6 +34,10 @@ if C.get('glow', 1):
     even = 255 - (255 - even) * (255 - bloom * .35 * g) / 255     # soft sheen on highlights (screen)
     w = (sk * .85 * g)[..., None]; out = rgb.astype(np.float32) * (1 - w) + even * w
     im[..., :3] = np.clip(out, 0, 255).astype(np.uint8); cv2.imwrite('person_natural.png', im)
+if C.get('edge_fade'):
+    im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); n = int(C['edge_fade'])
+    ramp = np.clip(np.arange(im.shape[1]) / n, 0, 1); im[..., 3] = (im[..., 3] * ramp[None, :]).astype(np.uint8)
+    cv2.imwrite('person_natural.png', im)
 if C.get('sharpen', .5):
     im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); rgb = im[..., :3].astype(np.float32)
     bl = cv2.GaussianBlur(rgb, (0, 0), 1.6); im[..., :3] = np.clip(rgb + C.get('sharpen', .5) * (rgb - bl), 0, 255).astype(np.uint8)
