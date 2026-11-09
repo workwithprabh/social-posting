@@ -18,11 +18,17 @@ are for statics. Rhythm: a post every second day per client, cycling 2 videos th
 
 ## Monthly mix per client (about 5 statics)
 
-1. Model spotlight
-2. Money & ownership
-3. Customer love
-4. Festivals & moments, or Offers & launches (whichever is due)
-5. Rotating: Service & care / Dealership & people / Engagement
+Customer love is capped at 2 posts per client per month (user, 9 Nov 2026); extra review posts that are already made
+move to the next month. The rest of the month leans to the brand: models, service, EMI and offers.
+
+1. Model spotlight (brand)
+2. Money & ownership (EMI, on-road, running cost)
+3. Service & care
+4. Offers & launches (team-confirmed offers only), or Festivals & moments when one is due
+5. Customer love (at most 2 a month; leave it out when other buckets need the slot)
+
+Extra statics, when a client is short of videos, go to Model spotlight, Service & care, Money & ownership or Offers,
+not to Customer love.
 
 Mahindra Arav swaps one of these for a Pickups post each month.
 
