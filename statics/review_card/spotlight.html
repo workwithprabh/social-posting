@@ -43,6 +43,16 @@ footer{position:absolute;left:0;right:0;bottom:0;height:230px;padding:0 72px 64p
 .loc{white-space:nowrap;text-align:right;font-weight:600;font-size:22px;line-height:1.4;opacity:.9}
 .loc b{font-weight:800;font-size:26px;letter-spacing:3px}
 .pin{color:var(--acc)}
+
+/* Hyundai brand colours (user, 9 Nov 2026): Hyundai Blue #002C5F + Active Blue #00AAD2, never black and red */
+.hyundai{--acc:#00AAD2;--chip:rgba(255,255,255,.08);--bg:#001735}
+.hyundai .bg{background:radial-gradient(1100px 900px at 78% 8%,#003a7a 0%,#002C5F 38%,#001735 78%)}
+.hyundai .price,.hyundai .emi{background:linear-gradient(180deg,#0b4f9c 0%,#002C5F 100%);border:2px solid #00AAD2;box-shadow:0 0 0 1px rgba(0,170,210,.25),0 14px 40px rgba(0,0,0,.45)}
+.hyundai .price small,.hyundai .emi small{color:#7fdcf2;opacity:1}
+.hyundai .chip{border-color:rgba(0,170,210,.35);background:rgba(0,44,95,.55)}
+.hyundai .tbl{border-color:rgba(0,170,210,.30);background:rgba(0,44,95,.55)}
+.hyundai .tag{border-color:rgba(0,170,210,.75)}
+.hyundai .car::after{content:"";position:absolute;inset:0;background:radial-gradient(900px 600px at 70% 30%,#00336e,#001c40);mix-blend-mode:lighten}
 </style></head><body><div class="bg"></div><div id="root"></div>
 <script>
 const FOOT={

@@ -67,6 +67,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 - Review and other static posts are posted by Claude (user, 9 Nov 2026). Before posting each one, check that the
   caption, the image and the footer numbers belong together (same customer, staff, car, branch; showroom vs service
   numbers per `statics/BRAND_SOURCES.md`), and post only the text after "Caption draft:" in the Captions tab.
+- Brand colours on static posts (user, 9 Nov 2026): Hyundai dealers use Hyundai Blue #002C5F with Active Blue #00AAD2
+  (theme `hyundai` in `statics/review_card/`), never black and red; black and red is for the Mahindra dealers only.
 - Capital Hyundai Dadri showroom number is 72900 77273 everywhere (user, 9 Nov 2026; matches the reel end card).
 - Boosting: rules and ad accounts are in `config/boost.json` (Instagram only, Advantage+ audience, goal profile visits, Rs 100/day for
   2 days). Capital Hyundai and M R Hyundai always use their own ad account; Mahindra Arav and Dee Emm Mahindra fall

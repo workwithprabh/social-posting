@@ -41,8 +41,8 @@ Calendar row (Bucket "Customer love", Status "Drafted", caption draft in "Brief 
 First batch (8 Nov 2026): CH-REV-2611-01/02, DEH-, MRH-, DEM-, AM-REV-2611-01.
 
 ## Model spotlight (brand) posts: `spotlight.html` (9 Nov 2026)
-`node render_spot.js [ID]` renders `cards_spot.json` (theme `bayon` = black and Hyundai red, `mahindra` = Anton caps
-and red) with the same header logos and footers as the review cards, then `python save.py out/`. Each card: car photo
+`node render_spot.js [ID]` renders `cards_spot.json` (theme `hyundai` = Hyundai Blue #002C5F with Active Blue #00AAD2, `mahindra` = Anton caps
+and red; user, 9 Nov 2026: black and red is wrong for Hyundai) with the same header logos and footers as the review cards, then `python save.py out/`. Each card: car photo
 (`img`, cropped clean from the brand's Instagram creative or website, no OEM text left in), kicker, headline, sub,
 three feature chips, price pill, fine print. Facts and prices come only from the brand's own posts or website,
 marked ex-showroom with T&C. The three Hyundai dealers take different angles of the same model (AI ON / Safety ON /
@@ -54,3 +54,5 @@ Performance ON) so their feeds don't repeat each other.
 `scripts/emi.py` (CarDekho's base-variant block for that city, optional accessories left out; 10% down, 9.8% p.a.,
 60 months), and the fine print says they are indicative, dated and lender-dependent. Each dealer gets its own city
 and a different model where possible.
+
+Hyundai photos shot on black are lifted to Hyundai blue (`.hyundai .car::after`, mix-blend lighten) so they sit in the blue background.
