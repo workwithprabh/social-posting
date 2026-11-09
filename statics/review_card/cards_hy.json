@@ -1,0 +1,199 @@
+[
+ {
+  "id": "CH-BRD-2611-01",
+  "kind": "spot",
+  "mode": "dark",
+  "img": "spot_CH.jpg",
+  "logo": "CH_cap_hr.png",
+  "logoH": 74,
+  "footer": "CH",
+  "tag": "Now in showrooms",
+  "label": "Hyundai BAYON",
+  "headline": "AI ON.",
+  "sub": "Just say “Hey Hyundai”. Its Generative AI voice assistant is ready to help on every drive.",
+  "priceLabel": "Introductory price from",
+  "price": "₹9,99,900*",
+  "chips": [
+   "Generative AI voice assistant",
+   "Curved panoramic display",
+   "Dash Boost mode"
+  ],
+  "fine": "*Ex-showroom price, 1.5 MPi HX 2 MT. Type approval certificate is applied for. Image for representation only. T&C apply.",
+  "vars": {
+   "ct": "430px",
+   "ch": "500px",
+   "pt": "905px",
+   "pl": "1015px"
+  }
+ },
+ {
+  "id": "DEH-BRD-2611-01",
+  "kind": "spot",
+  "mode": "dark",
+  "img": "spot_DEH.jpg",
+  "logo": "DEH_white_hr.png",
+  "logoH": 74,
+  "footer": "DEH",
+  "tag": "Bookings on",
+  "label": "Hyundai BAYON",
+  "headline": "Safety ON.",
+  "sub": "Over 80 advanced safety features, engineered for 5-star Indian safety standards*.",
+  "priceLabel": "Introductory price from",
+  "price": "₹9,99,900*",
+  "chips": [
+   "80+ advanced safety features",
+   "Engineered for 5-star safety standards*",
+   "Generative AI voice assistant"
+  ],
+  "fine": "*As per Hyundai's internal assessment. Ex-showroom price, 1.5 MPi HX 2 MT. Type approval certificate is applied for. Image for representation only. T&C apply.",
+  "vars": {
+   "ct": "440px",
+   "ch": "480px",
+   "pt": "905px",
+   "pl": "1015px"
+  }
+ },
+ {
+  "id": "MRH-BRD-2611-01",
+  "kind": "spot",
+  "mode": "dark",
+  "img": "spot_MRH.jpg",
+  "logo": "MRH_3_hr.png",
+  "logoH": 110,
+  "footer": "MRH",
+  "tag": "Bookings on",
+  "label": "Hyundai BAYON",
+  "headline": "Performance ON.",
+  "sub": "Dash Boost mode gives an instant boost of power, with sporty drive tech for every drive.",
+  "priceLabel": "Introductory price from",
+  "price": "₹9,99,900*",
+  "chips": [
+   "Dash Boost mode",
+   "Spacious, ergonomic interiors",
+   "Modern dual-tone cabin"
+  ],
+  "fine": "*Ex-showroom price, 1.5 MPi HX 2 MT. Type approval certificate is applied for. Image for representation only. T&C apply.",
+  "vars": {
+   "ct": "430px",
+   "ch": "500px",
+   "pt": "905px",
+   "pl": "1015px"
+  }
+ },
+ {
+  "id": "CH-EMI-2611-01",
+  "kind": "emi",
+  "mode": "light",
+  "img": "emi_CH.jpg",
+  "logo": "CH_blue_hr.png",
+  "logoH": 74,
+  "footer": "CH",
+  "tag": "EMI guide",
+  "label": "Hyundai CRETA · E petrol",
+  "headline": "Creta in Noida?",
+  "sub": "The full on-road price, and what it costs every month.",
+  "rows": [
+   [
+    "Ex-showroom",
+    "₹10,90,700"
+   ],
+   [
+    "Registration (RTO)",
+    "₹1,19,977"
+   ],
+   [
+    "Insurance",
+    "₹51,770"
+   ],
+   [
+    "Other charges",
+    "₹10,907"
+   ]
+  ],
+  "totalLabel": "On-road price*",
+  "total": "₹12,73,354",
+  "emi": "₹24,237",
+  "emiNote": "₹1,27,335 down<br>5 years · 9.8% p.a.",
+  "fine": "*Indicative on-road price in Noida from CarDekho (9 Nov 2026), base Creta E (petrol) variant, without optional accessories. EMI on a 10% down payment, 9.8% p.a. for 5 years; the actual EMI depends on the lender. Prices may change. T&C apply.",
+  "vars": {
+   "ct": "465px",
+   "ch": "410px",
+   "pt": "840px"
+  }
+ },
+ {
+  "id": "DEH-EMI-2611-01",
+  "kind": "emi",
+  "mode": "photo",
+  "ink": "white",
+  "img": "hy_DEH_EMI.jpg",
+  "logo": "DEH_white_hr.png",
+  "logoH": 74,
+  "footer": "DEH",
+  "tag": "EMI guide",
+  "label": "Hyundai VENUE · HX 2 petrol",
+  "headline": "Venue in Gurgaon?",
+  "sub": "The full on-road price, and what it costs every month.",
+  "rows": [
+   [
+    "Ex-showroom",
+    "₹7,99,900"
+   ],
+   [
+    "Registration (RTO)",
+    "₹63,992"
+   ],
+   [
+    "Insurance",
+    "₹41,368"
+   ]
+  ],
+  "totalLabel": "On-road price*",
+  "total": "₹9,05,260",
+  "emi": "₹17,231",
+  "emiNote": "₹90,526 down<br>5 years · 9.8% p.a.",
+  "fine": "*Indicative on-road price in Gurgaon from CarDekho (9 Nov 2026), base Venue HX 2 (petrol) variant, without optional accessories. EMI on a 10% down payment, 9.8% p.a. for 5 years; the actual EMI depends on the lender. Prices may change. T&C apply.",
+  "vars": {
+   "pt": "860px",
+   "h1": "92px"
+  }
+ },
+ {
+  "id": "MRH-EMI-2611-01",
+  "kind": "emi",
+  "mode": "light",
+  "img": "hy_MRH_EMI.jpg",
+  "logo": "MRH_blue_hr.png",
+  "logoH": 110,
+  "footer": "MRH",
+  "tag": "EMI guide",
+  "label": "Hyundai BAYON · HX 2 petrol MT",
+  "headline": "BAYON in Ghaziabad?",
+  "sub": "The full on-road price, and what it costs every month.",
+  "rows": [
+   [
+    "Ex-showroom",
+    "₹9,99,900"
+   ],
+   [
+    "Registration (RTO)",
+    "₹89,991"
+   ],
+   [
+    "Insurance",
+    "₹48,522"
+   ]
+  ],
+  "totalLabel": "On-road price*",
+  "total": "₹11,38,413",
+  "emi": "₹21,668",
+  "emiNote": "₹1,13,841 down<br>5 years · 9.8% p.a.",
+  "fine": "*Indicative on-road price in Ghaziabad from CarDekho (9 Nov 2026), base BAYON HX 2 Petrol MT variant, without optional accessories. EMI on a 10% down payment, 9.8% p.a. for 5 years; the actual EMI depends on the lender. Prices may change. T&C apply.",
+  "vars": {
+   "ct": "400px",
+   "ch": "470px",
+   "pt": "840px",
+   "h1": "80px"
+  }
+ }
+]

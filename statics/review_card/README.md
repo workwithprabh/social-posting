@@ -56,3 +56,8 @@ Performance ON) so their feeds don't repeat each other.
 and a different model where possible.
 
 Hyundai photos shot on black are lifted to Hyundai blue (`.hyundai .car::after`, mix-blend lighten) so they sit in the blue background.
+
+## Hyundai posts: `hyundai.html` (9 Nov 2026, replaces the `hyundai` blue theme)
+`node render_hy.js [ID]` renders `cards_hy.json`; `mode` dark / light / photo (with `ink` white or navy), `kind` spot
+or emi. Light posts use the Hyundai Blue logos (`*_blue_hr.png`, the white logos recoloured). Modelled on
+@hyundaiindia: the user rejected both black-and-red (too close to the Mahindra posts) and an all-blue gradient.
