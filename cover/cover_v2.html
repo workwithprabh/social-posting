@@ -1,0 +1,67 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Reel Cover v2</title>
+<style>
+/* v2 = the AM-2610-05 look the user picked as the best (9 Nov 2026):
+   big bright presenter on the right (face ~26% of the width), thin gold edge glow instead of a white sticker outline,
+   a real, lightly blurred showroom behind (not darkened), no gold panel frame, headline = 2 lines + a neon box that
+   holds the main question in big type, brand logo at the bottom. */
+@font-face{font-family:Anton;src:url(node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:#0a0a0d;overflow:hidden}
+.c{position:relative;width:1080px;height:1920px;overflow:hidden}
+.bg{position:absolute;inset:-30px;background:url(bg.png) center 40%/cover;filter:blur(BGBLUR) saturate(1.05) brightness(BGBRIGHT)}
+.shade{position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.55) 22%,rgba(0,0,0,.18) 44%,rgba(0,0,0,.08) 60%,rgba(0,0,0,.35) 78%,rgba(0,0,0,.92) 100%),
+  radial-gradient(ellipse 42% 22% at 76% 52%,rgba(255,170,60,.16),rgba(255,120,0,0) 70%)}
+.pwrap{position:absolute;inset:0;-webkit-mask-image:linear-gradient(180deg,#000 0,#000 PFADE0px,transparent PFADE1px);mask-image:linear-gradient(180deg,#000 0,#000 PFADE0px,transparent PFADE1px)}
+.person{position:absolute;filter:PFILTER}
+.side{position:absolute;left:28px;top:SIDETOPpx;width:SIDEWpx;transform:rotate(-5deg);border-radius:22px;overflow:hidden;
+  box-shadow:0 0 0 3px EDGE,0 0 18px 4px GLOW1,0 18px 34px rgba(0,0,0,.6)}
+.side img{display:block;width:100%}
+.tt{position:relative;display:inline-block;white-space:pre;color:#000;-webkit-text-stroke:7px #000;text-shadow:4px 7px 0 #000,6px 11px 20px rgba(0,0,0,.85)}
+.tt::after{content:attr(data-t);position:absolute;left:0;top:0;white-space:pre;-webkit-text-stroke:0;text-shadow:none;color:transparent;
+  -webkit-background-clip:text;background-clip:text;background-size:520px auto,100% 100%;background-repeat:repeat,no-repeat}
+.tt.w::after{background-image:url(grunge_light.png),linear-gradient(180deg,#ffffff 0%,#f4f3f3 50%,#dcdcdc 100%)}
+.tt.y::after{background-image:url(grunge_light.png),linear-gradient(180deg,#fcf314 0%,#fbe206 50%,#ecb308 100%)}
+.head{position:absolute;left:0;right:0;top:HEADTOPpx;transform:rotate(-3deg) skewX(-8deg);transform-origin:center top;isolation:isolate}
+.row{position:relative;width:max-content;margin:0 auto}
+.ln{display:block;position:relative;font-family:Anton;text-transform:uppercase;letter-spacing:0;white-space:pre}
+.stk{position:absolute;z-index:-1;left:-260px;right:-260px;top:4%;height:96%;background:url(BRUSH_W) 0 0/100% 100% no-repeat;filter:drop-shadow(0 0 14px STKGLOW)}
+.box{position:relative;width:BOXWpx;margin:0 auto;border-radius:22px;padding:BOXPAD;
+  background:BOXBG;border:3px solid BOXRIM;box-shadow:BOXSHADOW}
+.box .row{width:max-content}
+.watch{position:absolute;left:50%;top:WATCHTOPpx;transform:translateX(-50%) rotate(-3deg);width:1000px;height:150px}
+.watch .brush{position:absolute;inset:-10px -60px;background:url(BRUSH_D) 0 0/100% 100% no-repeat,url(BRUSH_W) 0 0/100% 100% no-repeat;filter:drop-shadow(0 0 18px STKGLOW)}
+.watch b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:Anton;font-size:118px;letter-spacing:1px;transform:skewX(-10deg)}
+.watch b .tt+.tt{margin-left:22px}
+.logo{position:absolute;left:0;right:0;bottom:70px;display:flex;align-items:center;justify-content:center;gap:34px}
+.logo i{display:block;width:230px;height:3px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.75))}
+.logo i+img+i{background:linear-gradient(90deg,rgba(255,255,255,.75),rgba(255,255,255,0))}
+.logo img{height:LOGOHpx}
+</style></head>
+<body><div class="c">
+  <div class="bg"></div><div class="shade"></div>
+  <div class="side"><img src="graphic.png"></div>
+  <div class="pwrap"><img class="person" src="person_natural.png"></div>
+  <div class="head">HEADHTML</div>
+  <div class="watch"><div class="brush"></div><b>BANNERHTML</b></div>
+  <div class="logo"><i></i><img src="logo.png"><i></i></div>
+</div>
+<script>
+const W=1010, GAP=0.07;
+const cv=document.createElement('canvas').getContext('2d');
+function metrics(fs){cv.font=fs+'px Anton';const m=cv.measureText('H');return {asc:m.fontBoundingBoxAscent,desc:m.fontBoundingBoxDescent,cap:m.actualBoundingBoxAscent};}
+function capCrop(el,fs){const m=metrics(fs),L=m.cap;el.style.fontSize=fs+'px';el.style.lineHeight=L+'px';el.style.height=L+'px';
+  const base=(L-(m.asc+m.desc))/2+m.asc;el.style.top=(-(base-m.cap))+'px';el.parentElement.style.height=L+'px';return L;}
+document.fonts.ready.then(()=>{
+  const caps=[];
+  document.querySelectorAll('.ln').forEach(el=>{el.style.fontSize='100px';const w=el.offsetWidth;caps.push(capCrop(el,Math.min(+(el.dataset.max||400),100*(+(el.dataset.w||W))/w)));});
+  const rows=[...document.querySelectorAll('.row')];
+  rows.forEach((r,i)=>{if(i>0&&!r.classList.contains('first'))r.style.marginTop=(GAP*Math.min(caps[i-1],caps[i]))+'px';});
+  const box=document.querySelector('.box'); if(box) box.style.marginTop=(0.16*caps[1])+'px';
+  document.body.dataset.headBottom=Math.round(document.querySelector('.head').getBoundingClientRect().bottom);
+  document.body.dataset.caps=caps.map(Math.round).join(',');
+});
+</script>
+</body></html>

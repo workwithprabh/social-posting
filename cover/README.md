@@ -20,3 +20,21 @@ Notes from the first trial (AM-2611-01, DEM-2611-02):
   (white showroom light) need a negative lift to land the face in the playbook ranges; CH-2610-12 used -0.2.
   Fix brightness in the grade, never with a CSS brightness filter on the presenter (that made v1 grey and flat).
 - Festival reels: same playbook template, headline from the reel's wish, banner "HAPPY DIWALI!".
+
+## v2 style (the AM-2610-05 look; user, 9 Nov 2026: "the best thumbnail", use these rules from now on; samples pending sign-off)
+What makes AM-2610-05 better than the v1 covers, measured on the file:
+- Presenter big and bright: face ~26% of the cover width (v1: 19%), face L* ~62 (v1: 48-56), highlights ~85, rosy
+  warmth (a* ~18), sharp. Body runs down behind the banner; no gold panel frame around him.
+- Glow: a thin bright edge (~2px gold, `#fff2a8`/`#ffcc00`) plus a soft warm halo, not the 5px white sticker outline.
+- Background: a real showroom/scene from the reel, lightly blurred (5px) and only slightly dimmed (scene L* ~50, v1
+  darkened to ~20); dark only at the very top (headline) and bottom (logo).
+- Headline: 2 lines (white topic, big yellow punch) + a neon box holding the main question in big type (white +
+  yellow line), not a small curiosity strip. Brand logo at the bottom between two thin lines, not a text footer.
+- A small tilted card on the left shows the reel's subject (news clipping, feature shot) without a heavy frame.
+Face = the reel's emotion (user, 9 Nov 2026): decide the reel's tone first (happy/reassuring -> confident smile,
+emotional -> emotional, shocking -> shocked), then `python3 emo.py <ID> <happiness|surprise|sadness|...>` scores
+every 0.2 s with the FER+ model (`models/ferplus.onnx`, from huggingface.co/onnxmodelzoo/emotion-ferplus-8) and
+tiles the best matches; choose among them by eye. Prefer close-ups (face 240+ px in the frame): a small face
+enlarged 1.6x goes soft and blotchy (AM-2610-07 at 31.7 s). If no frame shows the emotion, say so; don't fake it.
+Build: `python3 build_v2.py <ID>` with `<ID>/cfg2.json` (fields in the script); it tunes the face to L* ~62.
+Brighten dark frames in the grade (`lift`), not with the CSS brightness, which turns skin orange.
