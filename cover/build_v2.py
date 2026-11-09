@@ -12,6 +12,13 @@ fade = C.get('fade', [1240, 1400])
 if not os.path.exists('person2.png') or C.get('recut'):
     run('python3', '../02_cutout.py', C.get('frame', 'presenter.png'), 'person2.png', str(fade[0]), str(fade[1]))
     run('python3', '../clean.py', 'person2.png', 'person2.png', '60')
+    if C.get('human_mask'):  # drop car doors / furniture that isnet keeps: keep only what the human model sees
+        from rembg import remove, new_session
+        src = Image.open(C.get('frame', 'presenter.png')).convert('RGB')
+        h = np.array(remove(src, session=new_session('u2net_human_seg')).convert('RGBA'))[..., 3].astype(np.float32) / 255
+        hm = cv2.GaussianBlur((h > .3).astype(np.float32), (0, 0), 3)
+        p = np.array(Image.open('person2.png').convert('RGBA')).astype(np.float32)
+        p[..., 3] *= np.clip(hm[:p.shape[0], :p.shape[1]] * 1.2, 0, 1); Image.fromarray(p.astype(np.uint8)).save('person2.png')
 fr = cv2.imread(C.get('frame', 'presenter.png')); H, W = fr.shape[:2]
 det = cv2.FaceDetectorYN.create(os.path.join(HERE, 'models/yunet.onnx'), '', (W, H), 0.6)
 fx, fy, fw, fh = det.detect(fr)[1][0][:4]; fcx, fcy = fx + fw / 2, fy + fh / 2
@@ -91,7 +98,7 @@ def render(br):
     m = run('python3', '../04_face_metrics.py', 'cover2.png', *map(str, box))
     return info.strip(), m.strip()
 info, m = render(br); tgt = C.get('target_L', 62)
-for _ in range(4):
+for _ in range(0 if C.get("target_L",62)>100 else 4):
     L = float(m.split('face L ')[1].split(' ')[0])
     if abs(L - tgt) <= 2: break
     br = round(br * (tgt / L) ** 1.3, 3); info, m = render(br)

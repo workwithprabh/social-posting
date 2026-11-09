@@ -78,3 +78,6 @@ watermarks and subtitles out of the side card.
 
 No "WATCH THIS FIRST!" banner on reel thumbnails (user, 9 Nov 2026). `build_v2.py` leaves it out unless a
 cfg2.json sets `"banner"` explicitly.
+`"human_mask": true` in cfg2.json keeps only the person (u2net_human_seg) when the cutout picks up a car door or
+window frame (CH-2610-10). Customer testimonials: no AI face edit; hide the presenter (`.pwrap{display:none}`) and
+show the real delivery photo as a large card, plates pixelated (MRH-2610-03).
