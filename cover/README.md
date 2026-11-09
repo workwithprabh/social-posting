@@ -38,3 +38,20 @@ tiles the best matches; choose among them by eye. Prefer close-ups (face 240+ px
 enlarged 1.6x goes soft and blotchy (AM-2610-07 at 31.7 s). If no frame shows the emotion, say so; don't fake it.
 Build: `python3 build_v2.py <ID>` with `<ID>/cfg2.json` (fields in the script); it tunes the face to L* ~62.
 Brighten dark frames in the grade (`lift`), not with the CSS brightness, which turns skin orange.
+
+## Faces: expression rules (user, 9 Nov 2026: open mouths, visible teeth and missing glow are "of no use")
+A cover face must be a HELD expression, not a frame caught mid-word. In muscle terms (FACS / MediaPipe blendshapes):
+- Confident smile: lip corners up (smile 0.4+), mouth closed (jaw < 0.08, no teeth), cheeks lifted, eyes on camera,
+  head straight, symmetric. Warm/happy: a fuller smile that reaches the eyes (cheek squint); upper teeth only.
+- Shocked: brows high (0.5+), upper lids raised (eyes wide), jaw dropped into a relaxed "O" (lips rounded, no teeth).
+- Emotional/sad: inner brows raised and drawn together, lip corners down, mouth closed or pressed, eyes soft.
+- Serious/thinking: brows level or one raised, lips pressed, slight head tilt.
+- Always: eyes open and on the lens, face 240+ px wide in the frame, soft front light on both sides of the face.
+`python3 face_expr.py image.png` prints these signals for any face; `python3 face_expr.py --scan <ID> <target>`
+(targets: confident_smile, warm_smile, shocked, emotional, serious) scores every 0.1 s, rewards frames the face holds
+for 0.4 s, and tiles the best ones. Needs `pip install mediapipe` and `apt-get install libegl1 libgles2`, plus
+`models/face_landmarker.task` from storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/.
+Glow: the even, luminous skin of AM-2610-05 (skin spread ~5) comes from soft front light; `build_v2.py` evens skin
+gently (`glow` 1), but stronger settings make plastic skin, and side-lit frames can't be rescued.
+Talk-to-camera reels rarely contain these faces (9 Nov check: DEH-2610-05 has no closed-mouth smile at all);
+ask the team to hold each reel's expression for 3 seconds at the end of the take, in front light.

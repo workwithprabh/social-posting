@@ -16,6 +16,24 @@ fr = cv2.imread(C.get('frame', 'presenter.png')); H, W = fr.shape[:2]
 det = cv2.FaceDetectorYN.create(os.path.join(HERE, 'models/yunet.onnx'), '', (W, H), 0.6)
 fx, fy, fw, fh = det.detect(fr)[1][0][:4]; fcx, fcy = fx + fw / 2, fy + fh / 2
 run('python3', '../03_grade.py', 'person2.png', 'person_natural.png', str(fcx - 70), str(fcy - 90), str(C.get('lift', .30)))
+if C.get('glow', 1):
+    # "glow up": even, luminous skin like AM-2610-05 (skin spread ~5 vs 11-22 on v1/v2 covers)
+    im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); rgb = im[..., :3]; a = im[..., 3].astype(np.float32) / 255
+    ycc = cv2.cvtColor(rgb, cv2.COLOR_BGR2YCrCb)
+    sk = ((ycc[..., 1] > 135) & (ycc[..., 1] < 178) & (ycc[..., 2] > 80) & (ycc[..., 2] < 132)).astype(np.float32)
+    sk = cv2.GaussianBlur(cv2.morphologyEx(sk, cv2.MORPH_OPEN, np.ones((5, 5), np.uint8)), (0, 0), 6) * a
+    g = float(C.get('glow', 1))
+    smooth = cv2.bilateralFilter(rgb, 15, 38, 12).astype(np.float32)
+    lab = cv2.cvtColor(smooth.astype(np.uint8), cv2.COLOR_BGR2LAB).astype(np.float32); L = lab[..., 0]
+    base = cv2.GaussianBlur(L, (0, 0), 22)
+    L2 = base + (L - base) * (1 - .3 * g)                       # flatten blotches and hot spots
+    L2 = L2 + np.clip(175 - base, 0, None) * .22 * g             # fill light: lift the darker skin areas
+    lab[..., 0] = L2; even = cv2.cvtColor(np.clip(lab, 0, 255).astype(np.uint8), cv2.COLOR_LAB2BGR).astype(np.float32)
+    hi = np.clip((cv2.cvtColor(even.astype(np.uint8), cv2.COLOR_BGR2GRAY).astype(np.float32) - 150) / 105, 0, 1)
+    bloom = cv2.GaussianBlur(even * hi[..., None], (0, 0), 10)
+    even = 255 - (255 - even) * (255 - bloom * .35 * g) / 255     # soft sheen on highlights (screen)
+    w = (sk * .85 * g)[..., None]; out = rgb.astype(np.float32) * (1 - w) + even * w
+    im[..., :3] = np.clip(out, 0, 255).astype(np.uint8); cv2.imwrite('person_natural.png', im)
 if C.get('sharpen', .5):
     im = cv2.imread('person_natural.png', cv2.IMREAD_UNCHANGED); rgb = im[..., :3].astype(np.float32)
     bl = cv2.GaussianBlur(rgb, (0, 0), 1.6); im[..., :3] = np.clip(rgb + C.get('sharpen', .5) * (rgb - bl), 0, 255).astype(np.uint8)
