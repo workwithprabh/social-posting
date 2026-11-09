@@ -1,0 +1,133 @@
+[
+ {
+  "theme": "bayon",
+  "kicker": "HYUNDAI BAYON",
+  "priceLabel": "INTRODUCTORY PRICE FROM",
+  "price": "₹9,99,900*",
+  "vars": {
+   "ct": "360px",
+   "ch": "680px",
+   "pt": "870px",
+   "chipt": "975px"
+  },
+  "id": "CH-BRD-2611-01",
+  "img": "spot_CH.jpg",
+  "logo": "CH_cap_hr.png",
+  "logoH": 74,
+  "footer": "CH",
+  "tag": "NOW IN SHOWROOMS",
+  "headline": "AI <em>ON.</em>",
+  "sub": "Just say “Hey Hyundai”. Its Generative AI voice assistant is ready to help on every drive.",
+  "chips": [
+   "Generative AI voice assistant",
+   "Curved panoramic display",
+   "Dash Boost mode"
+  ],
+  "fine": "*Ex-showroom price, 1.2 MPi HX 2 MT. Type approval certificate is applied for. Image for representation only. T&C apply."
+ },
+ {
+  "theme": "bayon",
+  "kicker": "HYUNDAI BAYON",
+  "priceLabel": "INTRODUCTORY PRICE FROM",
+  "price": "₹9,99,900*",
+  "vars": {
+   "ct": "360px",
+   "ch": "680px",
+   "pt": "870px",
+   "chipt": "975px"
+  },
+  "id": "DEH-BRD-2611-01",
+  "img": "spot_DEH.jpg",
+  "logo": "DEH_white_hr.png",
+  "logoH": 74,
+  "footer": "DEH",
+  "tag": "BOOKINGS ON",
+  "headline": "Safety <em>ON.</em>",
+  "sub": "Over 80 advanced safety features, engineered for 5-star Indian safety standards*.",
+  "chips": [
+   "80+ advanced safety features",
+   "Engineered for 5-star safety standards*",
+   "Generative AI voice assistant"
+  ],
+  "fine": "*As per Hyundai's internal assessment. Ex-showroom price, 1.2 MPi HX 2 MT. Type approval certificate is applied for. Image for representation only. T&C apply."
+ },
+ {
+  "theme": "bayon",
+  "kicker": "HYUNDAI BAYON",
+  "priceLabel": "INTRODUCTORY PRICE FROM",
+  "price": "₹9,99,900*",
+  "vars": {
+   "ct": "360px",
+   "ch": "680px",
+   "pt": "870px",
+   "chipt": "975px",
+   "h1": "92px"
+  },
+  "id": "MRH-BRD-2611-01",
+  "img": "spot_MRH.jpg",
+  "logo": "MRH_3_hr.png",
+  "logoH": 110,
+  "footer": "MRH",
+  "tag": "BOOKINGS ON",
+  "headline": "Performance <em>ON.</em>",
+  "sub": "Dash Boost mode gives an instant boost of power, with sporty drive tech for every drive.",
+  "chips": [
+   "Dash Boost mode",
+   "Spacious, ergonomic interiors",
+   "Modern dual-tone cabin"
+  ],
+  "fine": "*Ex-showroom price, 1.2 MPi HX 2 MT. Type approval certificate is applied for. Image for representation only. T&C apply."
+ },
+ {
+  "id": "DEM-BRD-2611-01",
+  "theme": "mahindra",
+  "img": "spot_DEM.jpg",
+  "logo": "DEM_ice_white.png",
+  "logoH": 108,
+  "footer": "DEM",
+  "tag": "SEE ZNG. SAY ZING.",
+  "kicker": "MAHINDRA XUV 3XO ZNG",
+  "headline": "5-star safe.<br>CNG smart.",
+  "sub": "The segment's first 5-star BNCAP-rated CNG SUV.",
+  "chips": [
+   "5-star BNCAP safety rating",
+   "Twin CNG cylinders under the luggage area",
+   "200 Nm torque in CNG mode"
+  ],
+  "priceLabel": "MX EDGE FROM",
+  "price": "₹9.99 LAKH*",
+  "fine": "*Ex-showroom. T&C apply. Image for representation only.",
+  "vars": {
+   "ct": "560px",
+   "ch": "560px",
+   "pt": "885px",
+   "chipt": "990px"
+  }
+ },
+ {
+  "id": "AM-BRD-2611-01",
+  "theme": "mahindra",
+  "img": "spot_AM.jpg",
+  "logo": "AM_hr.png",
+  "logoH": 84,
+  "footer": "AM",
+  "tag": "EXPLORE THE IMPOSSIBLE",
+  "kicker": "MAHINDRA THAR OG",
+  "headline": "Take the<br>long way.",
+  "sub": "A new generation of Thar. The same unapologetic DNA.",
+  "chips": [
+   "Electronic Locking Differential",
+   "C-shaped DRLs & LED headlamps",
+   "6 airbags & all-4 disc brakes"
+  ],
+  "priceLabel": "PRICE STARTS AT",
+  "price": "₹10.32 LAKH*",
+  "fine": "*Ex-showroom. T&C apply. Image for representation only.",
+  "vars": {
+   "ct": "585px",
+   "ch": "540px",
+   "pt": "885px",
+   "chipt": "990px"
+  }
+ }
+]

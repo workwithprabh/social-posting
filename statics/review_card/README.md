@@ -39,3 +39,11 @@ Edit `cards.json` for each batch (`theme` hyundai/mahindra, `logo` and `logoH` (
 CH/DEH/MRH/DEM/AM for showroom posts, CH_SVC/DEM_SVC/AM_SVC for service posts). IDs are `<client>-REV-<YYMM>-<nn>`; drafts go to the "Claude drafts" Drive folder and a
 Calendar row (Bucket "Customer love", Status "Drafted", caption draft in "Brief and source").
 First batch (8 Nov 2026): CH-REV-2611-01/02, DEH-, MRH-, DEM-, AM-REV-2611-01.
+
+## Model spotlight (brand) posts: `spotlight.html` (9 Nov 2026)
+`node render_spot.js [ID]` renders `cards_spot.json` (theme `bayon` = black and Hyundai red, `mahindra` = Anton caps
+and red) with the same header logos and footers as the review cards, then `python save.py out/`. Each card: car photo
+(`img`, cropped clean from the brand's Instagram creative or website, no OEM text left in), kicker, headline, sub,
+three feature chips, price pill, fine print. Facts and prices come only from the brand's own posts or website,
+marked ex-showroom with T&C. The three Hyundai dealers take different angles of the same model (AI ON / Safety ON /
+Performance ON) so their feeds don't repeat each other.
