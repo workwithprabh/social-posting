@@ -61,3 +61,11 @@ Hyundai photos shot on black are lifted to Hyundai blue (`.hyundai .car::after`,
 `node render_hy.js [ID]` renders `cards_hy.json`; `mode` dark / light / photo (with `ink` white or navy), `kind` spot
 or emi. Light posts use the Hyundai Blue logos (`*_blue_hr.png`, the white logos recoloured). Modelled on
 @hyundaiindia: the user rejected both black-and-red (too close to the Mahindra posts) and an all-blue gradient.
+
+## Posting statics: `scripts/publish_static.py` (first used 9 Nov 2026)
+Posts one image to the Facebook Page (2160x2700 master) and Instagram (a 1080x1350 copy). Instagram needs a public
+image link, so the copy goes up to the Page as an unpublished photo, its CDN link is passed to Instagram, and the
+helper photo is deleted. Same tokens as reels (`--system-user` for CH, DEH, AM, CB; `META_PAGE_TOKEN_MRH` /
+`META_PAGE_TOKEN_DEM` without it). Page and Instagram ids are in `config/boost.json`. Before posting: check image,
+caption and footer belong together, post only the text after "Caption draft:", then set Statics Status to Posted and
+the review's Use? to Used with the date in the Reviews tab.
