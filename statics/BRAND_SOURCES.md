@@ -38,8 +38,8 @@ Prices change; re-read the sites before using a price in a post, and label it "e
 - Capital Hyundai Dadri showroom number: 72900 77273, as on Capital Hyundai's reel end card (user, 9 Nov 2026: the end
   card and Google numbers are both correct; use the end card one everywhere so posts match). It replaces 072900 77380.
   Service posts keep the Google Business Profile service numbers the user approved on 8 Nov (Dadri service 072900 79106).
-  The Nov 2026 reel end card lists other service numbers (Sector 132 99589 94275, Sector 58 72900 77350, Faridabad
-  93559 31003, Dadri 98991 56393); ask the user before switching service posts to those.
+- Phone numbers are settled (user, 9 Nov 2026): keep using the numbers already on our posts and in `clients.json`. Reel end
+  cards are the client's own and may list other numbers; don't compare against them or raise it again.
 - Capital Hyundai's showrooms and service centres post on one account (@capitalhyundai): plan showroom and service
   content together on its calendar (user, 8 Nov 2026).
 - Footer numbers follow the post's topic (user, 8 Nov 2026): a service post (service review, service tip, camp)
