@@ -114,3 +114,12 @@ edit needed. Car & Bike frames are pale and cool: `"skin_shift": [8, 22]` adds w
 `target_L` 57 keeps the face from going white; aim for skin chroma ~30, L ~78 (`skin_tone.py`).
 A new cover folder needs the helper links (`node_modules`, `render.js`, `0*_*.py`, `cover_template.html`) from
 `..`, or the headline falls back to a serif font.
+
+## Checklist before sending a cover (user, 11 Nov 2026: "created without the background colour, not like we planned")
+CH-2611-02 and CB-2611-03 first went out with a night/dim background and a small presenter, leaving the bottom
+third black (mean brightness 31 and 14 vs 73-97 on the approved covers). Before sending, compare side by side with
+an approved cover and check:
+- Background: a bright, lit showroom frame with colour (crop a presenter-free part of a frame if needed; set
+  `bg_bright` ~0.95). Never a night or near-black frame.
+- Presenter fills the frame to the bottom: AI crops are head-and-chest, so use `face_w` ~330 and `face_c` ~[790, 1110].
+- Lower third brightness close to the references; skin within the `skin_tone.py` range.
