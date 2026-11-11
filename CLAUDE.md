@@ -55,6 +55,11 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
      earlier covers; never let it go pale or white. Check with `python3 cover/skin_tone.py <cover>`: skin chroma about
      29-38 (the old covers' range), L about 66-80. If an AI edit comes out pale, warm it gently with `skin_ab`
      (e.g. [1.25, 1.05]); stronger values turn the face red and the lips magenta, so look at a face crop every time.
+  7. **Skin hue (user, 11 Nov 2026: Car & Bike faces looked "very odd", orange).** Keep skin hue about 48-55 deg (approved
+     covers: DEH-2610-05 48, AM-2610-05 50, CH-2610-06 55); above ~60 reads orange/filtered. When warming a pale frame
+     with `skin_shift`, add red as well as yellow (CB-2611-02: [16, 21]; CB-2611-03: [10, 8]); a yellow-heavy shift
+     ([8, 22]) gave hue 63-72. Too much red tints brown hair and the face pink. Keep the gold backlight low (0.2) on
+     Car & Bike covers. Compare face crops with an approved cover before sending.
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in
