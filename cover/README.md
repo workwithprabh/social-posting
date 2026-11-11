@@ -124,17 +124,18 @@ an approved cover and check:
 - Presenter fills the frame to the bottom: AI crops are head-and-chest, so use `face_w` ~330 and `face_c` ~[790, 1110].
 - Lower third brightness close to the references; skin within the `skin_tone.py` range.
 
-## Car-hero covers for Car & Bike (user, 11 Nov 2026: "rather than showing the model, show the car")
-Car & Bike reel covers show the car, not the presenter. `python3 build_car.py <ID>` reads `<ID>/cfgcar.json`
-(`car` cut-out, `bg` frame, `lines`, `box`, optional `car_w`, `car_top`, `bg_pos`, `bg_bright`, `refl`, `css`): same
-headline and gold box as v2, the car large below the box with a thin gold edge glow, a warm halo, a ground shadow and a
-faint floor reflection; no side card, no presenter, no AI edit. Steps (CB-2611-02 black Scorpio-N at 5.75 s,
-CB-2611-03 black Thar Roxx at 11.5 s):
-- Pick a frame where the whole car is sharp and no subtitle crosses the body (subtitles on the floor are fine).
-- Cut out with rembg `isnet-general-use` on a crop around the car. Black cars on dark glass lose edges: rerun with
-  GrabCut seeded from the isnet alpha, keep the largest piece, fill holes (wheel spokes, windows), erase floor
-  reflections, and fill the dark under-car area between the wheels so the glow does not trace a straight cut.
-  BiRefNet runs out of memory in the cloud session; don't use it.
-- Cover any other dealer's name (number-plate frames) with the plate colour.
-- Background: the car's own showroom frame, blurred 6 px, `bg_bright` ~1.08, positioned so the bright floor sits
-  under the car (Thar: `center 80%`). Check lower-third brightness like the presenter covers.
+
+## Approved covers: what they share (analysis of 10 approved covers, 11 Nov 2026)
+Measured on AM-2610-05, AM-2610-07, AM-2610-03, DEH-2610-04, DEH-2610-05, DEH-2610-06, CH-2610-06, CH-2610-08,
+CH-2611-02 and MRH-2609-05, against the first Car & Bike covers the user called "very bad":
+- Presenter: face 25.5-30.5% of the width at about (790-830, 1015-1110); a held, readable expression that differs
+  from reel to reel (sceptical, playful brow, shocked, confident). The CB covers had two near-identical mild smiles,
+  and CB-2611-02 was an upscaled far-away end-card frame (soft face). Start the AI edit from a real close-up.
+- Background: a recognisable, lit showroom or car behind the presenter, with colour. Background saturation 27-71
+  on the approved covers vs 11-16 on the CB covers (grey/black). Dark clothes on a dark background read as a
+  cut-out sticker; give them a bright background, not a stronger outline.
+- Glow: thin edge plus soft halo. The CB `strong_rim` gold halo was too thick; use the thinner `glow_css` in the CB
+  cfg2.json files.
+- Side card: one real photo from the reel (car, feature, news clip), not a text-heavy stock list.
+- Skin: L ~74-77, chroma ~25-36, hue ~48-56 (`skin_tone.py`).
+Car-only covers (no presenter) were tried and rejected (user, 11 Nov 2026: "looks like the car is flying").

@@ -60,8 +60,10 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
      with `skin_shift`, add red as well as yellow (CB-2611-02: [16, 21]; CB-2611-03: [10, 8]); a yellow-heavy shift
      ([8, 22]) gave hue 63-72. Too much red tints brown hair and the face pink. Keep the gold backlight low (0.2) on
      Car & Bike covers. Compare face crops with an approved cover before sending.
-  8. **Car & Bike reel covers show the car, not the presenter** (user, 11 Nov 2026). Build with `cover/build_car.py`
-     (cover/README.md "Car-hero covers"); Capital Hyundai and the other clients keep the presenter covers.
+  8. **Car & Bike covers keep the presenter (user, 11 Nov 2026).** A car-only cover was rejected ("looks like the car is
+     flying"). What the approved covers have and the first CB covers lacked: a bright, coloured real showroom behind
+     the presenter (not near-black), a thin glow (no thick gold halo), a distinct expression per reel, and a real photo
+     side card (not a text-heavy stock list). Details in cover/README.md "Approved covers: what they share".
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in
