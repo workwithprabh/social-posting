@@ -64,6 +64,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
      flying"). What the approved covers have and the first CB covers lacked: a bright, coloured real showroom behind
      the presenter (not near-black), a thin glow (no thick gold halo), a distinct expression per reel, and a real photo
      side card (not a text-heavy stock list). Details in cover/README.md "Approved covers: what they share".
+     Approved references (user, 11 Nov 2026): CB-2611-02 and CB-2611-03 with a natural closed-lip smile edited from a
+     real smiling frame (identity kept), and CH-2611-02.
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in
