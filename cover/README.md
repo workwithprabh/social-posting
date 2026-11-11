@@ -123,3 +123,18 @@ an approved cover and check:
   `bg_bright` ~0.95). Never a night or near-black frame.
 - Presenter fills the frame to the bottom: AI crops are head-and-chest, so use `face_w` ~330 and `face_c` ~[790, 1110].
 - Lower third brightness close to the references; skin within the `skin_tone.py` range.
+
+## Car-hero covers for Car & Bike (user, 11 Nov 2026: "rather than showing the model, show the car")
+Car & Bike reel covers show the car, not the presenter. `python3 build_car.py <ID>` reads `<ID>/cfgcar.json`
+(`car` cut-out, `bg` frame, `lines`, `box`, optional `car_w`, `car_top`, `bg_pos`, `bg_bright`, `refl`, `css`): same
+headline and gold box as v2, the car large below the box with a thin gold edge glow, a warm halo, a ground shadow and a
+faint floor reflection; no side card, no presenter, no AI edit. Steps (CB-2611-02 black Scorpio-N at 5.75 s,
+CB-2611-03 black Thar Roxx at 11.5 s):
+- Pick a frame where the whole car is sharp and no subtitle crosses the body (subtitles on the floor are fine).
+- Cut out with rembg `isnet-general-use` on a crop around the car. Black cars on dark glass lose edges: rerun with
+  GrabCut seeded from the isnet alpha, keep the largest piece, fill holes (wheel spokes, windows), erase floor
+  reflections, and fill the dark under-car area between the wheels so the glow does not trace a straight cut.
+  BiRefNet runs out of memory in the cloud session; don't use it.
+- Cover any other dealer's name (number-plate frames) with the plate colour.
+- Background: the car's own showroom frame, blurred 6 px, `bg_bright` ~1.08, positioned so the bright floor sits
+  under the car (Thar: `center 80%`). Check lower-third brightness like the presenter covers.
