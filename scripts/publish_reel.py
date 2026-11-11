@@ -6,7 +6,8 @@ Usage:
       --cover-url https://raw.githubusercontent.com/.../thumbnails/MRH-2609-02.jpg --cover-file thumbnails/MRH-2609-02.jpg \
       [--platforms ig,fb]
 
-Instagram: resumable Reels upload with the cover from --cover-url (Instagram only accepts a public link).
+Instagram: resumable Reels upload with the cover from --cover-url (Instagram only accepts a public link);
+without --cover-url, --cover-file is put on the Page as an unpublished photo and its link is used, then deleted.
 Facebook: Page Reels upload, then --cover-file is set as the preferred thumbnail.
 Prints one JSON line with the post links. Never prints the token.
 """
@@ -142,16 +143,30 @@ def main():
     token = os.environ[a.token_env].strip()
     caption = open(a.caption_file, encoding='utf-8').read().strip()
     result = {}
-    for plat in a.platforms.split(','):
-        try:
-            if plat == 'ig':
-                result.update(publish_instagram(a, token, caption))
-            else:
-                fb_token = call('GET', f'{GRAPH}/{a.page_id}', token, {'fields': 'access_token'})['access_token'] \
-                    if a.system_user else token
-                result.update(publish_facebook(a, fb_token, caption))
-        except RuntimeError as e:
-            result[f'{plat}_error'] = str(e)
+    fb_token = call('GET', f'{GRAPH}/{a.page_id}', token, {'fields': 'access_token'})['access_token'] \
+        if a.system_user else token
+    helper = None
+    if 'ig' in a.platforms and not a.cover_url and a.cover_file:
+        # No public cover link: put the cover on the Page as an unpublished photo and use its CDN link.
+        body, ctype = multipart({'published': 'false'}, 'source', a.cover_file)
+        helper = call('POST', f'{GRAPH}/{a.page_id}/photos', fb_token, data=body, headers={'Content-Type': ctype})['id']
+        imgs = call('GET', f'{GRAPH}/{helper}', fb_token, {'fields': 'images'})['images']
+        a.cover_url = max(imgs, key=lambda i: i['width'])['source']
+    try:
+        for plat in a.platforms.split(','):
+            try:
+                if plat == 'ig':
+                    result.update(publish_instagram(a, token, caption))
+                else:
+                    result.update(publish_facebook(a, fb_token, caption))
+            except RuntimeError as e:
+                result[f'{plat}_error'] = str(e)
+    finally:
+        if helper:
+            try:
+                call('DELETE', f'{GRAPH}/{helper}', fb_token)
+            except RuntimeError:
+                pass
     print(json.dumps(result))
 
 
