@@ -139,3 +139,9 @@ CH-2611-02 and MRH-2609-05, against the first Car & Bike covers the user called 
 - Side card: one real photo from the reel (car, feature, news clip), not a text-heavy stock list.
 - Skin: L ~74-77, chroma ~25-36, hue ~48-56 (`skin_tone.py`).
 Car-only covers (no presenter) were tried and rejected (user, 11 Nov 2026: "looks like the car is flying").
+AI expression edits that look "very odd" (user, 11 Nov 2026, CB-2611-02/03): asking for a big change (closed smile
+from a mid-word frame, a raised brow, a "playful" look) changed her face shape and nose, or gave a lopsided smirk.
+What worked: start from a real close-up where she is already smiling (CB-2611-02 at 48.6 s, CB-2611-03 at 44.9 s),
+ask to change only the mouth to a soft, even, closed-lip smile with relaxed level brows, and say "same face shape,
+nose, eyes, lips, skin texture, no added makeup, not retouched". Check `face_expr.py`: smile_asym under 0.05,
+brow_up near 0, teeth 0. Compare a face crop with the real frame to make sure it is still the same person.
