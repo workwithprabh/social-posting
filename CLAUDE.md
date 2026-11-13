@@ -112,7 +112,9 @@ Exports are 1080x1920 H.264 at about 45 Mbps and 95 MB to 1.3 GB, above Instagra
 Keep the result small: uploads from the cloud session fail above a size that varies (a 61 MB file never
 finished on Instagram; 34 and 41 MB files went through in Oct, but on 11 Nov 2026 a 27 MB file failed twice with
 ProcessingFailedError while 17 MB went through). If Instagram fails, re-encode smaller with `-crf 25 -maxrate 3M
--bufsize 6M -b:a 128k` (about 15-20 MB for a 50 s reel) and retry. Without `--cover-url`, `publish_reel.py` makes the
+-bufsize 6M -b:a 128k` (about 15-20 MB for a 50 s reel) and retry. Car & Bike's Instagram rejected 1080p files of every size; a 720p
+encode (`-vf scale=720:1280 -r 30 -crf 28 -maxrate 1500k -bufsize 3000k -b:a 96k`, about 8 MB) went through for
+CB-2611-03 on 13 Nov 2026. CB-2611-02 still fails even at 720p (same settings), so that one is posted from the app. Without `--cover-url`, `publish_reel.py` makes the
 cover link itself from `--cover-file` (an unpublished Page photo, deleted afterwards). Publish with `scripts/publish_reel.py`; for clients on the
 system user token add `--system-user` so Facebook gets the Page token.
 
