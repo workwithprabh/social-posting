@@ -84,7 +84,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   and no all-over blue gradient (the user found it looked very bad). Template `statics/review_card/hyundai.html`.
 - Capital Hyundai Dadri showroom number is 72900 77273 everywhere (user, 9 Nov 2026; matches the reel end card).
 - Boosting: rules and ad accounts are in `config/boost.json` (Instagram only, Advantage+ audience, goal profile visits, Rs 100/day for
-  2 days). Capital Hyundai and M R Hyundai always use their own ad account; Mahindra Arav and Dee Emm Mahindra fall
+  2 days). Capital Hyundai and M R Hyundai always use their own ad account; Car & Bike always uses the Dee Emm Hyundai
+  ad account only (user, 13 Nov 2026); Mahindra Arav and Dee Emm Mahindra fall
   back to the Dee Emm Hyundai / Car & Bike account only when their own can't cover the boost. Create boosts paused,
   show the batch, and activate only after the user says yes. `python scripts/check_ads.py` checks access and balances;
   `python scripts/boost_reel.py plan|create|activate|delete` makes the boost (create = paused, no spend).

@@ -91,7 +91,8 @@
       ],
       "page_id": "979679125237339",
       "ig_user": "17841475932990498",
-      "ig_username": "dm_carandbike"
+      "ig_username": "dm_carandbike",
+      "_rule": "User, 13 Nov 2026: Car & Bike boosts always use the Dee Emm Hyundai ad account (768739352110216) only; no other account."
     },
     "AM": {
       "name": "Mahindra Arav",
@@ -134,6 +135,6 @@
       "ig_username": "mahindradm"
     }
   },
-  "fallback_rule": "Use the fallback account only when the client's own account cannot cover the boost (balance or spend cap). Capital Hyundai and M R Hyundai never use another account.",
+  "fallback_rule": "Use the fallback account only when the client's own account cannot cover the boost (balance or spend cap). Capital Hyundai and M R Hyundai never use another account. Car & Bike always uses the Dee Emm Hyundai account only (user, 13 Nov 2026).",
   "_locations_note": "Approximate showroom areas; radius in km. Adjust if the client wants a different area."
 }
