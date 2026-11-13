@@ -40,7 +40,8 @@
       ],
       "page_id": "1796813873933984",
       "ig_user": "17841404103430378",
-      "ig_username": "capitalhyundai"
+      "ig_username": "capitalhyundai",
+      "country": "IN"
     },
     "MRH": {
       "name": "M R Hyundai",
@@ -57,7 +58,8 @@
       ],
       "page_id": "423738584167015",
       "ig_user": "17841470355540620",
-      "ig_username": "hyundaimr_sg"
+      "ig_username": "hyundaimr_sg",
+      "country": "IN"
     },
     "DEH": {
       "name": "Dee Emm Hyundai",
@@ -74,7 +76,8 @@
       ],
       "page_id": "222490927623865",
       "ig_user": "17841430529180239",
-      "ig_username": "hyundaidm"
+      "ig_username": "hyundaidm",
+      "country": "IN"
     },
     "CB": {
       "name": "Car and Bike",
@@ -93,8 +96,7 @@
       "ig_user": "17841475932990498",
       "ig_username": "dm_carandbike",
       "_rule": "User, 13 Nov 2026: Car & Bike boosts always use the Dee Emm Hyundai ad account (768739352110216) only; no other account.",
-      "country": "IN",
-      "_area": "User, 13 Nov 2026: widen Car & Bike boosts to all of India for more results (country IN replaces the Gurgaon 20 km circle)."
+      "country": "IN"
     },
     "AM": {
       "name": "Mahindra Arav",
@@ -117,7 +119,8 @@
       ],
       "page_id": "111768271764481",
       "ig_user": "17841457116100505",
-      "ig_username": "mahindraarav"
+      "ig_username": "mahindraarav",
+      "country": "IN"
     },
     "DEM": {
       "name": "Dee Emm Mahindra",
@@ -134,9 +137,11 @@
       ],
       "page_id": "1143134585858524",
       "ig_user": "17841415265612306",
-      "ig_username": "mahindradm"
+      "ig_username": "mahindradm",
+      "country": "IN"
     }
   },
   "fallback_rule": "Use the fallback account only when the client's own account cannot cover the boost (balance or spend cap). Capital Hyundai and M R Hyundai never use another account. Car & Bike always uses the Dee Emm Hyundai account only (user, 13 Nov 2026).",
-  "_locations_note": "Approximate showroom areas; radius in km. Adjust if the client wants a different area."
+  "_locations_note": "Approximate showroom areas; radius in km. Adjust if the client wants a different area.",
+  "area_rule": "User, 13 Nov 2026: all clients boost to all of India (country IN) for more results; the locations lists are kept only for reference."
 }
