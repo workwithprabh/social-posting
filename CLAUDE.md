@@ -20,6 +20,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   it moves to the new month on the 1st). Client names in Videos C and Statics B must match the `Clients` tab exactly
   ("Arav Mahindra", "Car and Bike"), or the Dashboard won't count them; fill Post date whenever a video is posted.
   Tab `Clients`: code, client, Drive folder.
+  Today's date: Dashboard!B4 is `=TODAY()`; the sheet's time zone is Asia/Kolkata (it was America/Los_Angeles,
+  which showed the previous day until 12:30 pm IST; fixed 13 Nov 2026). Read B4 to know today's date in India.
   Read it with the Drive connector: `download_file_content` with `exportMimeType: text/csv`.
   Writing to it needs the Google Sheets connector; without it, the user updates the sheet by hand.
 - **Edited videos:** owned by becarrotsocial@gmail.com, one folder per client, one subfolder per month,
@@ -88,7 +90,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   ad account only (user, 13 Nov 2026); Mahindra Arav and Dee Emm Mahindra fall
   back to the Dee Emm Hyundai / Car & Bike account only when their own can't cover the boost. Create boosts paused,
   show the batch, and activate only after the user says yes. `python scripts/check_ads.py` checks access and balances;
-  `python scripts/boost_reel.py plan|create|activate|delete` makes the boost (create = paused, no spend).
+  `python scripts/boost_reel.py plan|create|activate|delete` makes the boost (create = paused, no spend);
+  `boost_reel.py results <campaign_id> ...` reads spend, reach and Instagram profile visits (read-only).
 - Posting rhythm and static-post rules: `statics/BRAND_SOURCES.md` (a post every second day, cycling 2 videos then 1
   static, flexible when videos are short). Client contacts and logos: `statics/clients.json`.
 - Static content buckets and the Calendar/Reviews tabs: `statics/CONTENT_BUCKETS.md`. Google reviews come from

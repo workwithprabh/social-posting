@@ -5,6 +5,7 @@ Usage:
   python scripts/boost_reel.py create <CLIENT> <ig_media_id>        # create campaign/ad set/ad, all PAUSED (no spend)
   python scripts/boost_reel.py activate <campaign_id> <adset_id> <ad_id>   # only after the user says yes
   python scripts/boost_reel.py delete <campaign_id>                 # remove a test boost
+  python scripts/boost_reel.py results <campaign_id> ...            # read-only: spend, reach, profile visits so far
 
 Budget: a lifetime budget of daily_budget_inr x days over exactly that many days, so the total can't exceed the rule.
 Uses META_SYSTEM_USER_TOKEN. Never prints the token.
@@ -135,3 +136,20 @@ if __name__ == '__main__':
         print('activated', sys.argv[2:])
     elif cmd == 'delete':
         call('DELETE', sys.argv[2]); print('deleted', sys.argv[2])
+    elif cmd == 'results':   # read-only: lifetime results of each campaign id given
+        for cid in sys.argv[2:]:
+            try:
+                c = call('GET', cid, fields='name,effective_status,start_time,stop_time')
+                ins = call('GET', f'{cid}/insights', date_preset='maximum',
+                           fields='spend,reach,impressions,frequency,cpm,actions,instagram_profile_visits,results,cost_per_result').get('data') or [{}]
+                i = ins[0]
+                acts = {a['action_type']: a['value'] for a in i.get('actions', [])}
+                print(json.dumps(dict(campaign=cid, name=c.get('name'), status=c.get('effective_status'),
+                                      start=c.get('start_time'), stop=c.get('stop_time'), spend=i.get('spend'),
+                                      reach=i.get('reach'), impressions=i.get('impressions'),
+                                      frequency=i.get('frequency'), cpm=i.get('cpm'), profile_visits=i.get('instagram_profile_visits'),
+                                      cost_per_visit=((i.get('cost_per_result') or [{}])[0].get('values') or [{}])[0].get('value'),
+                                      link_clicks=acts.get('link_click'), video_views=acts.get('video_view'),
+                                      likes=acts.get('onsite_conversion.post_net_like')), ensure_ascii=False))
+            except RuntimeError as e:
+                print(json.dumps(dict(campaign=cid, error=str(e))))
