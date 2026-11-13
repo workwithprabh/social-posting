@@ -114,7 +114,10 @@ finished on Instagram; 34 and 41 MB files went through in Oct, but on 11 Nov 202
 ProcessingFailedError while 17 MB went through). If Instagram fails, re-encode smaller with `-crf 25 -maxrate 3M
 -bufsize 6M -b:a 128k` (about 15-20 MB for a 50 s reel) and retry. Car & Bike's Instagram rejected 1080p files of every size; a 720p
 encode (`-vf scale=720:1280 -r 30 -crf 28 -maxrate 1500k -bufsize 3000k -b:a 96k`, about 8 MB) went through for
-CB-2611-03 on 13 Nov 2026. CB-2611-02 still fails even at 720p (same settings), so that one is posted from the app. Without `--cover-url`, `publish_reel.py` makes the
+CB-2611-03 on 13 Nov 2026. CB-2611-02 still fails even at 720p (same settings), so that one is posted from the app.
+On 13 Nov 2026 1080p also failed for M R Hyundai and Arav Mahindra (15 MB, 8 MB) while Capital and Dee Emm
+Hyundai went through: AM worked at 720p; MRH-2610-03 needed `-vf scale=720:1280,fps=30 -profile:v main -level 4.0
+-crf 30 -maxrate 1200k -g 60 -ar 44100` (9 MB). If Instagram fails at 1080p, go straight to 720p. Without `--cover-url`, `publish_reel.py` makes the
 cover link itself from `--cover-file` (an unpublished Page photo, deleted afterwards). Publish with `scripts/publish_reel.py`; for clients on the
 system user token add `--system-user` so Facebook gets the Page token.
 
