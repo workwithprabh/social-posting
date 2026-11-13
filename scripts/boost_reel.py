@@ -7,7 +7,8 @@ Usage:
   python scripts/boost_reel.py delete <campaign_id>                 # remove a test boost
   python scripts/boost_reel.py results <campaign_id> ...            # read-only: spend, reach, profile visits so far
 
-Budget: a lifetime budget of daily_budget_inr x days over exactly that many days, so the total can't exceed the rule.
+Budget: a lifetime budget of daily_budget_inr x hours/24 (per_reel_inr) over exactly `hours` hours, so the total can't
+exceed the rule. `activate` restarts the ad set's window at activation time so the boost runs the full `hours`.
 Uses META_SYSTEM_USER_TOKEN. Never prints the token.
 """
 import datetime as dt
@@ -80,7 +81,7 @@ def plan(client, media_id, permalink=None):
     act, r, why = pick_account(client)
     ig, user, page, link, cap = ig_and_page(client, media_id, permalink)
     start = dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=10)
-    end = start + dt.timedelta(days=CFG['days'])
+    end = start + dt.timedelta(hours=CFG['hours'])
     loc = CFG['clients'][client]['locations']
     return dict(client=client, ad_account=act, fallback_reason=why, room_inr=round(r, 2), ig_user=ig, ig_username=user,
                 page_id=page, media=media_id, permalink=link, caption_start=cap,
@@ -132,6 +133,14 @@ if __name__ == '__main__':
                 print(json.dumps({'error': str(e)}))
     elif cmd == 'activate':
         for i in sys.argv[2:]:
+            try:
+                info = call('GET', i, fields='lifetime_budget,optimization_goal')   # optimization_goal exists only on ad sets
+            except RuntimeError:
+                info = {}
+            if info.get('optimization_goal'):   # the ad set: restart its window now so it runs the full `hours`
+                now = dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=2)
+                call('POST', i, start_time=now.isoformat(timespec='seconds'),
+                     end_time=(now + dt.timedelta(hours=CFG['hours'])).isoformat(timespec='seconds'))
             call('POST', i, status='ACTIVE')
         print('activated', sys.argv[2:])
     elif cmd == 'delete':
