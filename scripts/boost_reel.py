@@ -15,6 +15,7 @@ import datetime as dt
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -86,7 +87,7 @@ def plan(client, media_id, permalink=None):
     return dict(client=client, ad_account=act, fallback_reason=why, room_inr=round(r, 2), ig_user=ig, ig_username=user,
                 page_id=page, media=media_id, permalink=link, caption_start=cap,
                 budget_inr=CFG['per_reel_inr'], start=start.isoformat(timespec='seconds'), end=end.isoformat(timespec='seconds'),
-                locations=loc)
+                locations=loc, country=CFG['clients'][client].get('country'))
 
 
 def create(p):
@@ -101,9 +102,11 @@ def create(p):
 
 
 def _rest(p, name, camp):
+    geo = ({'countries': [p['country']]} if p.get('country') else
+           {'custom_locations': [dict(latitude=l['lat'], longitude=l['lng'], radius=l['km'], distance_unit='kilometer')
+                                 for l in p['locations']]})
     targeting = {
-        'geo_locations': {'custom_locations': [dict(latitude=l['lat'], longitude=l['lng'], radius=l['km'], distance_unit='kilometer')
-                                               for l in p['locations']]},
+        'geo_locations': geo,
         'publisher_platforms': ['instagram'],
         'instagram_positions': ['stream', 'story', 'reels', 'explore_home', 'profile_feed'],
         'targeting_automation': {'advantage_audience': 1},
@@ -139,8 +142,13 @@ if __name__ == '__main__':
                 info = {}
             if info.get('optimization_goal'):   # the ad set: restart its window now so it runs the full `hours`
                 now = dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=2)
-                call('POST', i, start_time=now.isoformat(timespec='seconds'),
-                     end_time=(now + dt.timedelta(hours=CFG['hours'])).isoformat(timespec='seconds'))
+                end = (now + dt.timedelta(hours=CFG['hours'])).isoformat(timespec='seconds')
+                try:
+                    call('POST', i, start_time=now.isoformat(timespec='seconds'), end_time=end)
+                except RuntimeError:   # start within 15 min or already passed: Meta keeps it; move only the end
+                    time.sleep(35)     # Meta allows one ad set edit per 30 s
+                    call('POST', i, end_time=end)
+                time.sleep(35)
             call('POST', i, status='ACTIVE')
         print('activated', sys.argv[2:])
     elif cmd == 'delete':
