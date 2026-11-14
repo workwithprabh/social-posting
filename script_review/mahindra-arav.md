@@ -198,4 +198,5 @@
   Pickup aapke liye sirf gaadi nahi, kamaai ka zariya hai. Isliye hamare yahan baat bechne pe khatam nahi hoti. Finance se lekar delivery tak, aur delivery ke baad service tak, hum aapke saath rehte hain.
 
   Toh pickup lena hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Bharose ke saath gaadi lijiye, aur kaam shuru kijiye.
+- Trust version scored 8/10 (hook 8, idea 8, accuracy 7, flow 8, voice 8, CTA 8, shootability 7); 9 needs one shown proof (real pickup customer clip or a real number).
 - To verify for the trust version: the workshop services pickups; finance help for commercial buyers.
