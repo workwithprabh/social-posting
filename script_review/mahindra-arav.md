@@ -22,3 +22,27 @@
   Aur CNG cylinder neeche fit hain, toh boot flat rehta hai. Poora 270 litre usable space.
 
   Toh agar aap bhi petrol aur ZNG mein confuse ho, ek baar Mahindra Arav aaiye, Gurgaon ya Manesar. Bas apni daily running batao, hum calculate karke bata denge ki aapke liye kaunsa better padega. Aur haan, test drive toh banta hai!
+
+## 2026-11-14 · XUV 3XO ZNG: gas leak safety + 5-star Bharat NCAP
+- Score: 6.5/10 (hook 6, idea 8, accuracy 8, flow 6, voice 6, CTA 7, shootability 5)
+- Main fixes: question moved to the first second (the "CNG car lene se pehle..." lead-in delayed it); "ho sakti
+  hai" made "ho jaati hai" (Mahindra says it switches); brochure phrasing ("integrated ... system diya gaya hai",
+  "features samajhiye") made spoken; added Mahindra's "first sub-compact CNG SUV with 5-star" claim (attributed)
+  and 35+ safety features; leak shown as a labelled graphic, never a staged leak.
+- Confirmed (Mahindra press release, 6 Nov 2026): leak detection switches to petrol automatically; 5-star Bharat
+  NCAP (AOP 29.36/32, COP 45/49); "India's first sub-compact CNG SUV" to get it; 35+ safety features incl. six
+  airbags, ESC, ISOFIX.
+- To verify: whether six airbags and ESC are on every ZNG variant (press release does not say).
+- Repeat in this client: slow lead-in before the hook (2 of 2 scripts); brochure wording (2 of 2).
+- Final script:
+
+  Agar CNG car mein kabhi gas leak ho gayi, toh kya hoga?
+  Ye sawaal almost har customer poochta hai, toh seedha answer sun lijiye.
+
+  XUV 3XO ZNG mein gas-leak detection inbuilt hai. Jaise hi system leak pakadta hai, car khud CNG se petrol mode pe switch ho jaati hai.
+
+  Aur safety sirf yahin tak nahi. 3XO ZNG ko Bharat NCAP mein 5-star rating mili hai. Mahindra ke hisaab se ye 5-star paane wali India ki pehli sub-compact CNG SUV hai. Saath mein six airbags aur ESC jaise 35 se zyada safety features milte hain.
+
+  Toh CNG car lete waqt sirf mileage mat dekhiye, safety bhi utni hi zaroori hai.
+
+  Ek baar Mahindra Arav aaiye, Gurgaon ya Manesar. Car ko paas se dekhiye, hum saare safety features aaram se samjha denge. Aur ek test drive toh le hi lijiye!
