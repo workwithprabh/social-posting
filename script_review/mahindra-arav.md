@@ -157,3 +157,27 @@
   Check ke baad pehle aapko bataya jaata hai ki kya kaam zaroori hai aur kitna kharcha aayega. Aap haan bolo, tabhi kaam shuru.
 
   Toh Mahindra ki service due hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Pehle check karwaiye, phir sirf wahi karwaiye jo sach mein zaroori hai.
+
+## 2026-11-14 · Commercial vehicle: choose by your business use
+- Score: 5/10 (hook 5, idea 7, accuracy 5, flow 6, voice 5, CTA 3, shootability 6)
+- Main fixes: removed the phone number (user rule: no numbers in scripts; 88006 73639 also does not match the
+  numbers we have, 88600 86639 / 88601 03798, so check it before it goes in any caption); "Mahindra commercial
+  vehicle" -> "pickup" (Arav sells only Bolero Pik-Up, Bolero Camper, Maxx City, Maxx HD, Veero, not Jeeto,
+  Supro, Treo, Zor Grand); named the line-up as the proof point; slow "Agar aap..." lead-in cut; jargon
+  ("right vehicle choose karna important hai", "suitable", "purchase process properly") made spoken;
+  "Arav Mahindra" -> "Mahindra Arav" (4th time).
+- To verify with the dealership: which outlet(s) sell and show pickups; finance help for commercial buyers;
+  the 88006 73639 number.
+- Repeat in this client: jargon (7 of 7), name order (4 of 7), slow "agar" lead-in (3 of 7), generic
+  "we'll explain everything" with no proof (3 of 7).
+- Final script (written as the 9/10 version):
+
+  Business ke liye pickup lena hai? Toh pehle gaadi nahi, apna kaam dekho.
+
+  Roz kitna maal uthana hai, kitna chalna hai, aur gaadi zyada city mein chalegi ya highway pe? Isi se pata chalta hai ki aapke liye kaunsi pickup sahi rahegi.
+
+  Mahindra Arav pe Bolero Pik-Up, Bolero Camper, Maxx aur Veero, sab ek hi jagah milti hain.
+
+  Aap bas apna kaam bataiye, hum sahi pickup suggest karenge aur finance ka poora hisaab bhi samjha denge.
+
+  Toh business ke liye pickup chahiye? Mahindra Arav aaiye, Gurgaon ya Manesar. Gaadi dekhiye, test drive lijiye, aur apne kaam ke hisaab se sahi choice kijiye.
