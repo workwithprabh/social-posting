@@ -15,3 +15,6 @@ One log per client: `capital-hyundai.md`, `dee-emm-hyundai.md`, `mr-hyundai.md`,
 Scoring criteria (each out of 10): hook (first 2 s), one clear idea, accuracy, flow and length (30-60 s),
 client voice and language (`captions/STYLE.md`), call to action, ease of shooting. Facts are checked against
 the brand's own site or press release; prices and offers carry "ex-showroom, T&C apply".
+
+Phone numbers never go in the script (user, 14 Nov 2026): the spoken CTA names the dealership only. Numbers stay
+in the caption's contact block.
