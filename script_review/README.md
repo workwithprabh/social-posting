@@ -18,3 +18,10 @@ the brand's own site or press release; prices and offers carry "ex-showroom, T&C
 
 Phone numbers never go in the script (user, 14 Nov 2026): the spoken CTA names the dealership only. Numbers stay
 in the caption's contact block.
+
+## How it should sound (user feedback, 14 Nov 2026)
+Write the way a salesperson talks on the floor, not like a brochure. Prefer everyday words: "mileage" over
+"efficiency" (keep "certified" for brand figures), "kharcha" over "running-cost comparison", "kaunsa better
+padega", "ek baar aaiye", "test drive toh banta hai". Read each line aloud; if nobody would say it to a customer
+(e.g. "daily running leke aao"), rewrite it. Brand facts can be said plainly ("dono mein same 200 Nm") without
+"Mahindra ke hisaab se", as long as the number is the brand's own.
