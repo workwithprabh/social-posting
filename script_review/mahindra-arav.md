@@ -64,15 +64,19 @@
 - To verify with Mahindra / the dealer's finance desk: how the Rs 3.75/km is billed (per km, fixed monthly,
   minimum 60 km/day?), what happens above/below 60 km/day, financier and tenure; price still current on post day.
 - Repeat in this client: brochure/finance wording (3 of 3); CTA wording reused across reels.
-- Final script:
+- Final script (9/10 version; Rs 6,750 is our arithmetic on Mahindra's own figures, 3.75 x 60 km x 30 days,
+  shown on screen as indicative; true whether billing is per km or a fixed amount at 60 km/day):
 
   Electric SUV, aur wo bhi ₹11.45 lakh se?
   Haan, BE 6 SPORTEQ ke saath ye possible hai. Bas iske peeche ka funda samajh lijiye.
 
-  Is price pe car aati hai BaaS ke saath, yaani Battery-as-a-Service. Matlab battery ka cost car ke price mein shamil nahi hai, uska kharcha alag se lagta hai.
+  Is price pe car aati hai BaaS ke saath, yaani Battery-as-a-Service. Matlab battery ka cost car ke price mein include nahi hai, uska kharcha alag se lagta hai.
 
-  BE 6 SPORTEQ ONE ka BaaS ex-showroom price hai ₹11.45 lakh, aur battery ka kharcha ₹3.75 per km, jo roz 60 km chalane ke hisaab se nikala gaya hai. Battery ke saath yahi car ₹19.45 lakh ki padti hai.
+  BE 6 SPORTEQ ONE ka BaaS ex-showroom price hai ₹11.45 lakh, aur battery ka kharcha ₹3.75 per km.
+  Yaani agar aap roz 60 km chalate ho, toh battery ka mahine ka kharcha lagbhag ₹6,750 banta hai.
 
-  Toh shuru mein kaafi kam paisa lagta hai. Bas battery ka har mahine kitna banega, wo pehle clear kar lena zaroori hai.
+  Aur agar battery ke saath poori car leni ho, toh yahi car ₹19.45 lakh ki padti hai.
+
+  Toh shuru mein kaafi kam paisa lagta hai. Bas apna monthly budget pehle check kar lijiye.
 
   BaaS lein ya battery ke saath poori car? Ek baar Mahindra Arav aaiye, Gurgaon ya Manesar. Aapke budget ke hisaab se hum dono option side-by-side dikha denge. Aur BE 6 ki drive bhi ek baar try kar lijiye!
