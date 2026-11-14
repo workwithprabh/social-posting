@@ -80,3 +80,29 @@
   Toh shuru mein kaafi kam paisa lagta hai. Bas apna monthly budget pehle check kar lijiye.
 
   BaaS lein ya battery ke saath poori car? Ek baar Mahindra Arav aaiye, Gurgaon ya Manesar. Aapke budget ke hisaab se hum dono option side-by-side dikha denge. Aur BE 6 ki drive bhi ek baar try kar lijiye!
+
+## 2026-11-14 · EV home charging: society won't allow a charger
+- Score: 6/10 (hook 8, idea 6, accuracy 6, flow 5, voice 5, CTA 7, shootability 6)
+- Main fixes: cut the hedgy "EV phir bhi sensible ho sakti hai" line; jargon (NOC, sanctioned load, DISCOM,
+  reliable public fast charger, comfortably manage) made spoken ("ghar ka bijli load", "bijli company");
+  Devanagari "फिलहाल" -> "filhaal" style Roman; one idea per paragraph; "180 kW" -> "180 kW tak".
+- Checked: Ministry of Power EV charging guidelines (2024, amended Jan 2025) let owners charge at home on the
+  existing connection or ask the DISCOM for a separate EV connection; society approval and load upgrades vary by
+  state. The script's hedged wording is fine; do not claim "society mana nahi kar sakti".
+- To verify with the dealership: Sector 83 charger exists, is live, 180 kW (per charger, shared across two guns?),
+  open to all EVs or Mahindra only, hours and pricing. Not found in any Mahindra/Charge_iN listing online.
+- Repeat in this client: jargon/brochure wording (4 of 4); "daily use ke hisaab se" CTA again.
+- Final script:
+
+  Society home charger lagane nahi de rahi? Toh kya EV ka plan cancel?
+  Bilkul nahi.
+
+  Pehle ye pata karo ki problem kya hai: society ki permission, parking, wiring, ya ghar ka bijli load. Society mein apna charger lagwana possible hai, bas society aur bijli company ka thoda process hota hai.
+
+  Aur jab tak ghar pe charger nahi lagta, tab tak dekho ki office ya ghar ke paas koi achha fast charger hai ya nahi.
+
+  Gurgaon mein ho toh Mahindra Arav, Sector 83 pe 180 kW tak ka fast charger bhi hai.
+
+  Toh EV lene se pehle sirf car mat dekho, ye bhi dekho ki charging kahan aur kaise karoge.
+
+  Confuse ho? Mahindra Arav aao, Gurgaon ya Manesar. Hum aapka poora charging scene samjha denge, aur EV ki test drive bhi ho jayegi!
