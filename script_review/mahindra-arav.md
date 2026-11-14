@@ -50,3 +50,28 @@
   Toh CNG car lete waqt sirf mileage mat dekhiye, safety bhi utni hi zaroori hai.
 
   Ek baar Mahindra Arav aaiye, Gurgaon ya Manesar. Car ko paas se dekhiye, hum saare safety features aaram se samjha denge. Aur ek test drive toh le hi lijiye!
+
+## 2026-11-14 · BE 6 SPORTEQ: Rs 11.45 lakh with BaaS explained
+- Score: 5.5/10 (hook 8, idea 8, accuracy 4, flow 6, voice 5, CTA 6, shootability 6)
+- Main fixes: removed "Rs 3.75/km effective usage cost hai, actual pay-per-km charge nahi" and "car aur battery
+  ki financing separate / battery ki separate EMI": Mahindra does not say this (only Spinny's reading); kept to
+  the official footnote (Rs 3.75/km considering 60 km/day); added ex-showroom, without wall charger, T&C apply;
+  added the Rs 19.45 lakh with-battery price for contrast; finance jargon ("monthly outflow", "effective usage
+  cost", "sensible") made spoken; CTA changed so it does not repeat the ZNG reel's "running batao, calculation".
+- Confirmed (Mahindra press release, 15 Aug 2026): ONE 59 kWh Rs 11.45 lakh (BaaS) / Rs 19.45 lakh, ex-showroom,
+  without wall charger and installation; battery at Rs 3.75/km considering 60 km/day usage.
+- To verify with Mahindra / the dealer's finance desk: how the Rs 3.75/km is billed (per km, fixed monthly,
+  minimum 60 km/day?), what happens above/below 60 km/day, financier and tenure; price still current on post day.
+- Repeat in this client: brochure/finance wording (3 of 3); CTA wording reused across reels.
+- Final script:
+
+  Electric SUV, aur wo bhi ₹11.45 lakh se?
+  Haan, BE 6 SPORTEQ ke saath ye possible hai. Bas iske peeche ka funda samajh lijiye.
+
+  Is price pe car aati hai BaaS ke saath, yaani Battery-as-a-Service. Matlab battery ka cost car ke price mein shamil nahi hai, uska kharcha alag se lagta hai.
+
+  BE 6 SPORTEQ ONE ka BaaS ex-showroom price hai ₹11.45 lakh, aur battery ka kharcha ₹3.75 per km, jo roz 60 km chalane ke hisaab se nikala gaya hai. Battery ke saath yahi car ₹19.45 lakh ki padti hai.
+
+  Toh shuru mein kaafi kam paisa lagta hai. Bas battery ka har mahine kitna banega, wo pehle clear kar lena zaroori hai.
+
+  BaaS lein ya battery ke saath poori car? Ek baar Mahindra Arav aaiye, Gurgaon ya Manesar. Aapke budget ke hisaab se hum dono option side-by-side dikha denge. Aur BE 6 ki drive bhi ek baar try kar lijiye!
