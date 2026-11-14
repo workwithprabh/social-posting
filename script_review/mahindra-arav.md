@@ -145,15 +145,15 @@
 - To verify with the dealership: service workshops at both Gurgaon and Manesar; checklist inspection; estimate
   shared and customer approval taken before extra work. Don't add warranty claims about outside garages.
 - Repeat in this client: jargon (6 of 6), name order (3 of 6), same hook template two reels running.
-- Final script:
+- Final script (9/10 version; hook lead-in cut; shoot after the dealership confirms the three points above):
 
-  Car service toh kahin bhi ho jaati hai. Par kya sirf oil aur filter badalna hi service hai?
+  Service ka matlab sirf oil aur filter badalna?
   Bilkul nahi.
 
   Agar dashboard pe warning light aa rahi hai, mileage kam ho gaya hai, ya pickup mein farak lag raha hai, toh pehle sahi wajah pakadna zaroori hai.
 
-  Mahindra Arav ke workshop mein trained technicians checklist ke saath poori gaadi check karte hain, aur Mahindra ke genuine parts hi lagate hain.
+  Mahindra Arav ke workshop mein trained technicians checklist ke saath poori gaadi check karte hain, aur sirf Mahindra genuine parts lagate hain.
 
-  Check ke baad aapko pehle bataya jaata hai ki kya kaam zaroori hai aur kitna kharcha aayega. Aapki haan ke baad hi kaam shuru hota hai.
+  Check ke baad pehle aapko bataya jaata hai ki kya kaam zaroori hai aur kitna kharcha aayega. Aap haan bolo, tabhi kaam shuru.
 
   Toh Mahindra ki service due hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Pehle check karwaiye, phir sirf wahi karwaiye jo sach mein zaroori hai.
