@@ -89,6 +89,7 @@
 - Checked: Ministry of Power EV charging guidelines (2024, amended Jan 2025) let owners charge at home on the
   existing connection or ask the DISCOM for a separate EV connection; society approval and load upgrades vary by
   state. The script's hedged wording is fine; do not claim "society mana nahi kar sakti".
+- Rewrite scored 7.5/10 (hook 8, idea 7, accuracy 7, flow 8, voice 8, CTA 8, shootability 7); 9 needs the Sector 83 charger confirmed.
 - To verify with the dealership: Sector 83 charger exists, is live, 180 kW (per charger, shared across two guns?),
   open to all EVs or Mahindra only, hours and pricing. Not found in any Mahindra/Charge_iN listing online.
 - Repeat in this client: jargon/brochure wording (4 of 4); "daily use ke hisaab se" CTA again.
