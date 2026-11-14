@@ -33,6 +33,13 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 ## Rules the user set
 
 - Post only when the user says to upload specific Video IDs. The Post date column is not a schedule.
+- Approving videos (user, 14 Nov 2026): when Claude makes a reel's thumbnail and finds everything in the video good,
+  Claude may set its Status to Approved itself, for every client except Capital Hyundai (the team marks CH reels by
+  hand). "Good" means Claude has checked the whole reel: the facts, prices and specs said or shown are right; the
+  dealer name, phone numbers and locations on screen and on the end card belong to that client; on-screen text and
+  subtitles are spelled right; no other dealer's or brand's name is shown; no cut-off audio, glitches or black frames.
+  If anything is doubtful, leave it Pending and tell the user what is wrong. Note the check in Notes ("video checked
+  and approved by Claude"). Approving is not posting: posting still needs the user's yes on the batch.
 - Claude drafts captions and thumbnails; the team approves them. Covers follow `cover/PLAYBOOK.md`
   (Mahindra style; Hyundai and Car & Bike use the same rules in their own colours, refs in `cover/refs/`),
   updated by the v2 rules below.
