@@ -145,3 +145,23 @@ What worked: start from a real close-up where she is already smiling (CB-2611-02
 ask to change only the mouth to a soft, even, closed-lip smile with relaxed level brows, and say "same face shape,
 nose, eyes, lips, skin texture, no added makeup, not retouched". Check `face_expr.py`: smile_asym under 0.05,
 brow_up near 0, teeth 0. Compare a face crop with the real frame to make sure it is still the same person.
+
+## Scene covers, no presenter (user, 14 Nov 2026: chosen for DEM-2611-05, "save it as a style")
+A third cover style for topic reels (a feature, charging, a safety test, a launch): the topic itself fills the cover,
+no presenter. Reference: DEM-2611-05 (EV home charging); config in `examples/DEM-2611-05_scene_cfg2.json`.
+Use it when the reel has a clear topic shot; keep presenter covers for advice and opinion reels (loans, exchange,
+"kaunsa lena sahi rahega"), and the real delivery photo for testimonials.
+1. Pick the reel's own shot of the topic: the real car or feature, sharp, nothing in front of it. Remove burnt-in
+   subtitles and the dealer watermark with `cv2.inpaint`.
+2. The car stays real. AI (Canva `generate-image` with the frame as reference, 9:16) may change only the setting:
+   e.g. a plain garage into a warm, lit Indian home with a wall charger. Prompt: keep the car exactly as it is (shape,
+   colour, doors, wheels, ports, cable), no new logos or text; change only the surroundings; bright, realistic.
+   Never let AI draw the car from scratch. Compare the car with the source frame side by side before using it.
+   To export at 1080x1920, add a 9:16 page to the scratch design and `insert_fill` the image.
+3. Build with `build_v2.py` and css overrides: `.pwrap,.side{display:none}`, `bg_blur` 0, `.shade::after{display:none}`
+   (that bottom fade is for the presenter and blacks out the scene), a lighter `.shade`, and `target_L` 200 to skip
+   the face tuning. Shift the scene down (~360 px) so the headline box does not hide the subject.
+4. Point at the subject: a gold ring (`.c::after`) around it, and a red pill (`.c::before`) with one fact from the reel
+   (here "7.2 kW | 11.2 kW WALL CHARGER").
+5. Notes on the row say "background edited with AI" (and "no presenter").
+Don't shift the scene sideways and mirror the edge to fill it: that duplicated the wall charger.

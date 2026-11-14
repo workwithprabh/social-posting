@@ -68,6 +68,10 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
      side card (not a text-heavy stock list). Details in cover/README.md "Approved covers: what they share".
      Approved references (user, 11 Nov 2026): CB-2611-02 and CB-2611-03 with a natural closed-lip smile edited from a
      real smiling frame (identity kept), and CH-2611-02.
+  9. **Scene covers, no presenter (user, 14 Nov 2026, DEM-2611-05).** For topic reels (feature, charging, safety,
+     launch) the topic fills the cover: the real car from the reel, with AI changing only the setting (never the car),
+     a gold ring on the subject and one fact from the reel in a pill. Recipe: cover/README.md "Scene covers". Keep
+     presenter covers for advice/opinion reels. Notes say "background edited with AI".
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in
