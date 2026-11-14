@@ -32,6 +32,7 @@
 - Confirmed (Mahindra press release, 6 Nov 2026): leak detection switches to petrol automatically; 5-star Bharat
   NCAP (AOP 29.36/32, COP 45/49); "India's first sub-compact CNG SUV" to get it; 35+ safety features incl. six
   airbags, ESC, ISOFIX.
+- Rewrite scored 8/10 (hook 8, idea 8, accuracy 8, flow 7, voice 8, CTA 8, shootability 7).
 - To verify: whether six airbags and ESC are on every ZNG variant (press release does not say).
 - Repeat in this client: slow lead-in before the hook (2 of 2 scripts); brochure wording (2 of 2).
 - Final script:
