@@ -35,14 +35,17 @@
 - Rewrite scored 8/10 (hook 8, idea 8, accuracy 8, flow 7, voice 8, CTA 8, shootability 7).
 - To verify: whether six airbags and ESC are on every ZNG variant (press release does not say).
 - Repeat in this client: slow lead-in before the hook (2 of 2 scripts); brochure wording (2 of 2).
-- Final script:
+- Final script (9/10 version; six airbags + ESC standard across the 3XO range per Bharat NCAP fact sheet and
+  Autocar, ZNG variant sheet still to confirm):
 
   Agar CNG car mein kabhi gas leak ho gayi, toh kya hoga?
-  Ye sawaal almost har customer poochta hai, toh seedha answer sun lijiye.
+  Seedha answer sun lijiye.
 
   XUV 3XO ZNG mein gas-leak detection inbuilt hai. Jaise hi system leak pakadta hai, car khud CNG se petrol mode pe switch ho jaati hai.
 
-  Aur safety sirf yahin tak nahi. 3XO ZNG ko Bharat NCAP mein 5-star rating mili hai. Mahindra ke hisaab se ye 5-star paane wali India ki pehli sub-compact CNG SUV hai. Saath mein six airbags aur ESC jaise 35 se zyada safety features milte hain.
+  Aur safety sirf yahin tak nahi. 3XO ZNG ko Bharat NCAP mein 5-star rating mili hai.
+
+  Mahindra ke hisaab se, ye India ki pehli sub-compact CNG SUV hai jise 5-star mila hai. Saath mein six airbags aur ESC jaise 35 se zyada safety features milte hain.
 
   Toh CNG car lete waqt sirf mileage mat dekhiye, safety bhi utni hi zaroori hai.
 
