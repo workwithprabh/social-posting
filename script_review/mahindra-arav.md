@@ -215,3 +215,16 @@
   (Customer, apne shabdon mein, ek line)
 
   Toh pickup lena hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Bharose ke saath gaadi lijiye, aur kaam shuru kijiye.
+- No customer available (user). Final version shows the proof instead: presenter walks into the workshop with
+  pickups being serviced. 8.5/10; 9 with one exact number from the dealership.
+
+  Business ke liye Mahindra pickup lene ka man bana liya hai?
+  Toh ab sawaal sirf ek hai: lein kahan se?
+
+  Aapko pata hai aapke kaam ke liye kaunsi gaadi chahiye. Bolero Pik-Up ho, Camper, Maxx ya Veero, sab Mahindra Arav pe ek hi jagah milti hain.
+
+  Pickup aapke liye sirf gaadi nahi, kamaai ka zariya hai. Isliye hamare yahan baat bechne pe khatam nahi hoti.
+
+  Finance hum khud arrange karte hain, aur delivery ke baad service bhi yahin hoti hai. Ye dekhiye, hamara workshop, jahan pickups ki service hoti hai.
+
+  Toh pickup lena hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Bharose ke saath gaadi lijiye, aur kaam shuru kijiye.
