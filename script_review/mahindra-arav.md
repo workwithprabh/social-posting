@@ -121,7 +121,8 @@
   member, the Sector 83 charger once confirmed).
 - To verify with the dealership: finance, exchange and insurance are all handled in-house at each outlet.
 - Rewrite scored 7.5/10; 9 needs the proof point.
-- Final script:
+- Final script (9/10 version; proof point = SUVs + pickups, from statics/BRAND_SOURCES.md, only Arav sells
+  pickups; confirm which outlets show pickups):
 
   Mahindra ki price toh online bhi mil jaati hai. Toh phir showroom aane ki zaroorat hi kya hai?
   Hai, aur kaafi badi hai.
@@ -130,6 +131,6 @@
 
   Ye sab koi website aapko nahi bata sakti.
 
-  Mahindra Arav mein hum pehle aapki zaroorat samajhte hain, phir car suggest karte hain. Finance, exchange, insurance, sab ek hi jagah.
+  Mahindra Arav mein hum pehle aapki zaroorat samajhte hain, phir gaadi suggest karte hain. Ghar ke liye SUV chahiye ho ya business ke liye pickup, dono yahin milte hain. Aur finance, exchange, insurance, sab ek hi jagah.
 
-  Toh Mahindra lene ka plan hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Car dekhiye, test drive lijiye, aur poori clarity ke saath decision lijiye.
+  Toh Mahindra lene ka plan hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Gaadi dekhiye, test drive lijiye, aur poori clarity ke saath decision lijiye.
