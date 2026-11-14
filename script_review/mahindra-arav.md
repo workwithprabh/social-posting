@@ -93,16 +93,19 @@
 - To verify with the dealership: Sector 83 charger exists, is live, 180 kW (per charger, shared across two guns?),
   open to all EVs or Mahindra only, hours and pricing. Not found in any Mahindra/Charge_iN listing online.
 - Repeat in this client: jargon/brochure wording (4 of 4); "daily use ke hisaab se" CTA again.
-- Final script:
+- Charge_iN (Mahindra press release 25 Nov 2025 + Charge_iN page): 180 kW dual-gun chargers take XEV 9e, BE 6,
+  XEV 9S from 20 to 80% in 20 minutes; network open to all EVs. Sector 83 is NOT in Charge_iN's 58-station list,
+  so it is probably the dealer's own charger: the 20-minute line holds only if it is a 180 kW DC (CCS2) unit.
+- Final script (9/10 version, shoot only after Sector 83 is confirmed):
 
   Society home charger lagane nahi de rahi? Toh kya EV ka plan cancel?
   Bilkul nahi.
 
-  Pehle ye pata karo ki problem kya hai: society ki permission, parking, wiring, ya ghar ka bijli load. Society mein apna charger lagwana possible hai, bas society aur bijli company ka thoda process hota hai.
+  Pehle ye pata karo ki problem kya hai: society ki permission, wiring, ya ghar ka bijli load. Society mein apna charger lagwana possible hai, bas society aur bijli company ka thoda process hota hai.
 
-  Aur jab tak ghar pe charger nahi lagta, tab tak dekho ki office ya ghar ke paas koi achha fast charger hai ya nahi.
+  Aur jab tak ghar pe charger nahi lagta, tab tak dekho ki office ya roz ke raste mein koi fast charger padta hai ya nahi.
 
-  Gurgaon mein ho toh Mahindra Arav, Sector 83 pe 180 kW tak ka fast charger bhi hai.
+  Gurgaon mein ho toh Mahindra Arav, Sector 83 pe 180 kW tak ka fast charger bhi hai. Mahindra ke hisaab se aise charger pe BE 6 aur XEV 9e sirf 20 minute mein 20 se 80 percent charge ho jaati hain.
 
   Toh EV lene se pehle sirf car mat dekho, ye bhi dekho ki charging kahan aur kaise karoge.
 
