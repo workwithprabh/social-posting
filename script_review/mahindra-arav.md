@@ -60,6 +60,7 @@
   cost", "sensible") made spoken; CTA changed so it does not repeat the ZNG reel's "running batao, calculation".
 - Confirmed (Mahindra press release, 15 Aug 2026): ONE 59 kWh Rs 11.45 lakh (BaaS) / Rs 19.45 lakh, ex-showroom,
   without wall charger and installation; battery at Rs 3.75/km considering 60 km/day usage.
+- Rewrite scored 7.5/10 (hook 8, idea 8, accuracy 8, flow 7, voice 8, CTA 8, shootability 7); 9 needs the confirmed billing line.
 - To verify with Mahindra / the dealer's finance desk: how the Rs 3.75/km is billed (per km, fixed monthly,
   minimum 60 km/day?), what happens above/below 60 km/day, financier and tenure; price still current on post day.
 - Repeat in this client: brochure/finance wording (3 of 3); CTA wording reused across reels.
