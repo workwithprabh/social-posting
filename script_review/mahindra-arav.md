@@ -134,3 +134,26 @@
   Mahindra Arav mein hum pehle aapki zaroorat samajhte hain, phir gaadi suggest karte hain. Ghar ke liye SUV chahiye ho ya business ke liye pickup, dono yahin milte hain. Aur finance, exchange, insurance, sab ek hi jagah.
 
   Toh Mahindra lene ka plan hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Gaadi dekhiye, test drive lijiye, aur poori clarity ke saath decision lijiye.
+
+## 2026-11-14 · Why service at Mahindra Arav
+- Score: 6/10 (hook 6, idea 7, accuracy 7, flow 6, voice 5, CTA 8, shootability 8)
+- Main fixes: same "kahin bhi ... toh Arav Mahindra hi kyun?" template as the previous reel, so the hook now
+  asks the owner's question ("sirf oil aur filter hi service hai?"); "Arav Mahindra" -> "Mahindra Arav" (3rd
+  time); four symptoms cut to three in spoken words; English-heavy lines ("proper diagnosis important hai",
+  "genuinely required", "clarity") made spoken; the strongest idea (check first, only needed work) moved to
+  the end with an estimate-before-work line.
+- To verify with the dealership: service workshops at both Gurgaon and Manesar; checklist inspection; estimate
+  shared and customer approval taken before extra work. Don't add warranty claims about outside garages.
+- Repeat in this client: jargon (6 of 6), name order (3 of 6), same hook template two reels running.
+- Final script:
+
+  Car service toh kahin bhi ho jaati hai. Par kya sirf oil aur filter badalna hi service hai?
+  Bilkul nahi.
+
+  Agar dashboard pe warning light aa rahi hai, mileage kam ho gaya hai, ya pickup mein farak lag raha hai, toh pehle sahi wajah pakadna zaroori hai.
+
+  Mahindra Arav ke workshop mein trained technicians checklist ke saath poori gaadi check karte hain, aur Mahindra ke genuine parts hi lagate hain.
+
+  Check ke baad aapko pehle bataya jaata hai ki kya kaam zaroori hai aur kitna kharcha aayega. Aapki haan ke baad hi kaam shuru hota hai.
+
+  Toh Mahindra ki service due hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Pehle check karwaiye, phir sirf wahi karwaiye jo sach mein zaroori hai.
