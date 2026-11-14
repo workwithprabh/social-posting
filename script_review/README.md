@@ -25,3 +25,9 @@ Write the way a salesperson talks on the floor, not like a brochure. Prefer ever
 padega", "ek baar aaiye", "test drive toh banta hai". Read each line aloud; if nobody would say it to a customer
 (e.g. "daily running leke aao"), rewrite it. Brand facts can be said plainly ("dono mein same 200 Nm") without
 "Mahindra ke hisaab se", as long as the number is the brand's own.
+
+## Script format to share (user, 14 Nov 2026, always)
+The rewritten script goes to the presenter as plain paragraphs: no timings, no tables, no labels. One paragraph
+per beat (hook, fact, doubt/answer, extra point, CTA), blank line between them; a question and its answer sit on
+consecutive lines in the same paragraph. Scores, fact check, shot list and thumbnail come separately, after it.
+Reference: the final Mahindra Arav XUV 3XO ZNG script in `mahindra-arav.md`.
