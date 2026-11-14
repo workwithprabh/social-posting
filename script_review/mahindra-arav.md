@@ -110,3 +110,26 @@
   Toh EV lene se pehle sirf car mat dekho, ye bhi dekho ki charging kahan aur kaise karoge.
 
   Confuse ho? Mahindra Arav aao, Gurgaon ya Manesar. Hum aapka poora charging scene samjha denge, aur EV ki test drive bhi ho jayegi!
+
+## 2026-11-14 · Why buy from Mahindra Arav if the price is online
+- Score: 5.5/10 (hook 6, idea 6, accuracy 8, flow 6, voice 5, CTA 7, shootability 7)
+- Main fixes: "Arav Mahindra" -> "Mahindra Arav" (2nd time); five-item list cut to three (variant, EMI, old
+  car); jargon ("EMI sensible rahegi", "equally important", "requirement") made spoken; reframed from "why us"
+  to the buyer's question "showroom kyun aayein"; no "best price / best deal" claims.
+- Weakness left: no proof. Every dealer can say "hum requirement samajhte hain". Needs one real differentiator
+  from the team (Google rating + review count, years, deliveries, SUVs + pickups under one roof, a named staff
+  member, the Sector 83 charger once confirmed).
+- To verify with the dealership: finance, exchange and insurance are all handled in-house at each outlet.
+- Rewrite scored 7.5/10; 9 needs the proof point.
+- Final script:
+
+  Mahindra ki price toh online bhi mil jaati hai. Toh phir showroom aane ki zaroorat hi kya hai?
+  Hai, aur kaafi badi hai.
+
+  Kyunki price toh sirf shuruaat hai. Asli sawaal ye hain: aapke liye kaunsa variant sahi rahega, EMI kitni banegi, aur purani car ka kya karna hai.
+
+  Ye sab koi website aapko nahi bata sakti.
+
+  Mahindra Arav mein hum pehle aapki zaroorat samajhte hain, phir car suggest karte hain. Finance, exchange, insurance, sab ek hi jagah.
+
+  Toh Mahindra lene ka plan hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Car dekhiye, test drive lijiye, aur poori clarity ke saath decision lijiye.
