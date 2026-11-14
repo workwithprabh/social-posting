@@ -1,5 +1,11 @@
 # Mahindra Arav: script reviews
 
+## Client notes (from the user)
+- Pickup buyers already know which vehicle suits their work. Pickup reels don't teach them how to choose; the
+  message is "planning a Mahindra pickup? Mahindra Arav is the dealer you can trust" (14 Nov 2026).
+- Commercial range is pickups only: Bolero Pik-Up, Bolero Camper, Maxx City, Maxx HD, Veero
+  (`statics/BRAND_SOURCES.md`). Don't say "truck" unless the user confirms Arav sells trucks.
+
 ## 2026-11-14 · XUV 3XO ZNG: petrol or ZNG, by daily running (running cost)
 - Score: 6/10 (hook 4, idea 7, accuracy 6, flow 6, voice 7, CTA 7, shootability 6)
 - Main fixes: hook was a slow "agar..." conditional, now a dilemma question; dropped the unconfirmed "CNG khatam
@@ -181,3 +187,15 @@
   Aap bas apna kaam bataiye, hum sahi pickup suggest karenge aur finance ka poora hisaab bhi samjha denge.
 
   Toh business ke liye pickup chahiye? Mahindra Arav aaiye, Gurgaon ya Manesar. Gaadi dekhiye, test drive lijiye, aur apne kaam ke hisaab se sahi choice kijiye.
+- User feedback: wrong angle, buyers already know what they need; rewritten as a trust reel.
+- Final script (trust angle):
+
+  Business ke liye Mahindra pickup lene ka man bana liya hai?
+  Toh ab sawaal sirf ek hai: lein kahan se?
+
+  Aapko pata hai aapke kaam ke liye kaunsi gaadi chahiye. Bolero Pik-Up ho, Camper, Maxx ya Veero, sab Mahindra Arav pe ek hi jagah milti hain.
+
+  Pickup aapke liye sirf gaadi nahi, kamaai ka zariya hai. Isliye hamare yahan baat bechne pe khatam nahi hoti. Finance se lekar delivery tak, aur delivery ke baad service tak, hum aapke saath rehte hain.
+
+  Toh pickup lena hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Bharose ke saath gaadi lijiye, aur kaam shuru kijiye.
+- To verify for the trust version: the workshop services pickups; finance help for commercial buyers.
