@@ -166,3 +166,13 @@ number in the pill; for testimonials, the real delivery photo.
    (here "7.2 kW | 11.2 kW WALL CHARGER").
 5. Notes on the row say "background edited with AI" (and "no presenter").
 Don't shift the scene sideways and mirror the edge to fill it: that duplicated the wall charger.
+
+Glow-up on scene covers (user, 15 Nov 2026: CB-2611-04 first went out without it and was flagged). The subject must
+pop like the presenter used to, so every scene cover gets:
+- the subject cut out in place (rembg isnet seeded GrabCut), so it keeps its real floor and position;
+- the subject brightened: shadows opened (gamma ~0.62), clarity, highlights lifted, and a soft diagonal showroom sheen
+  (screen blend) across the bonnet and upper body; a black car must read glossy, not flat (car L* rose 70 -> 107);
+- a thin bright gold rim (Mahindra/Car & Bike; white-blue for Hyundai) and a soft halo, both faded out near the floor
+  so the car stays grounded;
+- the background blurred 5 px, kept bright (x0.97), warmed slightly, with a warm light behind and above the subject.
+Rate it against an approved cover before sending: the subject should be the most eye-catching thing on the cover.
