@@ -1,32 +1,23 @@
 === CH-2611-03 ===
 CH-2611-03 - Capital Hyundai Nov Reel-5.mp4
 00:10 - offer card says "Valid until 13 November 2026", that date has passed. Get the current offers and end date from Capital Hyundai sales and redo the card (or remove it)
-00:10 - offer card has no "T&C apply". Add "*T&C apply" under the validity line
-00:26 - last line has no subtitle. Add "Capital Hyundai ko call kijiye ya phir aap showroom pe visit kar sakte hain"
-00:10 - "Valid until..." and "Check the caption for offers..." are in the bottom 20% (hidden by the Instagram caption). Move both up
-00:15 - subtitle "Aur sab discounts hi nahi," please listen once: if she says "sirf", change to "Aur sirf discounts hi nahi,"
+00:10 - offer card has no "T&C apply", add "*T&C apply"
+00:10 and 00:16 - Capital Hyundai logo missing, add it
 00:16 - Honda badge visible on the old car's wheel cap, blur it
-00:00 - first 1.5 s is silent walking, trim so "Hyundai shortlist kar li?" opens the reel
-Audio - peaks at +0.1 dB, add a limiter at -1 dBTP
-00:30 - end card: last two service lines are in the bottom 20%, move the list up about 120 px
+00:15 - subtitle "Aur sab discounts hi nahi," please listen once: if she says "sirf", change to "Aur sirf discounts hi nahi,"
 
 === CH-2611-05 ===
 CH-2611-05 - Capital Hyundai Nov Reel-7.mp4
-00:20 - call to action has no subtitles. Add "Toh wait kis baat ka hai? / Aaj hi Capital Hyundai ko call kijiye, / available cars check kijiye / aur apni favorite car ki test drive book kijiye."
-00:11 - subtitle says "H-Promise section", change to "Hyundai Promise section" (official name, same as 00:07 and the placard at 00:25)
-00:03 and 00:24 - number plates readable on the pre-owned cars, blur them
-00:00 and 00:08 - Capital Hyundai logo missing in these shots, keep it on throughout
-Audio - peaks at +0.1 dB, add a limiter at -1 dBTP
-00:27 - end card: last two service lines are in the bottom 20%, move the list up
+00:11 - "H-Promise section" change to "Hyundai Promise section" (official name, same as 00:07 and the placard at 00:25)
+00:00 and 00:08 - Capital Hyundai logo missing, keep it on throughout
 
 === CH-2611-04 ===
 CH-2611-04 - Capital Hyundai Nov Reel-3.mp4
-Whole video - 1:57 long, needs to be under 60 s. Suggested cut: 00:00-00:06 + 00:20-00:34 + 00:47-01:07 + 01:29-01:34 + 01:52-01:54 + end card
-00:07 - no subtitle while the photo frame is on screen. Add "jo ki maine Capital Hyundai se khareedi thi 2013 mein"
 00:00 - name "Devender Mehas": audio sounds like "Devinder/Devendra Manas", please confirm the spelling with the client
+01:34 - "18 years of serving customers": confirm the year with the client
 00:12 - "khridi" change to "khareedi"
-00:41 - "told told complete story" change to "told him the complete story"
 00:31 - "he share" change to "he shared"
+00:41 - "told told complete story" change to "told him the complete story"
 00:43 - "I share my son's mobile number to him" change to "I shared my son's mobile number with him"
 00:47 - "He immediately call back my son" change to "He immediately called back my son"
 00:49 - "send the service person" change to "sent the service person"
@@ -34,34 +25,23 @@ Whole video - 1:57 long, needs to be under 60 s. Suggested cut: 00:00-00:06 + 00
 01:32 - "I don't expect is going to come" change to "I don't expect it's going to come"
 01:34 - "I am really, happy, the way they are, uh, serving us" change to "I am really happy the way they are serving us"
 01:43 - second "Whenever" should be lower case
-01:34 - "18 years of serving customers" overlay: confirm the year with the client
-00:53 - plate MP04 ZN 7513 readable on the paint-booth Creta, blur it
-00:07 and 01:05 - logo disappears on white/bright sky, add a shadow
-Audio - peaks at +0.1 dB, add a limiter at -1 dBTP
+00:07 and 01:05 - logo disappears on the white/bright background, add a shadow
 
 === CH-2611-06 ===
 CH-2611-06 - Capital Hyundai Nov Reel-8.mp4
-00:00 - opening has no subtitles. Add "Hey, aaj weather kaisa rahega?" and the car's reply "Aaj mausam saaf rahega aur temperature rahega 28 degree Celsius."
 00:28 - she talks about the Blind-spot View Monitor but the screen shows the Surround View Monitor with "360-degree camera" text. Use a side-camera (indicator on) shot, or change the text to "Surround View Monitor (HX8 & HX10)"
 00:32 - "New Hyundai Bayon" change to "New Hyundai BAYON"
-00:36 - call to action has no subtitles. Add "Toh experience kijiye Hyundai BAYON ke yeh smart features / aur aaj hi test drive book kijiye."
-00:08 - "Siri" is another brand's name. Client to decide; if it goes, change to "Yeh jawab phone ne nahi..."
 00:19 - dual 12.3-inch curved screens are HX10 only, add "(HX10)"
-00:12 - outfit changes mid-sentence (red top to blazer), use one outfit or cut on B-roll
-00:00 and 00:40 - logo missing, and on white ceiling 00:01-00:11 the H emblem disappears, add a shadow
-Audio - too quiet (-19 LUFS), raise to about -14 LUFS
-00:42 - end card: last two service lines are in the bottom 20%, move the list up
+00:00, 00:12 and 00:40 - Capital Hyundai logo missing; at 00:01-00:11 the H emblem disappears on the white ceiling, add a shadow
 
 === CH-2610-07 ===
 CH-2610-07 - Capital Hyundai Oct Reel 3 offer.mp4
-00:24 - call to action has no subtitles. Add "Contact Capital Hyundai and book your Hyundai Creta test drive today."
-00:05 - auto hold is only on automatic S(O) and above. Add "(select automatic variants)"
+00:05 - auto hold is only on automatic S(O) and above, add "(select automatic variants)"
 00:00 - "How easy daily drive can be in Hyundai Creta, see." change to "See how easy daily driving can be in the Hyundai Creta."
-00:19 - rear camera with dynamic guidelines is not on E/EX, add "select variants" to "helps a lot in parking"
+00:16 - rear camera with dynamic guidelines is not on E/EX, add "select variants"
 00:12 - B-roll is a CRETA N Line, use a regular Creta shot
-00:16 and 00:18 - camera/settings shots are from older Hyundai cabins, use new Creta screens if available
+00:05 - Capital Hyundai logo missing, keep it on throughout
 00:28 - end card shows Sector 132 service 95600 27864, Nov reels show 99589 94275. Which one is current?
-Audio - peaks at +0.2 dB, add a limiter at -1 dBTP
 
 === CH-2610-09 ===
 CH-2610-09 - Capital Hyundai Oct Reel 4.mp4
@@ -69,39 +49,24 @@ CH-2610-09 - Capital Hyundai Oct Reel 4.mp4
 00:31 - pylon reads "Hyundai Promise / Shivang Hyundai" (another dealer) next to our logo. Replace the shot or blur it
 00:29 and 00:38 - white Creta has a foreign (Arabic) number plate, replace with Indian footage
 00:14 - HP logo on the laptop, blur it
-00:39 - end of the call to action has no subtitle. Add "call the number on the screen - / Capital Hyundai will be happy to assist you."
-00:00 - first 2 s silent on the phone, trim so "Looking for a Hyundai for your parents?" opens the reel
 00:26 - "is the one / feels comfortable..." change to "is the one that feels comfortable and easy in daily use, while being stylish."
 00:44 - end card: Sector 132 service 95600 27864 vs 99589 94275 on the Nov reels, which one is current?
-Audio - peak -0.4 dB, bring it to -1 dBTP
 
 === CH-2610-10 ===
 CH-2610-10 - Capital Hyundai Oct Reel 5.mp4
-00:35 - end of the call to action has no subtitle. Add "call the number on the screen - / Capital Hyundai will be happy to assist you."
-00:28 - CRETA N Line studio shot is also used in Oct Reel 3, swap it in one of them
-00:39 - end card: Sector 132 service 95600 27864 vs 99589 94275 on the Nov reels, which one is current?
-Audio - peaks at +0.1 dB, add a limiter at -1 dBTP
+00:39 - end card: Sector 132 service 95600 27864 vs 99589 94275 on the Nov reels, which one is current? Otherwise fine.
 
 === CH-2610-11 ===
 CH-2610-11 - Capital Hyundai Oct Reel 6.mp4
-00:32 - last two lines have no subtitles. Add "Because big decisions mean proper care." and "And if you're planning to buy a new Hyundai, you know where to come."
-00:10 and 00:32 - logo washes out on the white showroom, add a shadow
-00:00 - opening uses the CRETA N Line studio shot (also in Oct Reel 3 and 5), open on our own showroom or a delivery shot
+00:10 and 00:32 - Capital Hyundai logo washes out on the white showroom, add a shadow
 00:38 - end card: Sector 132 service 95600 27864 vs 99589 94275 on the Nov reels, which one is current?
-Audio - peak 0.0 dB, add a limiter at -1 dBTP
 
 === CH-2611-01 ===
 CH-2611-01 - Capital Hyundai Nov Reel-2.mp4
-00:20 - call to action has no subtitles. Add "So if you live or work near Noida Sector 132, / visit Capital Hyundai Sector 132 / or give us a call."
-00:09 - title "NOIdA SECTOr 132" change to "NOIDA SECTOR 132"
-00:15 - plate UP65 FU 3817 readable on the Grand i10 NIOS, blur it
-00:13 - please confirm the body-shop footage is from Sector 132
-Audio - too quiet (-20.5 LUFS), raise to about -14 LUFS
+00:09 - "NOIdA SECTOr 132" change to "NOIDA SECTOR 132"
+00:13 - please confirm Sector 132 has a body shop and the body-shop footage is from there
 
 === CH-2611-02 ===
 CH-2611-02 - Capital Hyundai Nov Reel-6.mp4
-00:29 - "ek poori experience hai" change to "ek poora experience hai" (that's what she says)
-00:05 and 00:26 - glitch transitions look like a broken file (double logos, double subtitles), shorten or use a clean cut
-00:22 - logo washes out on the white ceiling, add a shadow
-Audio - peaks at +0.2 dB, add a limiter at -1 dBTP
-00:38 - end card: last two service lines are in the bottom 20%, move the list up
+00:29 - "ek poori experience hai" change to "ek poora experience hai"
+00:22 - Capital Hyundai logo washes out on the white ceiling, add a shadow
