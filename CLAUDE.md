@@ -5,9 +5,9 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 ## Where things are
 
 - **Tracker sheet:** "Social Posting Tracker", Google Sheet id `1bcx0yZ-5C7F6e_WLg9Kbw8FRQQ4jUaPQ_SRGnJts_NY`
-  in the workwithprabh@gmail.com Drive. Tab `Videos`, columns A-M: Video ID, Client, Added to Drive (the video
-  file's Drive upload date, India time), Month, Video file (HYPERLINK to Drive), Status (Pending / Approved /
-  Posted / Skip), Platforms (IG + FB / IG only / FB only), Caption, Thumbnail link, Post date, Instagram post
+  in the workwithprabh@gmail.com Drive. Tab `Videos`, columns A-N (as of 15 Nov 2026): Planned date, Video ID, Client,
+  Added to Drive (the video file's Drive upload date, India time), Month, Video file (HYPERLINK to Drive), Status
+  (Pending / Not approved / Approved / Posted / Skip), Platforms (IG + FB / IG only / FB only), Caption, Thumbnail link, Post date, Instagram post
   link, Facebook post link, Notes. Rows are sorted by Added to Drive (oldest first) and a filter hides Posted/Skip
   rows; never change a Video ID once given. Other tabs (sheetId): `Videos` 589291894, `Dashboard` 1646150369
   (formula-only counts by client and month, never write to it), `Clients` 1351693519 (code, client, Drive folder),
@@ -45,6 +45,7 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   static, flexible when videos are short). Client contacts and logos: `statics/clients.json`.
 - Static content buckets and the Calendar/Reviews tabs: `statics/CONTENT_BUCKETS.md`. Google reviews come from
   `scripts/gbp_reviews.py` (setup in `statics/GBP_SETUP.md`; needs GBP_CLIENT_ID, GBP_CLIENT_SECRET, GBP_REFRESH_TOKEN).
+- Capital Hyundai editor reviews (verdicts, changes, repeating problems): `video_review/capital_hyundai.md`.
 - Both CH-2610-07 and CH-2610-08 (Reel 3 offer and Reel 3) are meant to be posted.
 
 ## Video handling
