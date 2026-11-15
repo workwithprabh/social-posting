@@ -1,0 +1,99 @@
+[
+ {
+  "id": "DEM-2611-02",
+  "theme": "mahindra",
+  "img": "reel_DEM-2611-02.jpg",
+  "tag": "CNG SUV COMPARISON",
+  "kicker": "XUV 3XO ZNG vs NEXON i-CNG",
+  "headline": "Sirf mileage<br>mat <em>dekho.</em>",
+  "sub": "Performance aur braking setup mein bhi fark hai.",
+  "priceLabel": "XUV 3XO ZNG · CNG MODE",
+  "price": "200 Nm torque",
+  "chips": [
+   "200 Nm vs 170 Nm torque in CNG mode",
+   "Disc brakes on all four wheels",
+   "Compare, then take a test drive"
+  ],
+  "vars": {
+   "ht": "270px",
+   "ct": "600px",
+   "ch": "1320px",
+   "pt": "1340px",
+   "chipt": "1480px",
+   "h1": "124px"
+  }
+ },
+ {
+  "id": "DEM-2611-04",
+  "theme": "mahindra",
+  "img": "reel_DEM-2611-04.jpg",
+  "tag": "EMI EXAMPLE",
+  "kicker": "MAHINDRA XUV 3XO ZNG · MX EDGE",
+  "headline": "₹2 lakh down.<br>EMI <em>kitni?</em>",
+  "sub": "Gurgaon on-road price aur EMI ka seedha hisaab.",
+  "priceLabel": "EMI APPROX",
+  "price": "₹19,250/month",
+  "chips": [
+   "Ex-showroom ₹9.99 lakh",
+   "On-road approx ₹11.27 lakh",
+   "Loan ₹9.27 lakh · 5 years · 9%"
+  ],
+  "vars": {
+   "ht": "270px",
+   "ct": "600px",
+   "ch": "1320px",
+   "pt": "1340px",
+   "chipt": "1480px",
+   "h1": "124px"
+  }
+ },
+ {
+  "id": "CB-2611-04",
+  "theme": "carbike",
+  "img": "reel_CB-2611-04.jpg",
+  "tag": "PRE-OWNED MAHINDRA",
+  "kicker": "CAR & BIKE · SECTOR 18, GURGAON",
+  "headline": "Mahindra SUV,<br><em>smart price.</em>",
+  "sub": "Showroom test-drive cars, single owner.",
+  "priceLabel": "20 CARS FROM",
+  "price": "₹8.50 lakh",
+  "chips": [
+   "Scorpio-N, XUV700, XUV 3XO, Thar Roxx",
+   "Petrol, diesel, AT & 4WD",
+   "Showroom-maintained condition"
+  ],
+  "vars": {
+   "ht": "270px",
+   "ct": "600px",
+   "ch": "1320px",
+   "pt": "1340px",
+   "chipt": "1480px",
+   "h1": "124px"
+  }
+ },
+ {
+  "id": "MRH-2611-03",
+  "mode": "dark",
+  "img": "reel_MRH-2611-03.jpg",
+  "tag": "Hyundai connected features",
+  "label": "Selected Hyundai cars",
+  "headline": "Car lock ki thi<br>ya nahi?",
+  "sub": "Ab phone par hi check kijiye.",
+  "priceLabel": "Control on your phone",
+  "price": "Lock · Unlock · Location",
+  "chips": [
+   "Car status on your phone",
+   "Lock or unlock check",
+   "Car location update",
+   "Some features with remote access"
+  ],
+  "vars": {
+   "ht": "270px",
+   "ct": "620px",
+   "ch": "1300px",
+   "pt": "1330px",
+   "pl": "1470px",
+   "h1": "108px"
+  }
+ }
+]

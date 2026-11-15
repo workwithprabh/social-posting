@@ -75,12 +75,16 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
      side card (not a text-heavy stock list). Details in cover/README.md "Approved covers: what they share".
      Approved references (user, 11 Nov 2026): CB-2611-02 and CB-2611-03 with a natural closed-lip smile edited from a
      real smiling frame (identity kept), and CH-2611-02.
-  9. **Scene covers, no presenter faces, for every reel and every client (user, 15 Nov 2026; first used on DEM-2611-05,
-     14 Nov).** The topic fills the cover: the real car or scene from the reel (AI may change only the setting, never
-     the car), a ring on the subject and one fact from the reel in a pill. Recipe: cover/README.md "Scene covers".
-     Presenter-face covers (rules 1-8) are no longer made. Capital Hyundai gets scene covers too, but only after the team
-     approves the reel. When changing the style for a batch, rework one cover first and replicate only after the user
-     approves it. Notes say "background edited with AI" when it was.
+  9. **Reel covers = the static-post design at 9:16, no presenter faces, every client (user, 15 Nov 2026).** Each
+     client's static look at 1080x1920: Mahindra (Anton caps, red label, chips, red pill) for Dee Emm Mahindra and Arav,
+     the @hyundaiindia look (sentence case, Active Blue label, outline pills) for the three Hyundai dealers, black and
+     gold for Car & Bike. No logo and no phone numbers (the account shows the brand, the end card has the numbers).
+     The picture is the reel's own car or scene, brightened with the glow-up (cover/README.md "Scene covers"); AI only
+     for the setting, never the car. Keep headline, picture, pill and chips inside the middle 3:4 area (y 240-1680),
+     because the profile grid crops to it. Template: statics/review_card/reelcover.html (mahindra, carbike) and
+     reelcover_hy.html (Hyundai), data in cards_reel.json, `node render_reel.js [ID]` (see the README there).
+     Capital Hyundai too, once the team approves the reel. Change a style on one cover first; replicate only after the
+     user approves it. Notes say "background edited with AI" when it was.
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in

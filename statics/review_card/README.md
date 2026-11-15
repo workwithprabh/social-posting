@@ -69,3 +69,13 @@ helper photo is deleted. Same tokens as reels (`--system-user` for CH, DEH, AM, 
 `META_PAGE_TOKEN_DEM` without it). Page and Instagram ids are in `config/boost.json`. Before posting: check image,
 caption and footer belong together, post only the text after "Caption draft:", then set Statics Status to Posted and
 the review's Use? to Used with the date in the Reviews tab.
+
+## Reel covers in the static look: `reelcover.html`, `reelcover_hy.html` (15 Nov 2026)
+`node render_reel.js [ID]` renders `cards_reel.json` to `out_reel/<ID>.png` at 1080x1920 (save as JPEG q95 4:4:4).
+Cards with `theme` mahindra or carbike use `reelcover.html` (the spotlight look: tag pill, kicker, Anton headline with
+an `<em>` accent word, sub, red or gold fact pill, three chips); cards with `mode` (dark) use `reelcover_hy.html` (the
+Hyundai look: tag, Active Blue label, sentence-case headline, big fact line, outline pills). No logo, no footer.
+`img` is a full-width crop of the reel's own frame (subtitles and watermarks removed, graded brighter); `vars` move
+the parts (`ht` head top, `ct`/`ch` picture top/height, `pt` pill top, `chipt`/`pl` chips top, `h1` size). Keep the
+headline, picture subject, pill and chips between y 240 and 1680, the 3:4 area the profile grid shows. Facts on the
+cover come only from the reel. First set: DEM-2611-02, DEM-2611-04, CB-2611-04, MRH-2611-03.
