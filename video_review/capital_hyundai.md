@@ -2,6 +2,11 @@
 
 Running log of editor reviews of Capital Hyundai reels before posting. Timestamps are mm:ss in the Drive file.
 
+**Editor doc (shared with the editor):** [Capital Hyundai Reel Changes – 15 Nov 2026](https://docs.google.com/document/d/1gVJwbFtSnFOcFQ7p6aFire0hQx9QUHQWsS_l8Ba3Drw/edit),
+Google Doc id `1gVJwbFtSnFOcFQ7p6aFire0hQx9QUHQWsS_l8Ba3Drw` in the workwithprabh@gmail.com Drive. It holds the final
+changes per reel with Drive video links. Keep it in step with this log; editing it in place needs the Google Docs
+connector (with only Drive, a change means a new file and a new link).
+
 ## What to flag (user, 15 Nov 2026)
 
 Focus on:
