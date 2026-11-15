@@ -108,7 +108,11 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   back to the Dee Emm Hyundai / Car & Bike account only when their own can't cover the boost. Create boosts paused,
   show the batch, and activate only after the user says yes. `python scripts/check_ads.py` checks access and balances;
   `python scripts/boost_reel.py plan|create|activate|delete` makes the boost (create = paused, no spend);
-  `boost_reel.py results <campaign_id> ...` reads spend, reach and Instagram profile visits (read-only).
+  `boost_reel.py results <campaign_id> ...` reads spend, reach, profile visits, likes, comments, shares, saves (read-only).
+  `--goal engagement` (user, 15 Nov 2026) makes an engagement boost instead (likes, comments, shares, saves;
+  OUTCOME_ENGAGEMENT / POST_ENGAGEMENT), same budget, hours and all-of-India targeting. Test plan: on the next batch
+  (Tue 17 Nov) boost MRH-2611-03 and CB-2611-04 with engagement and the rest with profile visits, then compare likes,
+  comments and profile visits per rupee per client.
 - Posting rhythm and static-post rules: `statics/BRAND_SOURCES.md` (a post every second day, cycling 2 videos then 1
   static, flexible when videos are short). Client contacts and logos: `statics/clients.json`.
 - Static content buckets and the Calendar/Reviews tabs: `statics/CONTENT_BUCKETS.md`. Google reviews come from

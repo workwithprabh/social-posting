@@ -1,11 +1,16 @@
-"""Boost an Instagram reel as an ad (Instagram only, Advantage+ audience, profile visits), following config/boost.json.
+"""Boost an Instagram reel as an ad (Instagram only, Advantage+ audience), following config/boost.json.
+
+Goals (--goal, default visits):
+  visits      profile visits: OUTCOME_TRAFFIC, VISIT_INSTAGRAM_PROFILE, all of India (the client's `country`)
+  engagement  likes, comments, shares, saves: OUTCOME_ENGAGEMENT, POST_ENGAGEMENT on the post itself, also all of India
+              (user, 15 Nov 2026)
 
 Usage:
-  python scripts/boost_reel.py plan   <CLIENT> <ig_media_id>        # show what would be created and which account pays
-  python scripts/boost_reel.py create <CLIENT> <ig_media_id>        # create campaign/ad set/ad, all PAUSED (no spend)
+  python scripts/boost_reel.py plan   <CLIENT> <ig_media_id> [permalink] [--goal engagement]   # what would be created
+  python scripts/boost_reel.py create <CLIENT> <ig_media_id> [permalink] [--goal engagement]   # all PAUSED (no spend)
   python scripts/boost_reel.py activate <campaign_id> <adset_id> <ad_id>   # only after the user says yes
   python scripts/boost_reel.py delete <campaign_id>                 # remove a test boost
-  python scripts/boost_reel.py results <campaign_id> ...            # read-only: spend, reach, profile visits so far
+  python scripts/boost_reel.py results <campaign_id> ...            # read-only: spend, reach, visits, likes, comments
 
 Budget: a lifetime budget of daily_budget_inr x hours/24 (per_reel_inr) over exactly `hours` hours, so the total can't
 exceed the rule. `activate` restarts the ad set's window at activation time so the boost runs the full `hours`.
@@ -78,7 +83,7 @@ def ig_and_page(client, media_id, permalink=None):
         return c['ig_user'], c['ig_username'], c.get('page_id'), permalink or f'https://www.instagram.com/{c["ig_username"]}/{media_id}', ''
 
 
-def plan(client, media_id, permalink=None):
+def plan(client, media_id, permalink=None, goal='visits'):
     act, r, why = pick_account(client)
     ig, user, page, link, cap = ig_and_page(client, media_id, permalink)
     start = dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=10)
@@ -87,12 +92,14 @@ def plan(client, media_id, permalink=None):
     return dict(client=client, ad_account=act, fallback_reason=why, room_inr=round(r, 2), ig_user=ig, ig_username=user,
                 page_id=page, media=media_id, permalink=link, caption_start=cap,
                 budget_inr=CFG['per_reel_inr'], start=start.isoformat(timespec='seconds'), end=end.isoformat(timespec='seconds'),
-                locations=loc, country=CFG['clients'][client].get('country'))
+                locations=loc, goal=goal, country=CFG['clients'][client].get('country'))
 
 
 def create(p):
-    name = f"Boost {p['client']} {p['permalink'].rstrip('/').split('/')[-1]}"
-    camp = call('POST', f"act_{p['ad_account']}/campaigns", name=name, objective='OUTCOME_TRAFFIC', status='PAUSED',
+    eng = p.get('goal') == 'engagement'
+    name = f"{'Engage' if eng else 'Boost'} {p['client']} {p['permalink'].rstrip('/').split('/')[-1]}"
+    camp = call('POST', f"act_{p['ad_account']}/campaigns", name=name, objective='OUTCOME_ENGAGEMENT' if eng else 'OUTCOME_TRAFFIC',
+                status='PAUSED',
                 special_ad_categories=[], buying_type='AUCTION', is_adset_budget_sharing_enabled='false')['id']
     try:
         return _rest(p, name, camp)
@@ -102,6 +109,7 @@ def create(p):
 
 
 def _rest(p, name, camp):
+    eng = p.get('goal') == 'engagement'
     geo = ({'countries': [p['country']]} if p.get('country') else
            {'custom_locations': [dict(latitude=l['lat'], longitude=l['lng'], radius=l['km'], distance_unit='kilometer')
                                  for l in p['locations']]})
@@ -113,10 +121,13 @@ def _rest(p, name, camp):
     }
     adset = call('POST', f"act_{p['ad_account']}/adsets", name=name, campaign_id=camp, status='PAUSED',
                  lifetime_budget=p['budget_inr'] * 100, start_time=p['start'], end_time=p['end'],
-                 billing_event='IMPRESSIONS', optimization_goal='VISIT_INSTAGRAM_PROFILE', destination_type='INSTAGRAM_PROFILE',
+                 billing_event='IMPRESSIONS',
+                 optimization_goal='POST_ENGAGEMENT' if eng else 'VISIT_INSTAGRAM_PROFILE',
+                 destination_type='ON_POST' if eng else 'INSTAGRAM_PROFILE',
                  bid_strategy='LOWEST_COST_WITHOUT_CAP', targeting=targeting)['id']
-    spec = dict(name=name, instagram_user_id=p['ig_user'], source_instagram_media_id=p['media'],
-                call_to_action={'type': 'VIEW_INSTAGRAM_PROFILE', 'value': {'link': f"https://www.instagram.com/{p['ig_username']}/"}})
+    spec = dict(name=name, instagram_user_id=p['ig_user'], source_instagram_media_id=p['media'])
+    if not eng:
+        spec['call_to_action'] = {'type': 'VIEW_INSTAGRAM_PROFILE', 'value': {'link': f"https://www.instagram.com/{p['ig_username']}/"}}
     if p.get('page_id'):
         spec['object_id'] = p['page_id']
     creative = call('POST', f"act_{p['ad_account']}/adcreatives", **spec)['id']
@@ -125,9 +136,15 @@ def _rest(p, name, camp):
 
 
 if __name__ == '__main__':
+    args = sys.argv[1:]
+    goal = 'visits'
+    if '--goal' in args:
+        k = args.index('--goal'); goal = args[k + 1]; del args[k:k + 2]
+        assert goal in ('visits', 'engagement'), goal
+    sys.argv = [sys.argv[0]] + args
     cmd = sys.argv[1]
     if cmd in ('plan', 'create'):
-        p = plan(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else None)
+        p = plan(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else None, goal)
         print(json.dumps(p, indent=1, ensure_ascii=False))
         if cmd == 'create':
             try:
@@ -167,6 +184,9 @@ if __name__ == '__main__':
                                       frequency=i.get('frequency'), cpm=i.get('cpm'), profile_visits=i.get('instagram_profile_visits'),
                                       cost_per_visit=((i.get('cost_per_result') or [{}])[0].get('values') or [{}])[0].get('value'),
                                       link_clicks=acts.get('link_click'), video_views=acts.get('video_view'),
-                                      likes=acts.get('onsite_conversion.post_net_like')), ensure_ascii=False))
+                                      likes=acts.get('onsite_conversion.post_net_like'), comments=acts.get('comment'),
+                                      shares=acts.get('post'), saves=acts.get('onsite_conversion.post_save'),
+                                      engagements=acts.get('post_engagement'),
+                                      result=((i.get('results') or [{}])[0].get('indicator'))), ensure_ascii=False))
             except RuntimeError as e:
                 print(json.dumps(dict(campaign=cid, error=str(e))))

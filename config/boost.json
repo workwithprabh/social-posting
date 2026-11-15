@@ -143,5 +143,8 @@
   },
   "fallback_rule": "Use the fallback account only when the client's own account cannot cover the boost (balance or spend cap). Capital Hyundai and M R Hyundai never use another account. Car & Bike always uses the Dee Emm Hyundai account only (user, 13 Nov 2026).",
   "_locations_note": "Approximate showroom areas; radius in km. Adjust if the client wants a different area.",
-  "area_rule": "User, 13 Nov 2026: all clients boost to all of India (country IN) for more results; the locations lists are kept only for reference."
+  "area_rule": "User, 13 Nov 2026: all clients boost to all of India (country IN) for more results; the locations lists are kept only for reference.",
+  "engagement": {
+    "_note": "User, 15 Nov 2026: test an engagement goal (likes, comments, shares, saves) on some reels, targeted to all of India like the profile-visit boosts. Same budget and hours. Use --goal engagement."
+  }
 }
