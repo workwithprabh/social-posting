@@ -13,7 +13,12 @@ Read first: `CLAUDE.md` (tracker sheet, clients, rules), `captions/STYLE.md` (Ca
 
 **Which videos**
 - Tracker sheet "Social Posting Tracker" (id in `CLAUDE.md`), tab `Videos`. Take the rows where Client is
-  "Capital Hyundai" and Status is "Pending" or "Not approved". Skip Approved, Posted and Skip rows unless I ask.
+  "Capital Hyundai" and Status is "Pending", "Not approved" or "Approved" (approved but not posted yet). Skip Posted
+  and Skip rows. A filter on the tab hides Posted and Skip rows; read the values through the API, which returns
+  every row.
+- Review the Pending and Not approved reels first, then the Approved ones. An Approved reel was marked by the team,
+  so if you find a problem in one, list it under "Approved, but found problems" in the summary, and I'll decide
+  whether it goes back to the editor.
 - Column F holds the file name (a link to Drive). Find each file with `scripts/list_videos.py` or
   `scripts/drive_folder.py` (`walk` on the Capital Hyundai month folders listed in `scripts/list_videos.py`), match it
   by file name, and download it with `drive_folder.download(file_id, dest)` into your scratchpad. The folders are
@@ -52,7 +57,7 @@ Read first: `CLAUDE.md` (tracker sheet, clients, rules), `captions/STYLE.md` (Ca
   starting with the Video ID and file name, then one line per change ("00:12 - subtitle says 'Cretta', change to
   'Creta'").
 
-At the end, give a summary table: Video ID, verdict, number of changes, and the main problem.
+At the end, give a summary table: Video ID, current Status, verdict, number of changes, and the main problem.
 
 **Rules**
 - Don't change Status: the team marks Capital Hyundai reels approved by hand. Don't post, boost, or edit captions or
