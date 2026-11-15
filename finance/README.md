@@ -94,8 +94,11 @@ When a partner shares a UPI or bank statement (CSV, XLSX or PDF):
 6. Read the month tab, then append the new rows below the last filled row of that owner's list (rows 6-29) with
    `update_formulas`. If a label already has a row, add the new amounts to its formula
    (`=4248` → `=4248+1142`) instead of adding a second row.
-7. Money received from a client: set that client's Status to `Rec` in the billing table of the month the bill was
-   for (an October bill is paid in November), after checking the amount against Final Payment + GST.
+7. Money received from a client pays the previous month's bill (an October receipt goes in the September tab, a
+   November receipt in October). A regular client: set its Status to `Rec` after checking the amount against Final
+   Payment + GST (Capital Hyundai pays less 1% TDS: 38,940 billed, 38,610 received). Any other client gets its own
+   row: insert it above the billing totals row, Status `Rec`, retainer = amount / 1.18 when GST was charged, and
+   extend the totals row's sums to include it. trob is the Dee Emm Mahindra monthly retainer.
 8. Read the tab again and report the new totals.
 
 Add rules for any label the user gave in step 3 to `rules.json`.
