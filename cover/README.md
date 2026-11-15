@@ -149,8 +149,9 @@ brow_up near 0, teeth 0. Compare a face crop with the real frame to make sure it
 ## Scene covers, no presenter (user, 14 Nov 2026: chosen for DEM-2611-05, "save it as a style")
 A third cover style for topic reels (a feature, charging, a safety test, a launch): the topic itself fills the cover,
 no presenter. Reference: DEM-2611-05 (EV home charging); config in `examples/DEM-2611-05_scene_cfg2.json`.
-Use it when the reel has a clear topic shot; keep presenter covers for advice and opinion reels (loans, exchange,
-"kaunsa lena sahi rahega"), and the real delivery photo for testimonials.
+User, 15 Nov 2026: this is now the cover style for every reel and every client (no presenter faces), Capital
+Hyundai included once the team approves the reel. For advice or EMI reels, show the car the reel is about with the key
+number in the pill; for testimonials, the real delivery photo.
 1. Pick the reel's own shot of the topic: the real car or feature, sharp, nothing in front of it. Remove burnt-in
    subtitles and the dealer watermark with `cv2.inpaint`.
 2. The car stays real. AI (Canva `generate-image` with the frame as reference, 9:16) may change only the setting:
