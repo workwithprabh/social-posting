@@ -1,2 +1,9 @@
 videos.json
 __pycache__/
+
+# bank / UPI statements and importer output
+finance/*.csv
+finance/*.xls
+finance/*.xlsx
+finance/*.pdf
+statement_rows.json

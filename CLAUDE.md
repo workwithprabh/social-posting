@@ -24,6 +24,11 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   Video ID. `scripts/fetch_thumbnail.py <ID>` copies one into `thumbnails/`; its raw GitHub URL on `main` is the
   Instagram `cover_url`.
 
+- **Company finances:** "Freelance Payment" Google Sheet id `1tucoQHv6ktk28JxGw2dtAqWJQKqwPYTStugQQ5mqo_Y`, one
+  tab per month. Layout, how expenses are labelled, and the steps for turning a partner's UPI/bank statement into
+  rows (`finance/import_statement.py`, rules in `finance/rules.json`): `finance/README.md`. Statements are never
+  committed.
+
 ## Rules the user set
 
 - Post only when the user says to upload specific Video IDs. The Post date column is not a schedule.

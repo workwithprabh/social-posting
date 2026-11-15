@@ -1,0 +1,61 @@
+{
+  "_about": "How statement payees map to the labels used in the Freelance Payment sheet. Rules are checked top to bottom; the first match wins. 'match' is a list of lowercase words or regexes searched in the statement narration. 'label' is what goes in the Detail column. 'kind': expense (default), transfer (partner reimbursement or withdrawal: goes to the billing 'paid to' columns, not to expenses), ignore. Optional 'max_amount' / 'min_amount' narrow a rule by amount. 'fuel': true marks travel costs (petrol, CNG, Fastag) that are asked about when they fall on a non-shoot day of a personal account. Add a rule whenever a payee gets a new label.",
+
+  "partners": {
+    "_about": "Words that identify each partner's own accounts in a narration (name as the bank shows it, UPI IDs). Fill in once from a real statement.",
+    "prabh": ["prabh"],
+    "jiti": ["jiti", "jiteshwari"],
+    "carrot": ["be carrot", "becarrot"]
+  },
+
+  "clients": {
+    "_about": "Words that identify a client in a credit (payment received) narration, matched to the 'Receiveable' names in the billing table.",
+    "Arav": ["arav"],
+    "Dee Emm hyundai": ["dee emm hyundai", "deeemm hyundai", "dee emm motors"],
+    "trob": ["trob", "dee emm mahindra"],
+    "Capital Hyundai": ["capital hyundai", "capital motors"],
+    "MR Hyundai": ["m r hyundai", "mr hyundai", "m.r. hyundai"]
+  },
+
+  "rules": [
+    {"match": ["cred.club", "cred club", "dreamplug", "credit card bill", "cc bill", "card bill payment"], "kind": "ignore", "label": "Credit card bill (the spends come from the card statement)"},
+    {"match": ["91springboard", "91 springboard", "springboard"], "max_amount": 2000, "label": "91 Springboard Parking"},
+    {"match": ["91springboard", "91 springboard", "springboard"], "label": "91 Springboard Seat"},
+    {"match": ["gst", "cbic", "gstn", "gst portal"], "label": "GST Payment"},
+    {"match": ["openai", "chatgpt"], "label": "Chatgpt"},
+    {"match": ["anthropic", "claude"], "label": "Claude"},
+    {"match": ["canva"], "label": "Canva"},
+    {"match": ["google one", "google storage", "google drive"], "label": "Google drive"},
+    {"match": ["google ads", "googleads", "adwords"], "label": "Google ads (which client?)", "check": true},
+    {"match": ["facebook", "facebk", "meta platforms", "fb ads", "metaads"], "label": "fb funds add (which client?)", "check": true},
+    {"match": ["godaddy", "hostinger", "namecheap", "bigrock", "domain"], "label": "Domain"},
+    {"match": ["fastag", "netc"], "label": "Fastag recharge", "fuel": true},
+    {"match": ["\\bcng\\b", "\\bigl\\b", "indraprastha gas", "adani gas", "adani total gas", "gail gas"], "label": "CNG", "fuel": true},
+    {"match": ["petrol", "fuel", "hpcl", "bpcl", "iocl", "indian oil", "hindustan petroleum", "bharat petroleum", "filling station", "service station", "fuels", "petroleum", "nayara", "jio-bp", "jio bp", "\\bshell\\b"], "label": "Petrol", "fuel": true},
+    {"match": ["zepto", "blinkit", "instamart"], "label": "Zepto"},
+    {"match": ["zomato", "swiggy", "restaurant", "cafe", "dhaba", "bakery", "sweets", "food", "eats", "kitchen", "biryani", "pizza"], "label": "Food"},
+    {"match": ["uber", "ola cabs", "olacabs", "rapido"], "label": "Cab"},
+
+    {"match": ["deepak"], "label": "Deepak Video Team", "check": true},
+    {"match": ["ammar"], "label": "Ammar Video Editor"},
+    {"match": ["anusha"], "label": "Anusha"},
+    {"match": ["shaurya"], "label": "Shaurya"},
+    {"match": ["divya"], "label": "Divya"},
+    {"match": ["shweta"], "label": "Shweta"},
+    {"match": ["ishwarya", "aishwarya"], "label": "Ishwarya"},
+    {"match": ["ufaque"], "label": "Ufaque"},
+    {"match": ["sahil"], "label": "Sahil"},
+    {"match": ["ekta"], "label": "Ekta"},
+    {"match": ["sparsh"], "label": "Sparsh"},
+    {"match": ["kavya"], "label": "Kavya"},
+    {"match": ["mayank"], "label": "Mayank"},
+    {"match": ["rohan"], "label": "Rohan"},
+    {"match": ["naresh"], "label": "Naresh Ji"},
+    {"match": ["arifa"], "label": "Arifa"},
+    {"match": ["manish"], "label": "Manish ji shoot payment"},
+    {"match": ["laxman"], "label": "Laxman"},
+    {"match": ["naman"], "label": "Naman"},
+    {"match": ["boski"], "label": "Boski"},
+    {"match": ["chartered accountant", " ca fee", "ca payment"], "label": "CA Payment"}
+  ]
+}
