@@ -93,6 +93,11 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   "Draft by Claude, needs review". Never put drafts in the team's Thumbnail folder: a file there named by Video ID
   is treated as the approved cover.
 - Before publishing, show the user the batch (ID, client, caption start, thumbnail, platforms) and wait for a yes.
+- Stories (user, 15 Nov 2026): every reel and static we publish also goes to the Instagram Story and the Facebook
+  Page Story, right after the post, with `scripts/publish_story.py --image|--video` (same tokens and ids as the post).
+  Statics are centred on a 9:16 blurred background; reels are cut to the first 60 s at 720p. The batch shown to the
+  user says "+ Stories" so the yes covers both. Music, stickers and "share post to story" can't be added through the
+  API (Instagram limits that to the app).
 - Captions are plain text: no bold, no markdown (`**`, `__`), no trailing spaces (user, 9 Nov 2026).
 - Review and other static posts are posted by Claude (user, 9 Nov 2026). Before posting each one, check that the
   caption, the image and the footer numbers belong together (same customer, staff, car, branch; showroom vs service
