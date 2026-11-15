@@ -29,8 +29,9 @@ Profile.
    borrowed clip for signage and logos before using it.
 3. **Variant-only features said as if every car has them:** Creta auto hold (CH-2610-07), BAYON dual screens, BVM and
    SVM (CH-2611-06). Add "select variants" / the variant name whenever a feature isn't standard.
-4. **Two versions of the end card:** the Oct reels (CH-2610-07, -09, -10, -11) list Sector 132 service as 95600 27864,
-   the Nov reels 99589 94275. Ask the client which is current and use one card file.
+4. **Old end card on the Oct reels:** CH-2610-07, -09, -10 and -11 list the Sector 132 service centre as 95600 27864.
+   The correct number is **99589 94275** (user, 15 Nov 2026), as on the Nov reels' card. Use the Nov card file
+   everywhere.
 
 ---
 
@@ -129,7 +130,8 @@ above. Rear parking sensors are standard.
 4. 00:12, **fact:** the B-roll shows a "CRETA N Line" (badge readable) while she talks about the regular Creta's AC and
    sunroof. Use a regular Creta shot.
 5. 00:05-00:08: the Capital Hyundai logo is missing. Keep it on throughout.
-6. 00:28-00:31, end card: Sector 132 service centre 95600 27864, while the Nov reels show 99589 94275. Which is current?
+6. 00:28-00:31, **end card (fact):** Sector 132 service centre says 95600 27864. Change to 99589 94275 (use the Nov
+   end card).
 
 ## 15 Nov 2026 – CH-2610-09 – Capital Hyundai Oct Reel 4.mp4 (Approved; planned Thu 19 Nov)
 
@@ -146,15 +148,17 @@ above. Rear parking sensors are standard.
 4. 00:14-00:15, **other brand:** the HP logo on the laptop lid is visible. Blur it.
 5. 00:26-00:32, **grammar:** "because the right Hyundai for parents is the one / feels comfortable and easy in daily use
    alongside being stylish." Change to "…is the one that feels comfortable and easy in daily use, while being stylish."
-6. 00:44-00:47, end card: Sector 132 service centre 95600 27864 (older card). Which is current?
+6. 00:44-00:47, **end card (fact):** Sector 132 service centre says 95600 27864. Change to 99589 94275 (use the Nov
+   end card).
 
 ## 15 Nov 2026 – CH-2610-10 – Capital Hyundai Oct Reel 5.mp4 (Approved; planned Mon 23 Nov)
 
 42 s. What to check on a Hyundai test drive.
 
-**Verdict: Ready** (one question)
+**Verdict: Minor changes** (end card only)
 
-1. 00:39-00:42, end card: Sector 132 service centre 95600 27864 (older card). Which is current?
+1. 00:39-00:42, **end card (fact):** Sector 132 service centre says 95600 27864. Change to 99589 94275 (use the Nov
+   end card).
 
 Checked and fine: spelling, no other dealers or brands, and the logo on throughout.
 
@@ -168,7 +172,8 @@ holds. The showrooms named (Sector 63, Sector 132, Dadri, Faridabad) are right.
 
 1. 00:10-00:14 and 00:32-00:36: the Capital Hyundai logo washes out on the white showroom (only "CAP" shows at 00:32).
    Add a shadow.
-2. 00:38-00:40, end card: Sector 132 service centre 95600 27864 (older card). Which is current?
+2. 00:38-00:40, **end card (fact):** Sector 132 service centre says 95600 27864. Change to 99589 94275 (use the Nov
+   end card).
 
 ## 15 Nov 2026 – CH-2611-01 – Capital Hyundai Nov Reel-2.mp4 (Approved; caption and thumbnail pending)
 
@@ -198,9 +203,9 @@ holds. The showrooms named (Sector 63, Sector 132, Dadri, Faridabad) are right.
 | CH-2611-05 | Pending | Minor changes | 2 | "H-Promise" should be "Hyundai Promise"; logo missing |
 | CH-2611-04 | Pending | Minor changes | 4 | Subtitle grammar ("told told", "share", "call back"); name and "18 years" to confirm |
 | CH-2611-06 | Pending | Minor changes | 5 | Blind-spot monitor shown as "360-degree camera"; "Bayon" spelling; HX10-only features |
-| CH-2610-07 | Approved | Minor changes | 6 | Auto hold is automatic S(O)+ only; grammar of opening line |
+| CH-2610-07 | Approved | Minor changes | 6 | Auto hold is automatic S(O)+ only; grammar; old Sector 132 service number |
 | CH-2610-09 | Approved | Re-edit needed | 6 | "JRD Nimbus Hyundai" and "Shivang Hyundai" signs on screen |
-| CH-2610-10 | Approved | Ready | 1 | Only the end-card number question |
-| CH-2610-11 | Approved | Minor changes | 2 | Logo washes out on white |
+| CH-2610-10 | Approved | Minor changes | 1 | End card: Sector 132 service 95600 27864, should be 99589 94275 |
+| CH-2610-11 | Approved | Minor changes | 2 | Logo washes out on white; old Sector 132 service number |
 | CH-2611-01 | Approved | Minor changes | 2 | "NOIdA SECTOr 132"; body shop claim to confirm |
 | CH-2611-02 | Approved | Minor changes | 2 | "poori" should be "poora"; logo washes out |

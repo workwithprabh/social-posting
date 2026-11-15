@@ -41,7 +41,7 @@ CH-2610-07 - Capital Hyundai Oct Reel 3 offer.mp4
 00:16 - rear camera with dynamic guidelines is not on E/EX, add "select variants"
 00:12 - B-roll is a CRETA N Line, use a regular Creta shot
 00:05 - Capital Hyundai logo missing, keep it on throughout
-00:28 - end card shows Sector 132 service 95600 27864, Nov reels show 99589 94275. Which one is current?
+00:28 - end card: Sector 132 service number 95600 27864 is wrong, change to 99589 94275 (use the Nov end card)
 
 === CH-2610-09 ===
 CH-2610-09 - Capital Hyundai Oct Reel 4.mp4
@@ -50,16 +50,16 @@ CH-2610-09 - Capital Hyundai Oct Reel 4.mp4
 00:29 and 00:38 - white Creta has a foreign (Arabic) number plate, replace with Indian footage
 00:14 - HP logo on the laptop, blur it
 00:26 - "is the one / feels comfortable..." change to "is the one that feels comfortable and easy in daily use, while being stylish."
-00:44 - end card: Sector 132 service 95600 27864 vs 99589 94275 on the Nov reels, which one is current?
+00:44 - end card: Sector 132 service number 95600 27864 is wrong, change to 99589 94275 (use the Nov end card)
 
 === CH-2610-10 ===
 CH-2610-10 - Capital Hyundai Oct Reel 5.mp4
-00:39 - end card: Sector 132 service 95600 27864 vs 99589 94275 on the Nov reels, which one is current? Otherwise fine.
+00:39 - end card: Sector 132 service number 95600 27864 is wrong, change to 99589 94275 (use the Nov end card). Otherwise fine.
 
 === CH-2610-11 ===
 CH-2610-11 - Capital Hyundai Oct Reel 6.mp4
 00:10 and 00:32 - Capital Hyundai logo washes out on the white showroom, add a shadow
-00:38 - end card: Sector 132 service 95600 27864 vs 99589 94275 on the Nov reels, which one is current?
+00:38 - end card: Sector 132 service number 95600 27864 is wrong, change to 99589 94275 (use the Nov end card)
 
 === CH-2611-01 ===
 CH-2611-01 - Capital Hyundai Nov Reel-2.mp4
