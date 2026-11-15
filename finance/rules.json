@@ -38,7 +38,7 @@
     {"match": ["zepto", "blinkit", "instamart"], "label": "Zepto"},
     {"match": ["booze", "beer", "liq", "wine", "liquor"], "label": "Beer"},
     {"match": ["parking"], "label": "Parking"},
-    {"match": ["amazon pay groceries"], "label": "Groceries", "check": true},
+    {"match": ["amazon pay groceries"], "kind": "ignore", "label": "Groceries (personal, per Jiti 15 Nov 2026)"},
     {"match": ["zomato", "swiggy", "restaurant", "cafe", "dhaba", "bakery", "sweets", "food", "eats", "kitchen", "biryani", "pizza", "foods", "coffee", "chole bhature", "kabab", "havmor"], "label": "Food"},
     {"match": ["uber", "ola cabs", "olacabs", "rapido"], "label": "Cab"},
 
