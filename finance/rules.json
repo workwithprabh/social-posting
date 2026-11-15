@@ -9,10 +9,14 @@
   },
 
   "clients": {
-    "_about": "Words that identify a client in a credit (payment received) narration, matched to the 'Receiveable' names in the billing table.",
+    "_about": "Words that identify a client in a credit (payment received) narration, matched to the 'Receiveable' names in the billing table. trob is the Dee Emm Mahindra monthly retainer (paid by TROB Auto India).",
     "Arav": ["arav"],
     "Dee Emm hyundai": ["dee emm hyundai", "deeemm hyundai", "dee emm motors"],
     "trob": ["trob auto", "trob"],
+    "Jai Kumar Arun Kumar": ["jai kumar arun kumar"],
+    "Sunita Jaina": ["sunita jaina"],
+    "Shree Shyam Ji Automotive": ["shree shyam ji automotive"],
+    "Kalyan Sales": ["kalyan sales"],
     "Cynor Service Hero Shoot": ["cynor media"],
     "Capital Hyundai": ["capital hyundai", "capital motors", "capital automotives"],
     "MR Hyundai": ["m r hyundai", "mr hyundai", "m.r. hyundai"]
@@ -20,6 +24,7 @@
 
   "rules": [
     {"match": ["paid to xxxxxx7654", "paid to xxxxxx0863"], "kind": "ignore", "label": "Prabh, between own accounts"},
+    {"match": ["vijay sales"], "kind": "ignore", "label": "Vijay Sales (not a company expense)"},
     {"match": ["snapmint"], "kind": "ignore", "label": "EMI (personal)"},
     {"match": ["cred.club", "cred club", "dreamplug", "credit card bill", "cc bill", "card bill payment"], "kind": "ignore", "label": "Credit card bill (the spends come from the card statement)"},
     {"match": ["91springboard", "91 springboard", "springboard", "rzp91spring"], "max_amount": 2000, "label": "91 Springboard Parking"},
@@ -34,7 +39,7 @@
     {"match": ["godaddy", "hostinger", "namecheap", "bigrock", "domain"], "label": "Domain"},
     {"match": ["fastag", "netc"], "label": "Fastag recharge", "fuel": true},
     {"match": ["\\bcng\\b", "\\bigl\\b", "indraprastha gas", "adani gas", "adani total gas", "gail gas"], "label": "CNG", "fuel": true},
-    {"match": ["petrol", "fuel", "hpcl", "bpcl", "iocl", "indian oil", "hindustan petroleum", "bharat petroleum", "filling station", "service station", "fuels", "petroleum", "nayara", "jio-bp", "jio bp", "\\bshell\\b", "cnl automobiles"], "label": "Petrol", "fuel": true},
+    {"match": ["petrol", "fuel", "hpcl", "bpcl", "iocl", "indian oil", "hindustan petroleum", "bharat petroleum", "filling station", "service station", "fuels", "petroleum", "nayara", "jio-bp", "jio bp", "\\bshell\\b", "cnl automobiles", "knr green"], "label": "Petrol", "fuel": true},
     {"match": ["zepto", "blinkit", "instamart"], "label": "Zepto"},
     {"match": ["booze", "beer", "liq", "wine", "liquor"], "label": "Beer"},
     {"match": ["parking"], "label": "Parking"},
@@ -42,6 +47,7 @@
     {"match": ["zomato", "swiggy", "restaurant", "cafe", "dhaba", "bakery", "sweets", "food", "eats", "kitchen", "biryani", "pizza", "foods", "coffee", "chole bhature", "kabab", "havmor"], "label": "Food"},
     {"match": ["uber", "ola cabs", "olacabs", "rapido"], "label": "Cab"},
 
+    {"match": ["manohar lal"], "label": "Manohar Lal"},
     {"match": ["deepak videographer"], "label": "Deepak Video Team"},
     {"match": ["deepak"], "label": "Deepak Video Team", "check": true},
     {"match": ["ammar"], "label": "Ammar Video Editor"},
