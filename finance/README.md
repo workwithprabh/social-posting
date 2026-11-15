@@ -55,9 +55,17 @@ A partner's personal spend counts as a company expense only on a **shoot day**. 
 "Shoot Date" notes (column M date, column N client; for October 2026: 3 Mahindra Arav, 4 Capital Hyundai, 12 MR
 Hyundai, ...). On a personal statement:
 
-- Spends on a shoot day go in that partner's list, named after the shoot ("Mahindra Arav Food", "MR Hyundai Petrol").
-- Fuel, CNG and Fastag on a non-shoot day: ask the user whether to add each one.
-- Everything else on a non-shoot day is personal and left out.
+- Spends on a shoot day **between 11 am and 9 pm** go in that partner's list, named after the shoot
+  ("Mahindra Arav food", "MR Hyundai fuel"). Before 11 am or after 9 pm they are personal.
+- Fuel, CNG and Fastag count on a shoot day at any hour, and on the day just before or just after a shoot (named after
+  that shoot). Fuel on any other day is left out.
+- Everything else on a non-shoot day is personal and left out, and so are card bill payments, loan repayments and
+  failed payments.
+- Facebook ad top-ups count whatever the day. Meta is also paid through "Razorpay Checkout" and "PayU Checkout"; check
+  the "fb funds add" rows already in the tab (and the tab before) before adding one, since they are often written
+  in by hand.
+- CRED has no statement: the partner sends screenshots of CRED's payment history; read the payee, date, time and
+  amount from them and apply the same rules.
 
 The company account has no such filter: everything on it is a company expense.
 

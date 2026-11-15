@@ -193,6 +193,10 @@ def read_app_lines(text):
             continue
         if cur is None:
             continue
+        tm = re.match(r"\s*(\d{1,2}):(\d{2}) ([AP]M)", line)
+        if tm and "time" not in cur:
+            h = int(tm.group(1)) % 12 + (12 if tm.group(3) == "PM" else 0)
+            cur["time"] = f"{h:02d}:{tm.group(2)}"
         if not cur["_amt"]:
             a = APP_AMOUNT.search(line)
             if a:
@@ -306,6 +310,9 @@ def classify(txn, cfg, owner):
     return {"kind": "expense", "label": payee_name(txn["narration"]), "check": True}
 
 
+HOURS = ("11:00", "21:00")  # shoot-day spends count only between 11 am and 9 pm
+
+
 def parse_shoots(s):
     """'3=Mahindra Arav; 4=Capital Hyundai; 24=DM Mahindra / Car & Bike' -> {3: 'Mahindra Arav', ...}"""
     shoots = {}
@@ -358,7 +365,7 @@ def main():
         txns = [t for t in txns if t["date"] and (t["date"].year, t["date"].month) == (y, m)]
 
     expenses, check, transfers, credits = OrderedDict(), [], [], []
-    ask_fuel, skipped = [], []
+    skipped = []
     for t in sorted(txns, key=lambda t: t["date"]):
         c = classify(t, cfg, a.owner)
         rec = {"date": t["date"].isoformat(), "amount": money(t["debit"] or t["credit"]),
@@ -369,9 +376,20 @@ def main():
         if personal and c["kind"] == "expense":
             # Personal account: a spend counts for the company only on a shoot day, and is named after
             # that shoot ("Mahindra Arav Food"). Fuel on other days is asked about; the rest is left out.
-            client = shoots.get(t["date"].day)
-            if client is None:
-                (ask_fuel if c.get("fuel") else skipped).append(rec)
+            day = t["date"].day
+            client = shoots.get(day)
+            in_hours = "time" not in t or HOURS[0] <= t["time"] < HOURS[1]
+            if t.get("time"):
+                rec["time"] = t["time"]
+            if c.get("fuel"):
+                # fuel counts on a shoot day at any hour, and on the day just before or after a shoot
+                client = client or shoots.get(day - 1) or shoots.get(day + 1)
+                if client is None:
+                    skipped.append(rec)
+                    continue
+                c["label"] = "fuel"
+            elif client is None or not in_hours:
+                skipped.append(rec)
                 continue
             rec["label"] = c["label"] = f"{client} {c['label']}"
             rec["shoot"] = client
@@ -391,7 +409,6 @@ def main():
         "expenses": [[label, cell(v)] for label, v in expenses.items()],
         "expenses_total": money(sum(sum(v) for v in expenses.values())),
         "check": check,
-        "ask_fuel": ask_fuel,
         "left_out": skipped,
         "transfers": transfers,
         "credits": credits,
@@ -405,9 +422,8 @@ def main():
     if personal:
         print("  shoot days: " + ", ".join(f"{d} {c}" for d, c in sorted(shoots.items())))
     for name, items in (("NEEDS A LABEL / CLIENT", check),
-                        ("FUEL ON A NON-SHOOT DAY (ask whether to add)", ask_fuel),
                         ("PARTNER TRANSFERS", transfers), ("MONEY RECEIVED", credits),
-                        ("LEFT OUT: card bill payments, and personal spends on non-shoot days", skipped)):
+                        ("LEFT OUT: card bills, personal spends off shoot days or outside 11 am-9 pm, fuel not next to a shoot", skipped)):
         if items:
             print(f"\n{name}:")
             for r in items:
