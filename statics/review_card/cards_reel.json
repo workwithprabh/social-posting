@@ -95,5 +95,29 @@
    "pl": "1470px",
    "h1": "108px"
   }
+ },
+ {
+  "id": "CH-2610-29",
+  "mode": "dark",
+  "img": "reel_CH-2610-29.jpg",
+  "tag": "Hyundai Shield of Trust",
+  "label": "SOT · 14 covered parts",
+  "headline": "₹15,000 clutch bill?<br>I paid zero.",
+  "sub": "Clutch, brake pads and 12 more selected parts covered.",
+  "priceLabel": "Take SOT at purchase or before",
+  "price": "10,000 km",
+  "chips": [
+   "Clutch: bearing, disc & cover",
+   "Brake pads & discs",
+   "Save up to ₹4,000 in the first 3 months"
+  ],
+  "vars": {
+   "ht": "250px",
+   "ct": "800px",
+   "ch": "1120px",
+   "pt": "1330px",
+   "pl": "1470px",
+   "h1": "84px"
+  }
  }
 ]
