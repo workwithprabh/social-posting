@@ -1,5 +1,6 @@
-"""Share one image or video to the Instagram Story and the Facebook Page Story (user, 15 Nov 2026: every post we
-publish also goes to both Stories).
+"""Post one image or video as a standalone Instagram Story and Facebook Page Story. Use only when the user asks for a
+Story: the user's standing request (15 Nov 2026) is to SHARE each post to the Story, which the API can't do, so the
+team does that in the app.
 
 Usage:
   python scripts/publish_story.py --image post.jpg   --token-env META_SYSTEM_USER_TOKEN --system-user \
