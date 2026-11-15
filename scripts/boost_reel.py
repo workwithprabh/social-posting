@@ -1,13 +1,13 @@
 """Boost an Instagram reel as an ad (Instagram only, Advantage+ audience), following config/boost.json.
 
-Goals (--goal, default visits):
+Goals (--goal, default engagement; user, 15 Nov 2026: engagement for all boosts):
   visits      profile visits: OUTCOME_TRAFFIC, VISIT_INSTAGRAM_PROFILE, all of India (the client's `country`)
   engagement  likes, comments, shares, saves: OUTCOME_ENGAGEMENT, POST_ENGAGEMENT on the post itself, also all of India
               (user, 15 Nov 2026)
 
 Usage:
-  python scripts/boost_reel.py plan   <CLIENT> <ig_media_id> [permalink] [--goal engagement]   # what would be created
-  python scripts/boost_reel.py create <CLIENT> <ig_media_id> [permalink] [--goal engagement]   # all PAUSED (no spend)
+  python scripts/boost_reel.py plan   <CLIENT> <ig_media_id> [permalink] [--goal visits]   # what would be created
+  python scripts/boost_reel.py create <CLIENT> <ig_media_id> [permalink] [--goal visits]   # all PAUSED (no spend)
   python scripts/boost_reel.py activate <campaign_id> <adset_id> <ad_id>   # only after the user says yes
   python scripts/boost_reel.py delete <campaign_id>                 # remove a test boost
   python scripts/boost_reel.py results <campaign_id> ...            # read-only: spend, reach, visits, likes, comments
@@ -83,7 +83,7 @@ def ig_and_page(client, media_id, permalink=None):
         return c['ig_user'], c['ig_username'], c.get('page_id'), permalink or f'https://www.instagram.com/{c["ig_username"]}/{media_id}', ''
 
 
-def plan(client, media_id, permalink=None, goal='visits'):
+def plan(client, media_id, permalink=None, goal='engagement'):
     act, r, why = pick_account(client)
     ig, user, page, link, cap = ig_and_page(client, media_id, permalink)
     start = dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=10)
@@ -137,7 +137,7 @@ def _rest(p, name, camp):
 
 if __name__ == '__main__':
     args = sys.argv[1:]
-    goal = 'visits'
+    goal = 'engagement'
     if '--goal' in args:
         k = args.index('--goal'); goal = args[k + 1]; del args[k:k + 2]
         assert goal in ('visits', 'engagement'), goal

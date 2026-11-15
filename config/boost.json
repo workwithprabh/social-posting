@@ -5,7 +5,7 @@
   "per_reel_inr": 271,
   "placement": "instagram_only",
   "audience": "advantage_plus",
-  "goal": "profile_visits (OUTCOME_TRAFFIC, destination INSTAGRAM_PROFILE, optimisation VISIT_INSTAGRAM_PROFILE)",
+  "goal": "engagement for every boost (user, 15 Nov 2026): OUTCOME_ENGAGEMENT, optimisation POST_ENGAGEMENT, destination ON_POST. Profile visits (--goal visits) only when the user asks",
   "clients": {
     "CH": {
       "name": "Capital Hyundai",
@@ -145,6 +145,6 @@
   "_locations_note": "Approximate showroom areas; radius in km. Adjust if the client wants a different area.",
   "area_rule": "User, 13 Nov 2026: all clients boost to all of India (country IN) for more results; the locations lists are kept only for reference.",
   "engagement": {
-    "_note": "User, 15 Nov 2026: test an engagement goal (likes, comments, shares, saves) on some reels, targeted to all of India like the profile-visit boosts. Same budget and hours. Use --goal engagement."
+    "_note": "User, 15 Nov 2026: engagement for all boosts from now (likes, comments, shares, saves), all of India, same budget and hours. It is the default in boost_reel.py."
   }
 }

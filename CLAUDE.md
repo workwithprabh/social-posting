@@ -107,17 +107,15 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   or full photo, mixed so each dealer's feed varies. No heavy red boxes or condensed caps (that is the Mahindra look),
   and no all-over blue gradient (the user found it looked very bad). Template `statics/review_card/hyundai.html`.
 - Capital Hyundai Dadri showroom number is 72900 77273 everywhere (user, 9 Nov 2026; matches the reel end card).
-- Boosting: rules and ad accounts are in `config/boost.json` (Instagram only, Advantage+ audience, all of India, goal profile visits, Rs 100/day for
+- Boosting: rules and ad accounts are in `config/boost.json` (Instagram only, Advantage+ audience, all of India, goal engagement (user, 15 Nov 2026: "engagement for all boosts from now"), Rs 100/day for
   65 hours, Rs 271 per reel; user, 13 Nov 2026, was 2 days). Capital Hyundai and M R Hyundai always use their own ad account; Car & Bike always uses the Dee Emm Hyundai
   ad account only (user, 13 Nov 2026); every client's boost targets all of India (user, 13 Nov 2026; `country` in boost.json); Mahindra Arav and Dee Emm Mahindra fall
   back to the Dee Emm Hyundai / Car & Bike account only when their own can't cover the boost. Create boosts paused,
   show the batch, and activate only after the user says yes. `python scripts/check_ads.py` checks access and balances;
   `python scripts/boost_reel.py plan|create|activate|delete` makes the boost (create = paused, no spend);
   `boost_reel.py results <campaign_id> ...` reads spend, reach, profile visits, likes, comments, shares, saves (read-only).
-  `--goal engagement` (user, 15 Nov 2026) makes an engagement boost instead (likes, comments, shares, saves;
-  OUTCOME_ENGAGEMENT / POST_ENGAGEMENT), same budget, hours and all-of-India targeting. Test plan: on the next batch
-  (Tue 17 Nov) boost MRH-2611-03 and CB-2611-04 with engagement and the rest with profile visits, then compare likes,
-  comments and profile visits per rupee per client.
+  Every boost, every client, uses the engagement goal (likes, comments, shares, saves; OUTCOME_ENGAGEMENT /
+  POST_ENGAGEMENT), the script's default since 15 Nov 2026. `--goal visits` (profile visits) only if the user asks for it.
 - Posting rhythm and static-post rules: `statics/BRAND_SOURCES.md` (a post every second day, cycling 2 videos then 1
   static, flexible when videos are short). Client contacts and logos: `statics/clients.json`.
 - Static content buckets and the Calendar/Reviews tabs: `statics/CONTENT_BUCKETS.md`. Google reviews come from
