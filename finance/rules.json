@@ -25,6 +25,7 @@
   "rules": [
     {"match": ["paid to xxxxxx7654", "paid to xxxxxx0863"], "kind": "ignore", "label": "Prabh, between own accounts"},
     {"match": ["vijay sales"], "kind": "ignore", "label": "Vijay Sales (not a company expense)"},
+    {"match": ["myntra", "ajio", "nykaa"], "kind": "ignore", "label": "Shopping (personal)"},
     {"match": ["snapmint"], "kind": "ignore", "label": "EMI (personal)"},
     {"match": ["cred.club", "cred club", "dreamplug", "credit card bill", "cc bill", "card bill payment"], "kind": "ignore", "label": "Credit card bill (the spends come from the card statement)"},
     {"match": ["91springboard", "91 springboard", "springboard", "rzp91spring"], "max_amount": 2000, "label": "91 Springboard Parking"},
