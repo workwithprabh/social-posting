@@ -5,7 +5,7 @@
     "_about": "Words that identify each partner's own accounts in a narration (name as the bank shows it, UPI IDs). Fill in once from a real statement.",
     "prabh": ["prabh"],
     "jiti": ["jiti", "jiteshwari"],
-    "carrot": ["be carrot", "becarrot"]
+    "carrot": ["be carrot", "becarrot", "lakhvir kaur"]
   },
 
   "clients": {
@@ -19,6 +19,8 @@
   },
 
   "rules": [
+    {"match": ["paid to xxxxxx7654", "paid to xxxxxx0863"], "kind": "ignore", "label": "Prabh, between own accounts"},
+    {"match": ["snapmint"], "kind": "ignore", "label": "EMI (personal)"},
     {"match": ["cred.club", "cred club", "dreamplug", "credit card bill", "cc bill", "card bill payment"], "kind": "ignore", "label": "Credit card bill (the spends come from the card statement)"},
     {"match": ["91springboard", "91 springboard", "springboard", "rzp91spring"], "max_amount": 2000, "label": "91 Springboard Parking"},
     {"match": ["91springboard", "91 springboard", "springboard", "rzp91spring"], "label": "91 Springboard Seat"},
@@ -34,7 +36,10 @@
     {"match": ["\\bcng\\b", "\\bigl\\b", "indraprastha gas", "adani gas", "adani total gas", "gail gas"], "label": "CNG", "fuel": true},
     {"match": ["petrol", "fuel", "hpcl", "bpcl", "iocl", "indian oil", "hindustan petroleum", "bharat petroleum", "filling station", "service station", "fuels", "petroleum", "nayara", "jio-bp", "jio bp", "\\bshell\\b", "cnl automobiles"], "label": "Petrol", "fuel": true},
     {"match": ["zepto", "blinkit", "instamart"], "label": "Zepto"},
-    {"match": ["zomato", "swiggy", "restaurant", "cafe", "dhaba", "bakery", "sweets", "food", "eats", "kitchen", "biryani", "pizza"], "label": "Food"},
+    {"match": ["booze", "beer", "liq", "wine", "liquor"], "label": "Beer"},
+    {"match": ["parking"], "label": "Parking"},
+    {"match": ["amazon pay groceries"], "label": "Groceries", "check": true},
+    {"match": ["zomato", "swiggy", "restaurant", "cafe", "dhaba", "bakery", "sweets", "food", "eats", "kitchen", "biryani", "pizza", "foods", "coffee", "chole bhature", "kabab", "havmor"], "label": "Food"},
     {"match": ["uber", "ola cabs", "olacabs", "rapido"], "label": "Cab"},
 
     {"match": ["deepak videographer"], "label": "Deepak Video Team"},

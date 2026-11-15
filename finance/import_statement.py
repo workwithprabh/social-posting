@@ -175,6 +175,43 @@ def read_pdf_columns(pdf):
     return [t for t in txns if t["date"] and (t["debit"] or t["credit"])]
 
 
+APP_START = re.compile(r"^(?P<date>[A-Z][a-z]{2} \d{1,2}, \d{4})\s+(?P<what>.+?)\s+(?P<type>Debit|Credit)\s+INR"
+                       r"(?:\s+(?P<amt>[\d,]+\.\d{2}))?\s*$")
+APP_AMOUNT = re.compile(r"\s([\d,]+\.\d{2})\s*$")
+
+
+def read_app_lines(text):
+    """PhonePe statement: 'Oct 03, 2026 Paid to X Debit INR 500.00', then the time, transaction id, UTR and
+    'Debited from XX7654' on the following lines. A long amount sometimes wraps onto the next line."""
+    txns, cur = [], None
+    for line in text.splitlines():
+        m = APP_START.match(line.strip())
+        if m:
+            cur = {"date": parse_date(m.group("date")), "narration": m.group("what"), "debit": 0.0, "credit": 0.0,
+                   "_type": m.group("type"), "_amt": m.group("amt")}
+            txns.append(cur)
+            continue
+        if cur is None:
+            continue
+        if not cur["_amt"]:
+            a = APP_AMOUNT.search(line)
+            if a:
+                cur["_amt"] = a.group(1)
+        acct = re.match(r"\s*(Debited from|Credited to) (\S+)", line)
+        if acct:
+            cur["narration"] += f" ({acct.group(1).lower()} {acct.group(2)})"
+    out = []
+    for t in txns:
+        amt = parse_amount(t.pop("_amt"))
+        if t.pop("_type") == "Credit":
+            t["credit"] = amt
+        else:
+            t["debit"] = amt
+        if amt:
+            out.append(t)
+    return out
+
+
 def read_pdf(path, password=None):
     import pdfplumber
     rows, text = [], []
@@ -190,7 +227,10 @@ def read_pdf(path, password=None):
     txns = rows_to_txns(rows) if rows else []
     if txns:
         return txns
-    # PhonePe / Google Pay style: one line per payment
+    txns = read_app_lines("\n".join(text))
+    if txns:
+        return txns
+    # other app exports: one line per payment
     for m in APP_LINE.finditer("\n".join(text)):
         what = m.group("what")
         is_cr = (m.group("type") or "").upper() == "CREDIT" or what.lower().startswith(("received", "money received"))
