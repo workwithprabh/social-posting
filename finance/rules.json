@@ -12,15 +12,16 @@
     "_about": "Words that identify a client in a credit (payment received) narration, matched to the 'Receiveable' names in the billing table.",
     "Arav": ["arav"],
     "Dee Emm hyundai": ["dee emm hyundai", "deeemm hyundai", "dee emm motors"],
-    "trob": ["trob", "dee emm mahindra"],
-    "Capital Hyundai": ["capital hyundai", "capital motors"],
+    "trob": ["trob auto", "trob"],
+    "Cynor Service Hero Shoot": ["cynor media"],
+    "Capital Hyundai": ["capital hyundai", "capital motors", "capital automotives"],
     "MR Hyundai": ["m r hyundai", "mr hyundai", "m.r. hyundai"]
   },
 
   "rules": [
     {"match": ["cred.club", "cred club", "dreamplug", "credit card bill", "cc bill", "card bill payment"], "kind": "ignore", "label": "Credit card bill (the spends come from the card statement)"},
-    {"match": ["91springboard", "91 springboard", "springboard"], "max_amount": 2000, "label": "91 Springboard Parking"},
-    {"match": ["91springboard", "91 springboard", "springboard"], "label": "91 Springboard Seat"},
+    {"match": ["91springboard", "91 springboard", "springboard", "rzp91spring"], "max_amount": 2000, "label": "91 Springboard Parking"},
+    {"match": ["91springboard", "91 springboard", "springboard", "rzp91spring"], "label": "91 Springboard Seat"},
     {"match": ["gst", "cbic", "gstn", "gst portal"], "label": "GST Payment"},
     {"match": ["openai", "chatgpt"], "label": "Chatgpt"},
     {"match": ["anthropic", "claude"], "label": "Claude"},
@@ -31,14 +32,15 @@
     {"match": ["godaddy", "hostinger", "namecheap", "bigrock", "domain"], "label": "Domain"},
     {"match": ["fastag", "netc"], "label": "Fastag recharge", "fuel": true},
     {"match": ["\\bcng\\b", "\\bigl\\b", "indraprastha gas", "adani gas", "adani total gas", "gail gas"], "label": "CNG", "fuel": true},
-    {"match": ["petrol", "fuel", "hpcl", "bpcl", "iocl", "indian oil", "hindustan petroleum", "bharat petroleum", "filling station", "service station", "fuels", "petroleum", "nayara", "jio-bp", "jio bp", "\\bshell\\b"], "label": "Petrol", "fuel": true},
+    {"match": ["petrol", "fuel", "hpcl", "bpcl", "iocl", "indian oil", "hindustan petroleum", "bharat petroleum", "filling station", "service station", "fuels", "petroleum", "nayara", "jio-bp", "jio bp", "\\bshell\\b", "cnl automobiles"], "label": "Petrol", "fuel": true},
     {"match": ["zepto", "blinkit", "instamart"], "label": "Zepto"},
     {"match": ["zomato", "swiggy", "restaurant", "cafe", "dhaba", "bakery", "sweets", "food", "eats", "kitchen", "biryani", "pizza"], "label": "Food"},
     {"match": ["uber", "ola cabs", "olacabs", "rapido"], "label": "Cab"},
 
+    {"match": ["deepak videographer"], "label": "Deepak Video Team"},
     {"match": ["deepak"], "label": "Deepak Video Team", "check": true},
     {"match": ["ammar"], "label": "Ammar Video Editor"},
-    {"match": ["anusha"], "label": "Anusha"},
+    {"match": ["anusha", "anush jha"], "label": "Anusha"},
     {"match": ["shaurya"], "label": "Shaurya"},
     {"match": ["divya"], "label": "Divya"},
     {"match": ["shweta"], "label": "Shweta"},
@@ -56,6 +58,6 @@
     {"match": ["laxman"], "label": "Laxman"},
     {"match": ["naman"], "label": "Naman"},
     {"match": ["boski"], "label": "Boski"},
-    {"match": ["chartered accountant", " ca fee", "ca payment"], "label": "CA Payment"}
+    {"match": ["chartered accountant", " ca fee", "ca payment", "qbcd23tdj13e@idbi"], "label": "CA Payment"}
   ]
 }

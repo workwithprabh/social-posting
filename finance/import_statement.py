@@ -17,6 +17,7 @@ Claude writes the reviewed rows into the month tab with the Google Sheets connec
 """
 import argparse
 import json
+import os
 import re
 import sys
 from collections import OrderedDict
@@ -121,14 +122,71 @@ APP_LINE = re.compile(
     r"(?:(?P<type>DEBIT|CREDIT)\s*(?:₹|Rs\.?|INR|[^\d\s])?|₹|Rs\.?|INR)\s?(?P<amt>[\d,]+(?:\.\d+)?)", re.I)
 
 
-def read_pdf(path):
+AMOUNT_WORD = re.compile(r"^[\d,]+\.\d{2}$")
+DATE_WORD = re.compile(r"^(\d{4}-\d{2}-\d{2}|\d{2}[/-]\d{2}[/-]\d{2,4}|\d{2}-[A-Za-z]{3}-\d{2,4})$")
+
+
+def read_pdf_columns(pdf):
+    """Statements whose table has no ruling lines (Yes Bank and others): place each word by its x position under
+    the header row (Description / Reference / Withdrawals / Deposits / Balance). A transaction starts at a date in
+    the first column; description lines that wrap below it are joined."""
+    txns = []
+    for page in pdf.pages:
+        words = page.extract_words()
+        head = {}
+        for w in words:
+            t = w["text"].lower()
+            for key, names in (("desc", ("description", "narration", "particulars")),
+                               ("ref", ("reference", "chq", "cheque")),
+                               ("dr", ("withdrawals", "withdrawal", "debit", "debits")),
+                               ("cr", ("deposits", "deposit", "credit", "credits")),
+                               ("bal", ("balance",))):
+                if t in names and key not in head:
+                    head[key] = w
+        if not {"desc", "dr", "cr"} <= head.keys():
+            continue
+        top = head["dr"]["top"]
+        desc_l = head["desc"]["x0"] - 40
+        desc_r = head["ref"]["x0"] - 10 if "ref" in head else head["dr"]["x0"] - 10
+        centers = {k: (head[k]["x0"] + head[k]["x1"]) / 2 for k in ("dr", "cr", "bal") if k in head}
+        cur = None
+        lines = {}
+        for w in words:
+            if w["top"] <= top + 5:
+                continue
+            lines.setdefault(round(w["top"]), []).append(w)
+        for y in sorted(lines):
+            row = sorted(lines[y], key=lambda w: w["x0"])
+            if DATE_WORD.match(row[0]["text"]) and row[0]["x0"] < desc_l:
+                cur = {"date": parse_date(row[0]["text"]), "narration": "", "debit": 0.0, "credit": 0.0}
+                txns.append(cur)
+            if cur is None:
+                continue
+            # the bank wraps the description at a fixed width, often mid-word, so lines join without a space
+            cur["narration"] += " ".join(w["text"] for w in row if desc_l <= w["x0"] < desc_r)
+            for w in row:
+                if AMOUNT_WORD.match(w["text"]) and w["x0"] > desc_r:
+                    mid = (w["x0"] + w["x1"]) / 2
+                    col = min(centers, key=lambda k: abs(centers[k] - mid))
+                    if col == "dr":
+                        cur["debit"] = parse_amount(w["text"])
+                    elif col == "cr":
+                        cur["credit"] = parse_amount(w["text"])
+    return [t for t in txns if t["date"] and (t["debit"] or t["credit"])]
+
+
+def read_pdf(path, password=None):
     import pdfplumber
     rows, text = [], []
-    with pdfplumber.open(path) as pdf:
+    with pdfplumber.open(path, password=password or None) as pdf:
         for page in pdf.pages:
             for table in page.extract_tables() or []:
                 rows.extend(table)
             text.append(page.extract_text() or "")
+    with pdfplumber.open(path, password=password or None) as pdf:
+        txns = read_pdf_columns(pdf)
+    if txns:
+        return txns
     txns = rows_to_txns(rows) if rows else []
     if txns:
         return txns
@@ -142,11 +200,11 @@ def read_pdf(path):
     return txns
 
 
-def read_statement(path):
+def read_statement(path, password=None):
     p = Path(path)
     ext = p.suffix.lower()
     if ext == ".pdf":
-        return read_pdf(p)
+        return read_pdf(p, password)
     if ext in (".xls", ".xlsx"):
         sheets = pd.read_excel(p, sheet_name=None, header=None, dtype=str)
         rows = [r for df in sheets.values() for r in df.fillna("").values.tolist()]
@@ -165,6 +223,12 @@ UPI_NOISE = {"upi", "dr", "cr", "imps", "neft", "rtgs", "p2a", "p2m", "payment",
 def payee_name(narr):
     """Best guess at the payee in a UPI / NEFT narration, for unmatched rows."""
     m = re.match(r"(?:paid to|sent to|money sent to|received from|money received from)\s+(.+)", narr, re.I)
+    if m:
+        return m.group(1).strip().title()
+    m = re.match(r"(?:YIB-NEFT|NEFT Cr|NET-TPT)-(?:[A-Z0-9]+-)?([A-Za-z][A-Za-z .&]+?)-", narr)  # Yes Bank NEFT
+    if m:
+        return m.group(1).strip().title()
+    m = re.match(r"PCA:\d+:[^:]+:(.+?)(?:\s+[A-Z][a-z]+)?\s*IND\d", narr)  # Yes Bank card (POS) payment
     if m:
         return m.group(1).strip().title()
     for part in re.split(r"[/|\-]", narr):
@@ -229,6 +293,8 @@ def main():
     ap.add_argument("--month", help="YYYY-MM")
     ap.add_argument("--shoots", help="shoot days of the month, '3=Mahindra Arav; 4=Capital Hyundai' "
                     "(from the month tab's Shoot Date notes); required for a personal account")
+    ap.add_argument("--password", default=os.environ.get("STATEMENT_PASSWORD"),
+                    help="password of a protected PDF (or set STATEMENT_PASSWORD); never saved anywhere")
     ap.add_argument("--rules", default=str(HERE / "rules.json"))
     ap.add_argument("--out", default="statement_rows.json")
     a = ap.parse_args()
@@ -239,7 +305,12 @@ def main():
         sys.exit("A personal account needs --month and --shoots: only spends on shoot days count for the company.")
 
     cfg = json.load(open(a.rules))
-    txns = read_statement(a.statement)
+    try:
+        txns = read_statement(a.statement, a.password)
+    except Exception as e:
+        if Path(a.statement).suffix.lower() == ".pdf" and "Pdfminer" in type(e).__name__:
+            sys.exit("Could not open the PDF: it is password-protected or the password is wrong. Pass --password.")
+        raise
     if not txns:
         sys.exit("No transactions found. Check the file, or send a CSV/XLSX export instead of a PDF.")
     if a.month:

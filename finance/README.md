@@ -79,22 +79,24 @@ PhonePe and CRED UPI payment. CRED has no statement download.
 When a partner shares a UPI or bank statement (CSV, XLSX or PDF):
 
 1. Save it to the session scratchpad (not the repo; statements never get committed).
-2. Read the month tab's Shoot Date notes, then run
+2. Password-protected PDFs (IndusInd and card statements): pass `--password` or set `STATEMENT_PASSWORD`. The user
+   gives the password in the conversation; never write it into this repo or any file.
+3. Read the month tab's Shoot Date notes, then run
    `python finance/import_statement.py <file> --owner carrot|prabh|jiti --month 2026-10 --shoots "3=Mahindra Arav; 4=Capital Hyundai" --out <scratchpad>/rows.json`
    (`--shoots` and `--month` are required for prabh and jiti).
-3. Show the user the result: the expense rows, the **needs a label** list (unknown payees, Meta/Google ads without a
+4. Show the user the result: the expense rows, the **needs a label** list (unknown payees, Meta/Google ads without a
    client), **fuel on a non-shoot day** to approve, partner transfers, money received, and what was left out as
    personal. Ask about the unclear ones.
-4. Before adding anything, check it isn't already in the sheet: compare amounts (and dates in the Detail text)
+5. Before adding anything, check it isn't already in the sheet: compare amounts (and dates in the Detail text)
    against that owner's list in this month's tab **and the tabs either side**. Entries are sometimes written in the
    month they were paid for, not the month they were paid ("Petrol 3rd oct" and "October Be carrot fb funds add" sit in
    the September 2026 tab).
-5. Read the month tab, then append the new rows below the last filled row of that owner's list (rows 6-29) with
+6. Read the month tab, then append the new rows below the last filled row of that owner's list (rows 6-29) with
    `update_formulas`. If a label already has a row, add the new amounts to its formula
    (`=4248` → `=4248+1142`) instead of adding a second row.
-6. Money received from a client: set that client's Status to `Rec` in the billing table of the month the bill was
+7. Money received from a client: set that client's Status to `Rec` in the billing table of the month the bill was
    for (an October bill is paid in November), after checking the amount against Final Payment + GST.
-7. Read the tab again and report the new totals.
+8. Read the tab again and report the new totals.
 
 Add rules for any label the user gave in step 3 to `rules.json`.
 
