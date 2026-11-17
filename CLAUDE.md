@@ -91,6 +91,14 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
      reelcover_hy.html (Hyundai), data in cards_reel.json, `node render_reel.js [ID]` (see the README there).
      Capital Hyundai too, once the team approves the reel. Change a style on one cover first; replicate only after the
      user approves it. Notes say "background edited with AI" when it was.
+  10. **High-CTR covers (user, 17 Nov 2026: the static-look covers were "very basic", "not catchy", low CTR).** Every
+     cover is built to stop the scroll: one hook taken from the reel's own story (curiosity, urgency or the payoff,
+     e.g. "Don't book your Creta yet!"), very big and very bold (Montserrat 900, ~130 px), a big bright cut-out hero
+     (rembg isnet + `cover/hero_glow.py`: shadows opened, clarity, sheen, white-blue rim and halo) on an energetic
+     background, a sticker with the payoff number, and bold pills. Readable at profile-grid size; text in y 240-1680.
+     Template `statics/review_card/reelcover_ctr.html` (`tpl` in cards_reel.json). With every cover Claude shares an
+     estimated CTR range (a judgment, not a measurement) and an impact score out of 10 with a one-line reason per
+     criterion: hook, subject, grid readability, emotion, brand fit. Reference: CH-2611-03 (17 Nov 2026).
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in

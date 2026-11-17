@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Mont;font-weight:600;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-600-normal.woff2)}
+@font-face{font-family:Mont;font-weight:700;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:Mont;font-weight:800;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:Mont;font-weight:900;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-900-normal.woff2)}
+/* Hyundai reel cover v2 (user, 17 Nov 2026): the reel's photo fills the whole 9:16 frame, the hook is very big and
+   very bold so it reads in the profile grid; Hyundai look kept (sentence case, Active Blue label, outline pills).
+   All text inside the middle 3:4 area (y 240-1680). */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+body{font-family:Mont,sans-serif;color:#fff;position:relative;--blue:#00AAD2}
+.bg{position:absolute;inset:0;background-size:var(--bs,cover);background-position:var(--bp,center);background-repeat:no-repeat}
+.veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,6,16,.92) 0%,rgba(0,6,16,.86) 18%,rgba(0,6,16,.55) 34%,rgba(0,6,16,0) 48%,rgba(0,6,16,0) 62%,rgba(0,6,16,.7) 76%,rgba(0,6,16,.92) 100%)}
+.head{position:absolute;left:64px;right:64px;top:var(--ht,262px)}
+.label{display:inline-block;background:var(--blue);color:#fff;font-weight:800;font-size:36px;padding:10px 20px;letter-spacing:.3px}
+h1{margin-top:22px;font-weight:900;font-size:var(--h1,150px);line-height:.98;letter-spacing:-4px;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+h1 em{font-style:normal;color:var(--blue)}
+h2{margin-top:14px;font-weight:800;font-size:var(--h2,64px);line-height:1.08;letter-spacing:-1.5px;text-shadow:0 4px 20px rgba(0,0,0,.6)}
+.foot{position:absolute;left:64px;right:64px;bottom:var(--fb,250px)}
+.pills{display:flex;flex-wrap:wrap;gap:16px}
+.pill{font-weight:800;font-size:38px;padding:14px 28px;border:3px solid #fff;border-radius:60px;background:rgba(0,0,0,.35)}
+.pill.b{background:var(--blue);border-color:var(--blue)}
+.note{margin-top:20px;font-weight:700;font-size:30px;opacity:.95}
+</style></head><body><div id="root"></div>
+<script>
+function render(c){
+ document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';'));
+ document.getElementById('root').innerHTML=`<div class="bg" style="background-image:url(${c.img})"></div><div class="veil"></div>
+ <div class="head"><span class="label">${c.label}</span><h1>${c.hook}</h1>${c.hook2?`<h2>${c.hook2}</h2>`:''}</div>
+ <div class="foot"><div class="pills">${c.pills.map((x,i)=>`<div class="pill${i==0&&c.firstBlue?' b':''}">${x}</div>`).join('')}</div>${c.note?`<div class="note">${c.note}</div>`:''}</div>`;
+ const hd=document.querySelector('.head').getBoundingClientRect(), ft=document.querySelector('.foot').getBoundingClientRect();
+ return {headBottom:Math.round(hd.bottom), footTop:Math.round(ft.top), footBottom:Math.round(ft.bottom)};
+}
+</script></body></html>
