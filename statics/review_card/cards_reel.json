@@ -313,5 +313,111 @@
    "ly": "0px",
    "lh": "0px"
   }
+ },
+ {
+  "id": "AM-2611-02ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "hero_x3xo.png",
+  "kick": "XUV 3XO ZNG",
+  "hook": "Petrol ya CNG?<br><em>Galti mat karo!</em>",
+  "sticker": "<small>CNG MEIN</small><b>24.7</b><i>km/kg*</i>",
+  "pills": [
+   "200 Nm dono mein",
+   "270 L boot"
+  ],
+  "note": "Mahindra XUV 3XO ZNG · *claimed",
+  "bg": "radial-gradient(720px 600px at 50% 60%,rgba(235,240,250,.55) 0%,rgba(120,130,150,.35) 38%,rgba(20,22,28,0) 75%),linear-gradient(180deg,#050506 0%,#15161a 45%,#202228 70%,#050506 100%)",
+  "floor": "linear-gradient(180deg,rgba(255,255,255,.35) 0,rgba(70,72,80,.6) 3px,rgba(40,42,48,.7) 90px,rgba(12,12,14,.94) 300px,#030303 100%)",
+  "floorlight": "radial-gradient(50% 50% at 50% 45%,rgba(240,245,255,.5),rgba(160,170,190,.22) 55%,rgba(40,40,50,0) 100%)",
+  "vars": {
+   "ht": "250px",
+   "h1": "112px",
+   "hx": "-80px",
+   "hy": "760px",
+   "hw": "1240px",
+   "fy": "3000px",
+   "gy": "1324px",
+   "sx": "650px",
+   "sy": "610px",
+   "sw": "400px",
+   "sb": "96px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "35px",
+   "ly": "0px",
+   "lh": "200px",
+   "kickbg": "#E31837",
+   "kickfg": "#fff"
+  }
+ },
+ {
+  "id": "DEM-2611-04ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "hero_x3xo.png",
+  "kick": "XUV 3XO ZNG",
+  "hook": "₹2 lakh down?<br><em>EMI kitni?</em>",
+  "sticker": "<small>EMI APPROX</small><b>₹19,250</b><i>per month*</i>",
+  "pills": [
+   "₹9.99 lakh ex-showroom",
+   "5 saal · 9%"
+  ],
+  "note": "*Indicative example · T&C apply",
+  "bg": "radial-gradient(720px 600px at 50% 60%,rgba(235,240,250,.55) 0%,rgba(120,130,150,.35) 38%,rgba(20,22,28,0) 75%),linear-gradient(180deg,#050506 0%,#15161a 45%,#202228 70%,#050506 100%)",
+  "floor": "linear-gradient(180deg,rgba(255,255,255,.35) 0,rgba(70,72,80,.6) 3px,rgba(40,42,48,.7) 90px,rgba(12,12,14,.94) 300px,#030303 100%)",
+  "floorlight": "radial-gradient(50% 50% at 50% 45%,rgba(240,245,255,.5),rgba(160,170,190,.22) 55%,rgba(40,40,50,0) 100%)",
+  "vars": {
+   "ht": "250px",
+   "h1": "124px",
+   "hx": "-80px",
+   "hy": "760px",
+   "hw": "1240px",
+   "fy": "3000px",
+   "gy": "1324px",
+   "sx": "650px",
+   "sy": "610px",
+   "sw": "400px",
+   "sb": "68px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "35px",
+   "ly": "0px",
+   "lh": "200px",
+   "kickbg": "#E31837",
+   "kickfg": "#fff"
+  }
+ },
+ {
+  "id": "AM-2611-03ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "hero_cyl.png",
+  "kick": "CNG SAFETY",
+  "hook": "Gas leak ho<br><em>gayi toh?</em>",
+  "sticker": "<small>BHARAT NCAP</small><b>5★</b><i>safety</i>",
+  "pills": [
+   "Leak? Car khud petrol pe",
+   "6 airbags + ESC"
+  ],
+  "note": "Mahindra XUV 3XO ZNG",
+  "bg": "radial-gradient(720px 600px at 50% 60%,rgba(235,240,250,.55) 0%,rgba(120,130,150,.35) 38%,rgba(20,22,28,0) 75%),linear-gradient(180deg,#050506 0%,#15161a 45%,#202228 70%,#050506 100%)",
+  "vars": {
+   "ht": "250px",
+   "h1": "132px",
+   "hx": "-40px",
+   "hy": "600px",
+   "hw": "1160px",
+   "fy": "3000px",
+   "gy": "3000px",
+   "sx": "680px",
+   "sy": "560px",
+   "sw": "370px",
+   "sb": "130px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "34px",
+   "ly": "0px",
+   "lh": "0px",
+   "kickbg": "#E31837",
+   "kickfg": "#fff"
+  }
  }
 ]
