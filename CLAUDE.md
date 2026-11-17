@@ -141,7 +141,7 @@ encode (`-vf scale=720:1280 -r 30 -crf 28 -maxrate 1500k -bufsize 3000k -b:a 96k
 CB-2611-03 on 13 Nov 2026. CB-2611-02 still fails even at 720p (same settings), so that one is posted from the app.
 On 13 Nov 2026 1080p also failed for M R Hyundai and Arav Mahindra (15 MB, 8 MB) while Capital and Dee Emm
 Hyundai went through (but on 15 Nov 2026 Capital's 14 MB 1080p failed too and 720p at crf 28, 5 MB, went through): AM worked at 720p; MRH-2610-03 needed `-vf scale=720:1280,fps=30 -profile:v main -level 4.0
--crf 30 -maxrate 1200k -g 60 -ar 44100` (9 MB). If Instagram fails at 1080p, go straight to 720p. Without `--cover-url`, `publish_reel.py` makes the
+-crf 30 -maxrate 1200k -g 60 -ar 44100` (9 MB). If Instagram fails at 1080p, go straight to 720p (17 Nov 2026: all six clients posted at 720p crf 28; Dee Emm Hyundai's failed once and went through at crf 30, -maxrate 1200k, 5 MB). Without `--cover-url`, `publish_reel.py` makes the
 cover link itself from `--cover-file` (an unpublished Page photo, deleted afterwards). Publish with `scripts/publish_reel.py`; for clients on the
 system user token add `--system-user` so Facebook gets the Page token.
 
