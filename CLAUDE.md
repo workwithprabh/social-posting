@@ -99,6 +99,10 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
      Template `statics/review_card/reelcover_ctr.html` (`tpl` in cards_reel.json). With every cover Claude shares an
      estimated CTR range (a judgment, not a measurement) and an impact score out of 10 with a one-line reason per
      criterion: hook, subject, grid readability, emotion, brand fit. Reference: CH-2611-03 (17 Nov 2026).
+     **Hero photo (user, 17 Nov 2026: the reel's Creta "looked dirty"):** if the reel's own shot isn't clean and sharp,
+     use a photo from the internet instead; prefer the brand's official images (e.g. hyundai.com/in `content/dam/...`
+     gallery shots on a studio background cut out cleanly), the same model as the reel, no registration plates. This
+     replaces "AI only for the setting, never the car" for the hero image; AI still never draws the car.
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in
