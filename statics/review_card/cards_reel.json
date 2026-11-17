@@ -119,5 +119,199 @@
    "pl": "1470px",
    "h1": "84px"
   }
+ },
+ {
+  "id": "CH-2611-03ctr2",
+  "tpl": "reelcover_ctr.html",
+  "img": "hero_CH-2611-03_official.png",
+  "kick": "WAIT!",
+  "hook": "Don't book<br>your Creta <em>yet!</em>",
+  "sticker": "<small>UP TO</small><b>₹1 LAKH</b><i>benefits</i>",
+  "pills": [
+   "Alcazar up to ₹80,000",
+   "Verna up to ₹90,000"
+  ],
+  "note": "November offers · till 30 Nov · T&C apply",
+  "vars": {
+   "ht": "250px",
+   "h1": "128px",
+   "hx": "-75px",
+   "hy": "755px",
+   "hw": "1225px",
+   "fy": "3000px",
+   "sx": "650px",
+   "sy": "600px",
+   "sw": "400px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "sb": "80px",
+   "pf": "35px",
+   "gy": "1238px",
+   "ly": "0px",
+   "lh": "200px"
+  }
+ },
+ {
+  "id": "CH-2611-01ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "hero_creta_front.png",
+  "kick": "NOIDA, LISTEN UP!",
+  "hook": "Stop driving<br>across <em>Noida!</em>",
+  "sticker": "<small>ALL IN</small><b>SEC 132</b><i>one place</i>",
+  "pills": [
+   "New Hyundais",
+   "Service",
+   "Body shop"
+  ],
+  "note": "Capital Hyundai, Sector 132, Noida",
+  "vars": {
+   "ht": "250px",
+   "h1": "128px",
+   "hx": "-80px",
+   "hy": "660px",
+   "hw": "1240px",
+   "fy": "3000px",
+   "gy": "1378px",
+   "sx": "650px",
+   "sy": "610px",
+   "sw": "400px",
+   "sb": "84px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "35px",
+   "ly": "0px",
+   "lh": "200px"
+  }
+ },
+ {
+  "id": "CH-2611-05ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "hero_verna_side.png",
+  "kick": "PRE-OWNED",
+  "hook": "Looks new?<br>It's <em>pre-owned!</em>",
+  "sticker": "<small>HYUNDAI</small><b>PROMISE</b><i>pre-owned cars</i>",
+  "pills": [
+   "Within your budget",
+   "Buy with confidence"
+  ],
+  "note": "Hyundai Promise at Capital Hyundai",
+  "vars": {
+   "ht": "250px",
+   "h1": "118px",
+   "hx": "-90px",
+   "hy": "860px",
+   "hw": "1260px",
+   "fy": "3000px",
+   "gy": "1283px",
+   "sx": "660px",
+   "sy": "640px",
+   "sw": "380px",
+   "sb": "70px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "35px",
+   "ly": "0px",
+   "lh": "200px"
+  }
+ },
+ {
+  "id": "CH-2611-06ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "hero_bayon_front.png",
+  "kick": "NEW BAYON",
+  "hook": "Your car<br><em>talks back!</em>",
+  "sticker": "<small>BUILT-IN</small><b>GEN AI</b><i>voice assistant</i>",
+  "pills": [
+   "12.3\" curved screens",
+   "Blind-spot view"
+  ],
+  "note": "Hyundai BAYON HX10",
+  "vars": {
+   "ht": "250px",
+   "h1": "128px",
+   "hx": "-120px",
+   "hy": "700px",
+   "hw": "1320px",
+   "fy": "3000px",
+   "gy": "1301px",
+   "sx": "650px",
+   "sy": "560px",
+   "sw": "400px",
+   "sb": "86px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "35px",
+   "ly": "0px",
+   "lh": "200px"
+  },
+  "bg": "radial-gradient(700px 600px at 50% 62%,rgba(0,200,230,.75) 0%,rgba(0,120,170,.45) 40%,rgba(0,20,40,0) 75%),linear-gradient(180deg,#000 0%,#031423 45%,#062236 70%,#000 100%)",
+  "floor": "linear-gradient(180deg,rgba(150,240,255,.35) 0,rgba(0,90,120,.55) 3px,rgba(0,50,70,.6) 90px,rgba(0,15,25,.92) 300px,#000 100%)",
+  "floorlight": "radial-gradient(50% 50% at 50% 45%,rgba(90,230,255,.45),rgba(0,160,200,.2) 55%,rgba(0,40,60,0) 100%)"
+ },
+ {
+  "id": "CH-2611-07ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "hero_bayon_side.png",
+  "kick": "DELIVERY DAY",
+  "hook": "The wait<br>is <em>OVER!</em>",
+  "sticker": "<small>NEW</small><b>BAYON</b><i>delivered!</i>",
+  "pills": [
+   "Welcome to the Capital Hyundai family"
+  ],
+  "note": "New keys. New era.",
+  "vars": {
+   "ht": "250px",
+   "h1": "128px",
+   "hx": "-100px",
+   "hy": "800px",
+   "hw": "1280px",
+   "fy": "3000px",
+   "gy": "1287px",
+   "sx": "650px",
+   "sy": "600px",
+   "sw": "400px",
+   "sb": "88px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "35px",
+   "ly": "0px",
+   "lh": "200px"
+  },
+  "bg": "radial-gradient(760px 620px at 50% 60%,rgba(255,190,90,.85) 0%,rgba(230,120,40,.5) 40%,rgba(40,10,0,0) 78%),linear-gradient(180deg,#120700 0%,#2a1206 45%,#3a1a08 70%,#120700 100%)",
+  "floor": "linear-gradient(180deg,rgba(255,210,150,.35) 0,rgba(110,50,15,.6) 3px,rgba(70,30,8,.65) 90px,rgba(30,12,2,.92) 300px,#0c0400 100%)",
+  "floorlight": "radial-gradient(50% 50% at 50% 45%,rgba(255,190,110,.5),rgba(220,120,50,.2) 55%,rgba(80,30,0,0) 100%)"
+ },
+ {
+  "id": "CH-2611-04ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "hero_CH-2611-04.png",
+  "kick": "REAL CUSTOMER STORY",
+  "hook": "My son's<br><em>accident…</em>",
+  "sticker": "<small>I PAID</small><b>₹0</b><i>cash</i>",
+  "pills": [
+   "24×7 roadside help",
+   "Daily repair updates",
+   "Cashless claim"
+  ],
+  "note": "13 years with Capital Hyundai",
+  "bg": "radial-gradient(760px 640px at 50% 58%,rgba(0,150,210,.7) 0%,rgba(0,80,150,.4) 40%,rgba(0,20,45,0) 76%),linear-gradient(180deg,#00122b 0%,#002C5F 50%,#00122b 100%)",
+  "vars": {
+   "ht": "250px",
+   "h1": "132px",
+   "hx": "-30px",
+   "hy": "590px",
+   "hw": "1140px",
+   "fy": "3000px",
+   "gy": "3000px",
+   "sx": "690px",
+   "sy": "560px",
+   "sw": "360px",
+   "sb": "140px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "33px",
+   "ly": "0px",
+   "lh": "0px"
+  }
  }
 ]
