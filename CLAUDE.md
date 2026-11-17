@@ -103,10 +103,10 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
      use a photo from the internet instead; prefer the brand's official images (e.g. hyundai.com/in `content/dam/...`
      gallery shots on a studio background cut out cleanly), the same model as the reel, no registration plates. This
      replaces "AI only for the setting, never the car" for the hero image; AI still never draws the car.
-     **No floating cars (user, 17 Nov 2026):** a cut-out car must stand on a floor. Run `cover/hero_ground.py` after
-     `hero_glow.py` (shadow under the footprint of all four tyres in a 3/4 view, contact shadow under each tyre, drawn
-     over the glow), and set the template's floor horizon `gy` above the highest tyre contact. Check a close-up of the
-     wheels before sending.
+     **No floating cars, no fake shadows (user, 17 Nov 2026):** a cut-out car must stand on a floor with its REAL
+     shadow. Drawn ovals under the tyres looked "very fake": never draw them. Use a studio photo on a light floor and
+     lift its own shadow with `cover/hero_studio_shadow.py` (after `hero_glow.py`), or keep the reel's own floor. Set
+     the template's floor horizon `gy` just above the rear tyres. Check a close-up of the wheels before sending.
   Captions follow `captions/STYLE.md` and use only facts said in the reel.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in
