@@ -33,6 +33,12 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 ## Rules the user set
 
 - Post only when the user says to upload specific Video IDs. The Post date column is not a schedule.
+- **No reposts (user, 17 Nov 2026).** The sheet's Status isn't enough: the team sometimes posts a reel from the app
+  without marking it Posted (AM-2610-07 was on Instagram since 23 Oct, still "Approved", and was posted again on
+  17 Nov). Before showing a batch, run `python scripts/check_reposts.py <CLIENT> <video.mp4>` for every reel; it
+  compares frames with the account's last 45 reels. If it says ALREADY POSTED, don't post: set Status to Posted with
+  that post's date and link, and tell the user. Reels Instagram won't hand out (licensed music) are listed to check by
+  eye against their covers and captions. When the team posts a reel themselves, they mark it Posted in the sheet.
 - Approving videos (user, 14 Nov 2026): when Claude makes a reel's thumbnail and finds everything in the video good,
   Claude may set its Status to Approved itself, for every client except Capital Hyundai (the team marks CH reels by
   hand). "Good" means Claude has checked the whole reel: the facts, prices and specs said or shown are right; the
