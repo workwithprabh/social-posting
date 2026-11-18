@@ -16,6 +16,13 @@ contact block, at most one engagement line, and about 5 hashtags. Leave out set-
 long tag lists. Examples (15 Nov 2026): AM-2610-07, DEH-2610-06, MRH-2611-03, DEM-2611-02 in the Captions tab.
 The longer shape below is still the order to follow; use only the parts that fit.
 
+**Comment-for-reply call to action (user, 18 Nov 2026).** Boosts stay on engagement, which brings likes but almost no
+comments or profile visits, so reels that should bring enquiries (offers, EMI, pre-owned/Promise, stock lists, savings
+calculators) get one line asking for a keyword comment with a promised reply, placed just before the contact block,
+in the client's language and true to the reel: e.g. "Comment OFFER and we'll send you the offer on your model.",
+"Comment EMI aur hum aapke budget ka EMI plan DM karenge 👇". The team must reply to those comments (or DM) the same day.
+Examples: CH-2611-03, CH-2611-05, DEM-2611-04, AM-2611-02 (Captions tab).
+
 
 1. **Hook line** in Hinglish, a question or myth the reel answers, ending in 1-2 emojis. `CNG car hai? Petrol wali service se kaam nahi chalega! ⛽🚫`
 2. **One or two short lines** that set up the problem, in the presenter's own words where possible.

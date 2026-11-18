@@ -138,6 +138,9 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   `boost_reel.py results <campaign_id> ...` reads spend, reach, profile visits, likes, comments, shares, saves (read-only).
   Every boost, every client, uses the engagement goal (likes, comments, shares, saves; OUTCOME_ENGAGEMENT /
   POST_ENGAGEMENT), the script's default since 15 Nov 2026. `--goal visits` (profile visits) only if the user asks for it.
+  User, 18 Nov 2026, after comparing results (engagement: ~Rs 0.10 per like, 2.4x the reach, but ~4 profile visits
+  per Rs 100 against 147 with the visits goal; comments ~0 either way): stick to engagement only; enquiry reels get a
+  comment-for-reply call to action in the caption instead (`captions/STYLE.md`).
 - Posting rhythm and static-post rules: `statics/BRAND_SOURCES.md` (a post every second day, cycling 2 videos then 1
   static, flexible when videos are short). Client contacts and logos: `statics/clients.json`.
 - Static content buckets and the Calendar/Reviews tabs: `statics/CONTENT_BUCKETS.md`. Google reviews come from
