@@ -8,7 +8,7 @@ Goals (--goal, default engagement; user, 15 Nov 2026: engagement for all boosts)
 Usage:
   python scripts/boost_reel.py plan   <CLIENT> <ig_media_id> [permalink] [--goal visits]   # what would be created
   python scripts/boost_reel.py create <CLIENT> <ig_media_id> [permalink] [--goal visits]   # all PAUSED (no spend)
-  python scripts/boost_reel.py activate <campaign_id> <adset_id> <ad_id>   # only after the user says yes
+  python scripts/boost_reel.py activate <campaign_id>              # campaign, ad set and ad; only after the user says yes
   python scripts/boost_reel.py delete <campaign_id>                 # remove a test boost
   python scripts/boost_reel.py results <campaign_id> ...            # read-only: spend, reach, visits, likes, comments
 
@@ -152,7 +152,18 @@ if __name__ == '__main__':
             except RuntimeError as e:
                 print(json.dumps({'error': str(e)}))
     elif cmd == 'activate':
-        for i in sys.argv[2:]:
+        ids = []
+        for i in sys.argv[2:]:   # a campaign id alone also activates its ad sets and ads (19 Nov 2026: only the
+            try:                 # campaign was switched on and the ads stayed paused)
+                is_campaign = bool(call('GET', i, fields='objective').get('objective'))
+            except RuntimeError:
+                is_campaign = False
+            if is_campaign:
+                ids += [x['id'] for x in call('GET', f'{i}/adsets', fields='id').get('data', [])]
+                ids += [x['id'] for x in call('GET', f'{i}/ads', fields='id').get('data', [])]
+            ids.append(i)
+        ids = list(dict.fromkeys(ids))
+        for i in ids:
             try:
                 info = call('GET', i, fields='lifetime_budget,optimization_goal')   # optimization_goal exists only on ad sets
             except RuntimeError:
@@ -167,7 +178,7 @@ if __name__ == '__main__':
                     call('POST', i, end_time=end)
                 time.sleep(35)
             call('POST', i, status='ACTIVE')
-        print('activated', sys.argv[2:])
+        print('activated', ids)
     elif cmd == 'delete':
         call('DELETE', sys.argv[2]); print('deleted', sys.argv[2])
     elif cmd == 'results':   # read-only: lifetime results of each campaign id given
