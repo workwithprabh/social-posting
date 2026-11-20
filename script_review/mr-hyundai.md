@@ -28,16 +28,18 @@ Plus: film any delivery happening that day (with the customer's consent).
   in fog, which every advisory agrees on (low beam + fog lamps, high beam reflects off fog).
 - Hazards line kept only for the case all sources agree on: pull over in a safe spot, then hazards on.
 - Fog lamps: not on every variant, so "agar aapki Hyundai mein fog lamps hain". Check the car being filmed.
+- User fix: "high beam maarta hai" -> "high beam use karta hai"; read-through also fixed the double "aur" and
+  made the address one form (aap) throughout.
 - Final script:
 
   Fog mein aage kuch dikh nahi raha, toh high beam on kar di?
   Yahi sabse badi galti hai!
 
-  High beam ki roshni fog se takra ke wapas aati hai. Saamne safed deewar si ban jaati hai, aur dikhna aur kam ho jaata hai.
+  High beam ki roshni fog se takra ke wapas aati hai. Saamne ek safed deewar si ban jaati hai, jisse dikhna aur bhi kam ho jaata hai.
 
-  Isliye fog mein headlights hamesha low beam pe rakho. Aur agar aapki Hyundai mein fog lamps hain, toh unhe bhi on kar do.
+  Isliye fog mein headlights hamesha low beam pe rakhiye. Aur agar aapki Hyundai mein fog lamps hain, toh unhe bhi on kar dijiye.
 
-  Speed kam rakho, aage wali gaadi se doori zyada, aur overtake bilkul nahi.
-  Aur agar fog itna ghana hai ki kuch dikh hi nahi raha, toh gaadi side mein safe jagah roko, phir hazard lights on karo.
+  Speed kam rakhiye, aage wali gaadi se doori zyada, aur overtake bilkul nahi.
+  Aur agar fog itna ghana hai ki kuch dikh hi nahi raha, toh gaadi kisi safe jagah pe side mein rokiye, phir hazard lights on kijiye.
 
-  Lights ya fog lamps theek se kaam nahi kar rahe? MR Hyundai, Shalimar Garden aaiye, hum check kar denge. Aur ye video us dost ko bhejo jo fog mein bhi high beam maarta hai!
+  Lights ya fog lamps theek se kaam nahi kar rahe? MR Hyundai, Shalimar Garden aaiye, hum check kar denge. Aur ye video us dost ko bhejiye jo fog mein bhi high beam use karta hai!

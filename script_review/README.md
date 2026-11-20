@@ -31,3 +31,9 @@ The rewritten script goes to the presenter as plain paragraphs: no timings, no t
 per beat (hook, fact, doubt/answer, extra point, CTA), blank line between them; a question and its answer sit on
 consecutive lines in the same paragraph. Scores, fact check, shot list and thumbnail come separately, after it.
 Reference: the final Mahindra Arav XUV 3XO ZNG script in `mahindra-arav.md`.
+
+## Read-through before sharing (user, 20 Nov 2026, every script)
+Read the whole script end to end as the presenter would say it, then fix:
+- slang or phrasing that sounds wrong on camera ("high beam maarta hai" -> "high beam use karta hai");
+- words that read two ways (e.g. "aur" as "and" and "more" in one line);
+- mixed address: keep one form throughout (aap: rakhiye, kijiye, aaiye), unless the user asks otherwise.
