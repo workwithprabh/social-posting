@@ -69,3 +69,25 @@ Plus: film any delivery happening that day (with the customer's consent).
   Aur peeche ke sheeshe ke liye, agar aapki gaadi mein rear defogger hai, toh bas uska button daba dijiye.
 
   Aapki Hyundai mein ye settings kahan hain, samajh nahi aa raha? MR Hyundai, Shalimar Garden aaiye, hum dikha denge. Aur ye video us dost ko bhejiye jo har subah kapda leke baithta hai!
+- Topics 1 and 2 approved by the user for the shoot (20 Nov 2026).
+
+## 2026-11-20 · Topic 3: December or January purchase (written by Claude for the 21 Nov shoot)
+- Score: 9/10 (hook 9, idea 9, accuracy 9, flow 8, voice 9, CTA 9, shootability 8)
+- Checked: Hyundai Motor India raised prices from 1 Jan 2025 (up to Rs 25,000) and 1 Jan 2026 (about 0.6%
+  weighted average); no January 2027 announcement found as of 20 Nov 2026, so the reel says only what happened
+  before. RC has a "Month/Year of Manufacture" field; Form 21 (sale certificate) carries the date of manufacture.
+- Not in the script: December offers (only if the team confirms one; then add a line with "T&C apply");
+  no resale numbers.
+- Final script:
+
+  Car December mein lein ya January mein?
+  Ye sawaal har saal aata hai, toh aaj seedha jawab.
+
+  December mein li, toh gaadi 2026 ki hi maani jaayegi, chahe aap use January se chalayein. Isliye kai log January ka wait karte hain.
+  Par dhyaan rahe, pichhle do saal Hyundai ne January mein price badhaaye the.
+
+  Toh faisla aapke plan pe hai. Gaadi lambe samay tak chalani hai, toh December mein lene se utna farak nahi padta. Do-teen saal mein bechni hai, toh January ka registration resale mein kaam aa sakta hai.
+
+  Aur December mein lein, toh ek kaam zaroor kijiye: booking se pehle gaadi ka manufacturing month pooch lijiye. Ye RC aur gaadi ke sale papers mein bhi likha hota hai.
+
+  Abhi bhi confuse hain? MR Hyundai, Shalimar Garden aaiye. Aapke plan ke hisaab se hum seedhi baat batayenge. Aur ye video us dost ko bhejiye jo har saal "January mein lunga" bolta hai!
