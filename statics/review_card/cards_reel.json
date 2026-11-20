@@ -419,5 +419,141 @@
    "kickbg": "#E31837",
    "kickfg": "#fff"
   }
+ },
+ {
+  "id": "AM-2611-04ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "card_am04.png",
+  "kick": "BE 6 SPORTEQ",
+  "hook": "EV sirf<br><em>₹11.45 lakh?</em>",
+  "sticker": "<small>BATTERY</small><b>₹3.75</b><i>per km</i>",
+  "pills": [
+   "Battery as a Service",
+   "Full car ₹19.45 lakh"
+  ],
+  "note": "Mahindra BE 6 SPORTEQ · ex-showroom, T&C apply",
+  "bg": "radial-gradient(720px 600px at 50% 60%,rgba(235,240,250,.55) 0%,rgba(120,130,150,.35) 38%,rgba(20,22,28,0) 75%),linear-gradient(180deg,#050506 0%,#15161a 45%,#202228 70%,#050506 100%)",
+  "vars": {
+   "ht": "250px",
+   "fy": "3000px",
+   "gy": "3000px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "34px",
+   "ly": "0px",
+   "lh": "0px",
+   "kickbg": "#E31837",
+   "kickfg": "#fff",
+   "h1": "128px",
+   "hx": "-50px",
+   "hy": "690px",
+   "hw": "1180px",
+   "sx": "660px",
+   "sy": "600px",
+   "sw": "400px",
+   "sb": "104px"
+  }
+ },
+ {
+  "id": "AM-2611-05ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "card_am05.png",
+  "kick": "EV CHARGING",
+  "hook": "Society bole<br><em>charger nahi?</em>",
+  "sticker": "<small>20→80%</small><b>20</b><i>min*</i>",
+  "pills": [
+   "180 kW fast charger",
+   "Arav Sector 83"
+  ],
+  "note": "Mahindra BE 6 · *Mahindra's claim, on a fast charger",
+  "bg": "radial-gradient(720px 600px at 50% 60%,rgba(235,240,250,.55) 0%,rgba(120,130,150,.35) 38%,rgba(20,22,28,0) 75%),linear-gradient(180deg,#050506 0%,#15161a 45%,#202228 70%,#050506 100%)",
+  "vars": {
+   "ht": "250px",
+   "fy": "3000px",
+   "gy": "3000px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "34px",
+   "ly": "0px",
+   "lh": "0px",
+   "kickbg": "#E31837",
+   "kickfg": "#fff",
+   "h1": "128px",
+   "hx": "-50px",
+   "hy": "760px",
+   "hw": "1180px",
+   "sx": "660px",
+   "sy": "690px",
+   "sw": "380px",
+   "sb": "130px"
+  }
+ },
+ {
+  "id": "AM-2611-06ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "card_am06.png",
+  "kick": "SHOWROOM VISIT",
+  "hook": "Price online hai,<br><em>showroom kyun?</em>",
+  "sticker": "<small>EK HI</small><b>Jagah</b><i>sab kuch</i>",
+  "pills": [
+   "Sahi variant",
+   "EMI + exchange"
+  ],
+  "note": "Mahindra Arav · Gurgaon | Manesar",
+  "bg": "radial-gradient(720px 600px at 50% 60%,rgba(235,240,250,.55) 0%,rgba(120,130,150,.35) 38%,rgba(20,22,28,0) 75%),linear-gradient(180deg,#050506 0%,#15161a 45%,#202228 70%,#050506 100%)",
+  "vars": {
+   "ht": "250px",
+   "fy": "3000px",
+   "gy": "3000px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "34px",
+   "ly": "0px",
+   "lh": "0px",
+   "kickbg": "#E31837",
+   "kickfg": "#fff",
+   "h1": "104px",
+   "hx": "60px",
+   "hy": "560px",
+   "hw": "960px",
+   "sx": "660px",
+   "sy": "580px",
+   "sw": "370px",
+   "sb": "96px"
+  }
+ },
+ {
+  "id": "AM-2611-07ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "card_amr6.png",
+  "kick": "SERVICE TIP",
+  "hook": "Service matlab<br><em>sirf oil change?</em>",
+  "sticker": "<small>BILKUL</small><b>NAHI!</b>",
+  "pills": [
+   "Poori checklist",
+   "Genuine parts"
+  ],
+  "note": "Mahindra Arav workshop",
+  "bg": "radial-gradient(720px 600px at 50% 60%,rgba(235,240,250,.55) 0%,rgba(120,130,150,.35) 38%,rgba(20,22,28,0) 75%),linear-gradient(180deg,#050506 0%,#15161a 45%,#202228 70%,#050506 100%)",
+  "vars": {
+   "ht": "250px",
+   "fy": "3000px",
+   "gy": "3000px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "34px",
+   "ly": "0px",
+   "lh": "0px",
+   "kickbg": "#E31837",
+   "kickfg": "#fff",
+   "h1": "120px",
+   "hx": "70px",
+   "hy": "560px",
+   "hw": "940px",
+   "sx": "680px",
+   "sy": "620px",
+   "sw": "360px",
+   "sb": "96px"
+  }
  }
 ]
