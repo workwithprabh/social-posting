@@ -28,6 +28,7 @@ Plus: film any delivery happening that day (with the customer's consent).
   in fog, which every advisory agrees on (low beam + fog lamps, high beam reflects off fog).
 - Hazards line kept only for the case all sources agree on: pull over in a safe spot, then hazards on.
 - Fog lamps: not on every variant, so "agar aapki Hyundai mein fog lamps hain". Check the car being filmed.
+- Score (final): 9/10 (hook 9, idea 8, accuracy 9, flow 8, voice 9, CTA 9, shootability 8)
 - User fix: "high beam maarta hai" -> "high beam use karta hai"; read-through also fixed the double "aur" and
   made the address one form (aap) throughout.
 - Final script:
