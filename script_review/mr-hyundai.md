@@ -20,3 +20,24 @@ Suggested for 21 Nov (seasonal: fog, smog, cold mornings, year end):
 6. BAYON: 3 things to check before booking
 7. Winter morning myths: long idling, tyre pressure
 Plus: film any delivery happening that day (with the customer's consent).
+
+## 2026-11-20 · Topic 1: fog driving (written by Claude for the 21 Nov shoot)
+- Changed angle: "hazard lights while driving = galti" is contested. Cyberabad police and Team-BHP say hazards
+  only when stopped, but the UP CM's Dec 2025 fog directive and Noida's advisory tell drivers to keep emergency
+  indicators on. MR Hyundai is in Ghaziabad (UP), so the reel must not call it a mistake. New angle: high beam
+  in fog, which every advisory agrees on (low beam + fog lamps, high beam reflects off fog).
+- Hazards line kept only for the case all sources agree on: pull over in a safe spot, then hazards on.
+- Fog lamps: not on every variant, so "agar aapki Hyundai mein fog lamps hain". Check the car being filmed.
+- Final script:
+
+  Fog mein aage kuch dikh nahi raha, toh high beam on kar di?
+  Yahi sabse badi galti hai!
+
+  High beam ki roshni fog se takra ke wapas aati hai. Saamne safed deewar si ban jaati hai, aur dikhna aur kam ho jaata hai.
+
+  Isliye fog mein headlights hamesha low beam pe rakho. Aur agar aapki Hyundai mein fog lamps hain, toh unhe bhi on kar do.
+
+  Speed kam rakho, aage wali gaadi se doori zyada, aur overtake bilkul nahi.
+  Aur agar fog itna ghana hai ki kuch dikh hi nahi raha, toh gaadi side mein safe jagah roko, phir hazard lights on karo.
+
+  Lights ya fog lamps theek se kaam nahi kar rahe? MR Hyundai, Shalimar Garden aaiye, hum check kar denge. Aur ye video us dost ko bhejo jo fog mein bhi high beam maarta hai!
