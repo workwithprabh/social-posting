@@ -51,6 +51,8 @@ Plus: film any delivery happening that day (with the customer's consent).
   mode, defrost mode, fan on; rear defroster heats the conductors on the glass, turns off after about 20 min;
   never use sharp instruments or abrasive cleaners on the inside of the rear glass. Not India-model pages:
   check the button layout on the car being filmed; rear defogger varies by variant.
+- User fix: many cars have no defrost button (manual AC uses a mode knob with a windshield position); script
+  now says "windshield wala sign, knob pe ho ya button pe"; rear defogger line starts with "agar".
 - Final script:
 
   Subah gaadi start ki, aur sheesha andar se dhundhla?
@@ -58,10 +60,10 @@ Plus: film any delivery happening that day (with the customer's consent).
 
   Kapde se ponchenge toh thodi der mein dhundh wapas aa jaayegi, aur chalti gaadi mein ponchna risky bhi hai.
 
-  Sahi tareeka simple hai. Defrost wala button dabaiye, AC on kijiye, fresh air mode rakhiye, aur fan thoda tez kar dijiye.
+  Sahi tareeka simple hai. AC ki hawa ko windshield ki taraf kijiye. Aapki gaadi mein jo windshield wala sign hai, knob pe ho ya button pe, wahi chuniye. Phir AC on, fresh air mode, aur fan thoda tez.
   Haan, thand mein bhi AC, kyunki AC hawa ki nami sukha deta hai. Kuch hi der mein sheesha saaf.
 
-  Aur peeche wale sheeshe pe jo patli lines dikhti hain, rear defogger ka button unhe garam karke dhundh hata deta hai. Thodi der baad ye khud band bhi ho jaata hai.
+  Aur agar aapki gaadi mein rear defogger hai, toh peeche wale sheeshe ki patli lines usi se garam hoke dhundh hata deti hain. Thodi der baad ye khud band bhi ho jaata hai.
   Bas peeche wale sheeshe ko andar se kisi nukili cheez se mat ragdiye, warna ye lines kharab ho sakti hain.
 
-  Aapki Hyundai mein ye buttons kahan hain, samajh nahi aa raha? MR Hyundai, Shalimar Garden aaiye, hum dikha denge. Aur ye video us dost ko bhejiye jo har subah kapda leke baithta hai!
+  Aapki Hyundai mein ye settings kahan hain, samajh nahi aa raha? MR Hyundai, Shalimar Garden aaiye, hum dikha denge. Aur ye video us dost ko bhejiye jo har subah kapda leke baithta hai!

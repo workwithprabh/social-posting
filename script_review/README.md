@@ -37,3 +37,5 @@ Read the whole script end to end as the presenter would say it, then fix:
 - slang or phrasing that sounds wrong on camera ("high beam maarta hai" -> "high beam use karta hai");
 - words that read two ways (e.g. "aur" as "and" and "more" in one line);
 - mixed address: keep one form throughout (aap: rakhiye, kijiye, aaiye), unless the user asks otherwise.
+- features that differ by car or variant (user, 20 Nov 2026): say it so it works on every car (e.g. "windshield
+  wala sign, knob pe ho ya button pe") or add "agar aapki gaadi mein hai"; never assume a button exists.
