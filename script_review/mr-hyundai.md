@@ -44,3 +44,24 @@ Plus: film any delivery happening that day (with the customer's consent).
   Aur agar fog itna ghana hai ki kuch dikh hi nahi raha, toh gaadi kisi safe jagah pe side mein rokiye, phir hazard lights on kijiye.
 
   Lights ya fog lamps theek se kaam nahi kar rahe? MR Hyundai, Shalimar Garden aaiye, hum check kar denge. Aur ye video us dost ko bhejiye jo fog mein bhi high beam use karta hai!
+
+## 2026-11-20 · Topic 2: windshield fogging inside (written by Claude for the 21 Nov shoot)
+- Score: 9/10 (hook 9, idea 9, accuracy 8, flow 8, voice 9, CTA 9, shootability 9)
+- Sources: Hyundai owner's manuals (2025 Palisade LX2, Tucson NX4, NH2 2026): defog inside = A/C on, fresh-air
+  mode, defrost mode, fan on; rear defroster heats the conductors on the glass, turns off after about 20 min;
+  never use sharp instruments or abrasive cleaners on the inside of the rear glass. Not India-model pages:
+  check the button layout on the car being filmed; rear defogger varies by variant.
+- Final script:
+
+  Subah gaadi start ki, aur sheesha andar se dhundhla?
+  Kapde se ponchna band kijiye!
+
+  Kapde se ponchenge toh thodi der mein dhundh wapas aa jaayegi, aur chalti gaadi mein ponchna risky bhi hai.
+
+  Sahi tareeka simple hai. Defrost wala button dabaiye, AC on kijiye, fresh air mode rakhiye, aur fan thoda tez kar dijiye.
+  Haan, thand mein bhi AC, kyunki AC hawa ki nami sukha deta hai. Kuch hi der mein sheesha saaf.
+
+  Aur peeche wale sheeshe pe jo patli lines dikhti hain, rear defogger ka button unhe garam karke dhundh hata deta hai. Thodi der baad ye khud band bhi ho jaata hai.
+  Bas peeche wale sheeshe ko andar se kisi nukili cheez se mat ragdiye, warna ye lines kharab ho sakti hain.
+
+  Aapki Hyundai mein ye buttons kahan hain, samajh nahi aa raha? MR Hyundai, Shalimar Garden aaiye, hum dikha denge. Aur ye video us dost ko bhejiye jo har subah kapda leke baithta hai!
