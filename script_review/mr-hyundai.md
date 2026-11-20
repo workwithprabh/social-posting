@@ -53,17 +53,19 @@ Plus: film any delivery happening that day (with the customer's consent).
   check the button layout on the car being filmed; rear defogger varies by variant.
 - User fix: many cars have no defrost button (manual AC uses a mode knob with a windshield position); script
   now says "windshield wala sign, knob pe ho ya button pe"; rear defogger line starts with "agar".
+- User: middle was confusing. Refined into 3 numbered steps ("ek, do, teen"), fresh air explained as "bahar ki
+  hawa wala mode", rear glass cut to one line, scratch warning moved to the caption. About 30 s, 9/10 (flow 9).
 - Final script:
 
   Subah gaadi start ki, aur sheesha andar se dhundhla?
-  Kapde se ponchna band kijiye!
+  Kapde se ponchna band kijiye! Dhundh thodi der mein wapas aa jaayegi.
 
-  Kapde se ponchenge toh thodi der mein dhundh wapas aa jaayegi, aur chalti gaadi mein ponchna risky bhi hai.
+  Bas teen kaam kijiye.
+  Ek, AC ki hawa windshield ki taraf kar dijiye. Knob ho ya button, windshield wala sign chuniye.
+  Do, AC on aur fan thoda tez kijiye. Haan, thand mein bhi AC, kyunki AC hawa ki nami sukha deta hai.
+  Teen, bahar ki hawa wala mode, yaani fresh air mode on rakhiye.
+  Bas, kuch hi der mein sheesha saaf.
 
-  Sahi tareeka simple hai. AC ki hawa ko windshield ki taraf kijiye. Aapki gaadi mein jo windshield wala sign hai, knob pe ho ya button pe, wahi chuniye. Phir AC on, fresh air mode, aur fan thoda tez.
-  Haan, thand mein bhi AC, kyunki AC hawa ki nami sukha deta hai. Kuch hi der mein sheesha saaf.
-
-  Aur agar aapki gaadi mein rear defogger hai, toh peeche wale sheeshe ki patli lines usi se garam hoke dhundh hata deti hain. Thodi der baad ye khud band bhi ho jaata hai.
-  Bas peeche wale sheeshe ko andar se kisi nukili cheez se mat ragdiye, warna ye lines kharab ho sakti hain.
+  Aur peeche ke sheeshe ke liye, agar aapki gaadi mein rear defogger hai, toh bas uska button daba dijiye.
 
   Aapki Hyundai mein ye settings kahan hain, samajh nahi aa raha? MR Hyundai, Shalimar Garden aaiye, hum dikha denge. Aur ye video us dost ko bhejiye jo har subah kapda leke baithta hai!
