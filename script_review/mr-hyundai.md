@@ -126,12 +126,12 @@ moved to on-screen text or the caption.
   Fog mein kuch dikh nahi raha, toh high beam on kar di?
   Yahi sabse badi galti hai!
 
-  High beam ki roshni fog se takra ke wapas aati hai, jisse dikhna aur bhi kam ho jaata hai.
+  High beam ki roshni fog se takra ke wapas aati hai, aur saamne safed deewar si ban jaati hai.
 
-  Fog mein headlights low beam pe rakhiye, aur fog lamps hain toh unhe bhi on kijiye.
+  Fog mein headlights low beam pe rakhiye, aur agar fog lamps hain, toh unhe bhi on kijiye.
   Speed kam, doori zyada, aur overtake bilkul nahi.
 
-  Lights check karwani hain? MR Hyundai, Shalimar Garden aaiye. Aur ye video us dost ko bhejiye jo fog mein bhi high beam use karta hai!
+  Lights theek se kaam nahi kar rahi? MR Hyundai, Shalimar Garden aaiye. Aur ye video us dost ko bhejiye jo fog mein bhi high beam use karta hai!
 
 ### Topic 2: windshield fogging (final, trimmed)
 
@@ -143,18 +143,18 @@ moved to on-screen text or the caption.
   Teen, bahar ki hawa wala mode, yaani fresh air mode on rakhiye.
   Kuch hi der mein sheesha saaf.
 
-  Settings samajh nahi aa rahi? MR Hyundai, Shalimar Garden aaiye, hum dikha denge. Aur ye video us dost ko bhejiye jo har subah kapda leke baithta hai!
+  Ye settings nahi mil rahi? MR Hyundai, Shalimar Garden aaiye, hum dikha denge. Aur ye video us dost ko bhejiye jo har subah kapda leke baithta hai!
 
 ### Topic 3: December or January (final, trimmed)
 
   Car December mein lein ya January mein?
 
-  December mein li, toh gaadi 2026 ki hi maani jaayegi. Par pichhle do saal, Hyundai ne January mein price badhaaye the.
+  December mein li, toh gaadi 2026 ki maani jaayegi. January tak ruke, toh dhyaan rahe, pichhle do saal Hyundai ne January mein price badhaaye the.
 
-  Gaadi lambe samay tak chalani hai, toh December mein lene se utna farak nahi padta. Do-teen saal mein bechni hai, toh January ka registration kaam aa sakta hai.
+  Gaadi lambe samay tak chalani hai, toh December mein lene se utna farak nahi padta. Do-teen saal mein bechni hai, toh January ka registration resale mein kaam aa sakta hai.
   Aur booking se pehle manufacturing month zaroor pooch lijiye.
 
-  Confuse hain? MR Hyundai, Shalimar Garden aaiye, hum seedhi baat batayenge. Aur ye video us dost ko bhejiye jo har saal "January mein lunga" bolta hai!
+  Confuse hain? MR Hyundai, Shalimar Garden aaiye. Aur ye video us dost ko bhejiye jo har saal "January mein lunga" bolta hai!
 
 ### Topic 4: warning lights (final, trimmed)
 
@@ -166,3 +166,5 @@ moved to on-screen text or the caption.
   Chauthi, brake wali light. Handbrake hata ke bhi jale, toh brake fluid kam ho sakta hai.
 
   In mein se koi light jali? MR Hyundai, Shalimar Garden aaiye. Aur ye video save kar lijiye!
+- Flow check after trimming (user asked): restored the "safed deewar" image and a clearer CTA in topic 1;
+  clearer CTA in topic 2; topic 3 had lost the logic bridge ("why waiting has a cost") and "resale", both back.
