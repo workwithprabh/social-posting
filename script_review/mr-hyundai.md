@@ -171,3 +171,6 @@ moved to on-screen text or the caption.
 - Shared with the team as a Google Doc (workwithprabh Drive), 21 Nov 2026: "MR Hyundai reel scripts – 21 Nov 2026",
   https://docs.google.com/document/d/1zXtQOT-QWU-PSqzzf_oBQQqdSp4PT8GPjrZqBGB4NOc/edit
 - Next 4 topics: the user will choose them.
+- Doc spacing added 21 Nov 2026 (10 pt after every line, 18 pt before each topic heading), same link. The doc had
+  been edited in Docs before that: topic 2's steps now read "First, ... / Second, ... / & third, ..." instead of
+  "Ek / Do / Teen". The Doc is the current version; that wording was kept.
