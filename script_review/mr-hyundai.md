@@ -192,3 +192,15 @@ moved to on-screen text or the caption.
   Booking se delivery tak, aur delivery ke baad har service tak, sab ek hi chhat ke neeche.
   
   Toh Hyundai lene ka plan hai? MR Hyundai, Shalimar Garden aaiye. Gaadi dekhiye, test drive lijiye, aur bharose ke saath ghar le jaiye!
+- Refined with the user (spoken phrasing): hook shortened, repeated ideas cut ("ek hi jagah" twice, CTA repeating
+  the hook), CTA now invites viewers to see the service centre themselves. 73 words, about 31 s.
+- Refined script:
+
+  Hyundai lene ka plan hai? Gaadi dekhne se pehle ek baat sochiye: service kahan karwayenge?
+  
+  Kyunki gaadi lene ke baad asli rishta toh service se hi banta hai.
+  
+  MR Hyundai pe showroom aur service, dono ek hi jagah hain. Jahan se gaadi li, wahin har service.
+  Loni Road pe, Shalimar Garden ke bilkul saamne.
+  
+  Toh ek baar MR Hyundai aaiye. Gaadi dekhiye, test drive lijiye, aur hamara service centre bhi khud dekh lijiye!
