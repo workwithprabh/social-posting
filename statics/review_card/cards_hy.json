@@ -195,5 +195,100 @@
    "pt": "840px",
    "h1": "80px"
   }
+ },
+ {
+  "id": "CH-BRD-2611-02",
+  "kind": "spot",
+  "mode": "dark",
+  "img": "spot_CH2.jpg",
+  "logo": "CH_cap_hr.png",
+  "logoH": 74,
+  "footer": "CH",
+  "tag": "Test drives open",
+  "label": "Hyundai CRETA King",
+  "headline": "Undisputed. Ultimate.",
+  "sub": "A dark-chrome grille with quad-beam LED headlamps, and R18 diamond-cut alloys for a commanding stance.",
+  "priceLabel": "Book your CRETA test drive",
+  "price": "Today.",
+  "chips": [
+   "Built-in dashcam",
+   "Connecting LED tail lamps",
+   "Dual-zone automatic climate control"
+  ],
+  "fine": "Features shown are of the CRETA King trim and vary by variant. Image for representation only. T&C apply.",
+  "vars": {
+   "ct": "470px",
+   "ch": "520px",
+   "pt": "905px",
+   "pl": "1015px",
+   "h1": "84px"
+  }
+ },
+ {
+  "id": "CH-BRD-2611-03",
+  "kind": "spot",
+  "mode": "dark",
+  "img": "spot_CH3.jpg",
+  "logo": "CH_cap_hr.png",
+  "logoH": 74,
+  "footer": "CH",
+  "tag": "Test drives open",
+  "label": "Hyundai VERNA",
+  "headline": "Pride. Performance. Proven.",
+  "sub": "Dual 10.25-inch integrated displays, Bose premium sound and 7 airbags.",
+  "priceLabel": "Book your VERNA test drive",
+  "price": "Today.",
+  "chips": [
+   "Surround view monitor",
+   "Bose 8-speaker sound",
+   "Electric driver seat with memory"
+  ],
+  "fine": "Features vary by variant. Image for representation only. T&C apply.",
+  "vars": {
+   "ct": "470px",
+   "ch": "500px",
+   "pt": "905px",
+   "pl": "1015px",
+   "h1": "74px",
+   "cp": "70% center"
+  }
+ },
+ {
+  "id": "CH-EMI-2611-02",
+  "kind": "emi",
+  "mode": "light",
+  "img": "emi_CH2.jpg",
+  "logo": "CH_blue_hr.png",
+  "logoH": 74,
+  "footer": "CH",
+  "tag": "EMI guide",
+  "label": "Hyundai EXTER · HX 2 petrol",
+  "headline": "Exter in Faridabad?",
+  "sub": "The full on-road price, and what it costs every month.",
+  "rows": [
+   [
+    "Ex-showroom",
+    "₹5,80,600"
+   ],
+   [
+    "Registration (RTO)",
+    "₹29,030"
+   ],
+   [
+    "Insurance",
+    "₹33,523"
+   ]
+  ],
+  "totalLabel": "On-road price*",
+  "total": "₹6,43,153",
+  "emi": "₹12,242",
+  "emiNote": "₹64,315 down<br>5 years · 9.8% p.a.",
+  "fine": "*Indicative on-road price in Faridabad from CarDekho (21 Nov 2026), base EXTER HX 2 (petrol) variant, without optional accessories. EMI on a 10% down payment, 9.8% p.a. for 5 years; the actual EMI depends on the lender. Prices may change. T&C apply.",
+  "vars": {
+   "ct": "500px",
+   "ch": "380px",
+   "pt": "860px",
+   "h1": "78px"
+  }
  }
 ]
