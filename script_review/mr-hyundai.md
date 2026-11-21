@@ -174,3 +174,21 @@ moved to on-screen text or the caption.
 - Doc spacing added 21 Nov 2026 (10 pt after every line, 18 pt before each topic heading), same link. The doc had
   been edited in Docs before that: topic 2's steps now read "First, ... / Second, ... / & third, ..." instead of
   "Ek / Do / Teen". The Doc is the current version; that wording was kept.
+
+## 2026-11-21 · Topic 5: why buy a Hyundai from MR Hyundai (written by Claude)
+- Angle: not "why us" (the weak Arav pattern) but the buyer's own question, "service kahan karwayenge?", answered with a
+  real fact: showroom and service at one place (statics/clients.json, captions/STYLE.md "Showroom & Service"),
+  address from FEED_ANALYSIS (Loni Rd, opp. Shalimar Garden, Pasonda, Sahibabad).
+- Score 8.5/10; 9 with one proof (real customer clip or an exact number from the dealership). 93 words, about 39 s.
+- To confirm: service workshop is on the same premises.
+- Draft script:
+
+  Ghaziabad mein Hyundai lene ka plan hai? Toh pehle ek sawaal: gaadi lene ke baad service kahan karwayenge?
+  
+  Kyunki gaadi ek din ki nahi, saalon ka saath hai.
+  
+  MR Hyundai mein showroom aur service, dono ek hi jagah hain: Loni Road pe, Shalimar Garden ke saamne. Jahan se gaadi li, wahin service bhi.
+  
+  Booking se delivery tak, aur delivery ke baad har service tak, sab ek hi chhat ke neeche.
+  
+  Toh Hyundai lene ka plan hai? MR Hyundai, Shalimar Garden aaiye. Gaadi dekhiye, test drive lijiye, aur bharose ke saath ghar le jaiye!
