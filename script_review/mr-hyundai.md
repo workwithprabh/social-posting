@@ -204,3 +204,4 @@ moved to on-screen text or the caption.
   Loni Road pe, Shalimar Garden ke bilkul saamne.
   
   Toh ek baar MR Hyundai aaiye. Gaadi dekhiye, test drive lijiye, aur hamara service centre bhi khud dekh lijiye!
+- Approved by the user and added to the Google Doc as "Topic 5: Showroom aur service, ek hi jagah" (21 Nov 2026).
