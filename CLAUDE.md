@@ -107,7 +107,9 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
      shadow. Drawn ovals under the tyres looked "very fake": never draw them. Use a studio photo on a light floor and
      lift its own shadow with `cover/hero_studio_shadow.py` (after `hero_glow.py`), or keep the reel's own floor. Set
      the template's floor horizon `gy` just above the rear tyres. Check a close-up of the wheels before sending.
-  Captions follow `captions/STYLE.md` and use only facts said in the reel.
+  Captions follow `captions/STYLE.md` and use only facts said in the reel. **Short captions only (user, 21 Nov 2026):**
+  about 50-60 words with the contact block (hook, at most 3 one-line facts, comment CTA or share line, contact, 5
+  hashtags); approved examples AM-2611-04 to AM-2611-07.
 - Drafts go to the Drive folder "Claude drafts" (`1KDnTFCTb2SoIW3168M26spmO3htJwX8o`, workwithprabh Drive), sorted
   as `Video thumbnails/` or `Social media posts/`, then `<YYYY-MM Month>/`, then the client (ids in
   `config/drafts_folders.json`; make the month's folders when a new month starts). Thumbnails are named

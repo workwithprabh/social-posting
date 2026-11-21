@@ -15,8 +15,8 @@ block included: a hook line, the 2-3 key facts from the reel (one line or a shor
 contact block, at most one engagement line, and about 5 hashtags. Leave out set-up lines, repeated takeaways and
 long tag lists. Examples (15 Nov 2026): AM-2610-07, DEH-2610-06, MRH-2611-03, DEM-2611-02 in the Captions tab.
 The longer shape below is still the order to follow; use only the parts that fit.
-**Shorter still (user, 21 Nov 2026: "make the captions a bit short"):** aim for about 50-60 words with the contact
-block: hook line, at most 3 one-line facts, the comment call to action (or a share line), contact block, 5 hashtags.
+**Shorter still, the standard from now on (user, 21 Nov 2026: "make the captions a bit short", then "keep these type
+of short captions only in the future"):** about 50-60 words with the contact block, for every reel caption: hook line, at most 3 one-line facts, the comment call to action (or a share line), contact block, 5 hashtags.
 No set-up paragraph and no separate takeaway line. Examples: AM-2611-04 to AM-2611-07 (Captions tab).
 
 **Comment-for-reply call to action (user, 18 Nov 2026).** Boosts stay on engagement, which brings likes but almost no
