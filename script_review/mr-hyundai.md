@@ -215,3 +215,47 @@ clearance; 10 colours; 3 yr unlimited km warranty, 3 yr free Bluelink. Not publi
 "5-star Indian safety standards as per internal assessment"), per-variant prices.
 Ideas: 1 AI voice assistant demo, 2 base variant HX2 value, 3 505 L boot loading test, 4 205 mm ground clearance
 vs Ghaziabad speed breakers, 5 manual or iVT, 6 colours poll.
+
+## 2026-11-21 · BAYON scripts, topics 6-8 (written by Claude)
+- Checked on hyundai.com/in features grid: Generative AI voice assistant is HX10 only; HX2 has six airbags (driver,
+  passenger, side, curtain), ESC, TPMS, rear parking sensors, LED projector headlamps, digital cluster, rear AC vents,
+  power windows, but no touchscreen, speakers or Bluetooth; 505 L boot (asterisk with no footnote), so "Hyundai ke
+  hisaab se". AI assistant topics per press release: travel, weather, hotels, restaurants, news, sports;
+  "HMIL's first-ever Generative AI Voice Assistant". Wake word and Hindi support not published: test on the car.
+- Topic 6:
+
+  Kabhi apni gaadi se baat ki hai? Aaj BAYON se karte hain!
+  
+  BAYON ke top variant HX10 mein Generative AI voice assistant hai. Sirf command nahi, normal baatcheet.
+  
+  "Aaj Ghaziabad ka mausam kaisa hai?"
+  
+  Mausam, news, restaurant, travel plan, sab pooch sakte hain. Aur ye Hyundai India ka pehla Generative AI voice assistant hai.
+  
+  Khud baat karke dekhna hai? MR Hyundai, Shalimar Garden aaiye, aur BAYON se ek sawaal aap bhi poochiye!
+
+- Topic 7:
+
+  BAYON ka sabse sasta variant, 9.99 lakh se shuru. Isme kya milta hai, aur kya nahi?
+  
+  Pehle achhi khabar: six airbags, ESC, tyre pressure monitor aur rear parking sensors, ye sab base variant mein bhi milte hain.
+  Saath mein LED projector headlamps, digital cluster, aur peeche AC vents bhi.
+  
+  Ab seedhi baat: base variant mein touchscreen aur speakers nahi milte.
+  
+  Toh safety mein koi compromise nahi, bas entertainment ke liye upar ke variants dekhne honge.
+  
+  Aapke liye kaunsa variant sahi hai? MR Hyundai, Shalimar Garden aaiye, hum seedha bata denge.
+
+- Topic 8:
+
+  Hyundai ke hisaab se BAYON ka boot 505 litre ka hai. Par isme asli mein kitna saamaan aata hai? Chaliye test karte hain!
+  
+  Ek bada suitcase. Doosra bada suitcase. Ek cabin bag. Aur ye stroller.
+  
+  Aur dekhiye, abhi bhi jagah baaki hai!
+  
+  Family trip ho ya weekend getaway, saamaan ki tension khatam.
+  
+  Apna saamaan leke aaiye aur khud test kijiye, MR Hyundai, Shalimar Garden mein. Aur ye video us dost ko bhejiye jo har trip pe aadha ghar saath le jaata hai!
+
