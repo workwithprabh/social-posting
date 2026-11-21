@@ -43,3 +43,14 @@ Read the whole script end to end as the presenter would say it, then fix:
 ## Length (user, 21 Nov 2026, every script)
 Reels must land at 30-40 s including the 3 s thumbnail hold. At about 2.6 spoken words a second that is
 **80-95 words** of script. Count the words before sharing; anything extra goes to on-screen text or the caption.
+
+## Script docs for the team (user, 21 Nov 2026)
+- One Google Doc per client per shoot month, in the workwithprabh Drive, named like the user's own:
+  **"<Client> Video shoot <month> <year>"**, e.g. "MR Hyundai Video shoot november 2026" (month in lower case).
+  New scripts for the same client and month go into that doc, not a new one.
+- Inside: each topic name as a bold heading, then the script only (no notes); every line its own paragraph with
+  10 pt after it, 18 pt above each topic heading.
+- Numbered steps: the team changed "Ek / Do / Teen" to "First / Second / & third" in the MR Hyundai doc; use that
+  form for step lists unless told otherwise.
+- Docs so far: MR Hyundai Video shoot november 2026,
+  https://docs.google.com/document/d/1zXtQOT-QWU-PSqzzf_oBQQqdSp4PT8GPjrZqBGB4NOc/edit

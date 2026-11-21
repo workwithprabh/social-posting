@@ -168,7 +168,7 @@ moved to on-screen text or the caption.
   In mein se koi light jali? MR Hyundai, Shalimar Garden aaiye. Aur ye video save kar lijiye!
 - Flow check after trimming (user asked): restored the "safed deewar" image and a clearer CTA in topic 1;
   clearer CTA in topic 2; topic 3 had lost the logic bridge ("why waiting has a cost") and "resale", both back.
-- Shared with the team as a Google Doc (workwithprabh Drive), 21 Nov 2026: "MR Hyundai reel scripts – 21 Nov 2026",
+- Shared with the team as a Google Doc (workwithprabh Drive), 21 Nov 2026, renamed by the user to "MR Hyundai Video shoot november 2026",
   https://docs.google.com/document/d/1zXtQOT-QWU-PSqzzf_oBQQqdSp4PT8GPjrZqBGB4NOc/edit
 - Next 4 topics: the user will choose them.
 - Doc spacing added 21 Nov 2026 (10 pt after every line, 18 pt before each topic heading), same link. The doc had
