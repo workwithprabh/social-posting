@@ -91,3 +91,28 @@ Plus: film any delivery happening that day (with the customer's consent).
   Aur December mein lein, toh ek kaam zaroor kijiye: booking se pehle gaadi ka manufacturing month pooch lijiye. Ye RC aur gaadi ke sale papers mein bhi likha hota hai.
 
   Abhi bhi confuse hain? MR Hyundai, Shalimar Garden aaiye. Aapke plan ke hisaab se hum seedhi baat batayenge. Aur ye video us dost ko bhejiye jo har saal "January mein lunga" bolta hai!
+- Topic 3 approved by the user (21 Nov 2026).
+
+## 2026-11-21 · Topic 4: four warning lights you must never ignore (written by Claude)
+- Score: 9/10 (hook 9, idea 9, accuracy 9, flow 8, voice 9, CTA 9, shootability 9)
+- Source: Hyundai India owner's manual, i20 N Line (hyundai.com/in), pages 5-9 to 5-13 and 9-7/9-8: oil pressure,
+  charging system and brake fluid lights = "Drive carefully to the nearest safe location and stop your
+  vehicle"; overheating = "Pull off the road and stop as soon as it is safe to do so"; "NEVER remove the
+  radiator cap ... while the engine and radiator are hot"; brake light with parking brake released = low brake
+  fluid; lights glow for about 3 s at ignition ON (oil and charging stay on until the engine starts).
+- Variants: some cars have a temperature gauge, others a high-temperature light, so the script names both.
+- Final script:
+
+  Dashboard pe ye 4 lights dikhein, toh ignore mat kijiye. Safe jagah dekh ke gaadi rokiye!
+
+  Pehli, engine oil wali light, jo oil ki kuppi jaisi dikhti hai. Iska matlab oil pressure kam hai. Gaadi rokiye, engine band kijiye, aur oil check kijiye.
+
+  Doosri, engine temperature. Temperature ki sui upar chali jaaye ya temperature wali light jale, toh engine garam ho raha hai. Gaadi side mein rokiye, aur garam engine mein radiator ka dhakkan bilkul mat kholiye.
+
+  Teesri, battery wali light. Iska matlab charging system mein dikkat hai. Gaadi rokiye aur jaldi check karwaiye.
+
+  Chauthi, brake wali light. Handbrake hata diya, phir bhi ye light jal rahi hai, toh brake fluid kam ho sakta hai. Gaadi rokiye, aur brake theek se kaam na karein toh gaadi mat chalaiye.
+
+  Haan, gaadi on karte waqt ye lights kuch second jalke band ho jaati hain, wo normal hai. Problem tab hai jab ye chalte waqt jalein.
+
+  In mein se koi light jali? MR Hyundai, Shalimar Garden aaiye, hum check kar denge. Aur ye video save kar lijiye, kabhi bhi kaam aa sakta hai!
