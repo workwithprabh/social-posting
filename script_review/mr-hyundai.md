@@ -297,3 +297,4 @@ vs Ghaziabad speed breakers, 5 manual or iVT, 6 colours poll.
   
   Apna saamaan leke aaiye aur khud test kijiye, MR Hyundai, Shalimar Garden mein. Aur ye video us dost ko bhejiye jo har trip pe aadha ghar saath le jaata hai!
 
+- Topics 6-8 (refined) approved and added to the Google Doc, 21 Nov 2026.
