@@ -149,7 +149,7 @@ moved to on-screen text or the caption.
 
   Car December mein lein ya January mein?
 
-  December mein li, toh gaadi 2026 ki hi maani jaayegi. Isliye kai log January ka wait karte hain. Par pichhle do saal, Hyundai ne January mein price badhaaye the.
+  December mein li, toh gaadi 2026 ki hi maani jaayegi. Par pichhle do saal, Hyundai ne January mein price badhaaye the.
 
   Gaadi lambe samay tak chalani hai, toh December mein lene se utna farak nahi padta. Do-teen saal mein bechni hai, toh January ka registration kaam aa sakta hai.
   Aur booking se pehle manufacturing month zaroor pooch lijiye.
@@ -160,9 +160,9 @@ moved to on-screen text or the caption.
 
   Dashboard pe ye 4 lights dikhein, toh ignore mat kijiye. Safe jagah dekh ke gaadi rokiye!
 
-  Pehli, engine oil wali light. Matlab oil pressure kam hai. Engine band karke oil check kijiye.
+  Pehli, engine oil wali light: oil pressure kam hai. Engine band karke oil check kijiye.
   Doosri, engine temperature. Sui upar jaaye ya light jale, toh engine garam hai. Radiator ka dhakkan bilkul mat kholiye.
-  Teesri, battery wali light. Matlab charging system mein dikkat hai.
+  Teesri, battery wali light: charging system mein dikkat hai.
   Chauthi, brake wali light. Handbrake hata ke bhi jale, toh brake fluid kam ho sakta hai.
 
-  In mein se koi light jali? MR Hyundai, Shalimar Garden aaiye, hum check kar denge. Aur ye video save kar lijiye!
+  In mein se koi light jali? MR Hyundai, Shalimar Garden aaiye. Aur ye video save kar lijiye!
