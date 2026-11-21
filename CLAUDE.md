@@ -155,6 +155,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 - Review posts: whatever goes on social media is in correct English. Column M "Text for post" holds the review with
   its grammar corrected or rephrased in our words, keeping the customer's meaning and facts (names, car, branch,
   what happened) and adding nothing; column G keeps the original. Details in `statics/CONTENT_BUCKETS.md`.
+- Festival greetings (user, 21 Nov 2026): not the same design for every client. Wait for the user's references and
+  give each client its own design; the shared `greeting.html` draft (Guru Nanak Jayanti) was put on hold.
 - Both CH-2610-07 and CH-2610-08 (Reel 3 offer and Reel 3) are meant to be posted.
 
 ## Video handling

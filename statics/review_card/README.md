@@ -87,3 +87,5 @@ logo `CB_logo.png` cut from the reel end card, since the Drive logo files aren't
 diyas, a gold Ik Onkar in Noto Serif Gurmukhi: `npm i -s @fontsource/noto-serif-gurmukhi@5.2.5`); no AI and no
 depiction of religious figures. Mahindra footers read "WARM WISHES FROM ..." instead of the sales CTA. First use:
 Guru Nanak Jayanti, `<client>-FST-2611-xx`.
+**On hold (user, 21 Nov 2026): don't use one design for every client.** Festival greetings get a different design per
+client, built from references the user sends; this shared template was a first draft and is not to be posted.
