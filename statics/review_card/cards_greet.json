@@ -1,0 +1,80 @@
+[
+ {
+  "id": "CH-FST-2611-01",
+  "theme": "hyundai",
+  "logo": "CH_cap_hr.png",
+  "logoH": 74,
+  "footer": "CH",
+  "tag": "Prakash Purab",
+  "label": "Guru Nanak Jayanti",
+  "headline": "Happy <em>Gurpurab</em>",
+  "pb": "Gurpurab diyan lakh lakh vadhaiyan",
+  "wish": "May the light of Guru Nanak Dev Ji's teachings fill your home with peace, love and happiness.",
+  "seed": 11
+ },
+ {
+  "id": "DEH-FST-2611-01",
+  "theme": "hyundai",
+  "logo": "DEH_white_hr.png",
+  "logoH": 74,
+  "footer": "DEH",
+  "tag": "Prakash Purab",
+  "label": "Guru Nanak Jayanti",
+  "headline": "Happy <em>Gurpurab</em>",
+  "pb": "Gurpurab diyan lakh lakh vadhaiyan",
+  "wish": "Guru Nanak Dev Ji ki shiksha aapke ghar mein sukh, shanti aur khushiyan laaye.",
+  "seed": 23
+ },
+ {
+  "id": "MRH-FST-2611-01",
+  "theme": "hyundai",
+  "logo": "MRH_3_hr.png",
+  "logoH": 110,
+  "footer": "MRH",
+  "tag": "Prakash Purab",
+  "label": "Guru Nanak Jayanti",
+  "headline": "Happy <em>Gurpurab</em>",
+  "pb": "Gurpurab diyan lakh lakh vadhaiyan",
+  "wish": "Guru Nanak Dev Ji ki shiksha aapke ghar mein sukh, shanti aur khushiyan laaye.",
+  "seed": 37
+ },
+ {
+  "id": "AM-FST-2611-02",
+  "theme": "mahindra",
+  "logo": "AM_hr.png",
+  "logoH": 84,
+  "footer": "AM",
+  "tag": "PRAKASH PURAB",
+  "label": "GURU NANAK JAYANTI",
+  "headline": "HAPPY <em>GURPURAB</em>",
+  "pb": "Gurpurab diyan lakh lakh vadhaiyan",
+  "wish": "Guru Nanak Dev Ji ki shiksha aapke ghar mein sukh, shanti aur khushiyan laaye.",
+  "seed": 41
+ },
+ {
+  "id": "DEM-FST-2611-01",
+  "theme": "mahindra",
+  "logo": "DEM_ice_white.png",
+  "logoH": 108,
+  "footer": "DEM",
+  "tag": "PRAKASH PURAB",
+  "label": "GURU NANAK JAYANTI",
+  "headline": "HAPPY <em>GURPURAB</em>",
+  "pb": "Gurpurab diyan lakh lakh vadhaiyan",
+  "wish": "Guru Nanak Dev Ji ki shiksha aapke ghar mein sukh, shanti aur khushiyan laaye.",
+  "seed": 53
+ },
+ {
+  "id": "CB-FST-2611-01",
+  "theme": "carbike",
+  "logo": "CB_logo.png",
+  "logoH": 64,
+  "footer": "CB",
+  "tag": "Prakash Purab",
+  "label": "Guru Nanak Jayanti",
+  "headline": "Happy <em>Gurpurab</em>",
+  "pb": "Gurpurab diyan lakh lakh vadhaiyan",
+  "wish": "Guru Nanak Dev Ji ki shiksha aapke ghar mein sukh, shanti aur khushiyan laaye.",
+  "seed": 67
+ }
+]

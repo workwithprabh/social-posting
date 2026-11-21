@@ -1,0 +1,107 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Mont;font-weight:500;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2)}
+@font-face{font-family:Mont;font-weight:600;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-600-normal.woff2)}
+@font-face{font-family:Mont;font-weight:700;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:Mont;font-weight:800;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:Anton;src:url(node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2)}
+@font-face{font-family:Gur;font-weight:700;src:url(node_modules/@fontsource/noto-serif-gurmukhi/files/noto-serif-gurmukhi-gurmukhi-700-normal.woff2)}
+/* Festival greeting statics (Guru Nanak Jayanti, 21 Nov 2026). Drawn in code: no AI, no depiction of the Guru.
+   Themes: hyundai (sentence case, Active Blue label), mahindra (Anton caps, red label), carbike (black, lime). */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:Mont,sans-serif;position:relative;color:#fff;background:#0a0503;--acc:#00AAD2}
+body.mahindra{--acc:#E31837} body.carbike{--acc:#D7F205}
+.bg{position:absolute;inset:0;background:
+ radial-gradient(760px 520px at 50% 33%,rgba(255,176,60,.30) 0%,rgba(255,140,30,.10) 45%,rgba(0,0,0,0) 75%),
+ radial-gradient(1200px 520px at 50% 100%,rgba(255,150,40,.42) 0%,rgba(150,60,10,.20) 45%,rgba(0,0,0,0) 80%),
+ linear-gradient(180deg,#070404 0%,#1a0c05 45%,#2a1206 72%,#120804 100%)}
+.hyundai .bg{background:
+ radial-gradient(760px 520px at 50% 33%,rgba(255,176,60,.28) 0%,rgba(255,140,30,.10) 45%,rgba(0,0,0,0) 75%),
+ radial-gradient(1200px 520px at 50% 100%,rgba(255,150,40,.40) 0%,rgba(150,60,10,.18) 45%,rgba(0,0,0,0) 80%),
+ linear-gradient(180deg,#00101f 0%,#0b1322 40%,#24140a 74%,#100804 100%)}
+.carbike .bg{background:
+ radial-gradient(760px 520px at 50% 33%,rgba(255,176,60,.26) 0%,rgba(255,140,30,.08) 45%,rgba(0,0,0,0) 75%),
+ radial-gradient(1200px 520px at 50% 100%,rgba(255,150,40,.38) 0%,rgba(120,50,10,.18) 45%,rgba(0,0,0,0) 80%),
+ linear-gradient(180deg,#050505 0%,#0e0b08 45%,#1f1308 74%,#0b0704 100%)}
+svg.fx{position:absolute;inset:0}
+header{position:absolute;left:72px;right:72px;top:64px;height:130px;display:flex;align-items:center;justify-content:space-between;z-index:3}
+header img{display:block}
+.tag{font-weight:600;font-size:22px;padding:10px 22px;border:1.5px solid currentColor;border-radius:40px;opacity:.9}
+.mahindra .tag{font-family:Mont;font-weight:700;letter-spacing:3px;font-size:20px}
+.ek{position:absolute;left:0;right:0;top:150px;padding-top:70px;text-align:center;font-family:Gur;font-weight:700;font-size:250px;line-height:1.15;z-index:2;
+ background:linear-gradient(180deg,#fff4cf 0%,#ffd77a 38%,#f2a93a 70%,#c9781a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+ filter:drop-shadow(0 0 28px rgba(255,190,80,.55)) drop-shadow(0 0 70px rgba(255,150,40,.35))}
+.txt{position:absolute;left:72px;right:72px;top:var(--tt,560px);text-align:center;z-index:2}
+.label{display:inline-block;background:var(--acc);color:#fff;font-weight:700;font-size:22px;padding:7px 16px;letter-spacing:.3px}
+.carbike .label{color:#0a0a0a}
+.mahindra .label{letter-spacing:3px;font-size:20px}
+h1{margin-top:22px;font-weight:700;font-size:84px;line-height:1.02;letter-spacing:-2px}
+.mahindra h1{font-family:Anton;font-weight:400;font-size:104px;letter-spacing:1px;line-height:1}
+.carbike h1{font-weight:800;letter-spacing:-1.5px}
+h1 em{font-style:normal;background:linear-gradient(180deg,#ffe9a8,#f4b13e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.carbike h1 em{background:none;color:var(--acc)}
+.pb{margin-top:20px;font-weight:600;font-size:34px;color:#ffd98a}
+.wish{margin:16px auto 0;max-width:820px;font-weight:500;font-size:27px;line-height:1.4;opacity:.88}
+footer{position:absolute;left:0;right:0;bottom:0;height:230px;padding:0 72px 64px;display:flex;flex-direction:column;justify-content:flex-end;z-index:3}
+footer:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.8) 100%);z-index:-1}
+.fine{position:absolute;left:72px;right:72px;bottom:22px;font-weight:500;font-size:14px;opacity:.6;text-align:center;z-index:3}
+.rule{display:flex;align-items:center;gap:20px;font-weight:700;font-size:22px;letter-spacing:4px;margin-bottom:22px}
+.rule:before,.rule:after{content:"";flex:1;height:2px;background:currentColor;opacity:.3}
+.cols{display:flex;justify-content:space-between}
+.cols div{font-weight:600;font-size:22px;opacity:.85}
+.cols div b{display:block;font-weight:800;font-size:27px;opacity:1;margin-top:6px;letter-spacing:.5px}
+.row{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.big{font-weight:800;font-size:32px;letter-spacing:1px;line-height:1.15}
+.mahindra .big{font-family:Anton;font-weight:400;font-size:38px;letter-spacing:1.5px}
+.ph{font-weight:800;font-size:40px;white-space:nowrap}
+.mahindra .ph{font-family:Anton;font-weight:400;font-size:46px;letter-spacing:1px}
+.fsub{margin-top:14px;font-weight:600;font-size:22px;letter-spacing:2px;opacity:.85}
+.loc{white-space:nowrap;text-align:right;font-weight:600;font-size:22px;line-height:1.4;opacity:.95}
+.loc b{font-weight:800;font-size:26px;letter-spacing:3px}
+.pin{color:var(--acc)}
+.hyundai .pin{color:#00AAD2}
+</style></head><body><div id="root"></div>
+<script>
+const FOOT={
+ CH:`<div class="rule">CAPITAL HYUNDAI SHOWROOMS</div><div class="cols"><div>Sector 63, Noida<b>99994 89444</b></div><div>Sector 132, Noida<b>73031 11937</b></div><div>Dadri<b>72900 77273</b></div><div>Faridabad<b>93559 31054</b></div></div>`,
+ DEH:`<div class="row"><div class="big">DEE EMM HYUNDAI GURGAON</div><div class="ph">97736 47900</div></div><div class="fsub">SECTOR 16 | SECTOR 49 · DAULATABAD · SECTOR 18 | SIKANDERPUR</div>`,
+ MRH:`<div class="row"><div><div class="big">SHOWROOM &amp; SERVICE</div><div class="fsub">Loni Rd, opp. Shalimar Garden, Pasonda, Sahibabad</div></div><div class="loc"><b><span class="pin">&#9679;</span> GHAZIABAD</b><br>Pasonda, Shalimar Garden<br><span class="ph">93128 21182</span></div></div>`,
+ DEM:`<div class="row"><div class="big">WARM WISHES FROM<br>DEE EMM MAHINDRA</div><div class="ph">95995 58379</div></div>`,
+ AM:`<div class="row"><div class="big">WARM WISHES FROM<br>MAHINDRA ARAV</div><div class="loc"><b><span class="pin">&#9679;</span> GURGAON</b><br>Manesar · Sector 95 · Sector 83<br><span class="ph">88600 86639</span></div></div>`,
+ CB:`<div class="row"><div><div class="big">DEE EMM CAR &amp; BIKE</div><div class="fsub">SECTOR 18, GURGAON</div></div><div class="ph">98185 64808</div></div>`};
+// deterministic pseudo-random for bokeh
+function rnd(s){return ()=>{s=(s*16807)%2147483647;return (s-1)/2147483646}}
+function diya(x,y,s){ // clay diya with the flame on its wick in the middle, soft halo
+ const w=170*s,h=54*s;
+ return `<g transform="translate(${x},${y})">
+  <ellipse cx="0" cy="${-58*s}" rx="${100*s}" ry="${105*s}" fill="url(#glow)" opacity=".8"/>
+  <path d="M${-w/2},0 Q${-w/2+4*s},${h} 0,${h} Q${w/2-4*s},${h} ${w/2},0 Z" fill="url(#clay)"/>
+  <ellipse cx="0" cy="0" rx="${w/2}" ry="${13*s}" fill="url(#rim)"/>
+  <ellipse cx="0" cy="${1.5*s}" rx="${w/2-12*s}" ry="${8*s}" fill="#2a0f03"/>
+  <rect x="${-2*s}" y="${-14*s}" width="${4*s}" height="${14*s}" rx="${2*s}" fill="#3a1a08"/>
+  <path d="M0,${-10*s} C${-17*s},${-34*s} ${-6*s},${-70*s} 0,${-104*s} C${6*s},${-70*s} ${17*s},${-34*s} 0,${-10*s} Z" fill="url(#flame)" filter="url(#soft)"/>
+  <path d="M0,${-14*s} C${-7*s},${-30*s} ${-3*s},${-48*s} 0,${-62*s} C${3*s},${-48*s} ${7*s},${-30*s} 0,${-14*s} Z" fill="#fffbe8"/>
+ </g>`}
+function render(c){
+ document.body.className=c.theme;
+ document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';'));
+ const r=rnd(c.seed||7); let bok='';
+ for(let i=0;i<46;i++){const x=r()*1080,y=120+r()*1000,rad=6+r()*26,o=.08+r()*.22;bok+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${rad.toFixed(1)}" fill="#ffc45e" opacity="${o.toFixed(2)}" filter="url(#bk)"/>`}
+ const lamps=[[130,1078,.8],[335,1098,.92],[540,1110,1.05],[745,1098,.92],[950,1078,.8]].map(([x,y,s])=>diya(x,y,s)).join('');
+ const svg=`<svg class="fx" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg"><defs>
+  <radialGradient id="glow"><stop offset="0" stop-color="#ffd27a" stop-opacity=".95"/><stop offset=".35" stop-color="#ffa53a" stop-opacity=".45"/><stop offset="1" stop-color="#ff8a1f" stop-opacity="0"/></radialGradient>
+  <linearGradient id="clay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8571c"/><stop offset=".5" stop-color="#7a3210"/><stop offset="1" stop-color="#3a1505"/></linearGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a35a"/><stop offset="1" stop-color="#9c4515"/></linearGradient>
+  <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff7a1a"/><stop offset=".45" stop-color="#ffc23a"/><stop offset="1" stop-color="#fff3b0"/></linearGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter><filter id="bk"><feGaussianBlur stdDeviation="3"/></filter>
+  <radialGradient id="floor" cx=".5" cy="0" r=".7"><stop offset="0" stop-color="#ffb04a" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+ </defs>${bok}<rect x="0" y="1090" width="1080" height="260" fill="url(#floor)"/>${lamps}</svg>`;
+ document.getElementById('root').innerHTML=`<div class="bg"></div>${svg}
+ <header><img src="${c.logo}" style="height:${c.logoH}px"><div class="tag">${c.tag||'Gurpurab'}</div></header>
+ <div class="ek">ੴ</div>
+ <div class="txt"><span class="label">${c.label}</span><h1>${c.headline}</h1><div class="pb">${c.pb}</div><div class="wish">${c.wish}</div></div>
+ <footer>${FOOT[c.footer]}</footer>${c.fine?`<div class="fine">${c.fine}</div>`:''}`;
+ const t=document.querySelector('.txt').getBoundingClientRect();
+ return {txtBottom:Math.round(t.bottom)};
+}
+</script></body></html>

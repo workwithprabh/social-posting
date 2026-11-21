@@ -79,3 +79,11 @@ Hyundai look: tag, Active Blue label, sentence-case headline, big fact line, out
 the parts (`ht` head top, `ct`/`ch` picture top/height, `pt` pill top, `chipt`/`pl` chips top, `h1` size). Keep the
 headline, picture subject, pill and chips between y 240 and 1680, the 3:4 area the profile grid shows. Facts on the
 cover come only from the reel. First set: DEM-2611-02, DEM-2611-04, CB-2611-04, MRH-2611-03.
+
+## Festival greetings: `greeting.html` (21 Nov 2026)
+`node render_greet.js [ID]` renders `cards_greet.json` at 2160x2700, then `python save.py out_greet/`. One layout,
+three themes: `hyundai` (sentence case, Active Blue label), `mahindra` (Anton caps, red label), `carbike` (black, lime;
+logo `CB_logo.png` cut from the reel end card, since the Drive logo files aren't link-shared). Drawn in code (bokeh,
+diyas, a gold Ik Onkar in Noto Serif Gurmukhi: `npm i -s @fontsource/noto-serif-gurmukhi@5.2.5`); no AI and no
+depiction of religious figures. Mahindra footers read "WARM WISHES FROM ..." instead of the sales CTA. First use:
+Guru Nanak Jayanti, `<client>-FST-2611-xx`.
