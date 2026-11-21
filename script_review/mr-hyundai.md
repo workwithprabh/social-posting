@@ -259,3 +259,41 @@ vs Ghaziabad speed breakers, 5 manual or iVT, 6 colours poll.
   
   Apna saamaan leke aaiye aur khud test kijiye, MR Hyundai, Shalimar Garden mein. Aur ye video us dost ko bhejiye jo har trip pe aadha ghar saath le jaata hai!
 
+- Self-review on request: first drafts 8.5 / 8.5 / 8.5. Refined: 6 drops the repeated "Generative AI" brag, local demo
+  question; 7 groups features (safety / comfort), CTA no longer repeats "seedha"; 8 opens on the challenge, cuts the
+  "tension khatam" line the test may not prove. Refined 9 / 9 / 9 (6 and 8 run ~36-37 s with the car reply / loading).
+- Topic 6 refined:
+
+  Kabhi apni gaadi se baat ki hai? Aaj BAYON se karte hain!
+  
+  BAYON ke top variant HX10 mein AI voice assistant hai. Sirf command nahi, normal baatcheet.
+  
+  "Ghaziabad mein best chhole bhature kahan milenge?"
+  
+  Mausam, news, restaurant, travel plan, sab pooch sakte hain.
+  
+  Khud baat karke dekhna hai? MR Hyundai, Shalimar Garden aaiye, aur BAYON se ek sawaal aap bhi poochiye!
+
+- Topic 7 refined:
+
+  BAYON ka sabse sasta variant, 9.99 lakh se shuru. Isme kya milta hai, aur kya nahi?
+  
+  Pehle achhi khabar. Safety mein: six airbags, ESC aur tyre pressure monitor.
+  Comfort mein: LED projector headlamps aur peeche AC vents.
+  
+  Ab seedhi baat: base variant mein touchscreen aur speakers nahi milte.
+  
+  Toh safety mein koi compromise nahi, bas entertainment ke liye upar ke variants dekhne honge.
+  
+  Aapke liye kaunsa variant sahi rahega? MR Hyundai, Shalimar Garden aaiye, hum aapke budget ke hisaab se bata denge.
+
+- Topic 8 refined:
+
+  Hyundai kehta hai BAYON ka boot 505 litre ka hai. Chaliye, test karte hain!
+  
+  Ek bada suitcase. Doosra bada suitcase. Ek cabin bag. Aur ye stroller.
+  
+  Aur dekhiye, abhi bhi jagah baaki hai!
+  
+  Apna saamaan leke aaiye aur khud test kijiye, MR Hyundai, Shalimar Garden mein. Aur ye video us dost ko bhejiye jo har trip pe aadha ghar saath le jaata hai!
+
