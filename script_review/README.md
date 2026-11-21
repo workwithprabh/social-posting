@@ -39,3 +39,7 @@ Read the whole script end to end as the presenter would say it, then fix:
 - mixed address: keep one form throughout (aap: rakhiye, kijiye, aaiye), unless the user asks otherwise.
 - features that differ by car or variant (user, 20 Nov 2026): say it so it works on every car (e.g. "windshield
   wala sign, knob pe ho ya button pe") or add "agar aapki gaadi mein hai"; never assume a button exists.
+
+## Length (user, 21 Nov 2026, every script)
+Reels must land at 30-40 s including the 3 s thumbnail hold. At about 2.6 spoken words a second that is
+**80-95 words** of script. Count the words before sharing; anything extra goes to on-screen text or the caption.

@@ -116,3 +116,53 @@ Plus: film any delivery happening that day (with the customer's consent).
   Haan, gaadi on karte waqt ye lights kuch second jalke band ho jaati hain, wo normal hai. Problem tab hai jab ye chalte waqt jalein.
 
   In mein se koi light jali? MR Hyundai, Shalimar Garden aaiye, hum check kar denge. Aur ye video save kar lijiye, kabhi bhi kaam aa sakta hai!
+
+## 2026-11-21 · All four scripts trimmed to 30-40 s (user: "these are quite big")
+Earlier versions ran 134-180 words (about 52-69 s), longer than the 35-45 s quoted at the time. Cut lines
+moved to on-screen text or the caption.
+
+### Topic 1: fog (final, trimmed)
+
+  Fog mein kuch dikh nahi raha, toh high beam on kar di?
+  Yahi sabse badi galti hai!
+
+  High beam ki roshni fog se takra ke wapas aati hai, jisse dikhna aur bhi kam ho jaata hai.
+
+  Fog mein headlights low beam pe rakhiye, aur fog lamps hain toh unhe bhi on kijiye.
+  Speed kam, doori zyada, aur overtake bilkul nahi.
+
+  Lights check karwani hain? MR Hyundai, Shalimar Garden aaiye. Aur ye video us dost ko bhejiye jo fog mein bhi high beam use karta hai!
+
+### Topic 2: windshield fogging (final, trimmed)
+
+  Subah sheesha andar se dhundhla? Kapde se ponchna band kijiye!
+
+  Bas teen kaam kijiye.
+  Ek, AC ki hawa windshield ki taraf kijiye. Knob ho ya button, windshield wala sign chuniye.
+  Do, AC on kijiye. Haan, thand mein bhi, kyunki AC hawa ki nami sukha deta hai.
+  Teen, bahar ki hawa wala mode, yaani fresh air mode on rakhiye.
+  Kuch hi der mein sheesha saaf.
+
+  Settings samajh nahi aa rahi? MR Hyundai, Shalimar Garden aaiye, hum dikha denge. Aur ye video us dost ko bhejiye jo har subah kapda leke baithta hai!
+
+### Topic 3: December or January (final, trimmed)
+
+  Car December mein lein ya January mein?
+
+  December mein li, toh gaadi 2026 ki hi maani jaayegi. Isliye kai log January ka wait karte hain. Par pichhle do saal, Hyundai ne January mein price badhaaye the.
+
+  Gaadi lambe samay tak chalani hai, toh December mein lene se utna farak nahi padta. Do-teen saal mein bechni hai, toh January ka registration kaam aa sakta hai.
+  Aur booking se pehle manufacturing month zaroor pooch lijiye.
+
+  Confuse hain? MR Hyundai, Shalimar Garden aaiye, hum seedhi baat batayenge. Aur ye video us dost ko bhejiye jo har saal "January mein lunga" bolta hai!
+
+### Topic 4: warning lights (final, trimmed)
+
+  Dashboard pe ye 4 lights dikhein, toh ignore mat kijiye. Safe jagah dekh ke gaadi rokiye!
+
+  Pehli, engine oil wali light. Matlab oil pressure kam hai. Engine band karke oil check kijiye.
+  Doosri, engine temperature. Sui upar jaaye ya light jale, toh engine garam hai. Radiator ka dhakkan bilkul mat kholiye.
+  Teesri, battery wali light. Matlab charging system mein dikkat hai.
+  Chauthi, brake wali light. Handbrake hata ke bhi jale, toh brake fluid kam ho sakta hai.
+
+  In mein se koi light jali? MR Hyundai, Shalimar Garden aaiye, hum check kar denge. Aur ye video save kar lijiye!
