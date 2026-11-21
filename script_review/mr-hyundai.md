@@ -205,3 +205,13 @@ moved to on-screen text or the caption.
   
   Toh ek baar MR Hyundai aaiye. Gaadi dekhiye, test drive lijiye, aur hamara service centre bhi khud dekh lijiye!
 - Approved by the user and added to the Google Doc as "Topic 5: Showroom aur service, ek hi jagah" (21 Nov 2026).
+
+## 2026-11-21 · BAYON topic ideas for today's shoot
+Facts from hyundai.com/in BAYON pages and the 26 Oct 2026 launch press release (read 21 Nov): from Rs 9,99,900
+ex-showroom; trims HX2, HX3, HX3+, HX5, HX6, HX8, HX10 (iVT from HX5); 1.5 MPi petrol 115 PS / 143.8 Nm, 6MT or
+iVT; six airbags, ESC, TPMS, rear parking sensors standard; panoramic sunroof HX6+; dual 12.3" curved displays;
+Generative AI voice assistant; Level 2 ADAS (most items HX10, some HX10 iVT only); 505 L boot*; 205 mm ground
+clearance; 10 colours; 3 yr unlimited km warranty, 3 yr free Bluelink. Not published: mileage, NCAP rating (only
+"5-star Indian safety standards as per internal assessment"), per-variant prices.
+Ideas: 1 AI voice assistant demo, 2 base variant HX2 value, 3 505 L boot loading test, 4 205 mm ground clearance
+vs Ghaziabad speed breakers, 5 manual or iVT, 6 colours poll.
