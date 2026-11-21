@@ -298,3 +298,37 @@ vs Ghaziabad speed breakers, 5 manual or iVT, 6 colours poll.
   Apna saamaan leke aaiye aur khud test kijiye, MR Hyundai, Shalimar Garden mein. Aur ye video us dost ko bhejiye jo har trip pe aadha ghar saath le jaata hai!
 
 - Topics 6-8 (refined) approved and added to the Google Doc, 21 Nov 2026.
+
+## 2026-11-21 · Topics 9-10 (written by Claude)
+- 9 tyre pressure in winter: Hyundai India owner's manual (i20 N Line): "decreased temperature leads to a proportional
+  lowering of tire pressure"; low-pressure light may come on in winter; check cold tyres (parked 3 h or driven <1.6
+  km); label on driver's side center pillar; underinflation = excessive wear, poor handling, reduced fuel economy;
+  radial tyres may look fine when underinflated, use a gauge; check monthly incl. spare. 95 words. 9/10.
+- 10 sell or exchange: advisory only, no valuation or bonus numbers. Confirm with MR Hyundai: they value old cars,
+  handle the RC transfer paperwork, adjust the amount in the new car, and which brands they take. 92 words. 8.5/10.
+- Topic 9:
+
+  Thand mein tyre ki hawa khud kam ho jaati hai. Pata tha?
+  
+  Hyundai ke owner's manual ke hisaab se, temperature girta hai toh tyre pressure bhi girta hai.
+  Aur kam hawa matlab: tyre jaldi ghisenge, handling kharab, aur mileage bhi kam.
+  
+  Toh check kaise karein? Subah gaadi chalane se pehle, jab tyre thande hon. Aur tyre dekh ke andaza mat lagaiye, gauge se hi check kijiye.
+  
+  Sahi pressure kitna hai? Driver side ka darwaaza kholiye, pillar pe sticker laga hai.
+  
+  Pressure check karwana hai? MR Hyundai, Shalimar Garden aaiye. Aur ye video save kar lijiye!
+
+- Topic 10:
+
+  Purani gaadi khud bechein ya exchange karein? Pehle ye samajh lijiye.
+  
+  Khud bechenge, toh kabhi-kabhi thode zyada paise mil sakte hain. Par buyer dhoondhna, anjaan logon ko test drive, aur paperwork, sab aapke zimme.
+  Aur jab tak RC transfer nahi hota, gaadi kaagaz pe aapke naam hi rehti hai.
+  
+  Exchange mein, purani gaadi ka valuation aur paperwork ek hi jagah ho jaata hai, aur paisa seedha nayi gaadi mein adjust.
+  
+  Toh dono ka hisaab lagaiye: kitne paise, aur kitni bhaag-daud.
+  
+  Apni purani gaadi ka valuation karwana hai? MR Hyundai, Shalimar Garden aaiye.
+
