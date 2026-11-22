@@ -113,6 +113,16 @@ Add rules for any label the user gave in step 3 to `rules.json`.
 
 ## Starting a new month
 
-The month tab for a month is created at the start of it by copying the previous tab: clear the three expense lists,
-the shoot notes and the `paid to` columns, set the billing rows to `Not Rec`, and update Bill of / Bill Raised On /
-Payment to be rec by.
+Create the tab when the month's first shoot or expense needs a home (November 2026 was made on 22 Nov 2026 this way).
+One `update_spreadsheet` batch:
+
+1. `duplicateSheet` of the previous month, inserted just after it, named "<Month> <Year>".
+2. Delete the previous month's one-off client rows (any billing row below MR Hyundai, above the totals row); the
+   totals and every formula below shift up on their own.
+3. Clear the values of B6:C29, F6:G29, I6:J29 (the three expense lists) and M6:Q40 (shoot notes; keep the
+   "Shoot Date" header in M5).
+4. Set Bill of / Bill Raised On / Payment to be rec by (C42:C44) to the month, the 1st and the 30th of the next.
+5. Billing rows stay `Not Rec` with retainers blank until the bill is raised; `paid to` columns stay 0.
+6. Write the month's shoot dates under "Shoot Date" (M: "21st November", N: client).
+
+Read the tab back and check the totals rows show 0 with no errors.
