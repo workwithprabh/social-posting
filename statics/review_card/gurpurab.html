@@ -61,7 +61,7 @@ function render(c){
  document.body.className=c.theme||'';
  document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';'));
  document.getElementById('root').innerHTML=`<div class="bg" style="background-image:url(${c.img})"></div>${c.glow?'<div class="glow"></div>':''}${c.halo?'<div class="halo"></div>':''}${c.fig?`<img class="fig${c.halo?' lit':''}" src="${c.fig}">`:''}<div class="veil"></div>
- <header><img src="${c.logo}" style="height:${c.logoH}px"><div class="tag">${c.tag}</div></header>
+ <header><img src="${c.logo}" style="height:${c.logoH}px">${c.tag?`<div class="tag">${c.tag}</div>`:''}</header>
  <div class="wish">${c.gwish?`<span class="gwish">${c.gwish}</span>`:`<small>${c.pre}</small>`}<h1>${c.wish}</h1></div>
  <div class="lesson">${c.label?`<span class="label">${c.label}</span>`:''}<div class="gur"${c.label?'':' style="margin-top:0"'}>${c.gur}</div><div class="lname">${c.lesson}</div>
   <div class="meaning">${c.meaning}</div><div class="line">${c.line}</div></div>

@@ -160,6 +160,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   testimonials are fine (the user liked those, 8 Nov 2026).
 - Festival greetings (user, 21 Nov 2026): not the same design for every client. Wait for the user's references and
   give each client its own design; the shared `greeting.html` draft (Guru Nanak Jayanti) was put on hold.
+  Gurpurab posts (`gurpurab.html`, user 24 Nov 2026): nothing in the top-right corner (no tag pill), logo 20% smaller
+  than on other statics, no "Guru Nanak Dev Ji's teaching" label; the Punjabi wish in Gurmukhi.
 - Both CH-2610-07 and CH-2610-08 (Reel 3 offer and Reel 3) are meant to be posted.
 
 ## Video handling
