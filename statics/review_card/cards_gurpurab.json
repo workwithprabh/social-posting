@@ -248,17 +248,17 @@
   "ill": "gn_cut_clean.png",
   "cars": [
    {
-    "src": "car_exter_front.png",
-    "x": -61,
-    "y": 969,
-    "w": 627,
+    "src": "car_bayon_front.png",
+    "x": -95,
+    "y": 928,
+    "w": 717,
     "z": 1
    },
    {
     "src": "car_venue_front.png",
-    "x": 515,
-    "y": 951,
-    "w": 627,
+    "x": 454,
+    "y": 914,
+    "w": 728,
     "z": 1
    },
    {
