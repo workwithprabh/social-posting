@@ -312,5 +312,31 @@
   "fig": "gn_cut_clean.png",
   "wishBelow": true,
   "fg": "mrh_night_fg.png"
+ },
+ {
+  "id": "AM-FST-2611-02",
+  "tpl": "gurpurab5.html",
+  "fig": "gn_cut_clean.png",
+  "logo": "AM_hr.png",
+  "logoH": 67,
+  "footer": "AM",
+  "gwish": "ਗੁਰਪੁਰਬ ਦੀਆਂ ਲੱਖ ਲੱਖ ਵਧਾਈਆਂ",
+  "wish": "Happy<br>Gurpurab",
+  "photo": "am_nankana.jpg",
+  "photoTitle": "Gurdwara Janam Asthan, Nankana Sahib",
+  "photoSub": "Birthplace of Guru Nanak Dev Ji",
+  "gur": "ੴ",
+  "lesson": "Ik Onkar",
+  "meaning": "There is One Creator<br>in all of us.",
+  "chips": [
+   "One Creator",
+   "One family",
+   "All equal"
+  ],
+  "note": "Photo: Gurdwara Janam Asthan by Shahzaib Damn Cruze, CC BY-SA 4.0, via Wikimedia Commons (cropped, overhead wire removed). Illustration made with AI.",
+  "vars": {
+   "fx": "456px",
+   "gx": "852px"
+  }
  }
 ]
