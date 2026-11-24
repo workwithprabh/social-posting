@@ -219,28 +219,28 @@
  },
  {
   "id": "DEH-FST-2611-01",
-  "tpl": "gurpurab2.html",
-  "img": "gp_night.jpg",
-  "med": "gn_fig.png",
-  "logo": "DEH_white_hr.png",
+  "tpl": "gurpurab3.html",
+  "logo": "DEH_black_hr.png",
   "logoH": 59,
   "footer": "DEH",
+  "mr": 330,
   "gwish": "ਗੁਰਪੁਰਬ ਦੀਆਂ ਲੱਖ ਲੱਖ ਵਧਾਈਆਂ",
   "wish": "Happy Gurpurab",
   "gur": "ਵੰਡ ਛਕੋ",
   "lesson": "Vand Chhako",
   "meaning": "Share what you have.",
   "line": "Because every joy grows when it is shared.",
-  "note": "Photo: Sasha India, CC BY-SA 2.0, via Wikimedia Commons (cropped, darkened). Illustration made with AI.",
+  "note": "Photo: Gurdwara Bangla Sahib, Delhi, by Ken Wieland, CC BY-SA 2.0, via Wikimedia Commons (cropped).",
   "vars": {
-   "bs": "cover",
-   "bp": "center 40%",
-   "mt": "165px",
-   "md": "410px",
-   "ms": "112%",
-   "mp": "50% 12%",
-   "tt": "620px",
-   "h1": "84px"
-  }
+   "my": "440px",
+   "at": "180px",
+   "aw": "620px",
+   "ah": "500px",
+   "tt": "712px",
+   "h1": "84px",
+   "as": "128% auto",
+   "ap": "28% 55%"
+  },
+  "arch": "gp_bangla.jpg"
  }
 ]

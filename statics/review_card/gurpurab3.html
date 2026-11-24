@@ -1,0 +1,66 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Mont;font-weight:500;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2)}
+@font-face{font-family:Mont;font-weight:600;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-600-normal.woff2)}
+@font-face{font-family:Mont;font-weight:700;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:Mont;font-weight:800;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:Play;font-weight:700;font-style:italic;src:url(node_modules/@fontsource/playfair-display/files/playfair-display-latin-700-italic.woff2)}
+@font-face{font-family:Gur;font-weight:700;src:url(node_modules/@fontsource/noto-serif-gurmukhi/files/noto-serif-gurmukhi-gurmukhi-700-normal.woff2)}
+/* Gurpurab post, light typographic design (third design, 24 Nov 2026): ivory background, a big gold Ik Onkar on a fine
+   mandala drawn in code, the teaching in a framed card, saffron and deep brown. No photo, no illustration. */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:Mont,sans-serif;color:var(--ink,#3a1f0d);background:#fbf4e6;position:relative;--saf:#d9741c;--gold:#c9952e}
+.bg{position:absolute;inset:0;background:radial-gradient(700px 600px at 50% 34%,#fff8e6 0%,#fbf0d8 45%,#f3e2bf 100%)}
+svg.m{position:absolute;left:50%;top:var(--my,330px);transform:translate(-50%,-50%);z-index:1}
+header{position:absolute;left:72px;top:64px;z-index:3}
+.ek{position:absolute;left:0;right:0;top:var(--et,150px);text-align:center;font-family:Gur;font-weight:700;font-size:var(--es,230px);line-height:1.2;z-index:2;padding-top:40px;
+ background:linear-gradient(180deg,#f7d27a 0%,#d99a2b 50%,#9c5f12 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+ filter:drop-shadow(0 6px 14px rgba(150,90,20,.25))}
+.arch{position:absolute;left:50%;top:var(--at,175px);width:var(--aw,640px);height:var(--ah,520px);transform:translateX(-50%);z-index:2;
+ border-radius:calc(var(--aw,640px)/2) calc(var(--aw,640px)/2) 26px 26px;border:7px solid var(--gold);overflow:hidden;
+ box-shadow:0 0 0 10px rgba(201,149,46,.18),0 18px 40px rgba(120,70,10,.25);background:var(--aimg) var(--ap,center top)/var(--as,cover) no-repeat}
+.crest{position:absolute;left:50%;top:calc(var(--at,175px) - 58px);transform:translateX(-50%);width:116px;height:116px;border-radius:50%;z-index:3;
+ background:#fbf4e6;border:4px solid var(--gold);display:flex;align-items:center;justify-content:center}
+.crest span{font-family:Gur;font-weight:700;font-size:64px;line-height:1;padding-top:14px;background:linear-gradient(180deg,#f7d27a,#d99a2b 55%,#9c5f12);-webkit-background-clip:text;background-clip:text;color:transparent}
+.txt{position:absolute;left:72px;right:72px;top:var(--tt,640px);text-align:center;z-index:2}
+.gwish{font-family:Gur;font-weight:700;font-size:40px;line-height:1.3;color:var(--saf)}
+h1{font-weight:800;font-size:var(--h1,86px);line-height:1.02;letter-spacing:-2px;margin-top:4px;color:var(--ink,#3a1f0d)}
+.card{margin:34px auto 0;width:820px;border:2px solid var(--gold);border-radius:22px;padding:26px 34px 28px;background:rgba(255,252,244,.75);position:relative}
+.card:before,.card:after{content:"";position:absolute;left:50%;width:14px;height:14px;background:var(--gold);transform:translateX(-50%) rotate(45deg)}
+.card:before{top:-8px}.card:after{bottom:-8px}
+.row{display:flex;align-items:center;justify-content:center;gap:26px}
+.gur{font-family:Gur;font-weight:700;font-size:58px;line-height:1.2;color:var(--saf)}
+.sep{width:2px;height:70px;background:var(--gold);opacity:.6}
+.lname{font-family:Play;font-style:italic;font-weight:700;font-size:60px;line-height:1.05;color:var(--ink,#3a1f0d)}
+.meaning{margin-top:12px;font-weight:700;font-size:30px;color:var(--saf)}
+.line{margin-top:6px;font-weight:500;font-size:25px;line-height:1.4;opacity:.85}
+.band{position:absolute;left:0;right:0;bottom:0;height:150px;background:var(--saf);z-index:2}
+footer{position:absolute;left:0;right:0;bottom:0;height:150px;padding:0 72px 30px;display:flex;flex-direction:column;justify-content:flex-end;z-index:3;text-align:center;color:#fff}
+.big{font-weight:800;font-size:28px;letter-spacing:1px}
+.big b{font-weight:800;margin-left:6px}
+.fsub{margin-top:8px;font-weight:600;font-size:19px;letter-spacing:2px;opacity:.92}
+.note{position:absolute;left:72px;right:72px;bottom:6px;font-weight:500;font-size:12px;opacity:.7;text-align:center;z-index:4;color:#fff}
+</style></head><body><div id="root"></div>
+<script>
+const FOOT={
+ DEH:`<div class="big">DEE EMM HYUNDAI GURGAON ·<b>97736 47900</b></div><div class="fsub">SECTOR 16 | SECTOR 49 · DAULATABAD · SECTOR 18 | SIKANDERPUR</div>`};
+function mandala(R){ // fine gold rosette drawn in code
+ let s=''; const c=R+10;
+ for(const [r,n,w,h,o] of [[R*0.95,48,R*0.06,R*0.20,.35],[R*0.78,36,R*0.07,R*0.22,.45],[R*0.6,24,R*0.08,R*0.24,.5],[R*0.42,16,R*0.09,R*0.2,.4]]){
+  for(let i=0;i<n;i++){const a=360*i/n; s+=`<ellipse cx="${c}" cy="${c-r}" rx="${w/2}" ry="${h/2}" transform="rotate(${a} ${c} ${c})" fill="none" stroke="#c9952e" stroke-width="2" opacity="${o}"/>`}}
+ for(const [r,o] of [[R,.5],[R*0.86,.3],[R*0.68,.35],[R*0.5,.3],[R*0.33,.25]]) s+=`<circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="#c9952e" stroke-width="2" opacity="${o}"/>`;
+ return `<svg class="m" width="${2*c}" height="${2*c}" viewBox="0 0 ${2*c} ${2*c}">${s}</svg>`;
+}
+function render(c){
+ document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';')+(c.arch?`;--aimg:url(${c.arch})`:''));
+ document.getElementById('root').innerHTML=`<div class="bg"></div>${mandala(c.mr||250)}
+ <header><img src="${c.logo}" style="height:${c.logoH}px"></header>
+ ${c.arch?`<div class="arch"></div><div class="crest"><span>ੴ</span></div>`:'<div class="ek">ੴ</div>'}
+ <div class="txt"><div class="gwish">${c.gwish}</div><h1>${c.wish}</h1>
+  <div class="card"><div class="row"><div class="gur">${c.gur}</div><div class="sep"></div><div class="lname">${c.lesson}</div></div>
+  <div class="meaning">${c.meaning}</div><div class="line">${c.line}</div></div></div>
+ <div class="band"></div><footer>${FOOT[c.footer]}</footer>${c.note?`<div class="note">${c.note}</div>`:''}`;
+ const t=document.querySelector('.txt').getBoundingClientRect();
+ return {txtTop:Math.round(t.top),txtBottom:Math.round(t.bottom)};
+}
+</script></body></html>
