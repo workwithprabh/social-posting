@@ -342,7 +342,7 @@
  {
   "id": "DEM-FST-2611-01",
   "tpl": "gurpurab6.html",
-  "img": "dem_kartarpur.jpg",
+  "img": "dem_kartarpur_full.jpg",
   "fig": "gn_cut_clean.png",
   "logo": "DEM_ice_white.png",
   "logoH": 86,
@@ -357,17 +357,20 @@
   "line": "",
   "note": "Photo: Gurdwara Darbar Sahib, Kartarpur, by Shahzaib Damn Cruze, CC BY-SA 4.0, via Wikimedia Commons (cropped). Illustration made with AI.",
   "vars": {
-   "ph": "700px",
-   "dl": "680px",
-   "dr": "560px",
-   "ps": "cover",
-   "pp": "center 30%",
-   "lbt": "590px",
-   "fx": "0px",
-   "fy": "540px",
-   "fw": "560px",
-   "gx": "295px",
-   "gy": "830px"
+   "bs": "cover",
+   "bp": "center 20%",
+   "tt": "176px",
+   "h1": "108px",
+   "cx": "72px",
+   "cy": "770px",
+   "cw": "330px",
+   "ch": "410px",
+   "cr": "-2deg",
+   "ix": "-34px",
+   "iy": "-78px",
+   "iw": "400px",
+   "lx": "448px",
+   "lt": "800px"
   }
  }
 ]

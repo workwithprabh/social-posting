@@ -5,54 +5,55 @@
 @font-face{font-family:Mont;font-weight:700;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2)}
 @font-face{font-family:Mont;font-weight:800;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
 @font-face{font-family:Gur;font-weight:700;src:url(node_modules/@fontsource/noto-serif-gurmukhi/files/noto-serif-gurmukhi-gurmukhi-700-normal.woff2)}
-/* Gurpurab post, diagonal split (sixth design, Dee Emm Mahindra, 24 Nov 2026): the gurdwara photo across the top with a
-   Mahindra-style diagonal edge and red stripe, charcoal below, the Guru Nanak Dev Ji illustration on the left in a warm
-   glow, the wish and the teaching on the right, a red label naming the gurdwara. Nothing in the top-right corner. */
+/* Gurpurab post, full photo + portrait card (sixth design, Dee Emm Mahindra, 24 Nov 2026; reworked after the user found
+   the diagonal cut and the figure cut-out "not looking good"): the gurdwara photo fills the post, the wish over the sky,
+   the Guru Nanak Dev Ji illustration in a framed portrait card on its own warm background (no cut-out on the photo), the
+   teaching beside it over the darkened marble, a red label naming the gurdwara. Nothing in the top-right corner. */
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1350px;overflow:hidden}
-body{font-family:Mont,sans-serif;color:#fff;position:relative;background:#141416;--red:#E31837;--g1:#fff1c9;--g2:#f6c66e;--g3:#d08f2e}
-.base{position:absolute;inset:0;background:radial-gradient(900px 700px at 25% 70%,#2a2a2f 0%,#17171a 60%,#0f0f11 100%)}
-.stripe{position:absolute;left:0;right:0;top:0;height:var(--ph,700px);background:var(--red);clip-path:polygon(0 0,100% 0,100% calc(var(--dr,560px) + 12px),0 calc(var(--dl,680px) + 12px));z-index:1}
-.photo{position:absolute;left:0;right:0;top:0;height:var(--ph,700px);background:var(--img) var(--pp,center top)/var(--ps,cover) no-repeat;clip-path:polygon(0 0,100% 0,100% var(--dr,560px),0 var(--dl,680px));z-index:2}
-.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,10,14,.55) 0,rgba(8,10,14,0) 22%,rgba(8,10,14,0) 70%,rgba(8,10,14,.35) 100%)}
-.label{position:absolute;left:72px;top:var(--lbt,560px);z-index:3}
-.label b{display:inline-block;background:var(--red);font-weight:800;font-size:18px;letter-spacing:2px;padding:8px 14px}
-.label span{display:block;margin-top:6px;font-weight:600;font-size:17px;text-shadow:0 2px 10px rgba(0,0,0,.6)}
-.glow{position:absolute;left:var(--gx,290px);top:var(--gy,830px);width:var(--gw,620px);height:var(--gw,620px);transform:translate(-50%,-50%);border-radius:50%;z-index:1;
- background:radial-gradient(closest-side,rgba(255,214,140,.55) 0%,rgba(255,180,90,.22) 45%,rgba(255,160,80,0) 100%)}
-.fig{position:absolute;left:var(--fx,0px);top:var(--fy,530px);width:var(--fw,560px);z-index:1;
- -webkit-mask-image:linear-gradient(180deg,#000 var(--m1,78%),transparent var(--m2,92%)),linear-gradient(90deg,#000 var(--r1,80%),transparent var(--r2,98%));-webkit-mask-composite:source-in;
- mask-image:linear-gradient(180deg,#000 var(--m1,78%),transparent var(--m2,92%)),linear-gradient(90deg,#000 var(--r1,80%),transparent var(--r2,98%));mask-composite:intersect}
+body{font-family:Mont,sans-serif;color:#fff;position:relative;background:#101012;--red:#E31837;--g1:#fff1c9;--g2:#f6c66e;--g3:#d08f2e}
+.bg{position:absolute;left:0;right:0;top:0;bottom:var(--fh,140px);background:var(--img) var(--bp,center top)/var(--bs,cover) no-repeat}
+.veil{position:absolute;left:0;right:0;top:0;bottom:var(--fh,140px);background:linear-gradient(180deg,rgba(6,8,12,.78) 0,rgba(6,8,12,.45) 14%,rgba(6,8,12,0) 28%,rgba(6,8,12,0) 54%,rgba(6,8,12,.55) 66%,rgba(6,8,12,.88) 80%,rgba(6,8,12,.96) 100%)}
 header{position:absolute;left:72px;top:58px;z-index:3}
-.txt{position:absolute;left:var(--tx,590px);right:60px;top:var(--tt,700px);z-index:3}
-.gwish{font-family:Gur;font-weight:700;font-size:var(--gs,30px);line-height:1.3;color:var(--g2)}
-h1{font-family:Anton;font-weight:400;text-transform:uppercase;font-size:var(--h1,104px);line-height:.98;letter-spacing:1px;margin-top:6px}
-.rule{width:90px;height:5px;background:var(--red);margin:22px 0 16px}
+.top{position:absolute;left:72px;right:72px;top:var(--tt,176px);z-index:3}
+.gwish{font-family:Gur;font-weight:700;font-size:32px;line-height:1.3;color:var(--g2);text-shadow:0 2px 12px rgba(0,0,0,.5)}
+h1{font-family:Anton;font-weight:400;text-transform:uppercase;font-size:var(--h1,112px);line-height:1;letter-spacing:1px;margin-top:4px;text-shadow:0 6px 26px rgba(0,0,0,.45)}
+.card{position:absolute;left:var(--cx,72px);top:var(--cy,770px);width:var(--cw,330px);height:var(--ch,420px);z-index:3;transform:rotate(var(--cr,-2deg));
+ padding:10px;background:linear-gradient(160deg,#f7dc9a,#c99236);border-radius:6px;box-shadow:0 26px 50px rgba(0,0,0,.6)}
+.card .in{position:relative;width:100%;height:100%;overflow:hidden;border-radius:2px;
+ background:radial-gradient(75% 60% at 55% 35%,#fff3cf 0%,#ffd98a 30%,#f0a443 62%,#b8561c 100%)}
+.card .in:before{content:"";position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 55% 34%,rgba(255,255,255,.18) 0 3deg,rgba(255,255,255,0) 3deg 10deg)}
+.card img{position:absolute;left:var(--ix,-70px);top:var(--iy,-120px);width:var(--iw,470px)}
+.les{position:absolute;left:var(--lx,450px);right:60px;top:var(--lt,800px);z-index:3}
+.label{display:inline-block;background:var(--red);font-weight:800;font-size:16px;letter-spacing:2px;padding:7px 12px}
+.lsub{margin-top:6px;font-weight:600;font-size:16px;opacity:.85}
+.rule{width:80px;height:4px;background:var(--red);margin:26px 0 14px}
 .lrow{display:flex;align-items:baseline;gap:18px}
-.gur{font-family:Gur;font-weight:700;font-size:62px;line-height:1.2;background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;color:transparent}
-.lname{font-family:Anton;font-size:76px;line-height:1;letter-spacing:1px;text-transform:uppercase}
-.meaning{margin-top:8px;font-weight:700;font-size:27px;line-height:1.3;color:var(--g2)}
-.line{margin-top:8px;font-weight:500;font-size:21px;line-height:1.4;opacity:.85}
-footer{position:absolute;left:0;right:0;bottom:0;height:140px;background:#0b0b0d;border-top:1px solid rgba(255,255,255,.08);padding:0 72px;display:flex;align-items:center;justify-content:space-between;z-index:4}
+.gur{font-family:Gur;font-weight:700;font-size:64px;line-height:1.2;background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lname{font-family:Anton;font-size:84px;line-height:1;letter-spacing:1px;text-transform:uppercase}
+.meaning{margin-top:10px;font-weight:700;font-size:28px;line-height:1.3;color:var(--g2)}
+footer{position:absolute;left:0;right:0;bottom:0;height:var(--fh,140px);background:#0b0b0d;padding:0 72px;display:flex;align-items:center;justify-content:space-between;z-index:4}
+footer:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:var(--red)}
 .big{font-family:Anton;font-size:38px;letter-spacing:1.5px;line-height:1.05}
 .fsub{margin-top:6px;font-weight:600;font-size:13.5px;letter-spacing:1px;opacity:.75;white-space:nowrap}
 .ph{text-align:right;font-family:Anton;font-size:44px;letter-spacing:1px;line-height:1;white-space:nowrap;margin-left:24px}
 .ph small{display:block;font-family:Mont;font-weight:700;font-size:14px;letter-spacing:3px;color:var(--red);margin-bottom:6px}
-.note{position:absolute;left:72px;right:72px;bottom:146px;font-weight:500;font-size:11px;opacity:.55;z-index:4}
+.note{position:absolute;left:72px;right:72px;bottom:calc(var(--fh,140px) + 8px);font-weight:500;font-size:11px;opacity:.55;z-index:4}
 </style></head><body><div id="root"></div>
 <script>
 const FOOT={
  DEM:`<div><div class="big">DEE EMM MAHINDRA</div><div class="fsub">SECTOR 18 · SECTOR 61 · GOLF COURSE RD · MG ROAD · PATAUDI · DAULATABAD</div></div><div class="ph"><small>CALL</small>95995 58379</div>`};
 function render(c){
  document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';')+`;--img:url(${c.img})`);
- document.getElementById('root').innerHTML=`<div class="base"></div><div class="glow"></div><img class="fig" src="${c.fig}"><div class="stripe"></div><div class="photo"></div>
- <div class="label"><b>${c.place}</b><span>${c.placeSub}</span></div>
+ document.getElementById('root').innerHTML=`<div class="bg"></div><div class="veil"></div>
  <header><img src="${c.logo}" style="height:${c.logoH}px"></header>
- <div class="txt"><div class="gwish">${c.gwish}</div><h1>${c.wish}</h1><div class="rule"></div>
+ <div class="top"><div class="gwish">${c.gwish}</div><h1>${c.wish}</h1></div>
+ <div class="card"><div class="in"><img src="${c.fig}"></div></div>
+ <div class="les"><span class="label">${c.place}</span><div class="lsub">${c.placeSub}</div><div class="rule"></div>
   <div class="lrow"><div class="gur">${c.gur}</div><div class="lname">${c.lesson}</div></div>
-  <div class="meaning">${c.meaning}</div>${c.line?`<div class="line">${c.line}</div>`:''}</div>
+  <div class="meaning">${c.meaning}</div></div>
  <footer>${FOOT[c.footer]}</footer>${c.note?`<div class="note">${c.note}</div>`:''}`;
- const b=document.querySelector('.txt').getBoundingClientRect();
- return {txtTop:Math.round(b.top),txtBottom:Math.round(b.bottom)};
+ const b=document.querySelector('.les').getBoundingClientRect(), t=document.querySelector('.top').getBoundingClientRect();
+ return {topBottom:Math.round(t.bottom),lesTop:Math.round(b.top),lesBottom:Math.round(b.bottom)};
 }
 </script></body></html>
