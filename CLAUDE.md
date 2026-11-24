@@ -132,6 +132,8 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   big photography, a small Active Blue (#00AAD2) label, thin outline pills; black (like the BAYON series), light studio
   or full photo, mixed so each dealer's feed varies. No heavy red boxes or condensed caps (that is the Mahindra look),
   and no all-over blue gradient (the user found it looked very bad). Template `statics/review_card/hyundai.html`.
+- Logo colours (user, 24 Nov 2026): Hyundai dealer logos only in black, white or Hyundai blue, never recoloured to match
+  a design (text colours can change). On light or sky backgrounds use black or blue.
 - Capital Hyundai Dadri showroom number is 72900 77273 everywhere (user, 9 Nov 2026; matches the reel end card).
 - Boosting: rules and ad accounts are in `config/boost.json` (Instagram only, Advantage+ audience, all of India, goal engagement (user, 15 Nov 2026: "engagement for all boosts from now"), Rs 100/day for
   65 hours, Rs 271 per reel; user, 13 Nov 2026, was 2 days). Capital Hyundai and M R Hyundai always use their own ad account; Car & Bike always uses the Dee Emm Hyundai
