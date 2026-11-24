@@ -232,15 +232,15 @@
   "line": "Because every joy grows when it is shared.",
   "note": "Illustration made with AI. Car images: Hyundai Motor India.",
   "vars": {
-   "my": "372px",
+   "my": "352px",
    "mr": "280px",
    "at": "168px",
    "aw": "520px",
-   "ah": "420px",
+   "ah": "384px",
    "ix": "-20px",
-   "iy": "-150px",
+   "iy": "-140px",
    "iw": "600px",
-   "tt": "604px",
+   "tt": "566px",
    "h1": "78px",
    "cm": "20px",
    "cp": "18px 34px 22px"
@@ -248,25 +248,24 @@
   "ill": "gn_cut_clean.png",
   "cars": [
    {
-    "src": "hero_verna_side.png",
-    "x": 40,
-    "y": 1030,
-    "w": 420,
+    "src": "car_exter_front.png",
+    "x": -61,
+    "y": 969,
+    "w": 627,
     "z": 1
    },
    {
-    "src": "hero_bayon_side.png",
-    "x": 620,
-    "y": 1010,
-    "w": 420,
-    "z": 1,
-    "flip": true
+    "src": "car_venue_front.png",
+    "x": 515,
+    "y": 951,
+    "w": 627,
+    "z": 1
    },
    {
-    "src": "hero_creta_front.png",
-    "x": 330,
-    "y": 930,
-    "w": 420,
+    "src": "car_creta_front.png",
+    "x": 193,
+    "y": 943,
+    "w": 694,
     "z": 3
    }
   ]
