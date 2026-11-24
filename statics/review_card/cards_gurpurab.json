@@ -1,0 +1,27 @@
+[
+ {
+  "id": "CH-FST-2611-01",
+  "img": "gp_bg.jpg",
+  "logo": "CH_cap_hr.png",
+  "logoH": 74,
+  "footer": "CH",
+  "tag": "Gurpurab",
+  "pre": "Gurpurab diyan lakh lakh vadhaiyan",
+  "wish": "Happy Gurpurab",
+  "label": "Guru Nanak Dev Ji's teaching",
+  "gur": "ਕਿਰਤ ਕਰੋ",
+  "lesson": "Kirat Karo",
+  "meaning": "Earn by honest work.",
+  "line": "A teaching we live by: honest work, done with care.",
+  "note": "Photo: Sasha India, CC BY-SA 2.0, via Wikimedia Commons (cropped, darkened).",
+  "vars": {
+   "bs": "1480px auto",
+   "bp": "-107px 205px",
+   "fa": "215px",
+   "fb": "330px",
+   "wt": "200px",
+   "h1": "84px",
+   "lt": "822px"
+  }
+ }
+]

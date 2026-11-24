@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Mont;font-weight:500;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2)}
+@font-face{font-family:Mont;font-weight:600;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-600-normal.woff2)}
+@font-face{font-family:Mont;font-weight:700;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:Mont;font-weight:800;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:Play;font-weight:700;font-style:italic;src:url(node_modules/@fontsource/playfair-display/files/playfair-display-latin-700-italic.woff2)}
+@font-face{font-family:Play;font-weight:600;src:url(node_modules/@fontsource/playfair-display/files/playfair-display-latin-600-normal.woff2)}
+@font-face{font-family:Gur;font-weight:700;src:url(node_modules/@fontsource/noto-serif-gurmukhi/files/noto-serif-gurmukhi-gurmukhi-700-normal.woff2)}
+@font-face{font-family:Gur;font-weight:600;src:url(node_modules/@fontsource/noto-serif-gurmukhi/files/noto-serif-gurmukhi-gurmukhi-600-normal.woff2)}
+/* Gurpurab posts, one design per client (user, 24 Nov 2026): a teaching of Guru Nanak Dev Ji, a gurdwara visual,
+   the wish, and the client's branding. Card fields: layout (lesson), img, logo, footer, label, gur (Gurmukhi line),
+   lesson, meaning, line (our one-line link to everyday life), wish. */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:Mont,sans-serif;color:#fff;background:#0b0603;position:relative;--acc:#00AAD2;--gold1:#fff1c9;--gold2:#f3c46a;--gold3:#c98a2c}
+.bg{position:absolute;inset:0;background-color:#000;background-repeat:no-repeat;background-size:var(--bs,cover);background-position:var(--bp,center);
+ -webkit-mask-image:linear-gradient(180deg,transparent 0,transparent var(--fa,0px),#000 var(--fb,1px));mask-image:linear-gradient(180deg,transparent 0,transparent var(--fa,0px),#000 var(--fb,1px))}
+.veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,6,14,.78) 0%,rgba(4,6,14,.30) 20%,rgba(4,6,14,0) 34%,rgba(4,6,14,.05) 48%,rgba(6,5,8,.70) 64%,rgba(6,4,4,.93) 80%,rgba(5,3,2,.97) 100%)}
+header{position:absolute;left:72px;right:72px;top:64px;height:130px;display:flex;align-items:center;justify-content:space-between;z-index:3}
+.tag{font-weight:600;font-size:22px;padding:10px 22px;border:1.5px solid rgba(255,255,255,.85);border-radius:40px}
+.wish{position:absolute;left:72px;right:72px;top:var(--wt,212px);z-index:2}
+.wish small{display:block;font-weight:600;font-size:26px;letter-spacing:.5px;color:var(--gold1);opacity:.95}
+.wish h1{font-weight:700;font-size:var(--h1,92px);line-height:1.02;letter-spacing:-2px;margin-top:6px;text-shadow:0 4px 30px rgba(0,0,0,.45)}
+.lesson{position:absolute;left:72px;right:72px;top:var(--lt,800px);z-index:2}
+.label{display:inline-block;background:var(--acc);color:#fff;font-weight:700;font-size:22px;padding:7px 16px}
+.gur{margin-top:22px;font-family:Gur;font-weight:700;font-size:58px;line-height:1.2;
+ background:linear-gradient(180deg,var(--gold1),var(--gold2) 55%,var(--gold3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lname{font-family:Play;font-style:italic;font-weight:700;font-size:76px;line-height:1.05;margin-top:2px;color:#fff}
+.meaning{margin-top:10px;font-weight:700;font-size:34px;color:var(--gold2)}
+.line{margin-top:14px;font-weight:500;font-size:27px;line-height:1.4;max-width:900px;opacity:.9}
+.rule{position:absolute;left:72px;right:72px;bottom:190px;height:1px;background:rgba(255,255,255,.25);z-index:2}
+footer{position:absolute;left:0;right:0;bottom:0;height:190px;padding:0 72px 54px;display:flex;flex-direction:column;justify-content:flex-end;z-index:3}
+.ftitle{display:flex;align-items:center;gap:20px;font-weight:700;font-size:20px;letter-spacing:4px;margin-bottom:18px;opacity:.9}
+.ftitle:before,.ftitle:after{content:"";flex:1;height:1.5px;background:currentColor;opacity:.3}
+.cols{display:flex;justify-content:space-between}
+.cols div{font-weight:600;font-size:21px;opacity:.85}
+.cols div b{display:block;font-weight:800;font-size:26px;opacity:1;margin-top:5px;letter-spacing:.5px}
+.note{position:absolute;left:72px;right:72px;bottom:16px;font-weight:500;font-size:13px;opacity:.5;text-align:center;z-index:3}
+</style></head><body><div id="root"></div>
+<script>
+const FOOT={
+ CH:`<div class="ftitle">CAPITAL HYUNDAI SHOWROOMS</div><div class="cols"><div>Sector 63, Noida<b>99994 89444</b></div><div>Sector 132, Noida<b>73031 11937</b></div><div>Dadri<b>72900 77273</b></div><div>Faridabad<b>93559 31054</b></div></div>`};
+function render(c){
+ document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';'));
+ document.getElementById('root').innerHTML=`<div class="bg" style="background-image:url(${c.img})"></div><div class="veil"></div>
+ <header><img src="${c.logo}" style="height:${c.logoH}px"><div class="tag">${c.tag}</div></header>
+ <div class="wish"><small>${c.pre}</small><h1>${c.wish}</h1></div>
+ <div class="lesson"><span class="label">${c.label}</span><div class="gur">${c.gur}</div><div class="lname">${c.lesson}</div>
+  <div class="meaning">${c.meaning}</div><div class="line">${c.line}</div></div>
+ <div class="rule"></div><footer>${FOOT[c.footer]}</footer>${c.note?`<div class="note">${c.note}</div>`:''}`;
+ const l=document.querySelector('.lesson').getBoundingClientRect();
+ return {lessonTop:Math.round(l.top),lessonBottom:Math.round(l.bottom)};
+}
+</script></body></html>

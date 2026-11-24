@@ -89,3 +89,13 @@ depiction of religious figures. Mahindra footers read "WARM WISHES FROM ..." ins
 Guru Nanak Jayanti, `<client>-FST-2611-xx`.
 **On hold (user, 21 Nov 2026): don't use one design for every client.** Festival greetings get a different design per
 client, built from references the user sends; this shared template was a first draft and is not to be posted.
+
+## Gurpurab posts, one design per client: `gurpurab.html` (24 Nov 2026)
+`node render_gurpurab.js [ID]` renders `cards_gurpurab.json` at 2160x2700, then `python save.py out_gp/`. The user
+asked (24 Nov 2026) for a different post per client, each with a lesson of Guru Nanak Dev Ji, a wish, a Guru Nanak or
+gurdwara visual and the client's branding. First design (Capital Hyundai): night photo of Sri Harmandir Sahib with its
+reflection (Sasha India, CC BY-SA 2.0, Wikimedia Commons: credit it on the image), "Happy Gurpurab" with the Punjabi
+wish, then the teaching in Gurmukhi (Noto Serif Gurmukhi), its name in Playfair italic, its meaning and one line tying
+it to everyday life; no sales message. Lessons are kept different per client (Kirat Karo, Vand Chhako, Naam Japo,
+Ek Onkar, Sarbat da bhala / seva, truthful living). Canva's generate-image made full posters with text when asked
+for a background, so it isn't used for this.
