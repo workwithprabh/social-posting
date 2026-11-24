@@ -372,5 +372,35 @@
    "lx": "448px",
    "lt": "800px"
   }
+ },
+ {
+  "id": "CB-FST-2611-01",
+  "tpl": "gurpurab7.html",
+  "img": "gp_night.jpg",
+  "fig": "gn_gold.png",
+  "logo": "CB_logo.png",
+  "logoH": 51,
+  "footer": "CB",
+  "gwish": "ਗੁਰਪੁਰਬ ਦੀਆਂ ਲੱਖ ਲੱਖ ਵਧਾਈਆਂ",
+  "wish": "Happy<br>Gurpurab",
+  "gur": "ਸੱਚ",
+  "lesson": "Sach",
+  "meaning": "Truth is high, but higher still is truthful living.",
+  "by": "GURU NANAK DEV JI",
+  "place": "SRI HARMANDIR SAHIB, AMRITSAR",
+  "note": "Photo: Sri Harmandir Sahib at night, by Sasha India, CC BY-SA 2.0, via Wikimedia Commons (cropped). Illustration made with AI, gold-toned.",
+  "vars": {
+   "pt": "640px",
+   "ps": "112% auto",
+   "pp": "center top",
+   "pf": "170px",
+   "fx": "470px",
+   "fy": "-70px",
+   "fw": "660px",
+   "gx": "800px",
+   "gy": "300px",
+   "ct": "1160px",
+   "st": "1035px"
+  }
  }
 ]

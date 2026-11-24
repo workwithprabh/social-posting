@@ -1,0 +1,60 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Mont;font-weight:500;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2)}
+@font-face{font-family:Mont;font-weight:600;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-600-normal.woff2)}
+@font-face{font-family:Mont;font-weight:700;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:Mont;font-weight:800;src:url(node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:Play;font-weight:700;font-style:italic;src:url(node_modules/@fontsource/playfair-display/files/playfair-display-latin-700-italic.woff2)}
+@font-face{font-family:Gur;font-weight:700;src:url(node_modules/@fontsource/noto-serif-gurmukhi/files/noto-serif-gurmukhi-gurmukhi-700-normal.woff2)}
+/* Gurpurab post, black and gold (seventh design, Car & Bike, 24 Nov 2026): black ground, the Guru Nanak Dev Ji
+   illustration in a gold tone (gradient-mapped, like gold-foil art) blending into the dark on the right, Playfair
+   italic wish in gold on the left with the teaching and Guru Nanak Dev Ji's words, a night photo of Sri Harmandir
+   Sahib across the bottom. Nothing in the top-right corner. */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:Mont,sans-serif;color:#f6ecd6;position:relative;background:#060504;--g1:#fff3cf;--g2:#f0c66c;--g3:#b9812a}
+.photo{position:absolute;left:0;right:0;top:var(--pt,690px);height:var(--phh,830px);background:var(--img) var(--pp,center top)/var(--ps,100% auto) no-repeat;
+ -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 var(--pf,150px));mask-image:linear-gradient(180deg,transparent 0,#000 var(--pf,150px))}
+.shade{position:absolute;left:0;right:0;top:var(--st,1040px);height:180px;z-index:2;background:linear-gradient(180deg,rgba(6,5,4,0),rgba(6,5,4,.88) 70%,rgba(6,5,4,.96))}
+.glow{position:absolute;left:var(--gx,800px);top:var(--gy,300px);width:var(--gw,760px);height:var(--gw,760px);transform:translate(-50%,-50%);border-radius:50%;
+ background:radial-gradient(closest-side,rgba(240,190,100,.30),rgba(240,190,100,.10) 50%,rgba(240,190,100,0) 100%)}
+.fig{position:absolute;left:var(--fx,500px);top:var(--fy,-80px);width:var(--fw,640px);
+ -webkit-mask-image:linear-gradient(180deg,#000 var(--m1,66%),transparent var(--m2,90%)),linear-gradient(90deg,transparent 0,#000 var(--l1,8%),#000 var(--r1,82%),transparent var(--r2,98%));-webkit-mask-composite:source-in;
+ mask-image:linear-gradient(180deg,#000 var(--m1,66%),transparent var(--m2,90%)),linear-gradient(90deg,transparent 0,#000 var(--l1,8%),#000 var(--r1,82%),transparent var(--r2,98%));mask-composite:intersect}
+header{position:absolute;left:72px;top:66px;z-index:3}
+.txt{position:absolute;left:72px;width:var(--tw,520px);top:var(--tt,180px);z-index:3}
+.gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.gwish{font-family:Gur;font-weight:700;font-size:30px;line-height:1.3;color:var(--g2)}
+h1{font-family:Play;font-style:italic;font-weight:700;font-size:var(--h1,112px);line-height:1;margin-top:10px;padding-bottom:8px}
+.orn{display:flex;align-items:center;gap:12px;margin:22px 0 18px}
+.orn i{display:block;width:120px;height:1.5px;background:linear-gradient(90deg,var(--g2),transparent)}
+.orn b{width:8px;height:8px;background:var(--g2);transform:rotate(45deg)}
+.lrow{display:flex;align-items:baseline;gap:18px}
+.gur{font-family:Gur;font-weight:700;font-size:62px;line-height:1.25}
+.lname{font-family:Play;font-style:italic;font-weight:700;font-size:70px;line-height:1.05;color:#fff}
+.quote{margin-top:12px;font-weight:600;font-size:27px;line-height:1.35;color:#f6ecd6}
+.by{margin-top:10px;font-weight:700;font-size:17px;letter-spacing:3px;color:var(--g2)}
+.cap{position:absolute;left:72px;top:var(--ct,1150px);z-index:3;font-weight:700;font-size:15px;letter-spacing:3px;color:var(--g2);text-shadow:0 2px 8px rgba(0,0,0,.8)}
+footer{position:absolute;left:0;right:0;bottom:0;height:140px;background:#050403;padding:0 72px;display:flex;align-items:center;justify-content:space-between;z-index:4}
+footer:before{content:"";position:absolute;left:72px;right:72px;top:0;height:1.5px;background:linear-gradient(90deg,transparent,var(--g2),transparent)}
+.big{font-weight:800;font-size:28px;letter-spacing:3px}
+.fsub{margin-top:8px;font-weight:600;font-size:16px;letter-spacing:2px;opacity:.75}
+.ph{text-align:right;font-weight:800;font-size:38px;letter-spacing:1px;white-space:nowrap}
+.ph small{display:block;font-weight:700;font-size:13px;letter-spacing:4px;color:var(--g2);margin-bottom:4px}
+.note{position:absolute;left:72px;right:72px;bottom:146px;font-weight:500;font-size:11px;opacity:.5;z-index:4}
+</style></head><body><div id="root"></div>
+<script>
+const FOOT={
+ CB:`<div><div class="big gold">DEE EMM CAR &amp; BIKE</div><div class="fsub">SECTOR 18, GURGAON</div></div><div class="ph"><small>CALL</small>98185 64808</div>`};
+function render(c){
+ document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';')+`;--img:url(${c.img})`);
+ document.getElementById('root').innerHTML=`<div class="photo"></div><div class="shade"></div><div class="glow"></div><img class="fig" src="${c.fig}">
+ <header><img src="${c.logo}" style="height:${c.logoH}px"></header>
+ <div class="txt"><div class="gwish">${c.gwish}</div><h1 class="gold">${c.wish}</h1><div class="orn"><i></i><b></b></div>
+  <div class="lrow"><div class="gur gold">${c.gur}</div><div class="lname">${c.lesson}</div></div>
+  <div class="quote">${c.meaning}</div><div class="by">${c.by}</div></div>
+ ${c.place?`<div class="cap">${c.place}</div>`:''}
+ <footer>${FOOT[c.footer]}</footer>${c.note?`<div class="note">${c.note}</div>`:''}`;
+ const b=document.querySelector('.txt').getBoundingClientRect();
+ return {txtTop:Math.round(b.top),txtBottom:Math.round(b.bottom)};
+}
+</script></body></html>
