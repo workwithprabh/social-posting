@@ -338,5 +338,36 @@
    "fx": "456px",
    "gx": "852px"
   }
+ },
+ {
+  "id": "DEM-FST-2611-01",
+  "tpl": "gurpurab6.html",
+  "img": "dem_kartarpur.jpg",
+  "fig": "gn_cut_clean.png",
+  "logo": "DEM_ice_white.png",
+  "logoH": 86,
+  "footer": "DEM",
+  "place": "GURDWARA DARBAR SAHIB, KARTARPUR",
+  "placeSub": "Where Guru Nanak Dev Ji spent his last years",
+  "gwish": "ਗੁਰਪੁਰਬ ਦੀਆਂ ਲੱਖ ਲੱਖ ਵਧਾਈਆਂ",
+  "wish": "Happy<br>Gurpurab",
+  "gur": "ਸੇਵਾ",
+  "lesson": "Sewa",
+  "meaning": "Serve others, expecting<br>nothing in return.",
+  "line": "",
+  "note": "Photo: Gurdwara Darbar Sahib, Kartarpur, by Shahzaib Damn Cruze, CC BY-SA 4.0, via Wikimedia Commons (cropped). Illustration made with AI.",
+  "vars": {
+   "ph": "700px",
+   "dl": "680px",
+   "dr": "560px",
+   "ps": "cover",
+   "pp": "center 30%",
+   "lbt": "590px",
+   "fx": "0px",
+   "fy": "540px",
+   "fw": "560px",
+   "gx": "295px",
+   "gy": "830px"
+  }
  }
 ]
