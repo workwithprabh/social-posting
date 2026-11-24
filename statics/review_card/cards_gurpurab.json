@@ -269,5 +269,31 @@
     "z": 3
    }
   ]
+ },
+ {
+  "id": "MRH-FST-2611-01",
+  "tpl": "gurpurab4.html",
+  "img": "mrh_night.jpg",
+  "logo": "MRH_3_hr.png",
+  "logoH": 88,
+  "footer": "MRH",
+  "gwish": "ਗੁਰਪੁਰਬ ਦੀਆਂ ਲੱਖ ਲੱਖ ਵਧਾਈਆਂ",
+  "wish": "Happy Gurpurab",
+  "gur": "ਨਾਮ ਜਪੋ",
+  "lesson": "Naam Japo",
+  "meaning": "Remember the Divine in every moment.",
+  "line": "A calm mind and a grateful heart, every day.",
+  "note": "Photo: Gurdwara Bangla Sahib, Delhi, at night, by Ken Wieland, CC BY-SA 2.0, via Wikimedia Commons (cropped, colour-graded).",
+  "vars": {
+   "bs": "128% auto",
+   "bx": "50%",
+   "py": "-100px",
+   "gy": "470px",
+   "gw": "760px",
+   "st": "1000px",
+   "fb": "56px",
+   "nb": "34px"
+  },
+  "glow": true
  }
 ]
