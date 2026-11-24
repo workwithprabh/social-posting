@@ -223,24 +223,52 @@
   "logo": "DEH_black_hr.png",
   "logoH": 59,
   "footer": "DEH",
-  "mr": 330,
+  "mr": 300,
   "gwish": "ਗੁਰਪੁਰਬ ਦੀਆਂ ਲੱਖ ਲੱਖ ਵਧਾਈਆਂ",
   "wish": "Happy Gurpurab",
   "gur": "ਵੰਡ ਛਕੋ",
   "lesson": "Vand Chhako",
   "meaning": "Share what you have.",
   "line": "Because every joy grows when it is shared.",
-  "note": "Photo: Gurdwara Bangla Sahib, Delhi, by Ken Wieland, CC BY-SA 2.0, via Wikimedia Commons (cropped).",
+  "note": "Illustration made with AI. Car images: Hyundai Motor India.",
   "vars": {
-   "my": "440px",
-   "at": "180px",
-   "aw": "620px",
-   "ah": "500px",
-   "tt": "712px",
-   "h1": "84px",
-   "as": "128% auto",
-   "ap": "28% 55%"
+   "my": "372px",
+   "mr": "280px",
+   "at": "168px",
+   "aw": "520px",
+   "ah": "420px",
+   "ix": "-20px",
+   "iy": "-150px",
+   "iw": "600px",
+   "tt": "604px",
+   "h1": "78px",
+   "cm": "20px",
+   "cp": "18px 34px 22px"
   },
-  "arch": "gp_bangla.jpg"
+  "ill": "gn_cut_clean.png",
+  "cars": [
+   {
+    "src": "hero_verna_side.png",
+    "x": 40,
+    "y": 1030,
+    "w": 420,
+    "z": 1
+   },
+   {
+    "src": "hero_bayon_side.png",
+    "x": 620,
+    "y": 1010,
+    "w": 420,
+    "z": 1,
+    "flip": true
+   },
+   {
+    "src": "hero_creta_front.png",
+    "x": 330,
+    "y": 930,
+    "w": 420,
+    "z": 3
+   }
+  ]
  }
 ]

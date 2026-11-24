@@ -99,3 +99,5 @@ wish, then the teaching in Gurmukhi (Noto Serif Gurmukhi), its name in Playfair 
 it to everyday life; no sales message. Lessons are kept different per client (Kirat Karo, Vand Chhako, Naam Japo,
 Ek Onkar, Sarbat da bhala / seva, truthful living). Canva's generate-image made full posters with text when asked
 for a background, so it isn't used for this.
+
+- Dee Emm Hyundai (DEH-FST-2611-01, `gurpurab3.html`, user 24 Nov 2026: no gurdwara, Guru Nanak illustration and Hyundai cars at the bottom): ivory and saffron, the illustration in an arch on a gold glow (`ill`), Ik Onkar crest and mandala in code, a `cars` row of official Verna, Creta and BAYON cut-outs standing on their own studio shadows (hero PNGs from the CTR covers; the BAYON is mirrored so both side cars face the centre). Images the card needs (gn_cut_clean.png, hero_*.png, logos) live in the build folder, not the repo.
