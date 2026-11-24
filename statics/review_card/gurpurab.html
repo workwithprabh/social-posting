@@ -15,6 +15,8 @@ html,body{width:1080px;height:1350px;overflow:hidden}
 body{font-family:Mont,sans-serif;color:#fff;background:#0b0603;position:relative;--acc:#00AAD2;--gold1:#fff1c9;--gold2:#f3c46a;--gold3:#c98a2c}
 .bg{position:absolute;inset:0;background-color:#000;background-repeat:no-repeat;background-size:var(--bs,cover);background-position:var(--bp,center);
  -webkit-mask-image:linear-gradient(180deg,transparent 0,transparent var(--fa,0px),#000 var(--fb,1px));mask-image:linear-gradient(180deg,transparent 0,transparent var(--fa,0px),#000 var(--fb,1px))}
+.fig{position:absolute;left:var(--fx,420px);top:var(--fy,200px);width:var(--fw,700px);z-index:1;
+ -webkit-mask-image:radial-gradient(60% 62% at 50% 44%,#000 58%,transparent 100%);mask-image:radial-gradient(60% 62% at 50% 44%,#000 58%,transparent 100%)}
 .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,6,14,.78) 0%,rgba(4,6,14,.30) 20%,rgba(4,6,14,0) 34%,rgba(4,6,14,.05) 48%,rgba(6,5,8,.70) 64%,rgba(6,4,4,.93) 80%,rgba(5,3,2,.97) 100%)}
 header{position:absolute;left:72px;right:72px;top:64px;height:130px;display:flex;align-items:center;justify-content:space-between;z-index:3}
 .tag{font-weight:600;font-size:22px;padding:10px 22px;border:1.5px solid rgba(255,255,255,.85);border-radius:40px}
@@ -27,7 +29,7 @@ header{position:absolute;left:72px;right:72px;top:64px;height:130px;display:flex
  background:linear-gradient(180deg,var(--gold1),var(--gold2) 55%,var(--gold3));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lname{font-family:Play;font-style:italic;font-weight:700;font-size:76px;line-height:1.05;margin-top:2px;color:#fff}
 .meaning{margin-top:10px;font-weight:700;font-size:34px;color:var(--gold2)}
-.line{margin-top:14px;font-weight:500;font-size:27px;line-height:1.4;max-width:900px;opacity:.9}
+.line{margin-top:14px;font-weight:500;font-size:27px;line-height:1.4;max-width:var(--lw,900px);opacity:.9}
 .rule{position:absolute;left:72px;right:72px;bottom:190px;height:1px;background:rgba(255,255,255,.25);z-index:2}
 footer{position:absolute;left:0;right:0;bottom:0;height:190px;padding:0 72px 54px;display:flex;flex-direction:column;justify-content:flex-end;z-index:3}
 .ftitle{display:flex;align-items:center;gap:20px;font-weight:700;font-size:20px;letter-spacing:4px;margin-bottom:18px;opacity:.9}
@@ -42,7 +44,7 @@ const FOOT={
  CH:`<div class="ftitle">CAPITAL HYUNDAI SHOWROOMS</div><div class="cols"><div>Sector 63, Noida<b>99994 89444</b></div><div>Sector 132, Noida<b>73031 11937</b></div><div>Dadri<b>72900 77273</b></div><div>Faridabad<b>93559 31054</b></div></div>`};
 function render(c){
  document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';'));
- document.getElementById('root').innerHTML=`<div class="bg" style="background-image:url(${c.img})"></div><div class="veil"></div>
+ document.getElementById('root').innerHTML=`<div class="bg" style="background-image:url(${c.img})"></div>${c.fig?`<img class="fig" src="${c.fig}">`:''}<div class="veil"></div>
  <header><img src="${c.logo}" style="height:${c.logoH}px"><div class="tag">${c.tag}</div></header>
  <div class="wish"><small>${c.pre}</small><h1>${c.wish}</h1></div>
  <div class="lesson"><span class="label">${c.label}</span><div class="gur">${c.gur}</div><div class="lname">${c.lesson}</div>
