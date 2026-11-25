@@ -130,7 +130,8 @@ Fonts: `npm install @fontsource/bricolage-grotesque @fontsource/inter @fontsourc
   The Hyundai tagline as the headline with the last word marked, a pure side view (hyundai.com/in 360 frame 34, front
   to the left) drawn like a technical drawing: dashed extension lines, a length dimension under the car and a height
   dimension beside it with the official figures, numbered navy markers on real parts (`pts`, in 1120-px frame units),
-  a three-column numbered legend, one line of further specs, a "Book your test drive at Capital Hyundai" pill.
+  a three-column numbered legend, one line of further specs, a "Book your test drive at Capital Hyundai" pill. No
+  "Spec sheet 01/02" label (user, 25 Nov 2026: not required on the creative).
   Every figure is from the model's page on hyundai.com/in (Creta 4,330 x 1,790 x 1,635 mm, 50 L, R18 alloys, quad-beam
   LED headlamps, dashcam, King and King Knight trims; Verna 4,565 x 1,765 x 1,475 mm, 45 L, 7 airbags, Bose 8 speakers,
   dual 10.25-inch displays, R16 alloys, dual LED projector headlamps, rear spoiler). No power or torque figures: the
