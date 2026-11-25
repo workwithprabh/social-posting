@@ -3,7 +3,7 @@
   "id": "CH-REV-2611-01",
   "kind": "review",
   "logo": "CH_blue_hr.png",
-  "logoH": 70,
+  "logoH": 63,
   "footer": "CH",
   "kicker": "Straight from our Google reviews",
   "headline": "“The team made me feel <mark>really special.</mark>”",
@@ -38,7 +38,7 @@
   "id": "CH-REV-2611-02",
   "kind": "review",
   "logo": "CH_blue_hr.png",
-  "logoH": 70,
+  "logoH": 63,
   "footer": "CH_SVC",
   "kicker": "Straight from our Google reviews",
   "headline": "“Problem sorted <mark>within no time.</mark>”",
@@ -73,10 +73,10 @@
   "id": "CH-EMI-2611-01",
   "kind": "emiday",
   "logo": "CH_blue_hr.png",
-  "logoH": 70,
+  "logoH": 63,
   "footer": "CH",
   "kicker": "Hyundai CRETA E · Petrol · Noida",
-  "l1": "Own a Creta for",
+  "l1": "Own a Creta from<br><b>Capital Hyundai</b> for",
   "big": "<mark>₹797</mark>",
   "car": {
    "src": "ch_creta_red.png",
@@ -90,23 +90,30 @@
   "notes": [
    {
     "t": "a day*",
-    "x": 612,
-    "y": 420,
-    "s": 92,
+    "x": 592,
+    "y": 470,
+    "s": 88,
     "r": -7
    }
   ],
   "fine": "*Indicative. Base CRETA E (petrol) on-road price in Noida from CarDekho (9 Nov 2026), without optional accessories. EMI on a 10% down payment at 9.8% p.a. for 5 years; per-day figure = monthly EMI × 12 ÷ 365, rounded up. The actual EMI depends on the lender. Image for representation only. T&C apply.",
-  "vars": {}
+  "vars": {
+   "l1t": "206px",
+   "bt": "336px",
+   "bs": "236px",
+   "ct2": "640px",
+   "dt": "1000px"
+  },
+  "pattern": true
  },
  {
   "id": "CH-EMI-2611-02",
   "kind": "emiday",
   "logo": "CH_blue_hr.png",
-  "logoH": 70,
+  "logoH": 63,
   "footer": "CH",
   "kicker": "Hyundai EXTER HX 2 · Petrol · Faridabad",
-  "l1": "Own an Exter for",
+  "l1": "Own an Exter from<br><b>Capital Hyundai</b> for",
   "big": "<mark>₹403</mark>",
   "car": {
    "src": "ch_exter_blue.png",
@@ -120,20 +127,27 @@
   "notes": [
    {
     "t": "a day*",
-    "x": 668,
-    "y": 420,
-    "s": 92,
+    "x": 648,
+    "y": 470,
+    "s": 88,
     "r": -7
    }
   ],
   "fine": "*Indicative. Base EXTER HX 2 (petrol) on-road price in Faridabad from CarDekho (21 Nov 2026), without optional accessories. EMI on a 10% down payment at 9.8% p.a. for 5 years; per-day figure = monthly EMI × 12 ÷ 365, rounded up. The actual EMI depends on the lender. Image for representation only. T&C apply.",
-  "vars": {}
+  "vars": {
+   "l1t": "206px",
+   "bt": "336px",
+   "bs": "236px",
+   "ct2": "640px",
+   "dt": "1000px"
+  },
+  "pattern": true
  },
  {
   "id": "CH-BRD-2611-02",
   "kind": "spec",
   "logo": "CH_blue_hr.png",
-  "logoH": 70,
+  "logoH": 63,
   "footer": "CH",
   "kicker": "Hyundai CRETA King",
   "model": "CRETA",
@@ -183,13 +197,14 @@
   "vars": {
    "mt": "196px",
    "tt": "968px"
-  }
+  },
+  "pattern": true
  },
  {
   "id": "CH-BRD-2611-03",
   "kind": "spec",
   "logo": "CH_blue_hr.png",
-  "logoH": 70,
+  "logoH": 63,
   "footer": "CH",
   "kicker": "Hyundai VERNA",
   "model": "VERNA",
@@ -239,6 +254,7 @@
   "vars": {
    "mt": "196px",
    "tt": "968px"
-  }
+  },
+  "pattern": true
  }
 ]

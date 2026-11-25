@@ -16,6 +16,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1350px;overflow:hidden}
 body{font-family:Inter,sans-serif;color:var(--navy);position:relative;--navy:#0B2A55;--paper:#F2EEE6;--mk:#FFE14D;background:var(--paper)}
+.pat{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:var(--pm,radial-gradient(120% 90% at 85% 30%,#000 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.12) 80%));mask-image:var(--pm,radial-gradient(120% 90% at 85% 30%,#000 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.12) 80%))}
 .grain{position:absolute;inset:0;opacity:.55;mix-blend-mode:multiply;pointer-events:none;z-index:0;
  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .42  0 0 0 0 .36  0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
 mark{background:none;color:inherit;position:relative;z-index:0;white-space:nowrap}
@@ -52,7 +53,8 @@ footer{position:absolute;left:72px;right:72px;bottom:44px;z-index:3}
 .rtext mark.w{color:#202124}
 /* emi per day */
 .em .kick{position:absolute;left:72px;top:176px}
-.em .l1{position:absolute;left:72px;top:var(--l1t,214px);font-family:Brico;font-weight:700;font-size:70px;letter-spacing:-1px;line-height:1}
+.em .l1{position:absolute;left:72px;top:var(--l1t,214px);font-family:Brico;font-weight:700;font-size:var(--l1s,60px);letter-spacing:-1px;line-height:1.08}
+.em .l1 b{font-weight:800;font-size:1.22em;letter-spacing:-1.5px}
 .em .big{position:absolute;left:62px;top:var(--bt,272px);font-family:Brico;font-weight:800;font-size:var(--bs,250px);letter-spacing:-8px;line-height:1;z-index:2}
 .em .big mark:before{top:.6em;bottom:.12em;left:-.04em;right:-.06em}
 .em .car{position:absolute;z-index:2}
@@ -68,7 +70,7 @@ footer{position:absolute;left:72px;right:72px;bottom:44px;z-index:3}
 .sp .tag h1{font-size:var(--h1,60px)}
 .feats{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:20px}
 .feats span{font-weight:700;font-size:20px;padding:9px 16px;border:2px solid var(--navy);border-radius:40px}
-</style></head><body><div class="grain"></div><div id="root"></div>
+</style></head><body><div class="pat" id="pat"></div><div class="grain"></div><div id="root"></div>
 <script>
 const G=`<svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`;
 const FOOT={
@@ -80,7 +82,17 @@ function arrow(a){const [x1,y1,x2,y2,b]=a;const mx=(x1+x2)/2+(b||0),my=(y1+y2)/2
  return `<svg class="arrow" style="left:0;top:0" width="1080" height="1350"><path d="M${x1} ${y1} Q${mx} ${my} ${x2} ${y2}" fill="none" stroke="#0B2A55" stroke-width="3.2" stroke-linecap="round"/><path d="M${p1[0]} ${p1[1]} L${x2} ${y2} L${p2[0]} ${p2[1]}" fill="none" stroke="#0B2A55" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`}
 function hands(c){return (c.notes||[]).map(n=>`<div class="hand" style="left:${n.x}px;top:${n.y}px;font-size:${n.s||40}px;transform:rotate(${n.r||-3}deg)">${n.t}</div>${n.a?arrow(n.a):''}`).join('')}
 function car(c){return c.car?`<img class="car" src="${c.car.src}" style="left:${c.car.x}px;top:${c.car.y}px;width:${c.car.w}px">`:''}
+function jewel(on){ // Hyundai-style parametric jewel facets: a diamond grid, each diamond split in 4 shaded triangles
+ if(!on) return ''; let seed=7; const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};
+ const W=1080,H=1350,a=64,b=40; let t='';
+ for(let row=-1;row*b<H+b;row++){for(let col=-1;col*a<W+a;col++){
+  const cx=col*a+(row%2?a/2:0), cy=row*b, T=[cx,cy-b/2*1], R=[cx+a/2,cy], B=[cx,cy+b/2*1], L=[cx-a/2,cy], C=[cx,cy];
+  for(const [p,q] of [[T,R],[R,B],[B,L],[L,T]]){const o=(0.015+rnd()*0.075).toFixed(3);
+   t+=`<path d="M${C[0]} ${C[1]}L${p[0]} ${p[1]}L${q[0]} ${q[1]}Z" fill="#0B2A55" fill-opacity="${o}"/>`}
+  t+=`<path d="M${T[0]} ${T[1]}L${R[0]} ${R[1]}L${B[0]} ${B[1]}L${L[0]} ${L[1]}Z" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1"/>`}}
+ return `<svg width="1080" height="1350" viewBox="0 0 1080 1350">${t}</svg>`}
 function render(c){
+ document.getElementById('pat').innerHTML=jewel(c.pattern);
  document.body.className=c.kind==='review'?'rv':c.kind==='emiday'?'em':'sp';
  document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';'));
  let h=`<header><img src="${c.logo}" style="height:${c.logoH}px"></header>`;

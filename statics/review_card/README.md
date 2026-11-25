@@ -125,3 +125,9 @@ Fonts: `npm install @fontsource/bricolage-grotesque @fontsource/inter @fontsourc
   the assumptions in the fine print.
 - `spec`: the model name set huge behind the car, the car (hyundai.com/in 360-viewer studio PNG with its own shadow)
   over its lower part, two handwritten callouts with arrows to real parts (headlamps, alloys), headline and chips.
+
+User feedback, 25 Nov 2026 (second round): logo 10% smaller (63 px, was 70); EMI headline says "Own a Creta from
+**Capital Hyundai** for" with "Capital Hyundai" set 22% larger; the plain paper behind EMI and model posts gets a
+subtle Hyundai-style parametric jewel texture (`pattern: true`: a diamond grid, each diamond split into four navy
+triangles of random 1.5-9% opacity with white hairlines, faded by a radial mask from the top right). Review posts
+stay on plain paper (the user: "the review creatives are fine").
