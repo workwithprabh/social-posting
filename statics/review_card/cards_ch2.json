@@ -5,7 +5,7 @@
   "logo": "CH_blue_hr.png",
   "logoH": 63,
   "footer": "CH",
-  "kicker": "Straight from our Google reviews",
+  "kicker": "",
   "headline": "“The team made me feel <mark>really special.</mark>”",
   "name": "Lokesh K.",
   "place": "Capital Hyundai, Sector 132 showroom",
@@ -28,7 +28,7 @@
    }
   ],
   "vars": {
-   "ht": "214px",
+   "ht": "186px",
    "h1": "78px",
    "ct": "420px",
    "rs": "27px"
@@ -40,7 +40,7 @@
   "logo": "CH_blue_hr.png",
   "logoH": 63,
   "footer": "CH_SVC",
-  "kicker": "Straight from our Google reviews",
+  "kicker": "",
   "headline": "“Problem sorted <mark>within no time.</mark>”",
   "name": "Anuradha K.",
   "place": "Capital Hyundai Service, Sector 132",
@@ -63,7 +63,7 @@
    }
   ],
   "vars": {
-   "ht": "214px",
+   "ht": "186px",
    "h1": "80px",
    "ct": "450px",
    "rs": "31px"
@@ -103,8 +103,7 @@
    "bs": "236px",
    "ct2": "640px",
    "dt": "1000px"
-  },
-  "pattern": true
+  }
  },
  {
   "id": "CH-EMI-2611-02",
@@ -140,8 +139,7 @@
    "bs": "236px",
    "ct2": "640px",
    "dt": "1000px"
-  },
-  "pattern": true
+  }
  },
  {
   "id": "CH-BRD-2611-02",
@@ -197,8 +195,7 @@
   "vars": {
    "mt": "196px",
    "tt": "968px"
-  },
-  "pattern": true
+  }
  },
  {
   "id": "CH-BRD-2611-03",
@@ -254,7 +251,6 @@
   "vars": {
    "mt": "196px",
    "tt": "968px"
-  },
-  "pattern": true
+  }
  }
 ]

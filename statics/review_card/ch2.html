@@ -97,7 +97,7 @@ function render(c){
  document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';'));
  let h=`<header><img src="${c.logo}" style="height:${c.logoH}px"></header>`;
  if(c.kind==='review'){
-  h+=`<div class="kick"><span style="width:30px;height:30px;display:inline-block">${G}</span>${c.kicker}</div><h1>${c.headline}</h1>
+  h+=`${c.kicker?`<div class="kick"><span style="width:30px;height:30px;display:inline-block">${G}</span>${c.kicker}</div>`:''}<h1>${c.headline}</h1>
   <div class="card"><div class="top"><div class="av" style="background:${c.avc}">${c.name[0]}</div><div class="who"><b>${c.name}</b><span>${c.place}</span></div><div class="g">${G}</div></div>
   <div class="stars"><i>★★★★★</i>${c.when||''}</div><div class="rtext">${c.text}</div></div>`;
  } else if(c.kind==='emiday'){
