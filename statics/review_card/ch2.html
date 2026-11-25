@@ -70,6 +70,19 @@ footer{position:absolute;left:72px;right:72px;bottom:44px;z-index:3}
 .sp .tag h1{font-size:var(--h1,60px)}
 .feats{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:20px}
 .feats span{font-weight:700;font-size:20px;padding:9px 16px;border:2px solid var(--navy);border-radius:40px}
+.sh .kick{position:absolute;left:72px;right:72px;top:172px;display:flex;justify-content:space-between}
+.sh .kick small{font-weight:700;font-size:16px;letter-spacing:3px;opacity:.7}
+.sh h1{position:absolute;left:72px;right:72px;top:var(--ht,206px);font-size:var(--h1,92px)}
+.sh .car{position:absolute;z-index:2}
+.dim{position:absolute;inset:0;z-index:3;overflow:visible}
+.dl{font:700 17px Inter;letter-spacing:2px;fill:#0B2A55}
+.num{position:absolute;z-index:4;width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;font:800 19px Inter;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px var(--paper)}
+.legend{position:absolute;left:72px;right:72px;top:var(--lgt,930px);display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--navy);z-index:3}
+.legend div{display:flex;gap:12px;align-items:flex-start;padding:16px 14px 14px 0;font-weight:700;font-size:20px;line-height:1.25}
+.legend div+div{border-left:1px solid rgba(11,42,85,.3);padding-left:16px}
+.legend i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font:800 15px Inter;font-style:normal;display:flex;align-items:center;justify-content:center}
+.data{position:absolute;left:72px;right:72px;top:var(--dtt,1035px);font-weight:600;font-size:19px;z-index:3}
+.data .pill{margin-top:14px}
 </style></head><body><div class="pat" id="pat"></div><div class="grain"></div><div id="root"></div>
 <script>
 const G=`<svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`;
@@ -91,9 +104,27 @@ function jewel(on){ // Hyundai-style parametric jewel facets: a diamond grid, ea
    t+=`<path d="M${C[0]} ${C[1]}L${p[0]} ${p[1]}L${q[0]} ${q[1]}Z" fill="#0B2A55" fill-opacity="${o}"/>`}
   t+=`<path d="M${T[0]} ${T[1]}L${R[0]} ${R[1]}L${B[0]} ${B[1]}L${L[0]} ${L[1]}Z" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1"/>`}}
  return `<svg width="1080" height="1350" viewBox="0 0 1080 1350">${t}</svg>`}
+
+function sheet(c){ // technical drawing: dimension lines + numbered callouts on a side view
+ const k=c.car, sc=k.w/2240, X=v=>k.x+v*2*sc, Y=v=>k.y+v*2*sc;
+ const x0=X(k.bx0),x1=X(k.bx1),yt=Y(k.by0),yb=Y(k.by1), ly=yb+44, hx=x1+46;
+ const tick=(x,y,v)=>v?`<line x1="${x-9}" y1="${y}" x2="${x+9}" y2="${y}" stroke="#0B2A55" stroke-width="2"/>`:`<line x1="${x}" y1="${y-9}" x2="${x}" y2="${y+9}" stroke="#0B2A55" stroke-width="2"/>`;
+ const mid=(x0+x1)/2, hm=(yt+yb)/2;
+ let g=`<svg class="dim" width="1080" height="1350">
+  <line x1="${x0}" y1="${yb-30}" x2="${x0}" y2="${ly+12}" stroke="#0B2A55" stroke-width="1" stroke-dasharray="4 4" opacity=".6"/>
+  <line x1="${x1}" y1="${yb-30}" x2="${x1}" y2="${ly+12}" stroke="#0B2A55" stroke-width="1" stroke-dasharray="4 4" opacity=".6"/>
+  <line x1="${x0}" y1="${ly}" x2="${mid-70}" y2="${ly}" stroke="#0B2A55" stroke-width="1.6"/><line x1="${mid+70}" y1="${ly}" x2="${x1}" y2="${ly}" stroke="#0B2A55" stroke-width="1.6"/>
+  ${tick(x0,ly)}${tick(x1,ly)}<text class="dl" x="${mid}" y="${ly+6}" text-anchor="middle">${c.len}</text>
+  <line x1="${x1-40}" y1="${yt}" x2="${hx+12}" y2="${yt}" stroke="#0B2A55" stroke-width="1" stroke-dasharray="4 4" opacity=".6"/>
+  <line x1="${x1+4}" y1="${yb}" x2="${hx+12}" y2="${yb}" stroke="#0B2A55" stroke-width="1" stroke-dasharray="4 4" opacity=".6"/>
+  <line x1="${hx}" y1="${yt}" x2="${hx}" y2="${hm-62}" stroke="#0B2A55" stroke-width="1.6"/><line x1="${hx}" y1="${hm+62}" x2="${hx}" y2="${yb}" stroke="#0B2A55" stroke-width="1.6"/>
+  ${tick(hx,yt,1)}${tick(hx,yb,1)}<text class="dl" transform="translate(${hx+6},${hm}) rotate(-90)" text-anchor="middle">${c.hgt}</text></svg>`;
+ g+=(c.pts||[]).map((p,i)=>`<div class="num" style="left:${X(p[0])-19}px;top:${Y(p[1])-19}px">${i+1}</div>`).join('');
+ return g;
+}
 function render(c){
  document.getElementById('pat').innerHTML=jewel(c.pattern);
- document.body.className=c.kind==='review'?'rv':c.kind==='emiday'?'em':'sp';
+ document.body.className=c.kind==='review'?'rv':c.kind==='emiday'?'em':c.kind==='sheet'?'sh':'sp';
  document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';'));
  let h=`<header><img src="${c.logo}" style="height:${c.logoH}px"></header>`;
  if(c.kind==='review'){
@@ -103,6 +134,10 @@ function render(c){
  } else if(c.kind==='emiday'){
   h+=`<div class="kick">${c.kicker}</div><div class="l1">${c.l1}</div><div class="big">${c.big}</div>${car(c)}
   <div class="calc">${c.calc}</div><div class="det">${c.det}<br><span class="pill">${c.cta}</span></div>`;
+ } else if(c.kind==='sheet'){
+  h+=`<div class="kick"><span>${c.kicker}</span><small>${c.sheetno||''}</small></div><h1>${c.headline}</h1>${car(c)}${sheet(c)}
+  <div class="legend">${c.legend.map((t,i)=>`<div><i>${i+1}</i>${t}</div>`).join('')}</div>
+  <div class="data">${c.data}<br><span class="pill">${c.cta}</span></div>`;
  } else {
   h+=`<div class="kick">${c.kicker}</div><div class="model">${c.model}</div>${car(c)}<div class="tag"><h1>${c.headline}</h1><div class="feats">${c.feats.map(f=>`<span>${f}</span>`).join('')}</div></div>`;
  }

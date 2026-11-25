@@ -252,5 +252,99 @@
    "mt": "196px",
    "tt": "968px"
   }
+ },
+ {
+  "id": "CH-BRD-2611-02s",
+  "kind": "sheet",
+  "logo": "CH_blue_hr.png",
+  "logoH": 63,
+  "footer": "CH",
+  "kicker": "Hyundai CRETA King",
+  "sheetno": "SPEC SHEET · 01",
+  "headline": "Undisputed.<br><mark>Ultimate.</mark>",
+  "car": {
+   "x": -56,
+   "y": 418,
+   "w": 1133,
+   "bx0": 144,
+   "bx1": 974,
+   "by0": 26,
+   "by1": 377,
+   "src": "side_creta.png"
+  },
+  "len": "4,330 mm",
+  "hgt": "1,635 mm",
+  "pts": [
+   [
+    122,
+    217
+   ],
+   [
+    265,
+    278
+   ],
+   [
+    519,
+    81
+   ]
+  ],
+  "legend": [
+   "Quad-beam LED headlamps",
+   "R18 diamond-cut alloys",
+   "Built-in dashcam"
+  ],
+  "data": "Width 1,790 mm · Fuel tank 50 L · Trims: King and King Knight",
+  "cta": "Book your test drive at Capital Hyundai  →",
+  "notes": [],
+  "fine": "Dimensions and features as listed on hyundai.com/in for the CRETA; features shown are of the King trim and vary by variant. Image for representation only. T&C apply.",
+  "vars": {}
+ },
+ {
+  "id": "CH-BRD-2611-03s",
+  "kind": "sheet",
+  "logo": "CH_blue_hr.png",
+  "logoH": 63,
+  "footer": "CH",
+  "kicker": "Hyundai VERNA",
+  "sheetno": "SPEC SHEET · 02",
+  "headline": "Pride. Performance.<br><mark>Proven.</mark>",
+  "car": {
+   "x": -109,
+   "y": 416,
+   "w": 1222,
+   "bx0": 182,
+   "bx1": 961,
+   "by0": 64,
+   "by1": 352,
+   "src": "side_verna.png"
+  },
+  "len": "4,565 mm",
+  "hgt": "1,475 mm",
+  "pts": [
+   [
+    162,
+    215
+   ],
+   [
+    274,
+    260
+   ],
+   [
+    930,
+    130
+   ]
+  ],
+  "legend": [
+   "Dual LED projector headlamps",
+   "R16 diamond-cut alloys",
+   "Aerodynamic rear spoiler"
+  ],
+  "data": "Width 1,765 mm · 7 airbags · Bose 8-speaker sound · Dual 10.25-inch displays",
+  "cta": "Book your test drive at Capital Hyundai  →",
+  "notes": [],
+  "fine": "Dimensions and features as listed on hyundai.com/in for the VERNA; features vary by variant. Image for representation only. T&C apply.",
+  "vars": {
+   "h1": "84px"
+  }
  }
 ]
