@@ -300,6 +300,8 @@ def classify(txn, cfg, owner):
                 return {"kind": "credit", "label": client}
         return {"kind": "credit", "label": payee_name(txn["narration"]), "check": True}
     for r in cfg["rules"]:
+        if "owners" in r and owner not in r["owners"]:
+            continue  # a rule only for some partners' accounts
         if "max_amount" in r and amount > r["max_amount"]:
             continue
         if "min_amount" in r and amount < r["min_amount"]:

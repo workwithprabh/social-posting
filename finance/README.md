@@ -64,6 +64,12 @@ Hyundai, ...). On a personal statement:
 - Facebook ad top-ups count whatever the day. Meta is also paid through "Razorpay Checkout" and "PayU Checkout"; check
   the "fb funds add" rows already in the tab (and the tab before) before adding one, since they are often written
   in by hand.
+- **Jiti does not top up Facebook ads for the company.** Facebook payments from Jiti's accounts are never added.
+  Prabh's Facebook top-ups are added ("<Month> fb funds add"), after checking the tab doesn't already have them.
+- Google Pay history (Jiti's Pixel) shows dates but no times: count every shoot-day spend there, without the
+  11 am-9 pm check. Phone UI tells whose screenshots they are: iPhone (PhonePe dark "History", CRED white
+  "payment history") is Prabh, Pixel Google Pay is Jiti.
+- A date in the Shoot Date notes where the shoot didn't happen is removed from the notes (9 Sept 2026, Kaveri).
 - CRED has no statement: the partner sends screenshots of CRED's payment history; read the payee, date, time and
   amount from them and apply the same rules.
 
