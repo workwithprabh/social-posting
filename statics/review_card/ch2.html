@@ -1,0 +1,102 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Brico;font-weight:700;src:url(node_modules/@fontsource/bricolage-grotesque/files/bricolage-grotesque-latin-700-normal.woff2)}
+@font-face{font-family:Brico;font-weight:800;src:url(node_modules/@fontsource/bricolage-grotesque/files/bricolage-grotesque-latin-800-normal.woff2)}
+@font-face{font-family:Inter;font-weight:500;src:url(node_modules/@fontsource/inter/files/inter-latin-500-normal.woff2)}
+@font-face{font-family:Inter;font-weight:600;src:url(node_modules/@fontsource/inter/files/inter-latin-600-normal.woff2)}
+@font-face{font-family:Inter;font-weight:700;src:url(node_modules/@fontsource/inter/files/inter-latin-700-normal.woff2)}
+@font-face{font-family:Inter;font-weight:800;src:url(node_modules/@fontsource/inter/files/inter-latin-800-normal.woff2)}
+@font-face{font-family:Roboto;font-weight:400;src:url(node_modules/@fontsource/roboto/files/roboto-latin-400-normal.woff2)}
+@font-face{font-family:Roboto;font-weight:500;src:url(node_modules/@fontsource/roboto/files/roboto-latin-500-normal.woff2)}
+@font-face{font-family:Hand;font-weight:700;src:url(node_modules/@fontsource/caveat/files/caveat-latin-700-normal.woff2)}
+/* Capital Hyundai house style v2 (user, 25 Nov 2026: the client found the posts "too AI"; it should look made by a
+   designer, simple but unique, not like other Hyundai posts). Flat warm paper with grain, Hyundai navy, one yellow
+   marker highlight, Bricolage Grotesque headlines, handwritten notes in Caveat. No glows, no gradients, no glass.
+   kinds: review (Google review shown like a screenshot, key words highlighted), emiday (EMI worked out per day),
+   spec (model name set big behind the car, handwritten callouts). */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:Inter,sans-serif;color:var(--navy);position:relative;--navy:#0B2A55;--paper:#F2EEE6;--mk:#FFE14D;background:var(--paper)}
+.grain{position:absolute;inset:0;opacity:.55;mix-blend-mode:multiply;pointer-events:none;z-index:0;
+ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .42  0 0 0 0 .36  0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+mark{background:none;color:inherit;position:relative;z-index:0;white-space:nowrap}
+mark:before{content:"";position:absolute;left:-.12em;right:-.12em;top:.42em;bottom:.02em;background:var(--mk);z-index:-1;border-radius:.12em .3em .2em .35em;transform:rotate(-.6deg)}
+mark.w{white-space:normal;background:linear-gradient(transparent 46%,var(--mk) 46%,var(--mk) 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .08em}
+mark.w:before{display:none}
+header{position:absolute;left:72px;top:64px;z-index:3}
+.kick{display:flex;align-items:center;gap:12px;font-weight:700;font-size:22px;letter-spacing:.5px}
+h1{font-family:Brico;font-weight:800;letter-spacing:-1.5px;line-height:1.02}
+.hand{font-family:Hand;font-weight:700;color:var(--navy);position:absolute;z-index:4;line-height:1}
+.arrow{position:absolute;z-index:4;overflow:visible}
+footer{position:absolute;left:72px;right:72px;bottom:44px;z-index:3}
+.frule{display:flex;align-items:center;gap:16px;font-weight:800;font-size:17px;letter-spacing:3px;margin-bottom:14px}
+.frule:after{content:"";flex:1;height:2px;background:var(--navy)}
+.cols{display:flex;justify-content:space-between}
+.cols div{font-weight:500;font-size:19px}
+.cols b{display:block;font-weight:800;font-size:25px;margin-top:2px;letter-spacing:.3px}
+.grid{display:grid;grid-template-columns:repeat(4,auto);justify-content:space-between;row-gap:10px}
+.grid div{font-weight:500;font-size:17px}.grid b{display:block;font-weight:800;font-size:22px;margin-top:1px}
+.fine{position:absolute;left:72px;right:72px;bottom:12px;font-weight:500;font-size:11.5px;line-height:1.35;opacity:.7;z-index:3}
+/* review */
+.rv h1{position:absolute;left:72px;right:72px;top:var(--ht,210px);font-size:var(--h1,80px);z-index:3}
+.rv .kick{position:absolute;left:72px;top:var(--kt,170px)}
+.card{position:absolute;left:var(--cx,90px);width:var(--cw,900px);top:var(--ct,560px);background:#fff;border-radius:22px;padding:34px 38px 36px;z-index:3;
+ transform:rotate(var(--cr,-1.4deg));box-shadow:0 1px 2px rgba(0,0,0,.08),0 12px 30px rgba(40,30,10,.12),0 30px 60px rgba(40,30,10,.08);font-family:Roboto,sans-serif;color:#202124}
+.card .top{display:flex;align-items:center;gap:18px}
+.av{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font:500 32px Roboto}
+.who b{display:block;font-weight:500;font-size:28px}
+.who span{display:block;font-size:20px;color:#5f6368;margin-top:2px}
+.card .g{margin-left:auto;width:46px;height:46px}
+.stars{display:flex;align-items:center;gap:10px;margin:18px 0 14px;font-size:20px;color:#5f6368}
+.stars i{font-style:normal;color:#FBBC04;font-size:30px;letter-spacing:2px}
+.rtext{font-size:var(--rs,29px);line-height:1.5;color:#3c4043;white-space:pre-line}
+.rtext mark.w{color:#202124}
+/* emi per day */
+.em .kick{position:absolute;left:72px;top:176px}
+.em .l1{position:absolute;left:72px;top:var(--l1t,214px);font-family:Brico;font-weight:700;font-size:70px;letter-spacing:-1px;line-height:1}
+.em .big{position:absolute;left:62px;top:var(--bt,272px);font-family:Brico;font-weight:800;font-size:var(--bs,250px);letter-spacing:-8px;line-height:1;z-index:2}
+.em .big mark:before{top:.6em;bottom:.12em;left:-.04em;right:-.06em}
+.em .car{position:absolute;z-index:2}
+.calc{position:absolute;left:72px;top:var(--ct2,600px);z-index:3;font-family:Hand;font-weight:700;font-size:36px;line-height:1.25}
+.calc .ln{display:inline-block;border-top:2.5px solid var(--navy);margin-top:4px;padding-top:2px}
+.det{position:absolute;left:72px;right:72px;top:var(--dt,1000px);font-weight:600;font-size:20px;line-height:1.45;z-index:3}
+.pill{display:inline-flex;align-items:center;gap:12px;background:var(--navy);color:#fff;border-radius:60px;padding:16px 28px;font-weight:700;font-size:23px;margin-top:16px}
+/* spec */
+.sp .kick{position:absolute;left:72px;top:176px}
+.sp .model{position:absolute;left:0;right:0;top:var(--mt,200px);text-align:center;font-family:Brico;font-weight:800;font-size:var(--ms,300px);letter-spacing:-10px;line-height:1;z-index:1;color:var(--mc,var(--navy))}
+.sp .car{position:absolute;z-index:2}
+.sp .tag{position:absolute;left:72px;right:72px;top:var(--tt,860px);z-index:3}
+.sp .tag h1{font-size:var(--h1,60px)}
+.feats{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:20px}
+.feats span{font-weight:700;font-size:20px;padding:9px 16px;border:2px solid var(--navy);border-radius:40px}
+</style></head><body><div class="grain"></div><div id="root"></div>
+<script>
+const G=`<svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`;
+const FOOT={
+ CH:`<div class="frule">CAPITAL HYUNDAI SHOWROOMS</div><div class="cols"><div>Sector 63, Noida<b>99994 89444</b></div><div>Sector 132, Noida<b>73031 11937</b></div><div>Dadri<b>72900 77273</b></div><div>Faridabad<b>93559 31054</b></div></div>`,
+ CH_SVC:`<div class="frule">CAPITAL HYUNDAI SERVICE CENTRES</div><div class="grid"><div>Sector 132, Noida<b>73031 11937</b></div><div>Sector 63, Noida<b>99994 89444</b></div><div>Sector 58, Noida<b>84480 96129</b></div><div>Sector 3, Noida<b>97177 92239</b></div><div>Sector 83, Noida<b>95606 11466</b></div><div>Faridabad<b>93559 31002</b></div><div>Dadri<b>072900 79106</b></div></div>`};
+// hand-drawn arrow: from (x1,y1) to (x2,y2) with a bend
+function arrow(a){const [x1,y1,x2,y2,b]=a;const mx=(x1+x2)/2+(b||0),my=(y1+y2)/2-(b||0)*.4;
+ const ang=Math.atan2(y2-my,x2-mx),h=18,s=.5;const p1=[x2-h*Math.cos(ang-s),y2-h*Math.sin(ang-s)],p2=[x2-h*Math.cos(ang+s),y2-h*Math.sin(ang+s)];
+ return `<svg class="arrow" style="left:0;top:0" width="1080" height="1350"><path d="M${x1} ${y1} Q${mx} ${my} ${x2} ${y2}" fill="none" stroke="#0B2A55" stroke-width="3.2" stroke-linecap="round"/><path d="M${p1[0]} ${p1[1]} L${x2} ${y2} L${p2[0]} ${p2[1]}" fill="none" stroke="#0B2A55" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`}
+function hands(c){return (c.notes||[]).map(n=>`<div class="hand" style="left:${n.x}px;top:${n.y}px;font-size:${n.s||40}px;transform:rotate(${n.r||-3}deg)">${n.t}</div>${n.a?arrow(n.a):''}`).join('')}
+function car(c){return c.car?`<img class="car" src="${c.car.src}" style="left:${c.car.x}px;top:${c.car.y}px;width:${c.car.w}px">`:''}
+function render(c){
+ document.body.className=c.kind==='review'?'rv':c.kind==='emiday'?'em':'sp';
+ document.body.setAttribute('style',Object.entries(c.vars||{}).map(([k,v])=>`--${k}:${v}`).join(';'));
+ let h=`<header><img src="${c.logo}" style="height:${c.logoH}px"></header>`;
+ if(c.kind==='review'){
+  h+=`<div class="kick"><span style="width:30px;height:30px;display:inline-block">${G}</span>${c.kicker}</div><h1>${c.headline}</h1>
+  <div class="card"><div class="top"><div class="av" style="background:${c.avc}">${c.name[0]}</div><div class="who"><b>${c.name}</b><span>${c.place}</span></div><div class="g">${G}</div></div>
+  <div class="stars"><i>★★★★★</i>${c.when||''}</div><div class="rtext">${c.text}</div></div>`;
+ } else if(c.kind==='emiday'){
+  h+=`<div class="kick">${c.kicker}</div><div class="l1">${c.l1}</div><div class="big">${c.big}</div>${car(c)}
+  <div class="calc">${c.calc}</div><div class="det">${c.det}<br><span class="pill">${c.cta}</span></div>`;
+ } else {
+  h+=`<div class="kick">${c.kicker}</div><div class="model">${c.model}</div>${car(c)}<div class="tag"><h1>${c.headline}</h1><div class="feats">${c.feats.map(f=>`<span>${f}</span>`).join('')}</div></div>`;
+ }
+ h+=hands(c)+`<footer>${FOOT[c.footer]}</footer>${c.fine?`<div class="fine">${c.fine}</div>`:''}`;
+ document.getElementById('root').innerHTML=h;
+ const q=s=>{const e=document.querySelector(s);if(!e)return null;const b=e.getBoundingClientRect();return [Math.round(b.left),Math.round(b.top),Math.round(b.right),Math.round(b.bottom)]};
+ return {h1:q('h1'),card:q('.card'),big:q('.big'),calc:q('.calc'),det:q('.det'),car:q('.car'),model:q('.model'),tag:q('.tag'),foot:q('footer')};
+}
+</script></body></html>

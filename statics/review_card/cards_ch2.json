@@ -1,0 +1,244 @@
+[
+ {
+  "id": "CH-REV-2611-01",
+  "kind": "review",
+  "logo": "CH_blue_hr.png",
+  "logoH": 70,
+  "footer": "CH",
+  "kicker": "Straight from our Google reviews",
+  "headline": "“The team made me feel <mark>really special.</mark>”",
+  "name": "Lokesh K.",
+  "place": "Capital Hyundai, Sector 132 showroom",
+  "avc": "#E8710A",
+  "text": "Everyone was so <mark class=\"w\">polite and welcoming</mark>!\nA special thanks to Astha for all her support and for the <mark class=\"w\">amazing demonstration</mark> of the Hyundai Creta.\nThe entire experience was wonderful, and the team <mark class=\"w\">made me feel really special</mark> during the delivery of my new Creta.\nThank you for making this car-buying experience so memorable!",
+  "notes": [
+   {
+    "t": "Thank you, Astha!",
+    "x": 560,
+    "y": 960,
+    "s": 54,
+    "r": -4,
+    "a": [
+     640,
+     950,
+     560,
+     880,
+     -30
+    ]
+   }
+  ],
+  "vars": {
+   "ht": "214px",
+   "h1": "78px",
+   "ct": "420px",
+   "rs": "27px"
+  }
+ },
+ {
+  "id": "CH-REV-2611-02",
+  "kind": "review",
+  "logo": "CH_blue_hr.png",
+  "logoH": 70,
+  "footer": "CH_SVC",
+  "kicker": "Straight from our Google reviews",
+  "headline": "“Problem sorted <mark>within no time.</mark>”",
+  "name": "Anuradha K.",
+  "place": "Capital Hyundai Service, Sector 132",
+  "avc": "#7B1FA2",
+  "text": "The service centre is <mark class=\"w\">very well managed</mark>. Palak at the reception was <mark class=\"w\">very responsive</mark> and the floor manager Mr. Nizam had been <mark class=\"w\">very helpful</mark>. <mark class=\"w\">Problem sorted within no time</mark>\nThank you guys.",
+  "notes": [
+   {
+    "t": "Well done, Palak<br>& Mr. Nizam!",
+    "x": 600,
+    "y": 940,
+    "s": 52,
+    "r": -4,
+    "a": [
+     660,
+     930,
+     590,
+     870,
+     -30
+    ]
+   }
+  ],
+  "vars": {
+   "ht": "214px",
+   "h1": "80px",
+   "ct": "450px",
+   "rs": "31px"
+  }
+ },
+ {
+  "id": "CH-EMI-2611-01",
+  "kind": "emiday",
+  "logo": "CH_blue_hr.png",
+  "logoH": 70,
+  "footer": "CH",
+  "kicker": "Hyundai CRETA E · Petrol · Noida",
+  "l1": "Own a Creta for",
+  "big": "<mark>₹797</mark>",
+  "car": {
+   "src": "ch_creta_red.png",
+   "x": 189,
+   "y": 611,
+   "w": 1075
+  },
+  "calc": "₹24,237 EMI a month<br>× 12 months ÷ 365 days<br><span class='ln'>= ₹797 a day</span>",
+  "det": "On-road ₹12,73,354* · 10% down (₹1,27,335) · 5 years · 9.8% p.a.",
+  "cta": "Comment EMI and we'll work out yours  →",
+  "notes": [
+   {
+    "t": "a day*",
+    "x": 612,
+    "y": 420,
+    "s": 92,
+    "r": -7
+   }
+  ],
+  "fine": "*Indicative. Base CRETA E (petrol) on-road price in Noida from CarDekho (9 Nov 2026), without optional accessories. EMI on a 10% down payment at 9.8% p.a. for 5 years; per-day figure = monthly EMI × 12 ÷ 365, rounded up. The actual EMI depends on the lender. Image for representation only. T&C apply.",
+  "vars": {}
+ },
+ {
+  "id": "CH-EMI-2611-02",
+  "kind": "emiday",
+  "logo": "CH_blue_hr.png",
+  "logoH": 70,
+  "footer": "CH",
+  "kicker": "Hyundai EXTER HX 2 · Petrol · Faridabad",
+  "l1": "Own an Exter for",
+  "big": "<mark>₹403</mark>",
+  "car": {
+   "src": "ch_exter_blue.png",
+   "x": 66,
+   "y": 521,
+   "w": 1366
+  },
+  "calc": "₹12,242 EMI a month<br>× 12 months ÷ 365 days<br><span class='ln'>= ₹403 a day</span>",
+  "det": "On-road ₹6,43,153* · 10% down (₹64,315) · 5 years · 9.8% p.a.",
+  "cta": "Comment EMI and we'll work out yours  →",
+  "notes": [
+   {
+    "t": "a day*",
+    "x": 668,
+    "y": 420,
+    "s": 92,
+    "r": -7
+   }
+  ],
+  "fine": "*Indicative. Base EXTER HX 2 (petrol) on-road price in Faridabad from CarDekho (21 Nov 2026), without optional accessories. EMI on a 10% down payment at 9.8% p.a. for 5 years; per-day figure = monthly EMI × 12 ÷ 365, rounded up. The actual EMI depends on the lender. Image for representation only. T&C apply.",
+  "vars": {}
+ },
+ {
+  "id": "CH-BRD-2611-02",
+  "kind": "spec",
+  "logo": "CH_blue_hr.png",
+  "logoH": 70,
+  "footer": "CH",
+  "kicker": "Hyundai CRETA King",
+  "model": "CRETA",
+  "car": {
+   "src": "ch_creta_black.png",
+   "x": -143,
+   "y": 430,
+   "w": 1432
+  },
+  "headline": "Undisputed. Ultimate.",
+  "feats": [
+   "Built-in dashcam",
+   "Connecting LED tail lamps",
+   "Dual-zone climate control"
+  ],
+  "notes": [
+   {
+    "t": "Quad-beam<br>LED headlamps",
+    "x": 46,
+    "y": 508,
+    "s": 40,
+    "r": -5,
+    "a": [
+     150,
+     600,
+     300,
+     662,
+     30
+    ]
+   },
+   {
+    "t": "R18 diamond-cut alloys",
+    "x": 612,
+    "y": 884,
+    "s": 40,
+    "r": -3,
+    "a": [
+     640,
+     890,
+     582,
+     862,
+     -12
+    ]
+   }
+  ],
+  "fine": "Features shown are of the CRETA King trim and vary by variant. Image for representation only. T&C apply.",
+  "vars": {
+   "mt": "196px",
+   "tt": "968px"
+  }
+ },
+ {
+  "id": "CH-BRD-2611-03",
+  "kind": "spec",
+  "logo": "CH_blue_hr.png",
+  "logoH": 70,
+  "footer": "CH",
+  "kicker": "Hyundai VERNA",
+  "model": "VERNA",
+  "car": {
+   "src": "ch_verna_night.png",
+   "x": -188,
+   "y": 372,
+   "w": 1523
+  },
+  "headline": "Pride. Performance. Proven.",
+  "feats": [
+   "Dual 10.25-inch displays",
+   "Bose 8-speaker sound",
+   "7 airbags"
+  ],
+  "notes": [
+   {
+    "t": "Horizon LED<br>lamp",
+    "x": 46,
+    "y": 520,
+    "s": 40,
+    "r": -5,
+    "a": [
+     150,
+     612,
+     290,
+     662,
+     20
+    ]
+   },
+   {
+    "t": "Diamond-cut alloys",
+    "x": 600,
+    "y": 872,
+    "s": 40,
+    "r": -3,
+    "a": [
+     620,
+     872,
+     560,
+     822,
+     -14
+    ]
+   }
+  ],
+  "fine": "Features vary by variant. Image for representation only. T&C apply.",
+  "vars": {
+   "mt": "196px",
+   "tt": "968px"
+  }
+ }
+]

@@ -105,3 +105,23 @@ for a background, so it isn't used for this.
 - Arav Mahindra (AM-FST-2611-02, `gurpurab5.html`, 24 Nov 2026): Mahindra red design. Anton caps on deep Mahindra red, the Guru Nanak Dev Ji illustration (`fig`) large on the right in a warm glow with rays, a tilted white photo card of Gurdwara Janam Asthan, Nankana Sahib (his birthplace; Shahzaib Damn Cruze, CC BY-SA 4.0; the overhead wire was removed by fitting its curve on each side of the right dome and inpainting a thin band, with a wire-only mask over the dome), the teaching Ik Onkar with outline chips, charcoal footer with a red call pill. White logo 67 px (20% under the usual 84). `render_gurpurab.js` now also loads Anton.
 - Dee Emm Mahindra (DEM-FST-2611-01, `gurpurab6.html`, 24 Nov 2026): full photo + portrait card. The first version (Kartarpur photo cut by a diagonal, Guru Ji as a cut-out on charcoal) was rejected: "this cutout style is not looking good". Now the photo of Gurdwara Darbar Sahib, Kartarpur (Shahzaib Damn Cruze, CC BY-SA 4.0, 3840 px thumb cropped to 4:5 with the gurdwara right of centre so its spire stays clear of the headline) fills the post; the Anton wish sits over the sky on the left; the Guru Nanak Dev Ji illustration is shown inside a gold-framed portrait card on its own warm sunburst background (not cut out on the photo; fit it so the palm with ੴ shows); red label naming the gurdwara and the teaching Sewa over the darkened marble; twin-peaks white logo 86 px; footer with the six locations and the phone. Rejected for this post: the Janamsakhi Sacha Sauda paintings (unclothed ascetics), a 19th-century painting of Guru Nanak with a tilak (may offend), and a langar photo (conflicting credit, identifiable people).
 - Car & Bike (CB-FST-2611-01, `gurpurab7.html`, 24 Nov 2026): black and gold. The Guru Nanak Dev Ji illustration gradient-mapped to a gold tone (`gn_gold.png`: luminance mapped black > bronze > gold > cream, 15% of the original colour kept) blending into the black on the right, Playfair italic gold wish on the left, the teaching Sach with Guru Nanak Dev Ji's words "Truth is high, but higher still is truthful living.", a night photo of Sri Harmandir Sahib (Sasha India, CC BY-SA 2.0) across the bottom with a dark `shade` so the place name and credit read over the reflections. car&bike logo 51 px (20% under 64). Caption in English, no emojis (Car & Bike style).
+
+## Capital Hyundai house style v2 (`ch2.html`, 25 Nov 2026)
+
+Client feedback (via the user, 25 Nov 2026): the Capital posts looked "too AI"; the Google reviews did not look like
+Google reviews; they want a designer's look, simple but unique and unlike other Hyundai posts, and EMI shown per day
+("own a Creta for about ₹800 a day"). What makes posts read as AI and is now avoided: glows, hazy gradients, glass
+panels, cinematic smoke. The v2 look: flat warm paper (#F2EEE6) with a fine grain, Hyundai navy (#0B2A55), one yellow
+marker highlight (#FFE14D) as the signature, Bricolage Grotesque headlines, Inter for text, Caveat for handwritten notes
+and arrows, the navy Hyundai logo. Cards in `cards_ch2.json`, `node render_ch2.js [ID]` -> `out_ch2/`.
+Fonts: `npm install @fontsource/bricolage-grotesque @fontsource/inter @fontsource/roboto @fontsource/caveat`.
+
+- `review`: a pull quote from the review as the headline with the key words highlighted; the review itself as a Google
+  review card (Google G, avatar initial, five stars, Roboto, the customer's own words verbatim, key phrases marked);
+  a handwritten thank-you to the staff the customer named. Keep the review text exactly as on Google (no rewriting:
+  it is shown like a screenshot), only the highlights are ours; the name is the tracker's "Name for post".
+- `emiday`: "Own a Creta for ₹797 a day*": monthly EMI × 12 ÷ 365, rounded up so the post never understates it,
+  with the working shown in handwriting, the on-road price, down payment, tenure and rate, a comment-EMI pill and
+  the assumptions in the fine print.
+- `spec`: the model name set huge behind the car, the car (hyundai.com/in 360-viewer studio PNG with its own shadow)
+  over its lower part, two handwritten callouts with arrows to real parts (headlamps, alloys), headline and chips.
