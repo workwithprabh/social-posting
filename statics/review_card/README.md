@@ -121,7 +121,9 @@ Fonts: `npm install @fontsource/bricolage-grotesque @fontsource/inter @fontsourc
   a handwritten thank-you to the staff the customer named. Keep the review text exactly as on Google (no rewriting:
   it is shown like a screenshot), only the highlights are ours; the name is the tracker's "Name for post".
 - `emiday`: "Own a Creta for ₹797 a day*": monthly EMI × 12 ÷ 365, rounded up so the post never understates it,
-  with the working shown in handwriting, the on-road price, down payment, tenure and rate, a comment-EMI pill and
+  with the working typeset as a small table ("How we worked it out": EMI a month, × 12 months, ÷ 365 days, A day;
+  Inter with tabular figures; the user, 26 Nov 2026, found the handwritten working "childish"; `calc` is a list of
+  [label, value] rows, the last one is the result), the on-road price, down payment, tenure and rate, a comment-EMI pill and
   the assumptions in the fine print.
 - `spec`: the model name set huge behind the car, the car (hyundai.com/in 360-viewer studio PNG with its own shadow)
   over its lower part, two handwritten callouts with arrows to real parts (headlamps, alloys), headline and chips.

@@ -84,7 +84,24 @@
    "y": 611,
    "w": 1075
   },
-  "calc": "₹24,237 EMI a month<br>× 12 months ÷ 365 days<br><span class='ln'>= ₹797 a day</span>",
+  "calc": [
+   [
+    "EMI a month",
+    "₹24,237"
+   ],
+   [
+    "× 12 months",
+    "₹2,90,844"
+   ],
+   [
+    "÷ 365 days",
+    "₹796.83"
+   ],
+   [
+    "A day",
+    "₹797"
+   ]
+  ],
   "det": "On-road ₹12,73,354* · 10% down (₹1,27,335) · 5 years · 9.8% p.a.",
   "cta": "Comment EMI and we'll work out yours  →",
   "notes": [
@@ -102,7 +119,8 @@
    "bt": "336px",
    "bs": "236px",
    "ct2": "640px",
-   "dt": "1000px"
+   "dt": "1000px",
+   "cw2": "262px"
   }
  },
  {
@@ -120,7 +138,24 @@
    "y": 521,
    "w": 1366
   },
-  "calc": "₹12,242 EMI a month<br>× 12 months ÷ 365 days<br><span class='ln'>= ₹403 a day</span>",
+  "calc": [
+   [
+    "EMI a month",
+    "₹12,242"
+   ],
+   [
+    "× 12 months",
+    "₹1,46,904"
+   ],
+   [
+    "÷ 365 days",
+    "₹402.48"
+   ],
+   [
+    "A day",
+    "₹403"
+   ]
+  ],
   "det": "On-road ₹6,43,153* · 10% down (₹64,315) · 5 years · 9.8% p.a.",
   "cta": "Comment EMI and we'll work out yours  →",
   "notes": [
