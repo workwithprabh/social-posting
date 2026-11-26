@@ -19,18 +19,18 @@ body{font-family:Inter,sans-serif;color:var(--navy);position:relative;--navy:#0B
 .pat{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:var(--pm,radial-gradient(120% 90% at 85% 30%,#000 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.12) 80%));mask-image:var(--pm,radial-gradient(120% 90% at 85% 30%,#000 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.12) 80%))}
 .grain{position:absolute;inset:0;opacity:.55;mix-blend-mode:multiply;pointer-events:none;z-index:0;
  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .42  0 0 0 0 .36  0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
-mark{background:none;color:inherit;position:relative;z-index:0;white-space:nowrap}
-mark:before{content:"";position:absolute;left:-.12em;right:-.12em;top:.42em;bottom:.02em;background:var(--mk);z-index:-1;border-radius:.12em .3em .2em .35em;transform:rotate(-.6deg)}
-mark.w{white-space:normal;background:linear-gradient(transparent 46%,var(--mk) 46%,var(--mk) 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .08em}
+mark{background:none;color:var(--mkfg,inherit);position:relative;z-index:0;white-space:nowrap}
+mark:before{content:"";position:absolute;left:-.12em;right:-.12em;top:var(--mkt,.42em);bottom:var(--mkb,.02em);background:var(--mk);z-index:-1;border-radius:.12em .3em .2em .35em;transform:rotate(-.6deg)}
+mark.w{white-space:normal;color:inherit;background:linear-gradient(transparent 46%,var(--mkw,var(--mk)) 46%,var(--mkw,var(--mk)) 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .08em}
 mark.w:before{display:none}
 header{position:absolute;left:72px;top:64px;z-index:3}
 .kick{display:flex;align-items:center;gap:12px;font-weight:700;font-size:22px;letter-spacing:.5px}
 h1{font-family:Brico;font-weight:800;letter-spacing:-1.5px;line-height:1.02}
-.hand{font-family:Hand;font-weight:700;color:var(--navy);position:absolute;z-index:4;line-height:1}
+.hand{font-family:Hand;font-weight:700;color:var(--hand,var(--navy));position:absolute;z-index:4;line-height:1}
 .arrow{position:absolute;z-index:4;overflow:visible}
 footer{position:absolute;left:72px;right:72px;bottom:44px;z-index:3}
 .frule{display:flex;align-items:center;gap:16px;font-weight:800;font-size:17px;letter-spacing:3px;margin-bottom:14px}
-.frule:after{content:"";flex:1;height:2px;background:var(--navy)}
+.frule:after{content:"";flex:1;height:2px;background:var(--rule,var(--navy))}
 .cols{display:flex;justify-content:space-between}
 .cols div{font-weight:500;font-size:19px}
 .cols b{display:block;font-weight:800;font-size:25px;margin-top:2px;letter-spacing:.3px}
@@ -48,7 +48,7 @@ footer{position:absolute;left:72px;right:72px;bottom:44px;z-index:3}
 .who span{display:block;font-size:20px;color:#5f6368;margin-top:2px}
 .card .g{margin-left:auto;width:46px;height:46px}
 .stars{display:flex;align-items:center;gap:10px;margin:18px 0 14px;font-size:20px;color:#5f6368}
-.stars i{font-style:normal;color:#FBBC04;font-size:30px;letter-spacing:2px}
+.stars i{font-style:normal;color:var(--star,#FBBC04);font-size:30px;letter-spacing:2px}
 .rtext{font-size:var(--rs,29px);line-height:1.5;color:#3c4043;white-space:pre-line}
 .rtext mark.w{color:#202124}
 /* emi per day */
@@ -97,7 +97,7 @@ const FOOT={
 // hand-drawn arrow: from (x1,y1) to (x2,y2) with a bend
 function arrow(a){const [x1,y1,x2,y2,b]=a;const mx=(x1+x2)/2+(b||0),my=(y1+y2)/2-(b||0)*.4;
  const ang=Math.atan2(y2-my,x2-mx),h=18,s=.5;const p1=[x2-h*Math.cos(ang-s),y2-h*Math.sin(ang-s)],p2=[x2-h*Math.cos(ang+s),y2-h*Math.sin(ang+s)];
- return `<svg class="arrow" style="left:0;top:0" width="1080" height="1350"><path d="M${x1} ${y1} Q${mx} ${my} ${x2} ${y2}" fill="none" style="stroke:var(--navy)" stroke-width="3.2" stroke-linecap="round"/><path d="M${p1[0]} ${p1[1]} L${x2} ${y2} L${p2[0]} ${p2[1]}" fill="none" style="stroke:var(--navy)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`}
+ return `<svg class="arrow" style="left:0;top:0" width="1080" height="1350"><path d="M${x1} ${y1} Q${mx} ${my} ${x2} ${y2}" fill="none" style="stroke:var(--hand,var(--navy))" stroke-width="3.2" stroke-linecap="round"/><path d="M${p1[0]} ${p1[1]} L${x2} ${y2} L${p2[0]} ${p2[1]}" fill="none" style="stroke:var(--hand,var(--navy))" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`}
 function hands(c){return (c.notes||[]).map(n=>`<div class="hand" style="left:${n.x}px;top:${n.y}px;font-size:${n.s||40}px;transform:rotate(${n.r||-3}deg)">${n.t}</div>${n.a?arrow(n.a):''}`).join('')}
 function car(c){return c.car?`<img class="car" src="${c.car.src}" style="left:${c.car.x}px;top:${c.car.y}px;width:${c.car.w}px">`:''}
 function jewel(on){ // Hyundai-style parametric jewel facets: a diamond grid, each diamond split in 4 shaded triangles

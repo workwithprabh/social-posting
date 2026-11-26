@@ -390,7 +390,7 @@
   "headline": "“Rohit Rajput made the entire process <mark>effortless.</mark>”",
   "name": "Himanshu K.",
   "place": "Dee Emm Mahindra, Sector 35 service",
-  "avc": "#0B8043",
+  "avc": "#16171B",
   "text": "Outstanding service at Dee Emm Mahindra, Sector 35, Gurgaon! Dealing with an insurance claim can often be a headache, but Rohit Rajput made the entire process <mark class=\"w\">effortless</mark>. He managed everything from the <mark class=\"w\">insurance paperwork to regular status updates</mark> and ensured a <mark class=\"w\">seamless, timely handover</mark> of my car. Thank you to Rohit and the entire Dee Emm Mahindra team for the <mark class=\"w\">top-notch professionalism</mark> and hassle-free experience!",
   "notes": [
    {
@@ -413,7 +413,16 @@
    "ht": "200px",
    "h1": "72px",
    "ct": "420px",
-   "rs": "26px"
+   "rs": "26px",
+   "paper": "#F4F4F3",
+   "mk": "#E31837",
+   "mkfg": "#FFFFFF",
+   "mkw": "rgba(227,24,55,.22)",
+   "star": "#E31837",
+   "hand": "#E31837",
+   "rule": "#E31837",
+   "mkt": ".1em",
+   "mkb": "-.04em"
   }
  }
 ]
