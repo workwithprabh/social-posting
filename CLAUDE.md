@@ -119,6 +119,10 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   "Draft by Claude, needs review". Never put drafts in the team's Thumbnail folder: a file there named by Video ID
   is treated as the approved cover.
 - Before publishing, show the user the batch (ID, client, caption start, thumbnail, platforms) and wait for a yes.
+  **Final image first, every time (user, 26 Nov 2026: "don't post it without my approval"; DEM-REV-2611-01 went out
+  twice).** "Post it", "make the changes and post" or "replace the live post" together with a design change is not
+  approval of the new design: render it, show the final image, and wait for an explicit yes on that image before
+  posting, replacing or deleting anything.
 - Stories (user, 15 Nov 2026): the user wants each post SHARED to the Instagram and Facebook Story (the post card that
   links back to the post), not a separate Story image. Meta's API can't share a post to a Story, so the team does it
   in the app after each post (Instagram: paper plane > Add post to your story; Facebook: Share > Share to your story).
