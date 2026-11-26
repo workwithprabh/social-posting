@@ -28,6 +28,8 @@ header{position:absolute;left:72px;top:64px;z-index:3}
 h1{font-family:Brico;font-weight:800;letter-spacing:-1.5px;line-height:1.02}
 .hand{font-family:Hand;font-weight:700;color:var(--hand,var(--navy));position:absolute;z-index:4;line-height:1}
 .arrow{position:absolute;z-index:4;overflow:visible}
+.pcard{position:absolute;z-index:3;background:#fff;padding:10px;border-radius:4px;box-shadow:0 14px 30px rgba(0,0,0,.18),0 2px 6px rgba(0,0,0,.10)}
+.pcard img{display:block;width:100%;height:100%;object-fit:cover}
 footer{position:absolute;left:72px;right:72px;bottom:44px;z-index:3}
 .frule{display:flex;align-items:center;gap:16px;font-weight:800;font-size:17px;letter-spacing:3px;margin-bottom:14px}
 .frule:after{content:"";flex:1;height:2px;background:var(--rule,var(--navy))}
@@ -135,7 +137,8 @@ function render(c){
  if(c.kind==='review'){
   h+=`${c.kicker?`<div class="kick"><span style="width:30px;height:30px;display:inline-block">${G}</span>${c.kicker}</div>`:''}<h1>${c.headline}</h1>
   <div class="card"><div class="top"><div class="av" style="background:${c.avc}">${c.name[0]}</div><div class="who"><b>${c.name}</b><span>${c.place}</span></div><div class="g">${G}</div></div>
-  <div class="stars"><i>★★★★★</i>${c.when||''}</div><div class="rtext">${c.text}</div></div>`;
+  <div class="stars"><i>★★★★★</i>${c.when||''}</div><div class="rtext">${c.text}</div></div>
+  ${c.photo?`<div class="pcard" style="left:${c.photo.x}px;top:${c.photo.y}px;width:${c.photo.w}px;height:${c.photo.h}px;transform:rotate(${c.photo.r??-3}deg)"><img src="${c.photo.src}" style="object-position:${c.photo.pos||'center'}"></div>`:''}`;
  } else if(c.kind==='emiday'){
   h+=`<div class="kick">${c.kicker}</div><div class="l1">${c.l1}</div><div class="big">${c.big}</div>${car(c)}
   <div class="calc">${Array.isArray(c.calc)?`<div class="ch">HOW WE WORKED IT OUT</div>${c.calc.slice(0,-1).map(r=>`<div class="r"><span>${r[0]}</span><b>${r[1]}</b></div>`).join('')}<div class="t"><span>${c.calc.at(-1)[0]}</span><b>${c.calc.at(-1)[1]}</b></div>`:c.calc}</div><div class="det">${c.det}<br><span class="pill">${c.cta}</span></div>`;

@@ -423,6 +423,15 @@
    "rule": "#E31837",
    "mkt": ".1em",
    "mkb": "-.04em"
+  },
+  "photo": {
+   "src": "m_service.jpg",
+   "x": 84,
+   "y": 938,
+   "w": 470,
+   "h": 234,
+   "r": -3,
+   "pos": "center"
   }
  }
 ]
