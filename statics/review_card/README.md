@@ -144,3 +144,5 @@ Creta from **Capital Hyundai** for" with "Capital Hyundai" set 22% larger. Revie
 Google reviews" line (the user: don't write it; the card's G logo is enough), so `kicker` is empty. A Hyundai-style
 parametric jewel texture (`pattern: true`) was tried behind the car posts and taken off again so every post, reviews
 included, sits on the same plain paper; the option stays in the template, off by default.
+
+Other clients (user, 26 Nov 2026: the review template is approved, use it for Dee Emm Mahindra): the same `review` card works for any client with its own logo, footer and ink colour (`vars.navy`; Dee Emm Mahindra uses charcoal #16171B and the official black twin-peaks logo `DEM_ice_black.png`, from the client's logo folder, at 97 px, 10% under the usual 108). Footer `DEM_SVC` for service reviews. First one: DEM-REV-2611-01.
