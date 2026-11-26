@@ -555,5 +555,36 @@
    "sw": "360px",
    "sb": "96px"
   }
+ },
+ {
+  "id": "MRH-2611-05ctr",
+  "tpl": "reelcover_ctr.html",
+  "img": "hero_creta_front.png",
+  "kick": "CAR LENE KA PLAN?",
+  "hook": "December<br>ya <em>January?</em>",
+  "sticker": "<small>REGISTRATION</small><b>2026</b><i>ya 2027?</i>",
+  "pills": [
+   "Resale value",
+   "Manufacturing month"
+  ],
+  "note": "Booking se pehle ye zaroor dekhiye",
+  "vars": {
+   "ht": "250px",
+   "h1": "128px",
+   "hx": "-80px",
+   "hy": "660px",
+   "hw": "1240px",
+   "fy": "3000px",
+   "gy": "1378px",
+   "sx": "650px",
+   "sy": "610px",
+   "sw": "400px",
+   "sb": "84px",
+   "sr": "-10deg",
+   "fb": "250px",
+   "pf": "35px",
+   "ly": "0px",
+   "lh": "200px"
+  }
  }
 ]
