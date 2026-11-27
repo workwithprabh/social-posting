@@ -1,8 +1,8 @@
 {
-  "_note": "Boost rules set by the user. Instagram only, Advantage+ audience, created paused and activated only after the user says yes. Duration 65 hours (user, 13 Nov 2026; was 2 days) at Rs 100/day: Rs 271 per reel.",
+  "_note": "Boost rules set by the user. Instagram only, Advantage+ audience, created paused and activated only after the user says yes. Duration 48 hours (user, 27 Nov 2026: \"2 days, 48 hours only, nothing more is required\"; was 65 hours from 13 Nov 2026) at Rs 100/day: Rs 200 per reel.",
   "daily_budget_inr": 100,
-  "hours": 65,
-  "per_reel_inr": 271,
+  "hours": 48,
+  "per_reel_inr": 200,
   "placement": "instagram_only",
   "audience": "advantage_plus",
   "goal": "engagement for every boost (user, 15 Nov 2026): OUTCOME_ENGAGEMENT, optimisation POST_ENGAGEMENT, destination ON_POST. Profile visits (--goal visits) only when the user asks",
