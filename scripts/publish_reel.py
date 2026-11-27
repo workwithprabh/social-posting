@@ -49,6 +49,38 @@ def post_form(url, token, fields):
                 headers={'Content-Type': 'application/x-www-form-urlencoded'})
 
 
+def _hook(text):
+    """First non-empty line of a caption, lower-cased with spaces collapsed: what tells two posts apart."""
+    for line in (text or '').splitlines():
+        line = ' '.join(line.split()).lower()
+        if line:
+            return line
+    return ''
+
+
+def already_posted(token, caption, ig_user=None, page_id=None, page_token=None, platforms='ig,fb', limit=40):
+    """No reposts (user, 27 Nov 2026): look for a live post with the same opening line on the platforms we are about
+    to post to. Returns a list of {'platform', 'link', 'time'} matches; empty means safe to post."""
+    hook, found = _hook(caption), []
+    if len(hook) < 12:
+        return found
+    if 'ig' in platforms and ig_user:
+        for m in call('GET', f'{GRAPH}/{ig_user}/media', token,
+                      {'fields': 'caption,permalink,timestamp', 'limit': limit}).get('data', []):
+            if _hook(m.get('caption')) == hook:
+                found.append({'platform': 'ig', 'link': m.get('permalink'), 'time': m.get('timestamp')})
+    if 'fb' in platforms and page_id:
+        try:
+            posts = call('GET', f'{GRAPH}/{page_id}/posts', page_token or token,
+                         {'fields': 'message,permalink_url,created_time', 'limit': limit}).get('data', [])
+        except RuntimeError:
+            posts = []  # some Page tokens can't read the feed; the Instagram check and the sheet still apply
+        for m in posts:
+            if _hook(m.get('message')) == hook:
+                found.append({'platform': 'fb', 'link': m.get('permalink_url'), 'time': m.get('created_time')})
+    return found
+
+
 def upload_binary(url, token, path):
     """Upload the whole file. The upload host can report an error even when the upload landed (seen with
     Instagram), so return the error instead of raising: the processing status checked next is what counts."""
@@ -139,12 +171,19 @@ def main():
     p.add_argument('--platforms', default='ig,fb')
     p.add_argument('--system-user', action='store_true',
                    help='token is the system user token: fetch the Page token for Facebook (kept in memory only)')
+    p.add_argument('--allow-repost', action='store_true',
+                   help='skip the no-repost check; only when the user has said in so many words to post it again')
     a = p.parse_args()
     token = os.environ[a.token_env].strip()
     caption = open(a.caption_file, encoding='utf-8').read().strip()
     result = {}
     fb_token = call('GET', f'{GRAPH}/{a.page_id}', token, {'fields': 'access_token'})['access_token'] \
         if a.system_user else token
+    if not a.allow_repost:
+        dup = already_posted(token, caption, a.ig_user, a.page_id, fb_token, a.platforms)
+        if dup:
+            print(json.dumps({'error': 'ALREADY POSTED: not posting again', 'matches': dup}))
+            return
     helper = None
     if 'ig' in a.platforms and not a.cover_url and a.cover_file:
         # No public cover link: put the cover on the Page as an unpublished photo and use its CDN link.

@@ -6,6 +6,8 @@ Usage:
 Facebook gets the 2160x2700 master as a Page photo. Instagram only accepts an image from a public link, so a
 1080x1350 copy (Instagram's own 4:5 size) is uploaded to the Page as an unpublished photo, its CDN link is given to
 Instagram, and the helper photo is deleted afterwards. Prints one JSON line with the post links; never the token.
+No reposts: if a live post on the target platforms opens with the same caption line, it posts nothing and prints
+ALREADY POSTED with the links (--allow-repost only when the user says to post it again).
 """
 import argparse
 import json
@@ -15,7 +17,7 @@ import time
 
 from PIL import Image
 
-from publish_reel import GRAPH, call, multipart, post_form
+from publish_reel import GRAPH, already_posted, call, multipart, post_form
 
 
 def page_token(a, token):
@@ -68,6 +70,8 @@ def main():
     p.add_argument('--ig-user')
     p.add_argument('--platforms', default='ig,fb')
     p.add_argument('--system-user', action='store_true', help='token is the system user token; fetch the Page token')
+    p.add_argument('--allow-repost', action='store_true',
+                   help='skip the no-repost check; only when the user has said in so many words to post it again')
     a = p.parse_args()
     token = os.environ[a.token_env].strip()
     caption = open(a.caption_file, encoding='utf-8').read().strip()
@@ -77,6 +81,11 @@ def main():
     except RuntimeError as e:
         print(json.dumps({'error': f'no Page token: {e}'}))
         return
+    if not a.allow_repost:
+        dup = already_posted(token, caption, a.ig_user, a.page_id, ptoken, a.platforms)
+        if dup:
+            print(json.dumps({'error': 'ALREADY POSTED: not posting again', 'matches': dup}))
+            return
     for plat in a.platforms.split(','):
         try:
             result.update(publish_instagram(a, token, ptoken, caption) if plat == 'ig' else publish_facebook(a, ptoken, caption))

@@ -123,6 +123,15 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   twice).** "Post it", "make the changes and post" or "replace the live post" together with a design change is not
   approval of the new design: render it, show the final image, and wait for an explicit yes on that image before
   posting, replacing or deleting anything.
+- **Never upload the same post twice (user, 27 Nov 2026: "make sure you will not post things again and again").**
+  Before any post, read its row in the sheet (Videos by ID in B, Statics by ID in F). Post only if Status is
+  "Approved" and there is no post link yet. If Status is anything else, or the sheet has no update, don't post: tell
+  the user it is not approved and wait. If the row already says Posted or has a link, don't post again, whatever a
+  message or scheduled task says. Each post goes out once. If an upload fails or its result is unclear, check the
+  account's latest posts before trying again; never re-run an upload "to be safe". If a live post needs fixing,
+  show the user and ask: don't repost or replace it yourself. `publish_static.py` and `publish_reel.py` refuse to post
+  when a live post on the target platform opens with the same caption line (ALREADY POSTED); never get around that
+  with `--allow-repost` unless the user has said in so many words to post that one again.
 - Stories (user, 15 Nov 2026): the user wants each post SHARED to the Instagram and Facebook Story (the post card that
   links back to the post), not a separate Story image. Meta's API can't share a post to a Story, so the team does it
   in the app after each post (Instagram: paper plane > Add post to your story; Facebook: Share > Share to your story).
