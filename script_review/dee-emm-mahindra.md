@@ -169,3 +169,4 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   
   Ye sab khud dekhna hai? BE 6 FOUR abhi DEE EMM MAHINDRA ke showroom mein hai. Aaiye, aur test drive bhi le lijiye!
 - User: say "BE 6 Pack FOUR" (showroom name) in the hook; also used in the CTA for consistency. 93 words.
+- Topic 3 (BE 6 Pack FOUR walkaround) approved and added to the doc, 28 Nov. Delhi entry becomes topic 4.
