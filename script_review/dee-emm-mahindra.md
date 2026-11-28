@@ -240,3 +240,24 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Exchange value janni hai? DEE EMM MAHINDRA aaiye, aur ye video us dost ko bhejiye jo roz Delhi jaata hai!
 - User: join the CTA lines ("aaiye, aur ye video ..."). 96 words.
 - Topic 4 approved and added to the doc (28 Nov). Doc now has topics 1-4.
+
+## 2026-11-28 · Topic 5: XEV 9e Cineluxe (showroom car; written by Claude)
+- Official (Mahindra blog/press note on mahindraelectricsuv.com): Rs 29.35 lakh ex-showroom; based on Pack Three;
+  exclusive Satin Black / Satin White; Chestnut Brown + Nocturne Black leatherette; ambient lighting 16 million+
+  colours; 79 kWh; real-world range "over 500 km"; 16-speaker Harman Kardon with Dolby Atmos; triple HD display;
+  AR HUD; Infinity Roof. Not official: 656 km, BaaS Rs 19.35 lakh, power. "Cinema" is our playful read of the name,
+  not a Mahindra feature claim. Under Rs 30 lakh -> Haryana 100% road tax waiver (topic 2). 95 words. 9/10.
+- Draft:
+
+  Ye hai XEV 9e Cineluxe. Naam sunke cinema yaad aata hai na? Chaliye, andar dekhte hain.
+  
+  16 speakers ka Harman Kardon system, Dolby Atmos ke saath.
+  Saamne teen HD screens, aur 1.6 crore se zyada colours wali ambient lighting.
+  Seats pe Chestnut Brown aur black ka combination.
+  
+  Ab bahar aaiye. Ye satin finish sirf Cineluxe Edition pe milti hai.
+  
+  Range? 79 kWh battery, aur Mahindra ke hisaab se real-world 500 km se zyada.
+  Keemat? ₹29.35 lakh, matlab Haryana mein road tax bhi maaf.
+  
+  Khud dekhna hai? DEE EMM MAHINDRA aaiye, aur test drive pe chaliye!
