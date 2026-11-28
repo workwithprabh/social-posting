@@ -261,3 +261,4 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Keemat? ₹29.35 lakh, matlab Haryana mein road tax bhi maaf.
   
   Khud dekhna hai? DEE EMM MAHINDRA aaiye, aur test drive pe chaliye!
+- Topic 5 (XEV 9e Cineluxe) approved and added to the doc (28 Nov). Doc now has topics 1-5.
