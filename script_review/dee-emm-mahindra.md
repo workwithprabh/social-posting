@@ -146,3 +146,25 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   
   Hisaab samajhna hai? DEE EMM MAHINDRA aaiye. Aur ye video us dost ko bhejiye jo BaaS ko kiraya samajhta hai!
 - Topics 1 (new hook, FOUR prices) and 2 (FOUR example) replaced in the doc, 28 Nov. Headings unchanged.
+- User: keep topics 1-2 as before, do a separate BE 6 FOUR topic. Reverted in the doc: topic 1 back to the base
+  "BE 6 Rs 11.45 lakh se" line (new hook kept, user asked for it on that version); topic 2 back to the DC example.
+
+## 2026-11-28 · Topic 3: BE 6 SPORTEQ FOUR walkaround (written by Claude, awaiting approval)
+- Official: Rs 26.95 lakh ex-showroom, 79 kWh (15 Aug release); three-screen coast-to-coast display "from TWO
+  onwards" (release); 20-80% in 20 min on 180 kW Charge_iN for BE 6 (Charge_iN release, 25 Nov 2025). Media only
+  (Autocar/ZigWheels/Times Drive/CarDekho): panoramic glass roof, AR head-up display, frunk 45 L, 282 bhp, range
+  683-708 km (cycle unclear). Media-only features must be checked on the showroom car; range and power left out.
+  91 words. 9/10.
+- Draft:
+
+  ₹26.95 lakh ki electric SUV mein kya-kya milta hai? Chaliye, BE 6 FOUR dekhte hain!
+  
+  Andar baithte hi teen screen, dashboard ke ek kone se doosre kone tak.
+  Upar dekhiye, poori glass ki roof.
+  Aur speed, navigation seedha windscreen pe: AR head-up display.
+  
+  Aage bonnet ke neeche bhi saamaan ki jagah hai, frunk.
+  
+  79 kWh battery, aur sahi fast charger pe 20 se 80% sirf 20 minute mein.
+  
+  Ye sab khud dekhna hai? BE 6 FOUR abhi DEE EMM MAHINDRA ke showroom mein hai. Aaiye, aur test drive bhi le lijiye!
