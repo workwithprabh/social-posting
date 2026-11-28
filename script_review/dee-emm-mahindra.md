@@ -225,7 +225,7 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
 - Sources (media; Delhi Transport Dept / CAQM notice not read): Outlook (1 Nov 2026), Tribune, Spinny, V3Cars: non-BS-VI
   vehicles registered outside Delhi barred 1 Nov 2026 - 31 Jan 2027; BS-VI, CNG, electric allowed; AI number-plate
   cameras at borders incl. Gurugram; fine up to Rs 20,000 (one source, left out). BS-VI mandatory for new cars from
-  April 2020, so older cars are likely BS-IV; RC shows the emission norm. 88 words. 8.5/10 (time-limited, media).
+  April 2020, so older cars are likely BS-IV; RC shows the emission norm. 95 words. 8.5/10 (time-limited, media).
 - Draft:
 
   Gurgaon se roz Delhi jaate hain? Pehle ye jaan lijiye.
@@ -235,6 +235,6 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   April 2020 se pehle ki gaadi hai, toh zyada chance hai ki BS-IV hai.
   
   Par BS-VI, CNG aur electric gaadiyon ki entry pe koi rok nahi.
-  Toh purani gaadi exchange kijiye, aur XUV 3XO ZNG ya Mahindra EV ke saath tension-free Delhi jaaiye.
+  Toh purani gaadi exchange kijiye, aur XUV 3XO ZNG ya Mahindra EV mein tension-free Delhi jaaiye.
   
-  Exchange value janni hai? DEE EMM MAHINDRA aaiye. Aur ye video us dost ko bhejiye jo roz Delhi jaata hai!
+  Exchange value janni hai? DEE EMM MAHINDRA aaiye. Ye video us dost ko bhejiye jo roz Delhi jaata hai!
