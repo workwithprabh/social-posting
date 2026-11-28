@@ -262,3 +262,22 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   
   Khud dekhna hai? DEE EMM MAHINDRA aaiye, aur test drive pe chaliye!
 - Topic 5 (XEV 9e Cineluxe) approved and added to the doc (28 Nov). Doc now has topics 1-5.
+
+## 2026-11-28 · Topic 6: XUV 3XO ZNG boot (written by Claude)
+- Feed check: DEM already posted ZNG pickup (5 Nov), 5-star safety (15 Nov), vs Nexon (17 Nov), EMI (19 Nov), on-road
+  (21 Nov); boot not covered. Official (Mahindra PR 6 Nov 2026): "underfloor twin-cylinder packaging ... flat loading
+  floor and 270 litres of usable boot space"; "certified efficiency of 24.7 km/kg". Delhi line from topic 4 sources
+  (media; CNG allowed till 31 Jan). 94 words. 9/10.
+- Draft:
+
+  CNG gaadi li, toh boot mein cylinder aur saamaan ki jagah khatam?
+  XUV 3XO ZNG mein aisa nahi hai. Dekhiye!
+  
+  Isme do CNG cylinder boot ke floor ke neeche fit hain.
+  Isiliye floor flat rehta hai, aur 270 litre ka usable boot milta hai.
+  Aur bags? Aaram se aa gaye.
+  
+  Aur jagah ke saath mileage bhi: CNG pe 24.7 km per kg, certified.
+  Upar se, CNG hai toh 31 January tak Delhi entry pe bhi koi rok nahi.
+  
+  Boot khud check karna hai? DEE EMM MAHINDRA aaiye, aur ZNG ki test drive bhi lijiye!
