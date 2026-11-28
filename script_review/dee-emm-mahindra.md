@@ -282,3 +282,21 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   
   Boot khud check karna hai? DEE EMM MAHINDRA aaiye, aur ZNG ki test drive bhi lijiye!
 - Topic 6 (XUV 3XO ZNG boot) approved and added to the doc (28 Nov). Doc now has topics 1-6 (3 pages).
+
+## 2026-11-28 · Topic 7: Scorpio-N or XUV 7XO (written by Claude)
+- Official: price ranges only (auto.mahindra.com: Scorpio-N Rs 13.69-25.49L, XUV 7XO Rs 13.99-25.94L). Media: Scorpio-N
+  ladder frame, RWD with optional 4WD with low range; XUV 7XO monocoque, AWD only on top diesel AT 7-seat (Autocar
+  Jan 2026), no low range; both offered as 6 or 7 seaters (CarWale). Base-variant seat count unverified, so prices
+  are not tied to 7 seats. 92 words. 8.5/10.
+- Draft:
+
+  Badi family ke liye Scorpio-N lein ya XUV 7XO?
+  Dono mein 6 aur 7 seats ke options. Asli farak aapke raaste ka hai.
+  
+  Scorpio-N ladder frame pe bani hai, aur isme low range wale 4x4 ka option bhi hai.
+  Kachcha raasta, pahad ya offroading pasand hai? Toh Scorpio-N.
+  
+  XUV 7XO monocoque pe bani hai, isiliye ride car jaisi smooth. Aur top diesel automatic mein AWD bhi hai.
+  Zyada time city aur highway pe? Toh XUV 7XO.
+  
+  Dono ek saath dekhni hain? DEE EMM MAHINDRA aaiye, aur dono ki test drive lijiye!
