@@ -56,3 +56,6 @@ Reels must land at 30-40 s including the 3 s thumbnail hold. At about 2.6 spoken
 - Docs so far: Dee Emm Mahindra (28 Nov 2026, reused UGC doc) https://docs.google.com/document/d/1ZQNM-dVSehOsqy5B9aLwcU1gP5ADiSTDEvUnBtpV724/edit ;
   MR Hyundai Video shoot november 2026,
   https://docs.google.com/document/d/1zXtQOT-QWU-PSqzzf_oBQQqdSp4PT8GPjrZqBGB4NOc/edit
+- Flow check (user, 28 Nov 2026): every line must lead into the next. Use spoken links ("yaani", "isiliye", "Toh ...
+  kahan se aaya?", "Bachat kitni?", "Ab bahar aaiye") instead of clipped fragments; give the reason before a price.
+  Keep the topic heading in step with the hook.

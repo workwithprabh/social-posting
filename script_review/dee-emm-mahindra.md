@@ -218,3 +218,5 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Aur sabse zaroori, 79 kWh battery. Sahi fast charger pe 20 se 80% sirf 20 minute mein.
   
   Ye sab khud dekhna hai? BE 6 Pack FOUR abhi DEE EMM MAHINDRA ke showroom mein hai. Aaiye, test drive bhi lijiye!
+- QC fixes approved and applied in the doc (28 Nov): topic 1 heading -> "Battery ka paisa har km pe? Galat!",
+  topics 2 and 3 replaced with the flow versions above.
