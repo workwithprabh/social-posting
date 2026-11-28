@@ -187,3 +187,4 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Toh ₹3.75 per km kahan se aaya? Simple maths: roz 60 km chalayein, toh per km itna padta hai.
   
   Agli baar koi BaaS ko kiraya bole, usse ye video bhejiye. Hisaab chahiye? DEE EMM MAHINDRA aaiye!
+- Topic 1 continuous-flow version approved and replaced in the doc (28 Nov).
