@@ -237,4 +237,5 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Par BS-VI, CNG aur electric gaadiyon ki entry pe koi rok nahi.
   Toh purani gaadi exchange kijiye, aur XUV 3XO ZNG ya Mahindra EV mein tension-free Delhi jaaiye.
   
-  Exchange value janni hai? DEE EMM MAHINDRA aaiye. Ye video us dost ko bhejiye jo roz Delhi jaata hai!
+  Exchange value janni hai? DEE EMM MAHINDRA aaiye, aur ye video us dost ko bhejiye jo roz Delhi jaata hai!
+- User: join the CTA lines ("aaiye, aur ye video ..."). 96 words.
