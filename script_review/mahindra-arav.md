@@ -228,3 +228,10 @@
   Finance hum khud arrange karte hain, aur delivery ke baad service bhi yahin hoti hai. Ye dekhiye, hamara workshop, jahan pickups ki service hoti hai.
 
   Toh pickup lena hai? Mahindra Arav aaiye, Gurgaon ya Manesar. Bharose ke saath gaadi lijiye, aur kaam shuru kijiye.
+
+## 2026-11-28 · Correction to the BE 6 SPORTEQ BaaS script (14 Nov)
+Mahindra's official BaaS FAQ and 28 Aug 2026 release (read 28 Nov): BaaS is a dual loan; "neither a battery
+subscription, nor battery rental / pay-per-use"; "no battery usage charges linked to kilometres driven"; battery EMI
+from Rs 6,975; Rs 3.75/km is the effective cost at 60 km/day. Our 9/10 version said "battery ka kharcha Rs 3.75 per
+km" and "lagbhag Rs 6,750 mahina": both wrong. The writer's original "effective usage cost hai, pay-per-km nahi" was
+right. Corrected lines sent to the user.
