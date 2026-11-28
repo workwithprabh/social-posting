@@ -28,3 +28,24 @@ https://docs.google.com/document/d/1ZQNM-dVSehOsqy5B9aLwcU1gP5ADiSTDEvUnBtpV724/
   10 (XEV 9S BaaS Rs 12.65 lakh, 59/70/79 kWh, 7 seater: official), 12, 13 (prices from brand sites 8 Nov; recheck),
   14 (Autocar 9.89 vs 7.70 kpl, torque converter), 15, 20.
 - Shortlist requested by the user (rated 8+ as written, 28 Nov): 14, 20, 10, 12, 13, 15, 18, 2, 6, 9, 17.
+
+## 2026-11-28 · Shortlist, one by one (user: fix, rate, approve, then add to our doc)
+- Reel 14 (traffic diaries) draft: Autocar credit spoken, Nexon "automatic" for fairness, [Rs X] filled as
+  "lagbhag teen hazaar" (28.8 L x Rs 102.12/L Gurgaon, Bankbazaar 25 Nov 2026; recheck on posting day). 89 spoken
+  words, ~37 s. 9/10.
+
+  (Golf Course Road, shaam 6:47. Steering pe jami hui, chaaron taraf horn.)
+  Ghar 4 km hai. Main 40 minute se yahin hoon.
+  
+  Is traffic se main lad nahi sakti. Par petrol se lad sakti hoon.
+  
+  Autocar India ke real test mein, city mein XUV 3XO automatic ne 9.89 km per litre di. Nexon automatic ne 7.70.
+  Mahine ke 1,000 km? Lagbhag 29 litre petrol bachta hai. Matlab har mahine lagbhag teen hazaar rupaye.
+  
+  Aur ye torque converter automatic hai, toh stop-go traffic mein bhi smooth chalti hai.
+  
+  (Traffic ek metre aage badhta hai.)
+  Chali! Ek metre!
+  
+  (Phir ruk jaata hai. Deadpan.)
+  Ye reel us dost ko bhejo jo roz yahin phansa hai.
