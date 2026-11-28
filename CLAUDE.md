@@ -156,9 +156,11 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
   which IMPORTRANGEs Capital's rows from the master (never point the client sheet at the master: anyone who can edit
   it could import any range of the master). Tab `Content review`: one row per reel or static (A type, B ID; C topic,
   E cover, F caption, G sent-for-review date come from the master by ID; D is the static preview link: the editor's
-  Drive video, or the approval-deck slide). The client fills only H (Approved / Changes required) and I (remarks);
-  J Status, K Waiting on, L Last reviewed on, M Days with client and N Planned post date are formulas. P "New version
-  uploaded on" is ours: set it when the editor uploads a corrected version (status becomes "New version ready").
+  Drive video, or the approval-deck slide). The client fills only H "Your status" (Pending / Approved / Changes required; new rows start as Pending)
+  and I remarks (a remark makes it Changes required). J Current status (Pending, Approved, Changes required, Updated –
+  please review, Posted), L Reviewed on and N Posting date are formulas; K Waiting on and M Days with client are
+  hidden (user, 28 Nov 2026: keep it simple for the client). P "Updated version sent on" is ours: set it when the
+  editor uploads a corrected version (status becomes "Updated – please review").
   Q and R (hidden) are self-referencing time stamps (iterative calculation on, 5 passes): never clear or retype
   them. `Posting plan`: B3 first posting day, B4 days between posts; approved posts take the next free slot of their
   type after the approval day, in the order Reel, Reel, Static. When a new Capital reel or static is ready for the
