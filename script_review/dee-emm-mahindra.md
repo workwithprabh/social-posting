@@ -173,3 +173,17 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
 - User: "Battery alag, isliye BE 6 Rs 11.45 lakh se" did not sound right (clipped, no reason given). Proposed:
   "Battery ki keemat gaadi mein nahi judti, isliye BE 6 Rs 11.45 lakh se shuru hoti hai." ("Bas ek example" ->
   "Ek example" to stay at 95 words.)
+- User: make it flow as one continuous talk. Rewritten with connectors (yaani / isiliye / aur / Toh ... kahan se
+  aaya?), "shuru" used once, CTA leads from the myth. 96 words (~40 s). Awaiting approval:
+
+  Suna hai, Mahindra EV mein battery ka paisa har km pe dena padta hai?
+  Bilkul galat!
+  
+  BaaS, yaani Battery-as-a-Service mein, gaadi aur battery ke do alag loan hote hain.
+  Battery ki keemat gaadi mein nahi judti, isiliye BE 6 ₹11.45 lakh se shuru.
+  
+  Battery ki EMI ₹6,975 se start hoti hai, aur kitna bhi chalayein, km ka alag charge nahi.
+  
+  Toh ₹3.75 per km kahan se aaya? Ek hisaab: roz 60 km chalayein, toh per km itna padta hai.
+  
+  Agli baar koi BaaS ko kiraya bole, usse ye video bhejiye. Hisaab chahiye? DEE EMM MAHINDRA aaiye!
