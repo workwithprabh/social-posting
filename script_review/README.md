@@ -61,3 +61,5 @@ Reels must land at 30-40 s including the 3 s thumbnail hold. At about 2.6 spoken
   Keep the topic heading in step with the hook.
 - CTA as one breath (user, 28 Nov 2026): join the visit line and the share line with "aur" ("... aaiye, aur ye video us
   dost ko bhejiye ...") instead of two separate sentences.
+- Viewer first (user, 28 Nov 2026): when the facts are right but the script feels like a spec sheet, reframe around the
+  buyer's situation ("Weekend pe pahad...? Toh Scorpio-N.") and give the car's reason after it.

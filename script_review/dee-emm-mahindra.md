@@ -341,3 +341,4 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Monocoque chassis, yaani car jaisi body, isiliye ride smooth. Aur top diesel automatic mein AWD bhi.
   
   Ab confuse mat hoiye. DEE EMM MAHINDRA aaiye, aur dono ki test drive lekar khud decide kijiye!
+- Topic 7 (Scorpio-N ya XUV 7XO?, reframed version) approved and added to the doc (28 Nov). Doc now has topics 1-7.
