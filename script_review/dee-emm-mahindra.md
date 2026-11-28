@@ -27,3 +27,4 @@ https://docs.google.com/document/d/1ZQNM-dVSehOsqy5B9aLwcU1gP5ADiSTDEvUnBtpV724/
 - Verified OK: 9 (203/170/160 hp, AWD top diesel AT, Safari powered tailgate; Safari petrol launch to recheck),
   10 (XEV 9S BaaS Rs 12.65 lakh, 59/70/79 kWh, 7 seater: official), 12, 13 (prices from brand sites 8 Nov; recheck),
   14 (Autocar 9.89 vs 7.70 kpl, torque converter), 15, 20.
+- Shortlist requested by the user (rated 8+ as written, 28 Nov): 14, 20, 10, 12, 13, 15, 18, 2, 6, 9, 17.
