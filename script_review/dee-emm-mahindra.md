@@ -62,7 +62,7 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
 - Facts (official): BaaS = dual loan (vehicle + battery); "neither a battery subscription, nor battery rental /
   pay-per-use"; "no battery usage charges linked to kilometres"; no minimum usage (BaaS FAQ); battery EMI from Rs 6,975,
   effective Rs 3.75/km at 60 km/day (28 Aug 2026 release); BE 6 ONE 59 kWh BaaS Rs 11.45 lakh ex-showroom, excl.
-  charger (15 Aug 2026 release). 92 words, ~39 s. 9/10.
+  charger (15 Aug 2026 release). 91 words, ~39 s. 9/10.
 - Draft:
 
   BaaS pe EV li, toh kya har km ka meter chalega?
