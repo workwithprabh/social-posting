@@ -78,4 +78,24 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Poora hisaab samajhna hai? DEE EMM MAHINDRA aaiye. Aur ye video us dost ko bhejiye jo BaaS ko kiraya samajhta hai!
 - Approved. User asked to clear their UGC doc and use it for our scripts: the 20 UGC reels were removed (still in the
   doc's Version history, revision before 28 Nov edit) and Topic 1 added in our layout. Doc:
-  https://docs.google.com/document/d/1ZQNM-dVSehOsqy5B9aLwcU1gP5ADiSTDEvUnBtpV724/edit (title still the UGC one).
+  https://docs.google.com/document/d/1ZQNM-dVSehOsqy5B9aLwcU1gP5ADiSTDEvUnBtpV724/edit (renamed 28 Nov).
+- Doc renamed to "Dee Emm Mahindra Video shoot november 2026" (28 Nov).
+
+## 2026-11-28 · Topic 2: Haryana EV road tax zero (written by Claude)
+- Source: Tribune, 25 Aug 2026 (media; quotes Gurugram DC and Badshahpur SDM): 100% MV tax waiver on BEVs up to
+  Rs 30 lakh ex-showroom, 50% above; purchased and registered in Haryana; DC example: a Mahindra "BE Formula"
+  Rs 2,44,900 waived. Official Haryana notification not reachable (transport/e-gazette sites down). Delhi still
+  waives too (EVFY), so the angle is "no need to go to Delhi". 95 words. 8.5/10; 9 with DEM's own figure.
+- Draft:
+
+  Gurgaon walon, EV lene ka plan hai? Ye suniye.
+  
+  Haryana mein ab ₹30 lakh tak ki electric car pe road tax poora maaf. Zero!
+  Usse upar wali EV pe bhi 50% maaf.
+  
+  Gurugram ke DC ke hisaab se, ek Mahindra EV pe ₹2.44 lakh se zyada ka road tax bacha.
+  
+  Bas ek shart: gaadi Haryana mein khareediye aur yahin register karwaiye.
+  Registration ke liye Delhi bhaagne ki zarurat nahi.
+  
+  Aapki EV pe kitna bachega? DEE EMM MAHINDRA aaiye, hisaab hum bata denge. Aur ye video us dost ko bhejiye jo EV lene wala hai!
