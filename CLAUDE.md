@@ -150,6 +150,20 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 - Logo colours (user, 24 Nov 2026): Hyundai dealer logos only in black, white or Hyundai blue, never recoloured to match
   a design (text colours can change). On light or sky backgrounds use black or blue.
 - **Capital Hyundai statics, v2 house style (client feedback via the user, 25 Nov 2026: "too AI").** Flat paper, navy, a yellow marker highlight, handwritten notes; no glows, haze or glass. Google review posts look like a Google review (G logo, stars, the customer's exact words with key phrases highlighted), with no "Straight from our Google reviews" line. Logo 63 px. Same plain paper on every post (no texture). EMI headline: "Own a Creta from Capital Hyundai for", Capital Hyundai larger. EMI posts lead with the per-day cost (monthly EMI × 12 ÷ 365, rounded up, assumptions in the fine print). Template `statics/review_card/ch2.html` (see the README there).
+- **Capital Hyundai client approval sheet (user, 28 Nov 2026: stop sending videos over WhatsApp).** Client sheet
+  "Capital Hyundai – Content approvals" (`1fzWIazZb653T-KI7oLaYWnEQYpPP-G4vgA5Nwi0jc0U`, shared with the client) reads
+  only from the private feed "Capital Hyundai feed (internal, do not share)" (`16xQn-oRaQWBkrBL1cQYu4zs2dn9-SfN71P8nEeqpE-U`),
+  which IMPORTRANGEs Capital's rows from the master (never point the client sheet at the master: anyone who can edit
+  it could import any range of the master). Tab `Content review`: one row per reel or static (A type, B ID; C topic,
+  E cover, F caption, G sent-for-review date come from the master by ID; D is the static preview link: the editor's
+  Drive video, or the approval-deck slide). The client fills only H (Approved / Changes required) and I (remarks);
+  J Status, K Waiting on, L Last reviewed on, M Days with client and N Planned post date are formulas. P "New version
+  uploaded on" is ours: set it when the editor uploads a corrected version (status becomes "New version ready").
+  Q and R (hidden) are self-referencing time stamps (iterative calculation on, 5 passes): never clear or retype
+  them. `Posting plan`: B3 first posting day, B4 days between posts; approved posts take the next free slot of their
+  type after the approval day, in the order Reel, Reel, Static. When a new Capital reel or static is ready for the
+  client, add a row: copy the last row's formulas down (copyPaste PASTE_FORMULA), then set A, B and D (and for
+  statics C, E "—", G and P). Post Capital content only when its row here says Approved, on its planned date.
 - Capital Hyundai Dadri showroom number is 72900 77273 everywhere (user, 9 Nov 2026; matches the reel end card).
 - Boosting: rules and ad accounts are in `config/boost.json` (Instagram only, Advantage+ audience, all of India, goal engagement (user, 15 Nov 2026: "engagement for all boosts from now"), Rs 100/day for
   48 hours, Rs 200 per reel; user, 27 Nov 2026: "2 days, 48 hours only, nothing more is required"; was 65 hours from 13 Nov). Capital Hyundai and M R Hyundai always use their own ad account; Car & Bike always uses the Dee Emm Hyundai
