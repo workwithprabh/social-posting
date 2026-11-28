@@ -281,3 +281,4 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Upar se, CNG hai toh 31 January tak Delhi entry pe bhi koi rok nahi.
   
   Boot khud check karna hai? DEE EMM MAHINDRA aaiye, aur ZNG ki test drive bhi lijiye!
+- Topic 6 (XUV 3XO ZNG boot) approved and added to the doc (28 Nov). Doc now has topics 1-6 (3 pages).
