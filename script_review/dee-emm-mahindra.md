@@ -184,6 +184,6 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   
   Battery ki EMI ₹6,975 se start hoti hai, aur kitna bhi chalayein, km ka alag charge nahi.
   
-  Toh ₹3.75 per km kahan se aaya? Ek hisaab: roz 60 km chalayein, toh per km itna padta hai.
+  Toh ₹3.75 per km kahan se aaya? Simple maths: roz 60 km chalayein, toh per km itna padta hai.
   
   Agli baar koi BaaS ko kiraya bole, usse ye video bhejiye. Hisaab chahiye? DEE EMM MAHINDRA aaiye!
