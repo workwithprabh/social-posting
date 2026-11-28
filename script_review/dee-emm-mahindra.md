@@ -100,3 +100,32 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   
   Aapki EV pe kitna bachega? DEE EMM MAHINDRA aaiye, hisaab hum bata denge. Aur ye video us dost ko bhejiye jo EV lene wala hai!
 - Topic 2 approved and added to the doc (28 Nov).
+
+## 2026-11-28 · Showroom car today: BE 6 SPORTEQ FOUR ("Pack 4")
+- Official (15 Aug release + BaaS FAQ): FOUR = 79 kWh, Rs 26.95 lakh ex-showroom (excl. wall charger), BaaS Rs 16.95
+  lakh; Rs 3.75/km footnote applies (Rs 6,975 = 3.75 x 60 km x 31 days). No official range/power per variant.
+- Proposed FOUR-specific versions of topics 1 and 2 (awaiting approval):
+
+  BaaS pe EV li, toh kya har km ka meter chalega?
+  Bilkul nahi!
+  
+  BaaS matlab Battery-as-a-Service. Isme do loan hain: ek gaadi ka, ek battery ka.
+  Battery alag, isliye ye BE 6 FOUR ₹26.95 lakh ki jagah ₹16.95 lakh mein.
+  
+  Battery ki EMI ₹6,975 se shuru. Kitna bhi chalayein, km ka koi alag charge nahi.
+  
+  Toh ₹3.75 per km kya hai? Ek hisaab: roz 60 km chalayein, toh EMI itni per km padti hai.
+  
+  Apna hisaab samajhna hai? DEE EMM MAHINDRA aaiye. Aur ye video us dost ko bhejiye jo BaaS ko kiraya samajhta hai!
+
+  Gurgaon walon, EV lene ka plan hai? Ye suniye.
+  
+  Haryana mein ab ₹30 lakh tak ki electric car pe road tax poora maaf. Zero!
+  Usse upar wali EV pe bhi 50% maaf.
+  
+  Ye BE 6 FOUR ₹26.95 lakh ki hai, matlab iska poora road tax bachega.
+  
+  Bas ek shart: gaadi Haryana mein khareediye aur yahin register karwaiye.
+  Registration ke liye Delhi bhaagne ki zarurat nahi.
+  
+  Aapki EV pe kitna bachega? DEE EMM MAHINDRA aaiye, hisaab hum bata denge. Aur ye video us dost ko bhejiye jo EV lene wala hai!
