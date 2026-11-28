@@ -5,12 +5,14 @@ This repo backs the posting of edited client reels to Instagram and Facebook. Re
 ## Where things are
 
 - **Tracker sheet:** "Social Posting Tracker", Google Sheet id `1bcx0yZ-5C7F6e_WLg9Kbw8FRQQ4jUaPQ_SRGnJts_NY`
-  in the workwithprabh@gmail.com Drive. Tab `Videos`, columns A-N: Planned date, Video ID, Client, Added to
+  in the workwithprabh@gmail.com Drive. Tab `Videos`, columns A-O: Planned date, Video ID, Client, Added to
   Drive (the video file's Drive upload date, India time), Month, Video file (HYPERLINK to Drive), Status (Pending /
   Approved / Not approved / Posted / Skip; the Dashboard counts these exact words), Platforms (IG + FB / IG only /
   FB only), Caption (Done/Pending, an ARRAYFORMULA in I2 that looks up the `Captions` tab: never type in column I),
   Thumbnail (the thumbnail's Drive link when done, else "Pending"), Post date, Instagram post link, Facebook post
-  link, Notes. A filter hides Posted and Skip rows: lift it before bulk copies or clears, because copies and clears
+  link, Notes, and O Topic (user, 28 Nov 2026: what the reel is about, in one line, e.g. "Service: 4 dashboard warning
+  lights and what to do"; fill it for every new reel when Claude watches it to check it or make its cover). A filter
+  (A-O) hides Posted and Skip rows: lift it before bulk copies or clears, because copies and clears
   skip hidden rows. **Row numbers (21 Nov 2026: wrong rows were overwritten three times by counting rows by eye):** never count rows
   in a read by eye. Read the ID column (Videos B, Statics F, Captions A) and work out each row as start row + index
   in code, write, then read the written rows back with their ID column and fix at once if one doesn't match. Never reset `textFormat` over the link columns (F, J, L, M): that removes the hyperlinks. A URL
