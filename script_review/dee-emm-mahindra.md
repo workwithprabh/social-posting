@@ -49,3 +49,11 @@ https://docs.google.com/document/d/1ZQNM-dVSehOsqy5B9aLwcU1gP5ADiSTDEvUnBtpV724/
   
   (Phir ruk jaata hai. Deadpan.)
   Ye reel us dost ko bhejo jo roz yahin phansa hai.
+
+## 2026-11-28 · Fresh topics for today's shoot (user: set the UGC doc aside, write our usual way)
+Feed check (last 40 posts, likes only, boosts inflate): BaaS "Rs 20 lakh EV feels affordable" 463, family car 74,
+tight parking 62, delivery 54, base vs right variant 49, EV charge at 0% 47, online research 46, EV home charging
+39, ZNG CNG pickup 38, Nexon vs ZNG 33. Already covered: ZNG pickup/EMI/on-road/vs Nexon, EV home charging, base vs
+variant, research vs showroom, family car.
+Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zero, 3 Delhi entry till 31 Jan,
+4 XEV 9S 7-seater on BaaS, 5 OTA for existing EV owners from Jan 2027, 6 delivery-day checklist.
