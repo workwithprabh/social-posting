@@ -188,3 +188,33 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   
   Agli baar koi BaaS ko kiraya bole, usse ye video bhejiye. Hisaab chahiye? DEE EMM MAHINDRA aaiye!
 - Topic 1 continuous-flow version approved and replaced in the doc (28 Nov).
+
+## 2026-11-28 · QC of topics 1-3 for flow (user)
+- 1 passes (96 words); heading no longer matches the hook.
+- 2: DC line had no lead-in, Delhi line came out of nowhere: added "Bachat kitni?", "Bas shart ye hai:", "Matlab ab".
+- 3: inside -> outside jump: "Ab bahar aaiye."; battery line: "Aur sabse zaroori"; fragment "teen screen" -> "teen
+  screens". Both 95 words. Awaiting approval.
+
+  Gurgaon walon, EV lene ka plan hai? Pehle ye suniye.
+  
+  Haryana mein ab ₹30 lakh tak ki electric car pe road tax poora maaf. Zero!
+  Aur usse mehngi EV pe bhi 50% maaf.
+  
+  Bachat kitni? Gurugram ke DC ke hisaab se, ek Mahindra EV pe ₹2.44 lakh se zyada.
+  
+  Bas shart ye hai: gaadi Haryana mein khareediye aur yahin register karwaiye.
+  Matlab ab registration ke liye Delhi bhaagne ki zarurat nahi.
+  
+  Aapki EV pe kitna bachega? DEE EMM MAHINDRA aaiye, hisaab hum batayenge. Aur ye video us dost ko bhejiye jo EV lene wala hai!
+
+  ₹26.95 lakh ki electric SUV mein kya-kya milta hai? Chaliye, BE 6 Pack FOUR dekhte hain!
+  
+  Andar baithte hi teen screens, dashboard ke ek kone se doosre kone tak.
+  Upar dekhiye, poori glass ki roof.
+  Aur speed, navigation seedha windscreen pe: AR head-up display.
+  
+  Ab bahar aaiye. Bonnet ke neeche bhi saamaan ki jagah hai: frunk.
+  
+  Aur sabse zaroori, 79 kWh battery. Sahi fast charger pe 20 se 80% sirf 20 minute mein.
+  
+  Ye sab khud dekhna hai? BE 6 Pack FOUR abhi DEE EMM MAHINDRA ke showroom mein hai. Aaiye, test drive bhi lijiye!
