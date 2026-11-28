@@ -313,3 +313,16 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Zyada time city aur highway pe? Toh XUV 7XO.
   
   Dono ek saath dekhni hain? DEE EMM MAHINDRA aaiye, aur dono ki test drive lijiye!
+- User: say "ladder frame chassis" (Scorpio-N) and "monocoque chassis" (XUV 7XO; user wrote 3XO, topic is 7XO).
+  "yaani car jaisi body" kept as the plain-words gloss. 95 words. Awaiting approval:
+
+  Badi family ke liye Scorpio-N lein ya XUV 7XO?
+  Dono mein 6 aur 7 seats ke options. Asli farak aapke raaste ka hai.
+  
+  Scorpio-N mazboot ladder frame chassis pe bani hai, aur isme 4x4 ka option bhi hai.
+  Kachcha raasta, pahad ya offroading pasand hai? Toh Scorpio-N.
+  
+  XUV 7XO monocoque chassis pe bani hai, yaani car jaisi body, isiliye ride smooth rehti hai. Aur top diesel automatic mein AWD bhi hai.
+  Zyada time city aur highway pe? Toh XUV 7XO.
+  
+  Dono ek saath dekhni hain? DEE EMM MAHINDRA aaiye, aur dono ki test drive lijiye!
