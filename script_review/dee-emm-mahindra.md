@@ -239,3 +239,4 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   
   Exchange value janni hai? DEE EMM MAHINDRA aaiye, aur ye video us dost ko bhejiye jo roz Delhi jaata hai!
 - User: join the CTA lines ("aaiye, aur ye video ..."). 96 words.
+- Topic 4 approved and added to the doc (28 Nov). Doc now has topics 1-4.
