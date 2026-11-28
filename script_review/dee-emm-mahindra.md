@@ -99,3 +99,4 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Registration ke liye Delhi bhaagne ki zarurat nahi.
   
   Aapki EV pe kitna bachega? DEE EMM MAHINDRA aaiye, hisaab hum bata denge. Aur ye video us dost ko bhejiye jo EV lene wala hai!
+- Topic 2 approved and added to the doc (28 Nov).
