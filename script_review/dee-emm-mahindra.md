@@ -57,3 +57,22 @@ tight parking 62, delivery 54, base vs right variant 49, EV charge at 0% 47, onl
 variant, research vs showroom, family car.
 Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zero, 3 Delhi entry till 31 Jan,
 4 XEV 9S 7-seater on BaaS, 5 OTA for existing EV owners from Jan 2027, 6 delivery-day checklist.
+
+## 2026-11-28 · Topic 1: BaaS, no per-km meter (written by Claude)
+- Facts (official): BaaS = dual loan (vehicle + battery); "neither a battery subscription, nor battery rental /
+  pay-per-use"; "no battery usage charges linked to kilometres"; no minimum usage (BaaS FAQ); battery EMI from Rs 6,975,
+  effective Rs 3.75/km at 60 km/day (28 Aug 2026 release); BE 6 ONE 59 kWh BaaS Rs 11.45 lakh ex-showroom, excl.
+  charger (15 Aug 2026 release). 94 words, ~39 s. 9/10.
+- Draft:
+
+  BaaS pe EV li, toh kya har km ka meter chalega?
+  Bilkul nahi!
+  
+  BaaS matlab Battery-as-a-Service. Isme do loan hote hain: ek gaadi ka, ek battery ka.
+  Battery alag hone se BE 6 ₹11.45 lakh se shuru ho jaati hai.
+  
+  Battery ki EMI ₹6,975 se shuru. Kitna bhi chalayein, km ka koi alag charge nahi.
+  
+  Toh ₹3.75 per km kya hai? Bas ek hisaab: roz 60 km chalayein, toh EMI itni per km padti hai.
+  
+  Apna poora hisaab samajhna hai? DEE EMM MAHINDRA aaiye. Aur ye video us dost ko bhejiye jo BaaS ko kiraya samajhta hai!
