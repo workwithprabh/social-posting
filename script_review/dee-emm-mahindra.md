@@ -129,3 +129,19 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Registration ke liye Delhi bhaagne ki zarurat nahi.
   
   Aapki EV pe kitna bachega? DEE EMM MAHINDRA aaiye, hisaab hum bata denge. Aur ye video us dost ko bhejiye jo EV lene wala hai!
+
+- User: hook confusing ("BaaS pe EV li, toh kya har km ka meter chalega?": jargon + metaphor in the first second).
+  New hook names the rumour in plain words: "Suna hai, Mahindra EV mein battery ka paisa har km pe dena padta hai?
+  Bilkul galat!" Applied to the FOUR version, 95 words:
+
+  Suna hai, Mahindra EV mein battery ka paisa har km pe dena padta hai?
+  Bilkul galat!
+  
+  BaaS matlab Battery-as-a-Service. Do loan: ek gaadi ka, ek battery ka.
+  Battery alag, isliye ye BE 6 FOUR ₹26.95 lakh ki jagah ₹16.95 lakh mein.
+  
+  Battery ki EMI ₹6,975 se shuru. Kitna bhi chalayein, km ka alag charge nahi.
+  
+  Phir ₹3.75 per km kya hai? Bas ek example: roz 60 km chalayein, toh EMI itni per km padti hai.
+  
+  Hisaab samajhna hai? DEE EMM MAHINDRA aaiye. Aur ye video us dost ko bhejiye jo BaaS ko kiraya samajhta hai!
