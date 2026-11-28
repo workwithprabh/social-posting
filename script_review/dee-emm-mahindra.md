@@ -220,3 +220,21 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Ye sab khud dekhna hai? BE 6 Pack FOUR abhi DEE EMM MAHINDRA ke showroom mein hai. Aaiye, test drive bhi lijiye!
 - QC fixes approved and applied in the doc (28 Nov): topic 1 heading -> "Battery ka paisa har km pe? Galat!",
   topics 2 and 3 replaced with the flow versions above.
+
+## 2026-11-28 · Topic 4: Delhi entry till 31 January (written by Claude)
+- Sources (media; Delhi Transport Dept / CAQM notice not read): Outlook (1 Nov 2026), Tribune, Spinny, V3Cars: non-BS-VI
+  vehicles registered outside Delhi barred 1 Nov 2026 - 31 Jan 2027; BS-VI, CNG, electric allowed; AI number-plate
+  cameras at borders incl. Gurugram; fine up to Rs 20,000 (one source, left out). BS-VI mandatory for new cars from
+  April 2020, so older cars are likely BS-IV; RC shows the emission norm. 88 words. 8.5/10 (time-limited, media).
+- Draft:
+
+  Gurgaon se roz Delhi jaate hain? Pehle ye jaan lijiye.
+  
+  31 January tak, Delhi ke bahar registered non-BS-VI gaadiyon ki Delhi mein entry band hai.
+  Apni gaadi ka norm RC mein check kar lijiye.
+  April 2020 se pehle ki gaadi hai, toh zyada chance hai ki BS-IV hai.
+  
+  Par BS-VI, CNG aur electric gaadiyon ki entry pe koi rok nahi.
+  Toh purani gaadi exchange kijiye, aur XUV 3XO ZNG ya Mahindra EV ke saath tension-free Delhi jaaiye.
+  
+  Exchange value janni hai? DEE EMM MAHINDRA aaiye. Aur ye video us dost ko bhejiye jo roz Delhi jaata hai!
