@@ -168,3 +168,4 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   79 kWh battery, aur sahi fast charger pe 20 se 80% sirf 20 minute mein.
   
   Ye sab khud dekhna hai? BE 6 FOUR abhi DEE EMM MAHINDRA ke showroom mein hai. Aaiye, aur test drive bhi le lijiye!
+- User: say "BE 6 Pack FOUR" (showroom name) in the hook; also used in the CTA for consistency. 93 words.
