@@ -326,3 +326,18 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
   Zyada time city aur highway pe? Toh XUV 7XO.
   
   Dono ek saath dekhni hain? DEE EMM MAHINDRA aaiye, aur dono ki test drive lijiye!
+- User: info right, framing needs work. Reframed viewer-first: hook "Ghar mein 7 log, aur dil mein Mahindra?";
+  each car introduced by the buyer's situation ("Weekend pe pahad...? Toh Scorpio-N.") then the reason; CTA
+  "dono ki test drive lekar khud decide kijiye". 93 words. 9/10. Awaiting approval:
+
+  Ghar mein 7 log, aur dil mein Mahindra? Toh sawaal ek hi hai: Scorpio-N ya XUV 7XO?
+  
+  Seats dono mein 6 ya 7 milti hain. Farak bas ek: gaadi chalegi kahan?
+  
+  Weekend pe pahad, kachcha raasta, thodi offroading? Toh Scorpio-N.
+  Mazboot ladder frame chassis, aur 4x4 ka option bhi.
+  
+  Roz office, city ka traffic, aur highway trips? Toh XUV 7XO.
+  Monocoque chassis, yaani car jaisi body, isiliye ride smooth. Aur top diesel automatic mein AWD bhi.
+  
+  Ab confuse mat hoiye. DEE EMM MAHINDRA aaiye, aur dono ki test drive lekar khud decide kijiye!
