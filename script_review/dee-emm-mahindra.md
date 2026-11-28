@@ -85,7 +85,7 @@ Proposed: 1 BaaS myth (no per-km meter; official FAQ), 2 Haryana EV road tax zer
 - Source: Tribune, 25 Aug 2026 (media; quotes Gurugram DC and Badshahpur SDM): 100% MV tax waiver on BEVs up to
   Rs 30 lakh ex-showroom, 50% above; purchased and registered in Haryana; DC example: a Mahindra "BE Formula"
   Rs 2,44,900 waived. Official Haryana notification not reachable (transport/e-gazette sites down). Delhi still
-  waives too (EVFY), so the angle is "no need to go to Delhi". 95 words. 8.5/10; 9 with DEM's own figure.
+  waives too (EVFY), so the angle is "no need to go to Delhi". 94 words. 8.5/10; 9 with DEM's own figure.
 - Draft:
 
   Gurgaon walon, EV lene ka plan hai? Ye suniye.
